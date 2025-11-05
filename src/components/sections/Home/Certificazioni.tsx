@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Certificazioni() {
   return (
     <section 
-      className="min-h-[100vh] lg:px-32 lg:py-16 flex flex-col gap-16 "
+      className="lg:px-32 lg:py-16 flex flex-col gap-16 "
     >
       <h2 className="text-[40px] leading-[40px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
         Certificazioni e sicurezza
