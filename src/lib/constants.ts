@@ -1,8 +1,8 @@
 export const NAVIGATION_LINKS = [
-  { name: "Home", href: "/" },
   { name: "Chi Siamo", href: "/chi-siamo" },
   { name: "Servizi", href: "/servizi" },
   { name: "Perché esternalizzare", href: "/esternalizzare" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const COLORS = {

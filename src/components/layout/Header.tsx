@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { NAVIGATION_LINKS } from "../../lib/constants";
 import { COLORS } from "../../lib/constants";
@@ -8,6 +9,7 @@ import Button from "../ui/Button";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setIsMounted(true);
@@ -49,18 +51,27 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center justify-end gap-8">
           <nav className="flex items-center space-x-8">
-            {NAVIGATION_LINKS.map((link, index) => (
-              <Link
-                key={`${link.name}-${index}`}
-                href={link.href}
-                className="font-medium uppercase text-base"
-                style={{ color: COLORS.TEXT }}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {NAVIGATION_LINKS.map((link, index) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={`${link.name}-${index}`}
+                  href={link.href}
+                  className="font-medium uppercase text-base pb-1 relative group"
+                  style={{ color: COLORS.TEXT }}
+                >
+                  {link.name}
+                  <span
+                    className={`absolute bottom-0 left-0 h-[2px] transition-all duration-300 ease-out ${
+                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                    style={{ backgroundColor: COLORS.PRIMARY }}
+                  />
+                </Link>
+              );
+            })}
           </nav>
-          <Button href="/Contatti">
+          <Button href="/contatti">
             Contattaci
           </Button>
         </div>
@@ -99,17 +110,26 @@ export default function Header() {
             }`}
           >
             <nav className="flex flex-col items-center py-8 space-y-6">
-              {NAVIGATION_LINKS.map((link, index) => (
-                <Link
-                  key={`${link.name}-${index}`}
-                  href={link.href}
-                  className="font-medium uppercase text-base"
-                  style={{ color: COLORS.TEXT }}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {NAVIGATION_LINKS.map((link, index) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={`${link.name}-${index}`}
+                    href={link.href}
+                    className="font-medium uppercase text-base pb-1 relative group"
+                    style={{ color: COLORS.TEXT }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.name}
+                    <span
+                      className={`absolute bottom-0 left-0 h-[2px] transition-all duration-300 ease-out ${
+                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
+                      style={{ backgroundColor: COLORS.PRIMARY }}
+                    />
+                  </Link>
+                );
+              })}
               <div className="pt-4">
                 <Button href="/Contatti" onClick={() => setIsMenuOpen(false)}>
                   Contattaci
