@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 export default function Button({ children, href, className = "", onClick, style }: ButtonProps) {
-  const baseClasses = "px-8 py-4 text-lg font-bold rounded-[24px] inline-block";
+  const baseClasses = "px-6 py-4 text-lg font-bold rounded-[24px] inline-block text-center text-[18px] leading-[18px]";
   const combinedClasses = `${baseClasses} ${className}`.trim();
   const buttonStyle = {
     backgroundColor: COLORS.PRIMARY,
@@ -25,6 +25,7 @@ export default function Button({ children, href, className = "", onClick, style 
         href={href} 
         className={combinedClasses}
         style={buttonStyle}
+        onClick={onClick}
       >
         {children}
       </Link>

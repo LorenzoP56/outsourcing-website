@@ -47,7 +47,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-xl">Marketing Rent</span>
               </div>
             </Link>
-            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="text-md text-center lg:text-left" style={{ color: COLORS.TEXT_WHITE }}>
               <span className="font-bold uppercase">OutSourcing Group srl</span> <br />
               Piazza G. Zanellato 13 - 35131 (PD) <br />
               P. IVA 03475900282 <br />
@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
 
           {/* Pagine */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
             isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
 
           {/* Servizi */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
             isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -152,7 +152,7 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
             isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'

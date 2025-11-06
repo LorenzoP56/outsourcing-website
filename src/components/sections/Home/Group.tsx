@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function Group() {
   return (
     <section 
-      className="h-[100vh] lg:px-32 lg:py-16 flex flex-row gap-16"
+      className="min-h-[100vh] lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 px-8 py-16"
     >
-      <div className="flex flex-1 h-full justify-center items-center relative">
-        <div className="relative w-full h-full">
+      <div className="flex flex-1 justify-center items-center relative lg:block hidden">
+        <div className="relative w-full aspect-square">
           <Image 
-            src="/images/Home/group.png" 
+            src="/images/Home/desktop/group.png" 
             alt="Group" 
             fill
             className="object-contain" 
@@ -20,7 +20,7 @@ export default function Group() {
       </div>
 
       <div className="flex flex-col flex-1 h-full justify-center gap-8">
-        <h2 className="text-[40px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
           Outsourcing Group:
           <br />
           partner affidabile per le imprese
@@ -47,6 +47,8 @@ export default function Group() {
           </Button>
         </div>
       </div>
+
+      <Image src="/images/Home/mobile/group.png" alt="Group" width={500} height={500} className="w-full h-auto lg:hidden block" />
     </section>
   );
 } 

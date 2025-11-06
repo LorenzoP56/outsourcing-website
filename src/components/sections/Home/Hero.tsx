@@ -1,20 +1,15 @@
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section 
-      className="h-[90vh] lg:pl-32 lg:pr-0 lg:py-16"
-      style={{
-        backgroundImage: 'url(/images/Home/hero.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="min-h-[90vh] lg:pl-32 lg:pr-0 lg:py-16 px-8 py-16 hero-bg flex items-center"
     >
-      <div className="flex flex-col w-[40vw] h-full justify-center gap-8">
+      <div className="flex flex-col lg:w-[40vw] w-full h-full justify-center gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="text-[56px] leading-[56px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_TITLE }}>
+          <h1 className="lg:text-[56px] lg:leading-[56px] text-[40px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_TITLE }}>
             Soluzioni di back office
             che fanno crescere la tua azienda
           </h1>
@@ -26,7 +21,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 lg:flex-row flex-col">
           <Button href="/consulenza">
             Richiedi consulenza gratuita
           </Button>
@@ -37,6 +32,8 @@ export default function Hero() {
             Scopri i servizi
           </Button>
         </div>
+
+        <Image src="/images/Home/mobile/hero.png" alt="Hero" width={500} height={500} className="w-full h-auto lg:hidden block" />
       </div>
     </section>
   );

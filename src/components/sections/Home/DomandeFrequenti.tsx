@@ -73,10 +73,10 @@ export default function DomandeFrequenti() {
 
   return (
     <section 
-      className="lg:px-32 lg:py-16 flex flex-col gap-16 "
+      className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16"
     > 
       <div className="flex flex-col gap-4">
-        <h2 className="text-[40px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
           Domande frequenti
         </h2>
         <p className="text-md" style={{ color: COLORS.TEXT }}>
@@ -85,7 +85,7 @@ export default function DomandeFrequenti() {
       </div>
       
 
-      <div className="flex flex-row gap-8 justify-center items-stretch">
+      <div className="flex lg:flex-row flex-col lg:gap-8 gap-4 justify-center items-stretch">
 
         <div className="flex flex-col gap-4 w-full max-w-4xl">
           {faqs.map((faq, index) => (
