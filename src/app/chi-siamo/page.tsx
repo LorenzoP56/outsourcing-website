@@ -4,7 +4,6 @@ import LaNostraStoria from "@/components/sections/ChiSiamo/LaNostraStoria";
 import Costruiamo from "@/components/sections/ChiSiamo/Costruiamo";
 import Valori from "@/components/sections/ChiSiamo/Valori";
 import Team from "@/components/sections/ChiSiamo/Team";
-import Affidati from "@/components/sections/ChiSiamo/Affidati";
 
 export default function ChiSiamo() {
   return (
@@ -15,7 +14,6 @@ export default function ChiSiamo() {
       <Costruiamo />
       <Valori />
       <Team />
-      <Affidati />
     </>
   );
 }

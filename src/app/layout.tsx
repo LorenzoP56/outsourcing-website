@@ -3,6 +3,7 @@ import { Asap, Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ConditionalSections from "@/components/layout/ConditionalSections";
 
 const asap = Asap({
   subsets: ["latin"],
@@ -42,7 +43,9 @@ export default function RootLayout({
         <main className="pt-28">
           {children}
         </main>
+        <ConditionalSections />
         <Footer />
+        
       </body>
 
     </html>
