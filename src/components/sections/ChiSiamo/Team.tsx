@@ -7,8 +7,8 @@ export default function Team() {
     <section 
       className="lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 px-8 py-16 items-center justify-center"
     >
-      <div className="flex flex-1 justify-center items-center relative lg:block hidden">
-        <div className="relative w-full aspect-square">
+      <div className="flex lg:flex-1 w-full justify-center items-center relative">
+        <div className="relative w-full aspect-square max-w-lg">
           <Image 
             src="/images/ChiSiamo/team.png" 
             alt="Group" 
@@ -20,12 +20,12 @@ export default function Team() {
       </div>
 
       <div className="flex flex-col flex-1 h-full justify-center gap-8">
-        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
           Un team che cresce
           <br />
           insieme ai clienti
         </h2>
-        <p className="text-md" style={{ color: COLORS.TEXT }}>
+        <p className="text-base" style={{ color: COLORS.TEXT }}>
 
           Affidare in outsourcing processi e dati sensibili richiede fiducia. Per questo, il nostro team lavora con trasparenza, metodo e un approccio collaborativo continuo con ogni cliente.
           <br />

@@ -12,7 +12,7 @@ export default function MissionVision() {
         <div className="flex flex-row gap-6 items-center">
           <Image src="/images/ChiSiamo/missionVision/1.png" alt="Mission" width={30} height={30} className="w-[30px] h-[30px] object-contain" />
           <h2 
-            className="lg:text-[32px] lg:leading-[32px] font-bold" 
+            className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold" 
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
             Vision
@@ -30,7 +30,7 @@ export default function MissionVision() {
         <div className="flex flex-row gap-6 items-center">
           <Image src="/images/ChiSiamo/missionVision/2.png" alt="Vision" width={30} height={30} className="w-[30px] h-[30px] object-contain" />
           <h2 
-            className="lg:text-[32px] lg:leading-[32px] font-bold" 
+            className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold" 
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
             Mission
