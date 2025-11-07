@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function Motivi() {
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-32">
+    <section className="lg:px-32 lg:py-16 px-8 py-16 flex flex-col lg:gap-32 gap-16">
 
-      <div className="flex flex-row gap-24">
+      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/1.png" alt="Motivo 1" width={100} height={100} className="w-full h-auto" />
         </div>
         
-        <div className="flex flex-1 flex-col gap-16 justify-center">
+        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -63,13 +63,13 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex flex-row-reverse gap-24">
+      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/2.png" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
         </div>
         
-        <div className="flex flex-1 flex-col gap-16 justify-center">
+        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -118,13 +118,13 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex flex-row gap-24">
+      <div className="flex lg:flex-row flex-col gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/3.png" alt="Motivo 3" width={100} height={100} className="w-full h-auto" />
         </div>
         
-        <div className="flex flex-1 flex-col gap-16 justify-center">
+        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
