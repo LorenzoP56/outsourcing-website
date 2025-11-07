@@ -7,7 +7,7 @@ export default function Hero() {
     >
       <div className="flex flex-col w-full h-full justify-center gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="lg:text-[56px] lg:leading-[56px] text-[36px] leading-[36px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+          <h1 className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             I nostri servizi di
             <br />
             outsourcing digitale
