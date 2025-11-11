@@ -52,7 +52,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center justify-end gap-8">
           <nav className="flex items-center space-x-8">
             {NAVIGATION_LINKS.map((link, index) => {
-              const isActive = pathname === link.href;
+              const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
               return (
                 <Link
                   key={`${link.name}-${index}`}
@@ -111,7 +111,7 @@ export default function Header() {
           >
             <nav className="flex flex-col items-center py-8 space-y-6">
               {NAVIGATION_LINKS.map((link, index) => {
-                const isActive = pathname === link.href;
+                const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
                 return (
                   <Link
                     key={`${link.name}-${index}`}
