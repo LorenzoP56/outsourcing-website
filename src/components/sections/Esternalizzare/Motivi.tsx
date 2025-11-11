@@ -63,7 +63,7 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
+      <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/2.png" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
