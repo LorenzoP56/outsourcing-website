@@ -1,6 +1,5 @@
 import Button from "@/components/ui/Button";
 import { COLORS } from "@/lib/constants";
-import Image from "next/image";
 
 export default function Affidati() {
   return (
@@ -27,7 +26,7 @@ export default function Affidati() {
               Parla direttamente con un nostro consulente per discutere delle tue esigenze.
             </p>
           </div>
-          <Button href="#" className="w-full">
+          <Button href="tel:+393483483483" className="w-full">
             Chiama ora
           </Button>
         </div>

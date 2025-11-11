@@ -130,7 +130,7 @@ export default function DomandeFrequenti() {
           </div>
           
           <Button 
-            href="#form"
+            href="/contatti"
             className="w-full text-center"
           >
             Contattaci

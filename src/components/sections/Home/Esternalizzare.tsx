@@ -58,7 +58,7 @@ export default function Esternalizzare() {
         </div>
 
         <div className="flex gap-6 lg:flex-row flex-col justify-center items-center mx-auto w-full">
-          <Button href="/consulenza " className="w-full lg:w-auto">
+          <Button href="#" className="w-full lg:w-auto">
             Richiedi preventivo
           </Button>
           <Button href="/contatti" className="w-full lg:w-auto" style={{ backgroundColor: 'white', color: COLORS.TEXT}}>

@@ -12,7 +12,7 @@ export default function Hero() {
           Affidare alcune attività a un partner specializzato significa ottimizzare costi, aumentare l'efficienza e concentrarsi su ciò che davvero fa crescere l'organizzazione. L'outsourcing non è una semplice esternalizzazione di compiti, ma una strategia per rendere i processi più snelli, sicuri e sostenibili nel tempo.
         </p>
       </div>
-      <Button href="/consulenza">
+      <Button href="/contatti">
         Richiedi preventivo
       </Button>
     </section>

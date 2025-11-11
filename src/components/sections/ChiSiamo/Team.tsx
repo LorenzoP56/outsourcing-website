@@ -1,5 +1,4 @@
 import { COLORS } from "@/lib/constants";
-import Button from "@/components/ui/Button";
 import Image from "next/image";
 
 export default function Team() {

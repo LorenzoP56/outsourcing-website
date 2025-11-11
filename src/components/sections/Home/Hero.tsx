@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         <div className="flex gap-6 lg:flex-row flex-col">
-          <Button href="/consulenza">
+          <Button href="#">
             Richiedi consulenza gratuita
           </Button>
           <Button 

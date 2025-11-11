@@ -131,7 +131,7 @@ export default function Header() {
                 );
               })}
               <div className="pt-4">
-                <Button href="/Contatti" onClick={() => setIsMenuOpen(false)}>
+                <Button href="/contatti" onClick={() => setIsMenuOpen(false)}>
                   Contattaci
                 </Button>
               </div>

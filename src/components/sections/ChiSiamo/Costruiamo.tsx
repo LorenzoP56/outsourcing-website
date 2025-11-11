@@ -12,7 +12,7 @@ export default function Costruiamo() {
           Ogni azienda ha esigenze diverse. Raccontaci la tua realtà: studieremo insieme il modo più efficace per esternalizzare i processi e migliorare la gestione operativa.
         </p>
       </div>
-      <Button href="/contattaci">
+      <Button href="/contatti">
         Richiedi informazioni
       </Button>
     </section>
