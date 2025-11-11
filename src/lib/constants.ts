@@ -46,26 +46,25 @@ export const SERVICES = [
     ],
     advantages: [
       {
-        title: "Specialità",
-        description: "Capaci di fornire una qualità puntuale e di arrivare fino in fondo senza fermarsi mai."
+        title: "Servizio professionale",
+        description: "Customer care di alta qualità gestito da operatori esperti, senza dover gestire internamente call center e turni."
       },
       {
-        title: "Empatia",
-        description: "Siamo in grado di comprendere gli aspetti umani dei processi da gestire."
+        title: "Riduzione dei costi",
+        description: "Riduzione significativa dei costi di personale, infrastrutture e tecnologie grazie alle economie di scala."
       },
       {
-        title: "Flessibilità",
-        description: "Ci adattiamo ai bisogni e manteniamo una gestione dinamica e pronta al cambiamento."
+        title: "Flessibilità operativa",
+        description: "Scalabilità immediata in base ai picchi di richiesta, garantendo sempre il livello di servizio ottimale."
       }
     ],
     detailedContent: {
       title: "Il tuo servizio clienti, gestito con competenza e umanità",
-      image: "/images/Servizi/detailed/customer-care.jpg",
+      image: "/images/Servizi/detailed/customer-care.png",
       paragraphs: [
-        "Gestire un servizio clienti richiede dedizione, ascolto e competenza. Noi lo facciamo ogni giorno, offrendo supporto multicanale – telefono, email, chat, ticket – integrato con i principali CRM come Salesforce, Zendesk e Freshdesk.",
-        "Il nostro obiettivo non è solo rispondere alle richieste, ma costruire relazioni durature con i tuoi clienti. Il team è formato per rappresentare al meglio il tuo brand, garantendo qualità, empatia e soluzioni rapide.",
-        "Che tu gestisca e-commerce, servizi B2B o assistenza tecnica, i nostri operatori si adattano ai tuoi processi e ai tuoi strumenti. Con formazione continua, report dettagliati e monitoraggio delle performance, il servizio è sempre scalabile, misurabile e orientato ai risultati.",
-        "L'approccio che adottiamo si basa su KPI chiari, procedure condivise e revisioni periodiche. Lavoriamo come un'estensione del tuo team, non come un fornitore esterno."
+        "Gestire un servizio clienti interno richiede operatori, turni, formazione e investimenti tecnologici. Senza un centro di assistenza strutturato il team viene sopraffatto dalle richieste, con disservizi e clienti insoddisfatti.",
+        "Dato su cosa vuol dire avere un servizio clienti non di qualità (cerca di perplexity pro da mio account) e poi metti fonte fra",
+        "Outsourcing Group offre un customer care multicanale gestito da professionisti qualificati che rispondono in modo diretto, preciso e coerente con l’identità del brand. Esternalizzando libererai risorse per il core business, ridurrai i costi operativi, avrai accesso a competenze specializzate e potrai adattare facilmente la capacità alle variazioni della domanda.",
       ]
     }
   },
@@ -99,26 +98,24 @@ export const SERVICES = [
     ],
     advantages: [
       {
-        title: "Specialità",
-        description: "Capaci di fornire una qualità puntuale e di arrivare fino in fondo senza fermarsi mai."
+        title: "Flessibilità e risparmio",
+        description: "Riduci i costi operativi e gestisci con flessibilità anche i picchi stagionali, senza dover assumere personale aggiuntivo."
       },
       {
-        title: "Empatia",
-        description: "Siamo in grado di comprendere gli aspetti umani dei processi da gestire."
+        title: "Qualità garantita",
+        description: "Ottieni dati accurati e aggiornati grazie a controlli qualità dedicati e procedure standardizzate."
       },
       {
-        title: "Flessibilità",
-        description: "Ci adattiamo ai bisogni e manteniamo una gestione dinamica e pronta al cambiamento."
+        title: "Focus sul core business",
+        description: "Migliori la produttività del team interno, concentrandoti sulle attività strategiche che generano valore."
       }
     ],
     detailedContent: {
-      title: "Dati accurati, processi efficienti",
-      image: "/images/Servizi/detailed/data-entry.jpg",
+      title: "Dati corretti, processi più veloci",
+      image: "/images/Servizi/detailed/data-entry.png",
       paragraphs: [
-        "I dati sono il cuore delle decisioni aziendali. Per questo è fondamentale che siano corretti, completi e sempre aggiornati. Il nostro servizio di data entry e data management garantisce inserimento preciso, pulizia e validazione dei dati secondo procedure rigorose.",
-        "Utilizziamo strumenti digitali avanzati per automatizzare parte del lavoro, riducendo errori e tempi. Ogni attività è tracciata, verificata e documentata per garantire la massima qualità.",
-        "Lavoriamo con database di ogni dimensione e complessità: anagrafiche clienti, ordini, fatture, inventari, pratiche amministrative. Che si tratti di volumi elevati o di attività ricorrenti, garantiamo precisione e continuità operativa.",
-        "Il nostro approccio prevede controlli incrociati, indicatori di qualità e report periodici. In questo modo, i tuoi dati sono sempre affidabili e pronti per essere utilizzati."
+        "Gestire grandi volumi di dati internamente richiede risorse, tempo e personale qualificato, spesso solo per periodi limitati. Le immissioni manuali rallentano la produttività e aumentano il rischio di errori e ritardi.",
+        "Con Outsourcing Group affidi il data entry a professionisti che operano con procedure digitali controllate e strumenti avanzati, garantendo puntualità, sicurezza e qualità del dato. Ottimizzi tempi e risorse, migliorando la gestione dei processi informativi e la continuità operativa. "
       ]
     }
   },
@@ -152,26 +149,24 @@ export const SERVICES = [
     ],
     advantages: [
       {
-        title: "Specialità",
-        description: "Capaci di fornire una qualità puntuale e di arrivare fino in fondo senza fermarsi mai."
+        title: "Supporto qualificato",
+        description: "Personale formato specificamente sui servizi digitali, in grado di risolvere problemi complessi e guidare gli utenti con competenza."
       },
       {
-        title: "Empatia",
-        description: "Siamo in grado di comprendere gli aspetti umani dei processi da gestire."
+        title: "Multicanale e flessibile",
+        description: "Assistenza telefonica, via ticket e chat per garantire accessibilità e risposte rapide attraverso il canale preferito dall'utente."
       },
       {
-        title: "Flessibilità",
-        description: "Ci adattiamo ai bisogni e manteniamo una gestione dinamica e pronta al cambiamento."
+        title: "Migliore esperienza utente",
+        description: "Riduciamo frustrazione e abbandoni, aumentando la soddisfazione e la fidelizzazione degli utenti dei servizi digitali."
       }
     ],
     detailedContent: {
-      title: "Assistenza specializzata per servizi digitali",
-      image: "/images/Servizi/detailed/digital-services.jpg",
+      title: "Assistenza reale, gestita da persone competenti",
+      image: "/images/Servizi/detailed/digital-services.png",
       paragraphs: [
-        "I servizi digitali stanno trasformando il modo in cui cittadini e aziende interagiscono con le istituzioni e con i servizi online. Ma spesso l'adozione di questi strumenti richiede supporto e accompagnamento.",
-        "Offriamo assistenza personalizzata agli utenti finali per l'utilizzo di SPID, firma digitale, PEC, identità digitali e altri servizi online. Il nostro team è formato per gestire richieste tecniche e amministrative con competenza e pazienza.",
-        "L'assistenza è disponibile via telefono, ticket e email. Ogni operatore è aggiornato sulle procedure, sui requisiti normativi e sugli strumenti necessari per guidare l'utente passo dopo passo.",
-        "Il risultato? Meno chiamate di secondo livello, maggiore soddisfazione degli utenti e un servizio più efficiente per chi fornisce le piattaforme digitali."
+        "Gli utenti dei servizi digitali hanno bisogno di supporto immediato e competente per utilizzare piattaforme complesse come SPID, firma digitale, PEC e altri servizi online. La mancanza di assistenza adeguata genera frustrazione, abbandoni e riduce l'efficacia dei servizi digitali.",
+        "Outsourcing Group fornisce assistenza telefonica e via ticket con personale qualificato e formato, capace di guidare gli utenti passo dopo passo. Supportiamo gli utenti finali in modo professionale, riducendo i tempi di risoluzione e migliorando la loro esperienza complessiva con i servizi digitali.",
       ]
     }
   },
@@ -205,26 +200,25 @@ export const SERVICES = [
     ],
     advantages: [
       {
-        title: "Specialità",
-        description: "Capaci di fornire una qualità puntuale e di arrivare fino in fondo senza fermarsi mai."
+        title: "Riduzione dei costi",
+        description: "Risparmi su stipendi, benefit e formazione del personale amministrativo, convertendo costi fissi in variabili."
       },
       {
-        title: "Empatia",
-        description: "Siamo in grado di comprendere gli aspetti umani dei processi da gestire."
+        title: "Maggiore efficienza",
+        description: "Alleggerisci il carico interno e migliori l'efficienza operativa con processi standardizzati e ottimizzati."
       },
       {
-        title: "Flessibilità",
-        description: "Ci adattiamo ai bisogni e manteniamo una gestione dinamica e pronta al cambiamento."
+        title: "Scalabilità on-demand",
+        description: "Adatti i servizi alle esigenze del mercato senza assumere nuovo personale, garantendo flessibilità operativa."
       }
     ],
     detailedContent: {
-      title: "Processi amministrativi senza pensieri",
-      image: "/images/Servizi/detailed/administrative.jpg",
+      title: "Processi semplificati, risultati misurabili",
+      image: "/images/Servizi/detailed/administrative.png",
       paragraphs: [
-        "Le attività amministrative e operative assorbono tempo, risorse e attenzione. Spesso sono ripetitive, ma richiedono precisione. Gestirle internamente può diventare un costo e un rallentamento.",
-        "Ci occupiamo di processi operativi come la gestione pratiche, creazione codici cliente, riconciliazioni contabili, archiviazione documentale e altre attività amministrative ricorrenti. Ogni processo viene mappato, digitalizzato e ottimizzato.",
-        "Lavoriamo con procedure condivise, checklist operative e strumenti di monitoraggio. Il nostro obiettivo è ridurre i tempi di esecuzione, eliminare gli errori e migliorare la tracciabilità.",
-        "In questo modo, tu puoi concentrarti sul business, mentre noi ci occupiamo delle attività di supporto con qualità e continuità."
+        "Procedure, fatturazione, codici cliente e incassi richiedono tempo, personale e aggiornamento continuo. La complessità amministrativa sottrae energie alla crescita e comporta costi fissi elevati.",
+        "Esternalizzando i processi non core con Outsourcing Group, ottieni supporto flessibile e professionale, riduci i costi operativi e migliori la continuità del servizio.",
+        "Gestiamo i flussi amministrativi anche per mercati esteri, permettendoti di concentrarti sullo sviluppo dell'attività.",
       ]
     }
   },
@@ -258,26 +252,24 @@ export const SERVICES = [
     ],
     advantages: [
       {
-        title: "Specialità",
-        description: "Capaci di fornire una qualità puntuale e di arrivare fino in fondo senza fermarsi mai."
+        title: "Efficienza operativa",
+        description: "Processi standardizzati e ottimizzati che riducono i tempi di esecuzione e migliorano la produttività complessiva."
       },
       {
-        title: "Empatia",
-        description: "Siamo in grado di comprendere gli aspetti umani dei processi da gestire."
+        title: "Costi sotto controllo",
+        description: "Conversione dei costi fissi in variabili, con risparmio su personale, formazione, infrastrutture e tecnologie."
       },
       {
-        title: "Flessibilità",
-        description: "Ci adattiamo ai bisogni e manteniamo una gestione dinamica e pronta al cambiamento."
+        title: "Continuità garantita",
+        description: "Assicuriamo continuità operativa e qualità costante, indipendentemente da assenze, turnover o picchi di lavoro."
       }
     ],
     detailedContent: {
-      title: "Backoffice affidabile, sempre operativo",
-      image: "/images/Servizi/detailed/backoffice.jpg",
+      title: "Un partner operativo che cresce con la tua azienda",
+      image: "/images/Servizi/detailed/backoffice.png",
       paragraphs: [
-        "Il backoffice è fondamentale per il funzionamento di ogni azienda, ma non sempre è strategico gestirlo internamente. Esternalizzare queste attività significa ridurre i costi fissi, aumentare la flessibilità e concentrare le energie sul core business.",
-        "Ci occupiamo di funzioni non core come gestione documentale, supporto amministrativo, elaborazione ordini, aggiornamento database e tutte quelle attività ripetitive che richiedono precisione e continuità.",
-        "Il nostro modello è scalabile: cresce con te. Puoi affidarci un singolo processo o l'intera gestione operativa, con la certezza di avere sempre un servizio puntuale, tracciato e misurabile.",
-        "Lavoriamo con strumenti digitali, procedure condivise e report periodici. In questo modo, mantieni il controllo totale sulle attività, senza doverti occupare della gestione quotidiana."
+        "Gestire internamente funzioni non strategiche sottrae tempo e risorse alle attività core. Attività ripetitive, amministrative e operative richiedono personale dedicato, formazione continua e costi fissi elevati.",
+        "Outsourcing Group gestisce le tue funzioni di backoffice con procedure standardizzate, controlli di qualità e tecnologie all'avanguardia. Ottimizzi costi e tempi, garantendo continuità operativa e qualità costante, mentre il tuo team si concentra su ciò che genera vero valore per il business.",
       ]
     }
   }

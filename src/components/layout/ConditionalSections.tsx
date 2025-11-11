@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import DomandeFrequenti from './DomandeFrequenti';
 import Affidati from './Affidati';
 import Map from '@/components/sections/Contatti/Map';
+import AffidatiServizi from './AffidatiServizi';
 
 export default function ConditionalSections() {
   const pathname = usePathname();
@@ -15,6 +16,13 @@ export default function ConditionalSections() {
       <>
         <DomandeFrequenti />
         <Map />
+      </>
+    );
+  } else if (pathname.includes('/servizi/')) {
+    return (
+      <>
+        <AffidatiServizi />
+        <DomandeFrequenti />
       </>
     );
   } else {
