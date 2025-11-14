@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { COLORS } from "@/lib/constants";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   href?: string;
   className?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
   style?: React.CSSProperties;
+  type?: "button" | "submit" | "reset";
 }
 
-export default function Button({ children, href, className = "", onClick, style }: ButtonProps) {
-  const baseClasses = "px-6 py-4 text-lg font-bold rounded-[24px] inline-block text-center text-[18px] leading-[18px]";
+export default function Button({ children, href, className = "", onClick, style, type, ...props }: ButtonProps) {
+  const baseClasses = "px-6 py-4 text-lg font-bold rounded-[16px] flex items-center justify-center text-center text-[18px] leading-[18px] min-w-[160px]";
   const combinedClasses = `${baseClasses} ${className}`.trim();
   const buttonStyle = {
     backgroundColor: COLORS.PRIMARY,
@@ -34,9 +35,11 @@ export default function Button({ children, href, className = "", onClick, style 
 
   return (
     <button 
+      type={type || "button"}
       className={combinedClasses}
       style={buttonStyle}
       onClick={onClick}
+      {...props}
     >
       {children}
     </button>

@@ -1,10 +1,11 @@
-import { COLORS } from "@/lib/constants";
+import { COLORS, SERVICES } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Servizi() {
   return (
     <section 
-      className="min-h-[100vh] lg:px-32 lg:py-16 flex flex-col gap-8 px-8 py-16"
+      className="min-h-[100vh] lg:px-32 lg:py-16 flex flex-col gap-8 p-8"
     >
       <h2 className="text-[40px] leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
         I nostri servizi
@@ -14,8 +15,8 @@ export default function Servizi() {
         Scopri come possiamo aiutare la tua azienda con servizi su misura.
       </p>
 
-      <div className="flex lg:flex-row flex-col gap-8 justify-between items-center">
-        <div className="flex flex-col flex-1 gap-8">
+      <div className="flex lg:flex-row flex-col gap-8 justify-between items-start">
+        <Link href={`/servizi/${SERVICES[0].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
             src="/images/Home/desktop/servizi/1.png" 
             alt="Servizio 1" 
@@ -23,7 +24,7 @@ export default function Servizi() {
             height={500}
             className="w-full h-auto"
           />
-          <div className="flex flex-col gap-4"> 
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Customer care
             </h3>
@@ -31,9 +32,9 @@ export default function Servizi() {
               Servizio clienti professionale e multicanale a supporto di ogni esigenza.
             </p>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col flex-1 gap-8">
+        <Link href={`/servizi/${SERVICES[1].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
             src="/images/Home/desktop/servizi/2.png" 
             alt="Servizio 1" 
@@ -41,7 +42,7 @@ export default function Servizi() {
             height={500}
             className="w-full h-auto"
           />
-          <div className="flex flex-col gap-4"> 
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Data management
             </h3>
@@ -49,9 +50,9 @@ export default function Servizi() {
               Gestione sicura e organizzata di tutti i tuoi dati aziendali con backup automatici e accesso controllato.
             </p>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col flex-1 gap-8">
+        <Link href={`/servizi/${SERVICES[2].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
             src="/images/Home/desktop/servizi/3.png" 
             alt="Servizio 1" 
@@ -59,7 +60,7 @@ export default function Servizi() {
             height={500}
             className="w-full h-auto"
           />
-          <div className="flex flex-col gap-4"> 
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Assistenza personalizzata
             </h3>
@@ -67,11 +68,11 @@ export default function Servizi() {
               Riduciamo tempi e complessità con un supporto professionale agli utenti digitali.
             </p>
           </div>
-        </div>
+        </Link>
       </div>
 
-      <div className="flex lg:flex-row flex-col gap-8 justify-center items-center">
-        <div className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full">
+      <div className="flex lg:flex-row flex-col gap-8 justify-center items-start">
+        <Link href={`/servizi/${SERVICES[3].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
             src="/images/Home/desktop/servizi/4.png" 
             alt="Servizio 1" 
@@ -79,7 +80,7 @@ export default function Servizi() {
             height={500}
             className="w-full h-auto"
           />
-          <div className="flex flex-col gap-4"> 
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Processi amministrativi
             </h3>
@@ -87,9 +88,9 @@ export default function Servizi() {
               Ottimizzazione dei processi amministrativi per ridurre costi e tempi di gestione.
             </p>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full">
+        <Link href={`/servizi/${SERVICES[4].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
             src="/images/Home/desktop/servizi/5.png" 
             alt="Servizio 1" 
@@ -97,7 +98,7 @@ export default function Servizi() {
             height={500}
             className="w-full h-auto"
           />
-          <div className="flex flex-col gap-4"> 
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Servizi di backoffice in outsourcing
             </h3>
@@ -105,7 +106,7 @@ export default function Servizi() {
               Archiviazione, catalogazione e recupero rapido di documenti cartacei e digitali in formato certificato.
             </p>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

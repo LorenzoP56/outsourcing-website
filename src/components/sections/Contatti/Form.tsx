@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { COLORS } from "@/lib/constants";
+import Button from "@/components/ui/Button";
 
 export default function Form() {
   return (
@@ -37,9 +38,9 @@ export default function Form() {
             <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Messaggio</label>
             <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
           </div>
-          <button type="submit" className="px-8 py-4 text-lg font-bold rounded-[24px] inline-block w-fit mx-auto lg:mx-0" style={{ backgroundColor: COLORS.PRIMARY, color: COLORS.TEXT_WHITE, fontFamily: 'var(--font-jost)' }}>
+          <Button type="submit" className="w-[300px]">
             Invia la tua richiesta
-          </button>
+          </Button>
         </form>
       </div>
     </div>

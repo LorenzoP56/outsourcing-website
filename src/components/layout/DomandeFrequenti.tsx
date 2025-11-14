@@ -16,23 +16,25 @@ interface FAQItemProps {
 function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
   return (
     <div 
-      className="border rounded-2xl p-6 cursor-pointer transition-all duration-100 hover:shadow-md"
+      className="border rounded-2xl p-6 cursor-pointer transition-all duration-100 hover:shadow-md items-center justify-center"
       style={{ borderColor: COLORS.TEXT }}
       onClick={onToggle}
     >
-      <div className="flex justify-between items-start gap-4">
+      <div className="flex justify-between items-center gap-4">
         <h3 className="text-lg font-semibold flex-1" style={{ color: COLORS.TEXT_TITLE }}>
           {question}
         </h3>
-        <button 
-          className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-2xl font-light transition-transform duration-300"
+        <Button 
+          onClick={onToggle}
+          className="flex-shrink-0 w-8 h-8 !p-0 !min-w-0 text-2xl font-light transition-transform duration-300"
           style={{ 
             color: COLORS.TEXT,
+            backgroundColor: 'transparent',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'
           }}
         >
           {isOpen ? "−" : "+"}
-        </button>
+        </Button>
       </div>
       <div 
         className="overflow-hidden transition-all duration-200 ease-in-out"
@@ -73,7 +75,7 @@ export default function DomandeFrequenti() {
 
   return (
     <section 
-      className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16"
+      className="lg:px-32 lg:py-16 flex flex-col lg:gap-16 gap-8 px-8 py-16"
     > 
       <div className="flex flex-col gap-4">
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -85,9 +87,9 @@ export default function DomandeFrequenti() {
       </div>
       
 
-      <div className="flex lg:flex-row flex-col lg:gap-8 gap-4 justify-center items-stretch">
+      <div className="flex lg:flex-row flex-col lg:gap-16 gap-4 justify-center items-stretch">
 
-        <div className="flex flex-col gap-4 w-full max-w-4xl">
+        <div className="flex flex-col gap-4 w-full">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}
@@ -100,7 +102,7 @@ export default function DomandeFrequenti() {
         </div>
 
         <div 
-          className="border rounded-3xl p-8 flex flex-col justify-between min-w-[320px] max-w-[350px]"
+          className="border rounded-3xl p-8 flex flex-col justify-between min-w-[320px] max-w-[350px] lg:gap-0 gap-8"
           style={{ borderColor: COLORS.TEXT }}
         >
           <div 
@@ -114,7 +116,7 @@ export default function DomandeFrequenti() {
             />
           </div>
           
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2">
             <h3 
               className="text-xl font-bold" 
               style={{ color: COLORS.TEXT_TITLE, fontFamily: 'var(--font-jost)' }}
@@ -122,7 +124,7 @@ export default function DomandeFrequenti() {
               Hai altre domande?
             </h3>
             <p 
-              className="text-sm leading-relaxed" 
+              className="text-base leading-relaxed" 
               style={{ color: COLORS.TEXT }}
             >
               Clicca qui sotto per contattarci e chiedere qualsiasi informazione di cui hai bisogno.

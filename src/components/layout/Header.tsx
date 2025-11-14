@@ -77,9 +77,10 @@ export default function Header() {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button
+        <Button
           onClick={toggleMenu}
-          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 relative"
+          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 relative !p-0 !min-w-0"
+          style={{ backgroundColor: 'transparent' }}
           aria-label="Toggle menu"
         >
           <span
@@ -100,7 +101,7 @@ export default function Header() {
             }`}
             style={{ backgroundColor: COLORS.SECONDARY }}
           />
-        </button>
+        </Button>
 
         {/* Mobile Menu */}
         {isMounted && (

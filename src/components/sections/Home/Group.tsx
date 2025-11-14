@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Group() {
   return (
     <section 
-      className="min-h-[100vh] lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 px-8 py-16"
+      className="min-h-[100vh] lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 p-8 items-center justify-center"
     >
       <div className="flex flex-1 justify-center items-center relative lg:block hidden">
         <div className="relative w-full aspect-square">
@@ -35,7 +35,7 @@ export default function Group() {
           <br />
           Un team di professionisti qualificati assicura qualità, precisione e conformità normativa in ogni attività gestita.
         </p>
-        <div className="flex gap-6">
+        <div className="flex lg:flex-row flex-col lg:gap-6 gap-4">
           <Button href="/contatti">
             Contattaci
           </Button>

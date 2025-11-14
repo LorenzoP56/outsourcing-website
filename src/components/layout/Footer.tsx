@@ -61,41 +61,41 @@ export default function Footer() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
           }`}>
-            <h3 className="text-white font-bold text-md">
+            <h3 className="text-white font-bold text-xl">
               Pagine
             </h3>
             <nav className="flex flex-col gap-4">
               <Link
                 href="/chi-siamo"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Chi siamo
               </Link>
               <Link
                 href="/servizi"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Servizi
               </Link>
               <Link
                 href="/esternalizzare"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Perché esternalizzare
               </Link>
               <Link
                 href="/blog"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Blog
               </Link>
               <Link
                 href="/contatti"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Contatti
@@ -109,41 +109,41 @@ export default function Footer() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
           }`}>
-            <h3 className="text-white font-bold text-md">
+            <h3 className="text-white font-bold text-xl">
               Servizi
             </h3>
             <nav className="flex flex-col gap-4">
               <Link
                 href="/chi-siamo"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Data management
               </Link>
               <Link
                 href="/servizi"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Processi operativi e amministrativi
               </Link>
               <Link
                 href="/esternalizzare"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Backoffice
               </Link>
               <Link
                 href="/blog"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Customer Care
               </Link>
               <Link
                 href="/contatti"
-                className="text-md transition-colors duration-300"
+                className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Assistenza personalizzata

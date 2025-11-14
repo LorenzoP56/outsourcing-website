@@ -1,6 +1,7 @@
 'use client'
 
 import { COLORS } from "@/lib/constants";
+import Button from "@/components/ui/Button";
 
 export default function Form() {
   return (
@@ -14,9 +15,9 @@ export default function Form() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="flex lg:flex-row flex-col w-full h-full justify-center gap-16">
+      <div className="flex lg:flex-row flex-col w-full h-full justify-between lg:gap-16 gap-8">
 
-        <div className="flex flex-col gap-4 flex-1 justify-center items-center">
+        <div className="flex flex-col gap-4 flex-1 justify-center items-start">
           <h2 className="lg:text-[40px] lg:leading-[50px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Affidati ad un partner operativo di fiducia
           </h2>
@@ -48,9 +49,15 @@ export default function Form() {
               <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Messaggio</label>
               <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px]" />
             </div>
-            <button type="submit" className="px-8 py-4 text-lg font-bold rounded-[24px] inline-block w-fit mx-auto lg:mx-0" style={{ backgroundColor: COLORS.PRIMARY, color: COLORS.TEXT_WHITE, fontFamily: 'var(--font-jost)' }}>
+            <div className="flex items-start gap-2">
+              <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
+              <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
+                Accetto l'<a href="/privacy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
+              </label>
+            </div>
+            <Button type="submit" className="w-[300px]">
               Invia la tua richiesta
-            </button>
+            </Button>
           </form>
         </div>
 

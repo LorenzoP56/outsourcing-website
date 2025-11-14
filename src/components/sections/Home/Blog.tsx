@@ -82,7 +82,7 @@ export default function Blog() {
 
       </div>
 
-      <Button href="/blog" className="w-fit mx-auto" style={{ backgroundColor: COLORS.TEXT_WHITE, color: COLORS.TEXT }}>
+      <Button href="/blog" className="mx-auto w-[300px]" style={{ backgroundColor: COLORS.TEXT_WHITE, color: COLORS.TEXT }}>
         Leggi altri articoli
       </Button>
 

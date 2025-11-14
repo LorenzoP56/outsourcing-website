@@ -17,7 +17,7 @@ export default function Esternalizzare() {
           </p>
         </div>
 
-        <div className="flex flex-row gap-16 lg:px-16 lg:justify-center lg:items-center justify-start items-start lg:flex-row flex-col lg:flex-nowrap flex-wrap">
+        <div className="flex flex-row lg:gap-16 gap-8 lg:px-16 lg:justify-center justify-start items-start lg:flex-row flex-col lg:flex-nowrap flex-wrap">
 
           <div className="flex flex-col gap-4 lg:flex-1 w-full lg:justify-center lg:items-center items-start">
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
@@ -52,16 +52,16 @@ export default function Esternalizzare() {
             </div>
             <p className="text-md lg:text-center text-left" style={{ color: COLORS.TEXT_WHITE }}>
               Soluzioni digitali che semplificano e accelerano i processi.
-            </p>items-start
+            </p>
           </div>
 
         </div>
 
         <div className="flex gap-6 lg:flex-row flex-col justify-center items-center mx-auto w-full">
-          <Button href="#" className="w-full lg:w-auto">
+          <Button href="#" className="w-[300px]">
             Richiedi preventivo
           </Button>
-          <Button href="/contatti" className="w-full lg:w-auto" style={{ backgroundColor: 'white', color: COLORS.TEXT}}>
+          <Button href="/contatti" className="w-[300px]" style={{ backgroundColor: 'white', color: COLORS.TEXT }}>
             Contattaci
           </Button>
         </div>
