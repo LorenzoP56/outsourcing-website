@@ -1,26 +1,28 @@
 export const NAVIGATION_LINKS = [
   { name: "Chi Siamo", href: "/chi-siamo" },
-  { name: "Servizi", href: "/servizi" },
+  { name: "Servizi", href: "/servizi", icon: "/images/icons/servizi.svg" },
   { name: "Perché esternalizzare", href: "/esternalizzare" },
   { name: "Blog", href: "/blog" },
 ];
 
 export const COLORS = {
-  PRIMARY: "#FF6600",
+  PRIMARY: "linear-gradient(to right, #208AE4, #1C2776)",
   SECONDARY: "#000000",
   TERTIARY: "#FFFFFF",
   TEXT:"#4A4A4A",
   TEXT_TITLE:"#2C2C2C",
   TEXT_WHITE:"#FFFFFF",
-  ORANGE: "#FF6600",
+  BLUE: "linear-gradient(to right, #208AE4, #1C2776)",
 };
 
 export const SERVICES = [
   {
-    slug: "customer-care-multicanale",
+    slug: "digital-back-office",
+    name: "Digital Back Office",
+    serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     title: "Customer care multicanale",
     shortDescription: "Assistenza clienti professionale tramite telefono, chat e ticketing, integrata con piattaforme CRM come Salesforce e Freshdesk. Un servizio scalabile, flessibile e in linea con l'identità del tuo brand.",
-    imageDesktop: "/images/Servizi/desktop/servizi/1.png",
+    imageDesktop: "/images/Servizi/desktop/servizi/1.webp",
     imageMobile: "/images/Servizi/mobile/servizi/1.png",
     functionality: [
       {
@@ -69,10 +71,12 @@ export const SERVICES = [
     }
   },
   {
-    slug: "data-entry-data-management",
+    slug: "contact-center",
+    name: "Contact Center",
+    serviceDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     title: "Data entry & data management",
     shortDescription: "Inserimento, pulizia e validazione dei dati con procedure controllate e strumenti digitali avanzati. Riduciamo errori, tempi e costi di gestione per database sempre aggiornati.",
-    imageDesktop: "/images/Servizi/desktop/servizi/2.png",
+    imageDesktop: "/images/Servizi/desktop/servizi/2.webp",
     imageMobile: "/images/Servizi/mobile/servizi/2.png",
     functionality: [
       {
@@ -120,10 +124,12 @@ export const SERVICES = [
     }
   },
   {
-    slug: "assistenza-servizi-digitali",
+    slug: "gestione-amministrativa-digitale-dei-clienti",
+    name: "Gestione Amministrativa Digitale dei Clienti",
+    serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell’azienda.",
     title: "Attività di assistenza personalizzata agli utenti di servizi digitali",
     shortDescription: "Supporto diretto agli utenti finali per SPID, firma digitale, PEC e servizi online. Assistenza telefonica e via ticket con personale qualificato.",
-    imageDesktop: "/images/Servizi/desktop/servizi/3.png",
+    imageDesktop: "/images/Servizi/desktop/servizi/3.webp",
     imageMobile: "/images/Servizi/mobile/servizi/3.png",
     functionality: [
       {
@@ -171,10 +177,12 @@ export const SERVICES = [
     }
   },
   {
-    slug: "processi-operativi-amministrativi",
+    slug: "assistenza-dedicata",
+    name: "Assistenza dedicata agli utenti",
+    serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     title: "Processi operativi e amministrativi",
     shortDescription: "Gestione di pratiche, codici cliente, riconciliazioni e attività amministrative ricorrenti. Trasformiamo procedure complesse in flussi semplici e misurabili, ottimizzando costi e performance.",
-    imageDesktop: "/images/Servizi/desktop/servizi/4.png",
+    imageDesktop: "/images/Servizi/desktop/servizi/4.webp",
     imageMobile: "/images/Servizi/mobile/servizi/4.png",
     functionality: [
       {
@@ -223,10 +231,65 @@ export const SERVICES = [
     }
   },
   {
-    slug: "backoffice-outsourcing",
+    slug: "data-management",
+    name: "Data management",
+    serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
     title: "Servizi di backoffice in outsourcing",
     shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
-    imageDesktop: "/images/Servizi/desktop/servizi/5.png",
+    imageDesktop: "/images/Servizi/desktop/servizi/5.webp",
+    imageMobile: "/images/Servizi/mobile/servizi/5.png",
+    functionality: [
+      {
+        icon: "/images/Servizi/icons/1.png",
+        title: "Lorem ipsum",
+        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+      },
+      {
+        icon: "/images/Servizi/icons/2.png",
+        title: "Lorem ipsum",
+        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+      },
+      {
+        icon: "/images/Servizi/icons/3.png",
+        title: "Lorem ipsum",
+        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+      },
+      {
+        icon: "/images/Servizi/icons/4.png",
+        title: "Lorem ipsum",
+        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+      }
+    ],
+    advantages: [
+      {
+        title: "Efficienza operativa",
+        description: "Processi standardizzati e ottimizzati che riducono i tempi di esecuzione e migliorano la produttività complessiva."
+      },
+      {
+        title: "Costi sotto controllo",
+        description: "Conversione dei costi fissi in variabili, con risparmio su personale, formazione, infrastrutture e tecnologie."
+      },
+      {
+        title: "Continuità garantita",
+        description: "Assicuriamo continuità operativa e qualità costante, indipendentemente da assenze, turnover o picchi di lavoro."
+      }
+    ],
+    detailedContent: {
+      title: "Un partner operativo che cresce con la tua azienda",
+      image: "/images/Servizi/detailed/backoffice.png",
+      paragraphs: [
+        "Gestire internamente funzioni non strategiche sottrae tempo e risorse alle attività core. Attività ripetitive, amministrative e operative richiedono personale dedicato, formazione continua e costi fissi elevati.",
+        "Outsourcing Group gestisce le tue funzioni di backoffice con procedure standardizzate, controlli di qualità e tecnologie all'avanguardia. Ottimizzi costi e tempi, garantendo continuità operativa e qualità costante, mentre il tuo team si concentra su ciò che genera vero valore per il business.",
+      ]
+    }
+  },
+  {
+    slug: "training-aziendali",
+    name: "Training aziendali",
+    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
+    title: "Servizi di backoffice in outsourcing",
+    shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
+    imageDesktop: "/images/Servizi/desktop/servizi/6.webp",
     imageMobile: "/images/Servizi/mobile/servizi/5.png",
     functionality: [
       {

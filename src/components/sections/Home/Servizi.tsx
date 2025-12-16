@@ -18,7 +18,7 @@ export default function Servizi() {
       <div className="flex lg:flex-row flex-col gap-8 justify-between items-start">
         <Link href={`/servizi/${SERVICES[0].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/1.png" 
+            src="/images/Home/desktop/servizi/1.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
@@ -26,17 +26,17 @@ export default function Servizi() {
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Customer care
+              {SERVICES[0].name}
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
-              Servizio clienti professionale e multicanale a supporto di ogni esigenza.
+              {SERVICES[0].serviceDescription}
             </p>
           </div>
         </Link>
 
         <Link href={`/servizi/${SERVICES[1].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/2.png" 
+            src="/images/Home/desktop/servizi/2.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
@@ -44,17 +44,17 @@ export default function Servizi() {
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Data management
+              {SERVICES[1].name}
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
-              Gestione sicura e organizzata di tutti i tuoi dati aziendali con backup automatici e accesso controllato.
+              {SERVICES[1].serviceDescription}
             </p>
           </div>
         </Link>
 
         <Link href={`/servizi/${SERVICES[2].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/3.png" 
+            src="/images/Home/desktop/servizi/3.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
@@ -62,10 +62,10 @@ export default function Servizi() {
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Assistenza personalizzata
+              {SERVICES[2].name}
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
-              Riduciamo tempi e complessità con un supporto professionale agli utenti digitali.
+              {SERVICES[2].serviceDescription}
             </p>
           </div>
         </Link>
@@ -74,7 +74,7 @@ export default function Servizi() {
       <div className="flex lg:flex-row flex-col gap-8 justify-center items-start">
         <Link href={`/servizi/${SERVICES[3].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/4.png" 
+            src="/images/Home/desktop/servizi/4.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
@@ -82,17 +82,17 @@ export default function Servizi() {
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Processi amministrativi
+              {SERVICES[3].name}
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
-              Ottimizzazione dei processi amministrativi per ridurre costi e tempi di gestione.
+              {SERVICES[3].serviceDescription}
             </p>
           </div>
         </Link>
 
         <Link href={`/servizi/${SERVICES[4].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/5.png" 
+            src="/images/Home/desktop/servizi/5.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
@@ -100,14 +100,33 @@ export default function Servizi() {
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Servizi di backoffice in outsourcing
+              {SERVICES[4].name}
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
-              Archiviazione, catalogazione e recupero rapido di documenti cartacei e digitali in formato certificato.
+              {SERVICES[4].serviceDescription}
+            </p>
+          </div>
+        </Link>
+
+        <Link href={`/servizi/${SERVICES[5].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+          <Image 
+            src="/images/Home/desktop/servizi/6.webp" 
+            alt="Servizio 1" 
+            width={500}
+            height={500}
+            className="w-full h-auto"
+          />
+          <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
+            <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+              {SERVICES[5].name}
+            </h3>
+            <p className="text-md" style={{ color: COLORS.TEXT }}>
+              {SERVICES[5].serviceDescription}
             </p>
           </div>
         </Link>
       </div>
+      
     </section>
   );
 } 

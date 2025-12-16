@@ -8,7 +8,7 @@ html {
 /* Hero background - solo su desktop */
 @media (min-width: 1024px) {
   .hero-bg {
-    background-image: url(/images/Home/desktop/hero.png);
+    background-image: url(/images/Home/desktop/bgHero.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

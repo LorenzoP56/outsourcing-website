@@ -29,7 +29,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
           className="flex-shrink-0 w-8 h-8 !p-0 !min-w-0 text-2xl font-light transition-transform duration-300"
           style={{ 
             color: COLORS.TEXT,
-            backgroundColor: 'transparent',
+            background: 'transparent',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'
           }}
         >
@@ -43,9 +43,11 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
           opacity: isOpen ? 1 : 0
         }}
       >
-        <p className="mt-4 text-base leading-relaxed" style={{ color: COLORS.TEXT }}>
-          {answer}
-        </p>
+        <p
+          className="mt-4 text-base leading-relaxed"
+          style={{ color: COLORS.TEXT }}
+          dangerouslySetInnerHTML={{ __html: answer.replace(/\n/g, "<br>") }}
+        />
       </div>
     </div>
   );
@@ -61,11 +63,11 @@ export default function DomandeFrequenti() {
     },
     {
       question: "Quanto tempo richiede l'attivazione dei servizi di outsourcing?",
-      answer: "Dipende dalla complessità del progetto. Per servizi standard come il data management o il customer care, l'attivazione può avvenire in 2-4 settimane. Per progetti più articolati che richiedono personalizzazione dei processi amministrativi o integrazione documentale, il tempo può estendersi a 4-8 settimane."
+      answer: "Dipende dalla complessità del progetto. Per servizi standard come il data management o il contact center, l'attivazione può avvenire in 2-4 settimane. Per progetti più articolati che richiedono personalizzazione dei processi amministrativi o integrazione documentale, il tempo può estendersi a 4-6 settimane."
     },
     {
       question: "In che modo vi differenziate da un semplice servizio di assistenza esterno?",
-      answer: "A differenza di un call center tradizionale, Outsourcing Group opera come una vera estensione dei reparti interni delle aziende e delle Pubbliche Amministrazioni.\nIl nostro team viene formato direttamente dal cliente sulle procedure le pratiche da gestire - ad esempio attivazione di SPID, firme digitali o PEC - così da garantire risposte precise e coerenti con gli standard del servizio.\nIn questo modo solleviamo l'organizzazione da attività operative complesse, assicurando continuità, qualità e piena aderenza ai processi aziendali."
+      answer: "A differenza di un call center tradizionale, Outsourcing Group opera come una vera estensione dei reparti interni della tua azienda.<br>Il nostro team viene informato direttamente dal cliente sulle procedure da gestire - ad esempio attivazione di SPID, firme digitali o PEC - così da garantire risposte precise e coerenti con gli standard del servizio.<br>In questo modo solleviamo l’organizzazione da attività operative complesse, assicurando continuità, qualità e piena aderenza ai processi aziendali."
     },
     {
       question: "I vostri servizi sono scalabili in base alle nostre esigenze?",
@@ -77,14 +79,9 @@ export default function DomandeFrequenti() {
     <section 
       className="lg:px-32 lg:py-16 flex flex-col lg:gap-16 gap-8 px-8 py-16"
     > 
-      <div className="flex flex-col gap-4">
-        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Domande frequenti
-        </h2>
-        <p className="text-md" style={{ color: COLORS.TEXT }}>
-          Risposte alle domande più comuni sull'outsourcing di servizi digitali
-        </p>
-      </div>
+      <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+        Domande frequenti
+      </h2>
       
 
       <div className="flex lg:flex-row flex-col lg:gap-16 gap-4 justify-center items-stretch">
@@ -107,7 +104,7 @@ export default function DomandeFrequenti() {
         >
           <div 
             className="w-16 h-16 flex items-center justify-center rounded-2xl"
-            style={{ backgroundColor: COLORS.TEXT }}
+            style={{ background: COLORS.PRIMARY }}
           >
             <FontAwesomeIcon 
               icon={faComments} 

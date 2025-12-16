@@ -9,7 +9,7 @@ export default function Form() {
       id="form"
       className="lg:px-32 lg:py-16 px-8 py-16"
       style={{
-        backgroundImage: 'url(/images/Home/desktop/bgForm.png)',
+        backgroundImage: 'url(/images/Home/desktop/bgForm.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

@@ -11,7 +11,7 @@ export default function Blog() {
     <section 
       className="lg:px-32 lg:py-16 flex flex-col gap-8 px-8 py-16"
       style={{
-        backgroundImage: 'url(/images/Home/desktop/bgBlog.png)',
+        backgroundImage: 'url(/images/Home/desktop/bgBlog.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -82,7 +82,7 @@ export default function Blog() {
 
       </div>
 
-      <Button href="/blog" className="mx-auto w-[300px]" style={{ backgroundColor: COLORS.TEXT_WHITE, color: COLORS.TEXT }}>
+      <Button href="/blog" className="mx-auto w-[300px]" style={{ background: COLORS.TEXT_WHITE, color: COLORS.TEXT }}>
         Leggi altri articoli
       </Button>
 

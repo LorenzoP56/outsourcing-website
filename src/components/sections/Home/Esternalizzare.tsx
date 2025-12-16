@@ -7,7 +7,7 @@ export default function Esternalizzare() {
     <section 
       className="lg:px-32 lg:py-16"
     >
-      <div className="flex flex-col gap-8 lg:justify-center lg:items-center justify-start items-start lg:px-8 lg:py-12 gap-10 px-8 py-16 lg:rounded-[56px]" style={{ backgroundImage: 'url(/images/Home/desktop/esternalizzare.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <div className="flex flex-col gap-8 lg:justify-center lg:items-center justify-start items-start lg:px-8 lg:py-12 gap-10 px-8 py-16 lg:rounded-[56px]" style={{ backgroundImage: 'url(/images/Home/desktop/esternalizzare.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="flex flex-col gap-4">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Perché esternalizzare con Outsourcing Group
@@ -23,11 +23,11 @@ export default function Esternalizzare() {
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
               <Image src="/images/Home/desktop/esternalizzare/1.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-                Risparmio di tempo
+                Riduzione dei costi operativi
               </h3>
             </div>
             <p className="text-md lg:text-center text-left" style={{ color: COLORS.TEXT_WHITE }}>
-              Eliminiamo le attività ripetitive, liberando risorse per il tuo core business.
+              Esternalizzando, l’azienda elimina spese fisse (personale, formazione, software, infrastruttura, postazioni, turnazioni) e le trasforma in costi variabili, pagando solo ciò che usa.
             </p>
           </div>
 
@@ -35,11 +35,11 @@ export default function Esternalizzare() {
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
               <Image src="/images/Home/desktop/esternalizzare/2.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-                Competenze specializzate
+                Efficienza e qualità professionale
               </h3>
             </div>
             <p className="text-md lg:text-center text-left" style={{ color: COLORS.TEXT_WHITE }}>
-              Team di esperti pronti a supportare ogni esigenza aziendale.
+              Ogni processo è gestito da personale già formato.Il servizio è scalabile in base ai picchi operativi.L’azienda può così alzare la qualità del servizio ai clienti e abbattere errori, ritardi e inefficienze interne.
             </p>
           </div>
 
@@ -47,11 +47,11 @@ export default function Esternalizzare() {
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
               <Image src="/images/Home/desktop/esternalizzare/3.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-                Tecnologie all'avanguardia
+                Focus totale sul core business
               </h3>
             </div>
             <p className="text-md lg:text-center text-left" style={{ color: COLORS.TEXT_WHITE }}>
-              Soluzioni digitali che semplificano e accelerano i processi.
+              Delegando Digital Back Office & Contact Center, l’azienda libera tempo e risorse per ciò che fa crescere davvero il business.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function Esternalizzare() {
           <Button href="#" className="w-[300px]">
             Richiedi preventivo
           </Button>
-          <Button href="/contatti" className="w-[300px]" style={{ backgroundColor: 'white', color: COLORS.TEXT }}>
+          <Button href="/contatti" className="w-[300px]" style={{ background: 'white', color: COLORS.TEXT }}>
             Contattaci
           </Button>
         </div>

@@ -40,7 +40,7 @@ export default function Affidati() {
               Inviaci una email e ti risponderemo entro 24 ore lavorative.
             </p>
           </div>
-          <Button href="#" className="w-full" style={{ backgroundColor: 'white', color: COLORS.TEXT }}>
+          <Button href="#" className="w-full" style={{ background: 'white', color: COLORS.TEXT }}>
             Invia email
           </Button>
         </div>
