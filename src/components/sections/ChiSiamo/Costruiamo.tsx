@@ -9,7 +9,7 @@ export default function Costruiamo() {
           Costruiamo insieme la soluzione più adatta alla tua azienda
         </h2>
         <p className="text-base text-center" style={{ color: COLORS.TEXT_WHITE }}>
-          Ogni azienda ha esigenze diverse. Raccontaci la tua realtà: studieremo insieme il modo più efficace per esternalizzare i processi e migliorare la gestione operativa.
+          Ogni azienda ha esigenze diverse. Ascoltiamo le tue necessità e analizziamo insieme il modo più efficace per esternalizzare i processi e migliorare la gestione operativa.
         </p>
       </div>
       <Button href="/contatti">

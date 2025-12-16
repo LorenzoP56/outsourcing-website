@@ -20,20 +20,18 @@ export default function Team() {
 
       <div className="flex flex-col flex-1 h-full justify-center gap-8">
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Un team che cresce
-          <br />
-          insieme ai clienti
+          Insieme, trasformiamo ogni servizio in un risultato
         </h2>
         <p className="text-base" style={{ color: COLORS.TEXT }}>
 
-          Affidare in outsourcing processi e dati sensibili richiede fiducia. Per questo, il nostro team lavora con trasparenza, metodo e un approccio collaborativo continuo con ogni cliente.
-          <br />
-          <br />
-          Da oltre vent’anni operiamo nel <span className="font-bold">digital trust</span>, unendo competenze tecniche e attenzione alle persone.Ogni membro del team viene <span className="font-bold">formato direttamente sulle procedure e sui flussi operativi del cliente</span>, acquisendo una conoscenza approfondita delle sue modalità di lavoro e delle pratiche specifiche da gestire. Questo ci consente di operare come una vera <span className="font-bold">estensione del reparto interno</span>, garantendo precisione, coerenza e continuità nel tempo.
-          <br />
-          <br />
-          Crediamo nella collaborazione come leva di crescita reciproca: ogni progetto diventa un'occasione per migliorare insieme ai nostri clienti, condividendo conoscenze e soluzioni.
-
+        Affidare in outsourcing processi e dati sensibili richiede fiducia. Per questo, il nostro team lavora con <span className="font-bold">trasparenza, metodo</span> e un <span className="font-bold">approccio collaborativo continuo</span> con ogni cliente.
+        <br/>
+        <br/>
+        Da oltre vent’anni operiamo nel <span className="font-bold">digital trust</span>, unendo competenze tecniche e attenzione alle persone. Ogni membro del team viene informato direttamente sulle procedure e sui flussi operativi del cliente, acquisendo una conoscenza approfondita delle sue modalità di lavoro e delle pratiche specifiche da gestire.
+        Questo ci consente di operare come una <span className="font-bold">vera estensione del reparto interno</span>, garantendo precisione, coerenza e continuità nel tempo.
+        <br/>
+        <br/>
+        Crediamo nella collaborazione come leva di crescita reciproca: ogni progetto diventa un'occasione per migliorare insieme ai nostri clienti, condividendo conoscenze e soluzioni.
         </p>
       </div>
 

@@ -5,7 +5,7 @@ export default function LaNostraStoria() {
   return (
     <section className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center">
       
-      <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>La nostra storia</h2>
+      <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>La nostra storia nel digitale</h2>
     
       <div className="flex lg:flex-row flex-col gap-8 justify-between items-start">
 

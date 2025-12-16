@@ -47,7 +47,6 @@ export default function Group() {
         </p>
       </div>
 
-      <Image src="/images/Home/mobile/group.png" alt="Group" width={500} height={500} className="w-full h-auto lg:hidden block" />
     </section>
   );
 } 

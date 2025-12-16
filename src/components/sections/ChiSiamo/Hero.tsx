@@ -7,13 +7,11 @@ export default function Hero() {
     >
       <div className="flex flex-col w-full h-full justify-center gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="lg:text-[56px] lg:leading-[56px] text-[36px] leading-[36px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-            Professionisti al servizio 
-            <br />
-            della trasformazione digitale
+          <h1 className="lg:text-[56px] lg:leading-[56px] text-[36px] leading-[36px] font-bold lg:text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+            Professionisti al passo con l’evoluzione del settore digitale
           </h1>
-          <p className="lg:text-xl text-base text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-            Dal 1999 al tuo fianco per digitalizzare e semplificare il back office e il customer care, con affidabilità e sicurezza.
+          <p className="lg:text-xl text-base lg:text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+            Dal 1999 affianchiamo le aziende con servizi digitali che evolvono costantemente, integrando tecnologie e competenze per garantire gestione operativa, qualità e compliance in un mercato in continua trasformazione.
           </p>
         </div>
       </div>

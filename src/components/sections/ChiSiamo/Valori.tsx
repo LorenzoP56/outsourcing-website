@@ -38,18 +38,11 @@ export default function Valori() {
   };
 
   return (
-    <section className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center" style={{ backgroundColor: '#D9D9D9' }}>
+    <section className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center" style={{ backgroundColor: 'rgba(0, 96, 174, 0.1)' }}>
       
-      <div className="flex flex-col gap-8 items-center justify-center">
-        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          I valori che ci guidano
-        </h2>
-        <p className="text-base text-center" style={{ color: COLORS.TEXT }}>
-          Diventare il punto di riferimento italiano per l'outsourcing del back office e del customer care digitale,
-          <br/>
-          favorendo una trasformazione digitale sicura e accessibile a tutte le organizzazioni.
-        </p> 
-      </div>
+      <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+        I nostri valori al servizio della tua azienda
+      </h2>
 
       {/* Desktop: mostra tutte le card */}
       <div className="hidden lg:flex flex-row gap-4 justify-center">
