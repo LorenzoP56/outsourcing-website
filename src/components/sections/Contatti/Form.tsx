@@ -6,16 +6,39 @@ import Button from "@/components/ui/Button";
 
 export default function Form() {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 mx-32 lg:-mt-24 -mt-8 bg-white p-8 w-[80%] mx-auto shadow-lg gap-8" style={{ borderRadius: '16px' }}>
-      <div className="flex flex-col gap-4 flex-1">
-        <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center lg:text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Affidati ad un partner operativo di fiducia
-        </h2>
-        <p className="text-base text-center lg:text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.
-          <br />
-          Contattaci per una consulenza personalizzata.
-        </p>
+    <div className="flex lg:flex-row flex-col gap-4 lg:mx-32 lg:-mt-24 -mt-8 bg-white p-12 lg:w-[80%] lg:mx-auto lg:shadow-lg gap-8" style={{ borderRadius: '16px' }}>
+      <div className="flex flex-col gap-8 flex-1">
+        <div className="flex flex-col gap-4">
+          <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold lg:text-center lg:text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+            Affidati ad un partner operativo di fiducia
+          </h2>
+          <p className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+            Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.
+            <br />
+            Contattaci per una consulenza personalizzata.
+          </p>
+        </div>
+        <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/images/Contatti/imgForm.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
+          <h3 className="text-white font-bold text-xl">
+            Disponibilità
+          </h3>
+          <div>
+            <h3 className="text-white font-bold text-xl">
+              Lunedì - Venerdì
+            </h3>
+            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+              09:00 - 19:00
+            </p>
+          </div>
+          <div>
+            <h3 className="text-white font-bold text-xl">
+              Sabato e Domenica
+            </h3>
+            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+              supporto attivabile su necessità operative o progetti dedicati
+            </p>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col gap-4 flex-1">
         <form className="flex flex-col gap-4" onSubmit={(e) => {
