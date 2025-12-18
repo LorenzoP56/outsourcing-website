@@ -86,7 +86,7 @@ export default function Blog() {
                 {blog.category && (
                   <span
                     className="text-xs font-semibold uppercase tracking-wider"
-                    style={{ color: COLORS.ORANGE }}
+                    style={{ color: COLORS.BLUE }}
                   >
                     {blog.category}
                   </span>
@@ -149,7 +149,7 @@ export default function Blog() {
                   onClick={() => handlePageClick(index)}
                   className="w-12 h-12 rounded-full flex items-center justify-center font-semibold transition-colors"
                   style={{
-                    backgroundColor: index === currentPage ? COLORS.ORANGE : "transparent",
+                    backgroundColor: index === currentPage ? COLORS.BLUE : "transparent",
                     color: index === currentPage ? "white" : COLORS.TEXT,
                     border: index === currentPage ? "none" : `2px solid ${COLORS.TEXT}`,
                   }}
