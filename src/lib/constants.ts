@@ -20,8 +20,7 @@ export const SERVICES = [
     slug: "digital-back-office",
     name: "Digital Back Office",
     serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
-    title: "Customer care multicanale",
-    shortDescription: "Assistenza clienti professionale tramite telefono, chat e ticketing, integrata con piattaforme CRM come Salesforce e Freshdesk. Un servizio scalabile, flessibile e in linea con l'identità del tuo brand.",
+    shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     imageDesktop: "/images/Servizi/desktop/servizi/1.png",
     imageMobile: "/images/Servizi/mobile/servizi/1.png",
     functionality: [
@@ -75,7 +74,7 @@ export const SERVICES = [
     name: "Contact Center",
     serviceDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     title: "Data entry & data management",
-    shortDescription: "Inserimento, pulizia e validazione dei dati con procedure controllate e strumenti digitali avanzati. Riduciamo errori, tempi e costi di gestione per database sempre aggiornati.",
+    shortDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     imageDesktop: "/images/Servizi/desktop/servizi/2.png",
     imageMobile: "/images/Servizi/mobile/servizi/2.png",
     functionality: [
@@ -128,7 +127,7 @@ export const SERVICES = [
     name: "Gestione Amministrativa Digitale dei Clienti",
     serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell’azienda.",
     title: "Attività di assistenza personalizzata agli utenti di servizi digitali",
-    shortDescription: "Supporto diretto agli utenti finali per SPID, firma digitale, PEC e servizi online. Assistenza telefonica e via ticket con personale qualificato.",
+    shortDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell’azienda.",
     imageDesktop: "/images/Servizi/desktop/servizi/3.png",
     imageMobile: "/images/Servizi/mobile/servizi/3.png",
     functionality: [
@@ -181,7 +180,7 @@ export const SERVICES = [
     name: "Assistenza dedicata agli utenti",
     serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     title: "Processi operativi e amministrativi",
-    shortDescription: "Gestione di pratiche, codici cliente, riconciliazioni e attività amministrative ricorrenti. Trasformiamo procedure complesse in flussi semplici e misurabili, ottimizzando costi e performance.",
+    shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     imageDesktop: "/images/Servizi/desktop/servizi/4.png",
     imageMobile: "/images/Servizi/mobile/servizi/4.png",
     functionality: [
@@ -231,9 +230,9 @@ export const SERVICES = [
     }
   },
   {
-    slug: "data-management",
-    name: "Data management",
-    serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
+    slug: "training-aziendali",
+    name: "Training aziendali",
+    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
     title: "Servizi di backoffice in outsourcing",
     shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
     imageDesktop: "/images/Servizi/desktop/servizi/5.png",
@@ -284,11 +283,11 @@ export const SERVICES = [
     }
   },
   {
-    slug: "training-aziendali",
-    name: "Training aziendali",
-    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
+    slug: "data-management",
+    name: "Data management",
+    serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
     title: "Servizi di backoffice in outsourcing",
-    shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
+    shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente.\nI training possono essere modulari, multi-sessione, personalizzati o standard.",
     imageDesktop: "/images/Servizi/desktop/servizi/6.png",
     imageMobile: "/images/Servizi/mobile/servizi/6.png",
     functionality: [

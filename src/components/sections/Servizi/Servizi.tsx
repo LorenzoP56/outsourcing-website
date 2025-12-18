@@ -12,29 +12,34 @@ export default function Servizi() {
         >
           <Image 
             src={service.imageDesktop} 
-            alt={service.title} 
+            alt={service.name} 
             width={500} 
             height={500} 
-            className="lg:w-[70%] w-full h-auto lg:block hidden" 
+            className="lg:w-[60%] w-full h-auto lg:block hidden" 
           />
           <Image 
             src={service.imageMobile} 
-            alt={service.title} 
+            alt={service.name} 
             width={500} 
             height={500} 
             className="lg:hidden block w-full h-auto" 
           />
           
-          <div className="flex flex-col flex-1 gap-8 lg:w-[30%] w-full justify-center items-center">
+          <div className="flex flex-col flex-1 gap-8 lg:w-[40%] w-full justify-center items-center">
             <div className="flex flex-col gap-4">
               <h3 
                 className="lg:text-[40px] lg:leading-[40px] text-[20px] leading-[20px] font-bold" 
                 style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
               >
-                {service.title}
+                {service.name}
               </h3>
               <p className="text-base" style={{ color: COLORS.TEXT }}>
-                {service.shortDescription}
+                {service.shortDescription.split("\n").map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i !== service.shortDescription.split("\n").length - 1 && <br />}
+                  </span>
+                ))}
               </p>
             </div>
 
