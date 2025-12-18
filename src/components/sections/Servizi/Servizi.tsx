@@ -43,7 +43,7 @@ export default function Servizi() {
               </p>
             </div>
 
-            <Button href={`/servizi/${service.slug}`} className="lg:self-start self-center">
+            <Button href={`/servizi/${service.slug}`} className="lg:self-start self-center w-full">
               Scopri di più
             </Button>
           </div>
