@@ -5,7 +5,6 @@ import { useState } from "react";
 
 interface AdvantageItem {
   title: string;
-  subtitle: string;
   description: string;
 }
 

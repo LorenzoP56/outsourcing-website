@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: ServicePageProps) {
   }
 
   return {
-    title: `${service.title} | Outsourcing`,
-    description: service.shortDescription,
+    title: `${service.name} | Outsourcing`,
+    description: service.detailDescription,
   };
 }
 
@@ -43,8 +43,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
   return (
     <>
-      <Hero title={service.title} description={service.shortDescription} />
-      <Funzionalita functionality={service.functionality} />
+      <Hero title={service.name} description={service.detailDescription} bgHero={service.headerImage} />
+      <Funzionalita functionalityTitle={service.functionalityTitle} functionalitySubtitle={service.functionalitySubtitle} functionality={service.functionality} />
       <Vantaggi advantages={service.advantages} />
       <ServiceContent detailedContent={service.detailedContent} />
     </>

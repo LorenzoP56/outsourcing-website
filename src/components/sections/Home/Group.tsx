@@ -21,9 +21,7 @@ export default function Group() {
       <div className="flex flex-col flex-1 h-full justify-center gap-8">
 
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-        Outsourcing Group partner affidabile:
-        <br />
-        la nostra storia
+          Outsourcing Group partner affidabile
         </h2>
 
         <p className="text-md" style={{ color: COLORS.TEXT }}>

@@ -23,26 +23,42 @@ export const SERVICES = [
     shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     imageDesktop: "/images/Servizi/desktop/servizi/1.png",
     imageMobile: "/images/Servizi/mobile/servizi/1.png",
+    headerImage: "images/Servizi/detailed/digitalBank/bgHero",
+    detailDescription: "Supportiamo i tuoi processi digitali con attività operative strutturate, controlli accurati e gestione completa delle pratiche.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/1.png",
+        description: "Verifiche documentali per onboarding utenti, attivazioni, compliance, recupero informazioni e gestione pratiche."
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/2.png",
+        description: "Controlli di identità tramite sistemi digitali (adeguata verifica della clientela, OTP, video-identificazione dove prevista)."
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/3.png",
+        description: "Validazione dei requisiti (es. requisiti tecnici, amministrativi, anagrafici, contrattuali)."
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/4.png",
+        description: "Configurazioni personalizzate di account, profili, app, piattaforme o servizi digitali."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/5.png",
+        description: "Attivazioni on-demand con procedure previste da SLA e workflow approvati dal cliente."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/6.png",
+        description: "Rilascio dei servizi con gestione dall’inizio alla fine delle fasi post-attivazione."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/7.png",
+        description: "Monitoraggio pratiche e gestione degli stati avanzamento."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/8.png",
+        description: "Eventuali escalation verso reparti tecnici o di supporto avanzato."
       }
     ],
     advantages: [
@@ -77,26 +93,42 @@ export const SERVICES = [
     shortDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     imageDesktop: "/images/Servizi/desktop/servizi/2.png",
     imageMobile: "/images/Servizi/mobile/servizi/2.png",
+    headerImage: "images/Servizi/detailed/contactCenter/bgHero",
+    detailDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/1.png",
+        description: "Verifiche documentali per onboarding utenti, attivazioni, compliance, recupero informazioni e gestione pratiche."
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/2.png",
+        description: "Controlli di identità tramite sistemi digitali (adeguata verifica della clientela, OTP, video-identificazione dove prevista)."
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/3.png",
+        description: "Validazione dei requisiti (es. requisiti tecnici, amministrativi, anagrafici, contrattuali)."
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/4.png",
+        description: "Configurazioni personalizzate di account, profili, app, piattaforme o servizi digitali."
+      },
+      {
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/5.png",
+        description: "Attivazioni on-demand con procedure previste da SLA e workflow approvati dal cliente."
+      },
+      {
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/6.png",
+        description: "Rilascio dei servizi con gestione dall'inizio alla fine delle fasi post-attivazione."
+      },
+      {
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/7.png",
+        description: "Monitoraggio pratiche e gestione degli stati avanzamento."
+      },
+      {
+        icon: "/images/Servizi/detailed/contactCenter/funzionalita/8.png",
+        description: "Eventuali escalation verso reparti tecnici o di supporto avanzato."
       }
     ],
     advantages: [
@@ -125,11 +157,15 @@ export const SERVICES = [
   {
     slug: "gestione-amministrativa-digitale-dei-clienti",
     name: "Gestione Amministrativa Digitale dei Clienti",
-    serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell’azienda.",
+    serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
     title: "Attività di assistenza personalizzata agli utenti di servizi digitali",
-    shortDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell’azienda.",
+    shortDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
     imageDesktop: "/images/Servizi/desktop/servizi/3.png",
     imageMobile: "/images/Servizi/mobile/servizi/3.png",
+    headerImage: "images/Servizi/detailed/gestioneAmministrativa/bgHero",
+    detailDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
         icon: "/images/Servizi/icons/1.png",
@@ -183,6 +219,10 @@ export const SERVICES = [
     shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     imageDesktop: "/images/Servizi/desktop/servizi/4.png",
     imageMobile: "/images/Servizi/mobile/servizi/4.png",
+    headerImage: "images/Servizi/detailed/assistenza/bgHero",
+    detailDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
         icon: "/images/Servizi/icons/1.png",
@@ -232,11 +272,15 @@ export const SERVICES = [
   {
     slug: "training-aziendali",
     name: "Training aziendali",
-    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
+    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
     title: "Servizi di backoffice in outsourcing",
     shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
     imageDesktop: "/images/Servizi/desktop/servizi/5.png",
     imageMobile: "/images/Servizi/mobile/servizi/5.png",
+    headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
+    detailDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
         icon: "/images/Servizi/icons/1.png",
@@ -287,9 +331,13 @@ export const SERVICES = [
     name: "Data management",
     serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
     title: "Servizi di backoffice in outsourcing",
-    shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente.\nI training possono essere modulari, multi-sessione, personalizzati o standard.",
+    shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente.\nI training possono essere modulari, multi-sessione, personalizzati o standard.",
     imageDesktop: "/images/Servizi/desktop/servizi/6.png",
     imageMobile: "/images/Servizi/mobile/servizi/6.png",
+    headerImage: "images/Servizi/detailed/dataManagement/bgHero",
+    detailDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     functionality: [
       {
         icon: "/images/Servizi/icons/1.png",
