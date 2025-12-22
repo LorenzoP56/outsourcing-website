@@ -4,15 +4,15 @@ import { COLORS } from "@/lib/constants";
 import { useState } from "react";
 
 interface AdvantageItem {
-  title: string;
   description: string;
 }
 
 interface VantaggiProps {
+  advantagesTitle: string;
   advantages: AdvantageItem[];
 }
 
-export default function Vantaggi({ advantages }: VantaggiProps) {
+export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -30,28 +30,19 @@ export default function Vantaggi({ advantages }: VantaggiProps) {
           className="lg:text-[48px] lg:leading-[48px] text-[32px] leading-[40px] font-bold text-center" 
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
         >
-          I tuoi vantaggi
+          {advantagesTitle}
         </h2>
 
         {/* Desktop: mostra tutte le card */}
-        <div className="hidden lg:grid lg:grid-cols-3 gap-8 mt-8">
+        <div className="hidden lg:grid lg:grid-cols-5 gap-8">
           {advantages.map((advantage, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg p-8 shadow-lg"
+              className="bg-white rounded-lg py-8 px-4 shadow-lg flex items-center justify-centerh-full"
             >
-              <div className="flex flex-col gap-4">
-                <h3 
-                  className="text-2xl font-bold text-center" 
-                  style={{ fontFamily: 'var(--font-jost)'}}
-                >
-                  {advantage.title}
-                </h3>
-                
-                <p className="text-base" style={{ color: COLORS.TEXT }}>
-                  {advantage.description}
-                </p>
-              </div>
+              <p className="text-base" style={{ color: COLORS.TEXT }}>
+                {advantage.description}
+              </p>
             </div>
           ))}
         </div>
@@ -60,13 +51,6 @@ export default function Vantaggi({ advantages }: VantaggiProps) {
         <div className="lg:hidden flex flex-col gap-8 items-center">
           <div className="bg-white rounded-lg p-8 shadow-lg w-full">
             <div className="flex flex-col gap-4">
-              <h3 
-                className="text-2xl font-bold text-center" 
-                style={{ fontFamily: 'var(--font-jost)'}}
-              >
-                {advantages[currentIndex].title}
-              </h3>
-              
               <p className="text-base" style={{ color: COLORS.TEXT }}>
                 {advantages[currentIndex].description}
               </p>

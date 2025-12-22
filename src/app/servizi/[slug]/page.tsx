@@ -44,8 +44,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <>
       <Hero title={service.name} description={service.detailDescription} bgHero={service.headerImage} />
-      <Funzionalita functionalityTitle={service.functionalityTitle} functionalitySubtitle={service.functionalitySubtitle} functionality={service.functionality} />
-      <Vantaggi advantages={service.advantages} />
+      <Funzionalita functionalityTitle={service.functionalityTitle} functionalitySubtitle={service.functionalitySubtitle} grid={service.grid} functionality={service.functionality} />
+      <Vantaggi advantagesTitle={service.advantagesTitle} advantages={service.advantages} />
       <ServiceContent detailedContent={service.detailedContent} />
     </>
   );
