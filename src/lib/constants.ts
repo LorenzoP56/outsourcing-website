@@ -102,9 +102,9 @@ export const SERVICES = [
     imageDesktop: "/images/Servizi/desktop/servizi/2.png",
     imageMobile: "/images/Servizi/mobile/servizi/2.png",
     headerImage: "images/Servizi/detailed/contactCenter/bgHero",
-    detailDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
+    detailDescription: "Assistenza multicanale strutturata per gestire ogni richiesta in modo rapido, tracciabile e coerente su tutti i canali di comunicazione.",
+    functionalityTitle: "Come lavoriamo",
+    functionalitySubtitle: "Ogni progetto parte da un’analisi delle esigenze del cliente e si sviluppa con procedure definite, strumenti digitali condivisi e un controllo costante della qualità del servizio.",
     grid: false,
     functionality: [
       {
@@ -170,57 +170,75 @@ export const SERVICES = [
   },
   {
     slug: "gestione-amministrativa-digitale-dei-clienti",
-    name: "Gestione Amministrativa Digitale dei Clienti",
+    name: "Gestione Operativa dei Dati Cliente",
     serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
     shortDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
     imageDesktop: "/images/Servizi/desktop/servizi/3.png",
     imageMobile: "/images/Servizi/mobile/servizi/3.png",
     headerImage: "images/Servizi/detailed/gestioneAmministrativa/bgHero",
-    detailDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
+    detailDescription: "Organizziamo e gestiamo tutte le attività operative, anagrafiche e amministrative legate al ciclo di vita dei tuoi clienti, garantendo ordine, coerenza e controllo totale dei processi.",
+    functionalityTitle: "Come lavoriamo",
+    functionalitySubtitle: "Ogni processo amministrativo viene gestito con workflow chiari, strumenti integrati e supervisione costante della qualità, per garantire dati affidabili e operazioni sempre sotto controllo.",
     grid: false,
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/gestioneAmministrativa/funzionalita/1.png",
+        title: "Procedure standardizzate",
+        description: "Ogni attività segue procedure documentate, garantendo uniformità e riducendo errori operativi."
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/gestioneAmministrativa/funzionalita/2.png",
+        title: "Tracciabilità completa",
+        description: "Tutte le operazioni (creazioni, modifiche, verifiche, incassi e rimborsi) vengono registrate e monitorate."
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/gestioneAmministrativa/funzionalita/3.png",
+        title: "Integrazione con i tuoi sistemi",
+        description: "Lavoriamo direttamente su CRM, gestionali, billing, ERP e piattaforme digitali già utilizzate dall’azienda."
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/gestioneAmministrativa/funzionalita/4.png",
+        title: "Supervisione qualificata",
+        description: "Operatori formati su normative, procedure amministrative e policy interne del cliente."
+      },
+      {
+        icon: "/images/Servizi/detailed/gestioneAmministrativa/funzionalita/5.png",
+        title: "Controlli qualità continui",
+        description: "Effettuiamo verifiche costanti per mantenere dati coerenti, affidabili e sempre aggiornati."
       }
     ],
-    advantagesTitle: "",
+    advantagesTitle: "Perché scegliere questo servizio",
     advantages: [
       {
-        description: "Personale formato specificamente sui servizi digitali, in grado di risolvere problemi complessi e guidare gli utenti con competenza."
+        description: "Eliminazione di errori anagrafici e amministrativi"
       },
       {
-        description: "Assistenza telefonica, via ticket e chat per garantire accessibilità e risposte rapide attraverso il canale preferito dall'utente."
+        description: "Riduzione drastica dei tempi di gestione interna"
       },
       {
-        description: "Riduciamo frustrazione e abbandoni, aumentando la soddisfazione e la fidelizzazione degli utenti dei servizi digitali."
+        description: "Dati sempre aggiornati e coerenti"
+      },
+      {
+        description: "Migliore esperienza per il cliente finale"
+      },
+      {
+        description: "Controllo dei flussi economici e delle pratiche amministrative"
+      },
+      {
+        description: "Allineamento totale tra sistemi digitali"
+      },
+      {
+        description: "Scalabilità immediata in caso di aumento dei volumi"
       }
     ],
     detailedContent: {
-      title: "Assistenza reale, gestita da persone competenti",
+      title: "Un ciclo amministrativo sempre sotto controllo",
       imageDesktop: "/images/Servizi/detailed/gestioneAmministrativa/serviceImageDesktop.png",
       imageMobile: "/images/Servizi/detailed/gestioneAmministrativa/serviceImageMobile.png",
       paragraphs: [
-        "Gli utenti dei servizi digitali hanno bisogno di supporto immediato e competente per utilizzare piattaforme complesse come SPID, firma digitale, PEC e altri servizi online. La mancanza di assistenza adeguata genera frustrazione, abbandoni e riduce l'efficacia dei servizi digitali.",
-        "Outsourcing Group fornisce assistenza telefonica e via ticket con personale qualificato e formato, capace di guidare gli utenti passo dopo passo. Supportiamo gli utenti finali in modo professionale, riducendo i tempi di risoluzione e migliorando la loro esperienza complessiva con i servizi digitali.",
+        "Gestiamo tutte le <strong>attività operative, amministrative</strong> e <strong>anagrafiche</strong> legate ai clienti che utilizzano i servizi digitali della tua azienda. Dalla creazione dei codici cliente all’allineamento delle anagrafiche, dagli incassi ai rimborsi fino al controllo delle fatture, ogni fase del ciclo di vita del cliente viene gestita in modo preciso e coerente.",
+        "Questo servizio è particolarmente adatto a <strong>realtà che gestiscono servizi digitali ricorrenti, piattaforme SaaS, grandi database anagrafici</strong> o <strong>processi con attivazioni e cessazioni frequenti.</strong> Anche i flussi amministrativi multi-step e le attività di billing ad alto volume trovano un supporto strutturato e affidabile.",
+        "Il risultato è <strong>un sistema amministrativo ordinato, aggiornato</strong> e <strong>completamente tracciato</strong>, che elimina gli errori e garantisce continuità operativa. L’azienda può così concentrarsi sulle attività a maggiore valore aggiunto, delegando a noi la gestione puntuale e professionale di tutto il ciclo amministrativo."
       ]
     }
   },
@@ -232,52 +250,56 @@ export const SERVICES = [
     imageDesktop: "/images/Servizi/desktop/servizi/4.png",
     imageMobile: "/images/Servizi/mobile/servizi/4.png",
     headerImage: "images/Servizi/detailed/assistenza/bgHero",
-    detailDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
+    detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell’utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    functionalityTitle: "Come funziona",
+    functionalitySubtitle: "Ogni richiesta viene gestita da un operatore dedicato, che segue l’utente passo dopo passo in tutte le fasi:",
     grid: false,
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/1.png",
+        title: "Comprensione del servizio digitale",
+        description: "Aiutiamo l’utente a capire chiaramente come funziona il servizio messo a disposizione dall’azienda."
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/2.png",
+        title: "Attivazioni e configurazioni guidate",
+        description: "Supportiamo gli utenti in attivazioni, configurazioni e accessi ai portali e agli strumenti digitali."
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/3.png",
+        title: "Supporto tecnico-operativo",
+        description: "Gestiamo richieste e problematiche tecniche, fornendo soluzioni rapide e istruzioni precise."
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/4.png",
+        title: "Utilizzo corretto e sicuro",
+        description: "Accompagniamo gli utenti nell’uso conforme alle procedure interne e alle policy di sicurezza."
+      },
+      {
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/5.png",
+        title: "Risoluzione delle difficoltà",
+        description: "Interveniamo per sbloccare situazioni critiche o rallentamenti operativi, ripristinando rapidamente la funzionalità del servizio."
       }
     ],
-    advantagesTitle: "",
+    advantagesTitle: "Risultato",
     advantages: [
       {
+        title: "Servizi digitali sempre operativi",
         description: "Risparmi su stipendi, benefit e formazione del personale amministrativo, convertendo costi fissi in variabili."
       },
       {
-        description: "Alleggerisci il carico interno e migliori l'efficienza operativa con processi standardizzati e ottimizzati."
-      },
-      {
-        description: "Adatti i servizi alle esigenze del mercato senza assumere nuovo personale, garantendo flessibilità operativa."
+        title: "Nessun carico sui reparti interni",
+        description: "Gestiamo l’assistenza quotidiana; IT, HR, Compliance e Digital Office mantengono governance e controllo."
       }
     ],
     detailedContent: {
-      title: "Processi semplificati, risultati misurabili",
+      title: "Un supporto che semplifica l’uso dei servizi digitali e libera i tuoi reparti",
       imageDesktop: "/images/Servizi/detailed/assistenza/serviceImageDesktop.png",
       imageMobile: "/images/Servizi/detailed/assistenza/serviceImageMobile.png",
       paragraphs: [
-        "Procedure, fatturazione, codici cliente e incassi richiedono tempo, personale e aggiornamento continuo. La complessità amministrativa sottrae energie alla crescita e comporta costi fissi elevati.",
-        "Esternalizzando i processi non core con Outsourcing Group, ottieni supporto flessibile e professionale, riduci i costi operativi e migliori la continuità del servizio.",
-        "Gestiamo i flussi amministrativi anche per mercati esteri, permettendoti di concentrarti sullo sviluppo dell'attività.",
+        "Con il nostro servizio di <strong>assistenza dedicata</strong>, i tuoi utenti ricevono un supporto diretto e personalizzato per <strong>comprendere</strong>, <strong>configurare e utilizzare correttamente gli strumenti digitali</strong> messi a disposizione dalla tua azienda. Gestiamo attivazioni, accessi, difficoltà operative, problemi tecnici e qualsiasi esigenza quotidiana che possa ostacolare l’operatività.",
+        "L’azienda mantiene il pieno controllo e la governance del servizio digitale, mentre noi gestiamo tutta l’operatività quotidiana. Questo permette ai reparti interni - come IT, HR, Compliance o Digital Office - di <strong>concentrarsi sulle attività strategiche</strong> senza dover assorbire richieste continue da parte degli utenti.",
+        "Il risultato è un <strong>servizio digitale sempre funzionante</strong>, <strong>conforme alle policy aziendali</strong> e <strong>utilizzato correttamente dagli utenti</strong>, con un supporto disponibile anche in <strong>lingua inglese</strong> quando necessario.",
       ]
     }
   },
@@ -289,51 +311,55 @@ export const SERVICES = [
     imageDesktop: "/images/Servizi/desktop/servizi/5.png",
     imageMobile: "/images/Servizi/mobile/servizi/5.png",
     headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
-    detailDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
+    detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull’utilizzo dei servizi e degli strumenti dell’azienda",
+    functionalityTitle: "Come funziona",
+    functionalitySubtitle: "I training aziendali sono pensati per gruppi di utenti, anche numerosi, che devono essere formati in modo uniforme, completo e strutturato. Si tratta di sessioni di formazione dedicate a dipendenti delle aziende clienti che in genere vertono sull’utilizzo dei servizi e degli strumenti digitali in uso.",
     grid: true,
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/1.png",
+        description: "Spieghiamo tutte le funzionalità del servizio digitale in uso nell’azienda"
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/2.png",
+        description: "Rispondiamo in diretta ai dubbi dei partecipanti"
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/3.png",
+        description: "Mostriamo i flussi operativi"
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/4.png",
+        description: "Guidiamo i dipendenti nell’utilizzo corretto, sicuro ed efficace del servizio"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/5.png",
+        description: "Approfondiamo anche parti del servizio che non tutti utilizzeranno, per garantire una visione completa"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/6.png",
+        description: "Possiamo dedicare più giornate o sessioni a moduli specifici"
       }
     ],
-    advantagesTitle: "",
+    advantagesTitle: "I training possono essere:",
     advantages: [
       {
-        description: "Processi standardizzati e ottimizzati che riducono i tempi di esecuzione e migliorano la produttività complessiva."
+        title: "Personalizzati",
+        description: "Costruiti su misura in base alle esigenze dell’azienda cliente, ai ruoli dei dipendenti, ai processi interni e agli ambiti di utilizzo del servizio digitale."
       },
       {
-        description: "Conversione dei costi fissi in variabili, con risparmio su personale, formazione, infrastrutture e tecnologie."
-      },
-      {
-        description: "Assicuriamo continuità operativa e qualità costante, indipendentemente da assenze, turnover o picchi di lavoro."
+        title: "Standard",
+        description: "Pensati per fornire una panoramica completa del servizio digitale in tutte le sue funzionalità."
       }
     ],
     detailedContent: {
-      title: "Un partner operativo che cresce con la tua azienda",
+      title: "Training aziendali per migliorare competenze e processi",
       imageDesktop: "/images/Servizi/detailed/trainingAziendali/serviceImageDesktop.png",
       imageMobile: "/images/Servizi/detailed/trainingAziendali/serviceImageMobile.png",
       paragraphs: [
-        "Gestire internamente funzioni non strategiche sottrae tempo e risorse alle attività core. Attività ripetitive, amministrative e operative richiedono personale dedicato, formazione continua e costi fissi elevati.",
-        "Outsourcing Group gestisce le tue funzioni di backoffice con procedure standardizzate, controlli di qualità e tecnologie all'avanguardia. Ottimizzi costi e tempi, garantendo continuità operativa e qualità costante, mentre il tuo team si concentra su ciò che genera vero valore per il business.",
+        "Offriamo training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere <strong>modulari, multi-sessione, personalizzati</strong> o <strong>standard</strong>.",
+        "Coprono tutte le funzionalità del servizio, incluse quelle non utilizzate da tutti i ruoli, e <strong>forniscono istruzioni operative, best practice, procedure di sicurezza</Strong> e <strong>supporto diretto ai partecipanti.</strong>",
+        "L’obiettivo è garantire che l’azienda abbia dipendenti competenti, autonomi e pronti a utilizzare il servizio digitale in modo corretto, migliorando produttività, continuità operativa e sicurezza."
       ]
     }
   },
@@ -345,57 +371,69 @@ export const SERVICES = [
     imageDesktop: "/images/Servizi/desktop/servizi/6.png",
     imageMobile: "/images/Servizi/mobile/servizi/6.png",
     headerImage: "images/Servizi/detailed/dataManagement/bgHero",
-    detailDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
-    grid: false,
+    detailDescription: "Gestiamo i tuoi dati in modo sicuro, organizzato e conforme, garantendo continuità operativa e una base solida per automazioni e progetti digitali.",
+    functionalityTitle: "Come funziona",
+    functionalitySubtitle: "Ogni attività di Data Management è gestita con un modello operativo strutturato, che garantisce dati protetti, aggiornati e pienamente integrati con i processi digitali dell’azienda.",
+    grid: true,
     functionality: [
       {
-        icon: "/images/Servizi/icons/1.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/1.png",
+        description: "Organizziamo i dati in modo ordinato, con archiviazione strutturata e versioni sempre sotto controllo."
       },
       {
-        icon: "/images/Servizi/icons/2.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/2.png",
+        description: "Applichiamo criteri di cybersecurity con controlli accessi, crittografia e monitoraggio continuo."
       },
       {
-        icon: "/images/Servizi/icons/3.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/3.png",
+        description: "Gestiamo backup automatici e copie ridondanti per garantire continuità operativa."
       },
       {
-        icon: "/images/Servizi/icons/4.png",
-        title: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur. Aliquam ac amet sed maecenas arcu quis vulputate eget at posuere lorem."
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/4.png",
+        description: "Definiamo ruoli e permessi, tracciando ogni accesso ai documenti e alle informazioni."
+      },
+      {
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/5.png",
+        description: "Integriamo i dati con CRM, ERP, gestionali, API e archivi cloud."
+      },
+      {
+        icon: "/images/Servizi/detailed/dataManagement/funzionalita/6.png",
+        description: "Verifichiamo la qualità del dato, correggendo incongruenze e mantenendo i sistemi allineati."
       }
     ],
-    advantagesTitle: "",
+    advantagesTitle: "I tuoi vantaggi",
     advantages: [
       {
-        description: "Gestiscono servizi digitali complessi"
+        description: "Applichiamo standard avanzati di cybersecurity per proteggere dati e sistemi in ogni fase."
       },
       {
-        description: "Hanno bisogno di operazioni ripetitive ma sensibili"
+        description: "Manteniamo i dati strutturati, allineati e facilmente consultabili da tutti i reparti."
       },
       {
-        description: "Devono garantire qualità e conformità nei processi"
+        description: "Backup costanti e sistemi ridondanti garantiscono stabilità e continuità operativa."
       },
       {
-        description: "Vogliono alleggerire il carico operativo interno"
+        description: "Dati sempre pronti e disponibili, con tempi di reperimento drasticamente ridotti."
       },
       {
-        description: "Operano in settori regolamentati o ad alto volume di pratiche"
+        description: "Procedure di ripristino e monitoraggio continuo assicurano la massima operatività."
+      },
+      {
+        description: "Gestiamo i dati rispettando normative, policy interne e criteri di governance."
+      },
+      {
+        description: "Ci integriamo nei tuoi sistemi digitali e supportiamo architetture anche molto articolate."
       }
+
     ],
     detailedContent: {
-      title: "Un partner operativo che cresce con la tua azienda",
+      title: "Un sistema dati sicuro, ordinato e sempre disponibile",
       imageDesktop: "/images/Servizi/detailed/dataManagement/serviceImageDesktop.png",
       imageMobile: "/images/Servizi/detailed/dataManagement/serviceImageMobile.png",
       paragraphs: [
-        "Gestire internamente funzioni non strategiche sottrae tempo e risorse alle attività core. Attività ripetitive, amministrative e operative richiedono personale dedicato, formazione continua e costi fissi elevati.",
-        "Outsourcing Group gestisce le tue funzioni di backoffice con procedure standardizzate, controlli di qualità e tecnologie all'avanguardia. Ottimizzi costi e tempi, garantendo continuità operativa e qualità costante, mentre il tuo team si concentra su ciò che genera vero valore per il business.",
+        "Il Data Management è diventato un elemento strategico per qualsiasi organizzazione che voglia operare con continuità, sicurezza e scalabilità. Con il nostro servizio <strong>strutturiamo, proteggiamo e rendiamo fruibili tutti i dati aziendali<strong>, integrandoli nei processi digitali e garantendo la loro disponibilità in ogni momento.",
+        "Gestiamo l’intero ciclo del dato <strong>applicando criteri avanzati di cybersecurity e governance</strong>. Organizziamo le informazioni in modo ordinato e tracciabile, così i sistemi lavorano meglio e il personale può contare su basi dati affidabili e aggiornate.",
+        "Il risultato è un’<strong>infrastruttura dati moderna e resiliente</strong>, capace di supportare progetti digitali, automazioni e iniziative basate sull’intelligenza artificiale. Un ambiente sicuro, scalabile e progettato per accompagnare la crescita dell’azienda nel tempo."
       ]
     }
   }

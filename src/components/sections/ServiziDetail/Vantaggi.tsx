@@ -4,6 +4,7 @@ import { COLORS } from "@/lib/constants";
 import { useState } from "react";
 
 interface AdvantageItem {
+  title?: string
   description: string;
 }
 
@@ -38,8 +39,14 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
           {advantages.map((advantage, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg py-8 px-4 shadow-lg flex items-center justify-centerh-full"
+              className="bg-white rounded-lg py-8 px-4 shadow-lg flex flex-col items-center justify-centerh-full gap-4"
             >
+              <h3 
+                className="font-bold text-xl text-center"
+                style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
+              >
+                {advantages[currentIndex].title}
+              </h3>
               <p className="text-base" style={{ color: COLORS.TEXT }}>
                 {advantage.description}
               </p>
@@ -51,6 +58,9 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
         <div className="lg:hidden flex flex-col gap-8 items-center">
           <div className="bg-white rounded-lg p-8 shadow-lg w-full">
             <div className="flex flex-col gap-4">
+              <h3 className="text-base" style={{ color: COLORS.TEXT }}>
+                {advantages[currentIndex].title}
+              </h3>
               <p className="text-base" style={{ color: COLORS.TEXT }}>
                 {advantages[currentIndex].description}
               </p>
