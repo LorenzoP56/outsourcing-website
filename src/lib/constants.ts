@@ -171,8 +171,8 @@ export const SERVICES = [
   {
     slug: "gestione-amministrativa-digitale-dei-clienti",
     name: "Gestione Operativa dei Dati Cliente",
-    serviceDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
-    shortDescription: "È il servizio con cui gestiamo tutte le attività operative, amministrative e anagrafiche connesse ai clienti che utilizzano i servizi digitali dell'azienda.",
+    serviceDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
+    shortDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
     imageDesktop: "/images/Servizi/desktop/servizi/3.png",
     imageMobile: "/images/Servizi/mobile/servizi/3.png",
     headerImage: "images/Servizi/detailed/gestioneAmministrativa/bgHero",

@@ -21,7 +21,7 @@ export default function Motivi() {
               Gestire internamente attività operative o amministrative comporta costi fissi elevati, formazione continua e un impiego di risorse che spesso non genera valore strategico.
               <br />
               <br />
-              Affidandoti a un partner specializzato, puoi convertire i costi fissi dovuti ad attività operative o amministrative in investimenti mirati e soprattutto modulabili, ottimizzando così la gestione del personale (sia nel numero che nelle capacità professionali) e così adattandoti al meglio ai periodi di picco o di down.
+              Affidandoti a un partner specializzato, <span className="font-bold">puoi convertire i costi fissi dovuti ad attività operative o amministrative in investimenti mirati e soprattutto modulabili</span>, ottimizzando così la gestione del personale (sia nel numero che nelle capacità professionali) e così adattandoti al meglio ai periodi di picco o di down.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function Motivi() {
               Dati sicuri e velocità dei processi
             </h3>
             <p className="text-base" style={{ color: COLORS.TEXT }}>
-              Gestire internamente attività che coinvolgono dati sensibili richiede procedure rigide, strumenti adeguati e personale costantemente aggiornato sulle normative.Un partner specializzato assicura invece <span className="font-bold">processi controllati, protocolli chiari</span> e una <span className="font-bold">gestione dei dati conforme e monitorata</span>, riducendo al minimo errori, rallentamenti e rischi operativi.
+              Gestire internamente attività che coinvolgono dati sensibili richiede procedure rigide, strumenti adeguati e personale costantemente aggiornato sulle normative. <span className="font-bold">Un partner specializzato assicura invece processi controllati, protocolli chiari e una gestione dei dati conforme e monitorata, riducendo al minimo errori, rallentamenti e rischi operativi.</span>
               <br />
               <br />
               Affidando queste attività a Outsourcing Group, ottieni processi più rapidi, tracciati e sicuri: ogni operazione viene eseguita seguendo istruzioni precise e standard condivisi, garantendo continuità e qualità anche nei momenti di maggiore carico.

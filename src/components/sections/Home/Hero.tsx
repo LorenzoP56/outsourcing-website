@@ -13,10 +13,10 @@ export default function Hero() {
             Soluzioni professionali di Digital Back Office che fanno crescere la tua azienda
           </h1>
           <p className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Gestiamo le attività di <span className="font-bold">Back Office</span> e <span className="font-bold">Contact Center</span> per servizi digitali e siamo specializzati nell’assistenza ai clienti.
+          Gestiamo le attività di <span className="font-bold">Back Office</span> e <span className="font-bold">Contact Center</span> esternalizzabili, con una forte specializzazione nell’assistenza ai clienti.
           <br />
           <br />
-          Ottimizziamo i tuoi processi aziendali di Back Office <span className="font-bold">riducendo tempi e costi, garantendo continuità operativa e qualità del servizio.</span>
+          Ottimizziamo i tuoi processi aziendali di Back Office riducendo tempi e costi, garantendo continuità operativa e qualità del servizio.
           </p>
         </div>
 

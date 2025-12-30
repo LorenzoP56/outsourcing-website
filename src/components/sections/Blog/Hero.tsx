@@ -8,7 +8,7 @@ export default function Hero() {
           Blog
         </h1>
         <p className="lg:text-xl text-base text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-          Rimani aggiornato sulle ultime novità in tema di outsourcing del back office digitale, customer care professionale e conformità normativa. Scopri strategie, best practice e soluzioni innovative per ottimizzare i tuoi processi aziendali.
+          Review sulle ultime novità in tema di outsourcing del back office digitale, customer care professionale e conformità normativa. Scopri strategie, best practice e soluzioni innovative per ottimizzare i tuoi processi aziendali.
         </p>
       </div>
     </section>
