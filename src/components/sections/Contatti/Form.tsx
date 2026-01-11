@@ -18,7 +18,7 @@ export default function Form() {
             Contattaci per una consulenza personalizzata.
           </p>
         </div>
-        <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/images/Contatti/imgForm.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
+        <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/images/Contatti/imgForm.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
           <h3 className="text-white font-bold text-xl">
             Disponibilità
           </h3>
