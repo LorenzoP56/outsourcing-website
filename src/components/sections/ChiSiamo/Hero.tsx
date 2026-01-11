@@ -3,7 +3,7 @@ import { COLORS } from "@/lib/constants";
 export default function Hero() {
   return (
     <section 
-      className="min-h-[50vh] lg:px-32 lg:py-16 px-8 py-16 flex items-center justify-center"
+      className="min-h-[50vh] lg:px-32 lg:pt-16 px-8 pt-16 flex items-center justify-center"
     >
       <div className="flex flex-col w-full h-full justify-center gap-8">
         <div className="flex flex-col gap-4">

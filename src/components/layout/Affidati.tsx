@@ -20,14 +20,14 @@ export default function Affidati() {
         <div className="flex flex-col p-8 gap-8 w-[300px] items-center justify-center">
           <div className="flex flex-col gap-4 items-center justify-center">
             <h3 className="text-[24px] leading-[24px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-              Chiamaci
+              Contattaci
             </h3>
             <p className="text-md text-center" style={{ color: COLORS.TEXT_WHITE }}>
-              Parla direttamente con un nostro consulente per discutere delle tue esigenze.
+              Un consulente dedicato ti aiuterà a comprendere come ottimizzare i tuoi processi di back office.
             </p>
           </div>
           <Button href="tel:+393483483483" className="w-full">
-            Chiama ora
+            Parla con un consulente
           </Button>
         </div>
 
@@ -37,7 +37,7 @@ export default function Affidati() {
               Scrivici
             </h3>
             <p className="text-md text-center" style={{ color: COLORS.TEXT_WHITE }}>
-              Inviaci una email e ti risponderemo entro 24 ore lavorative.
+              Il nostro team ti risponderà rapidamente per approfondire le esigenze della tua azienda.
             </p>
           </div>
           <Button href="#" className="w-full" style={{ background: 'white', color: COLORS.TEXT }}>

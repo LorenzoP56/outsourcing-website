@@ -9,18 +9,17 @@ export default function Team() {
       <div className="flex lg:flex-1 w-full justify-center items-center relative">
         <div className="relative w-full aspect-square max-w-lg">
           <Image 
-            src="/images/ChiSiamo/team.png" 
+            src="/images/ChiSiamo/B - Chi siamo - Trasformiamo.webp" 
             alt="Group" 
             fill
-            className="object-contain" 
-            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover h-[80vh] w-auto aspect-[5/7] flex w-[40%] rounded-[16px]" 
           />
         </div>
       </div>
 
       <div className="flex flex-col flex-1 h-full justify-center gap-8">
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          Insieme, trasformiamo ogni servizio in un risultato
+          Insieme, trasformiamo ogni servizio in risultato
         </h2>
         <p className="text-base" style={{ color: COLORS.TEXT }}>
 
@@ -28,7 +27,7 @@ export default function Team() {
         <br/>
         <br/>
         Da oltre vent’anni operiamo nel <span className="font-bold">digital trust</span>, unendo competenze tecniche e attenzione alle persone. Ogni membro del team viene informato direttamente sulle procedure e sui flussi operativi del cliente, acquisendo una conoscenza approfondita delle sue modalità di lavoro e delle pratiche specifiche da gestire.
-        Questo ci consente di operare come una <span className="font-bold">vera estensione del reparto interno</span>, garantendo precisione, coerenza e continuità nel tempo.
+        Questo ci consente di operare come una <span className="font-bold">vera estensione del tuo reparto interno</span>, garantendo precisione, coerenza e continuità nel tempo.
         <br/>
         <br/>
         Crediamo nella collaborazione come leva di crescita reciproca: ogni progetto diventa un'occasione per migliorare insieme ai nostri clienti, condividendo conoscenze e soluzioni.

@@ -5,24 +5,24 @@ import { useState } from "react";
 
 const valori = [
   {
-    image: '/images/ChiSiamo/valori/1.png',
+    image: '/images/ChiSiamo/valori/1.webp',
     title: 'Affidabilità & Trasparenza',
     description: 'I nostri processi sono certificati e conformi alle normative, per darti sicurezza completa.'
   },
   {
-    image: '/images/ChiSiamo/valori/2.png',
+    image: '/images/ChiSiamo/valori/2.webp',
     title: 'Flessibilità & Partnership',
-    description: 'Ci adattiamo a grandi aziende, PMI e PA, offrendo soluzioni su misura e white-label.'
+    description: 'Adattandoci a grandi aziende, PMI e PA, offriamo soluzioni su misura e white-label.'
   },
   {
-    image: '/images/ChiSiamo/valori/3.png',
+    image: '/images/ChiSiamo/valori/3.webp',
     title: 'Innovazione & Competenza',
-    description: 'Investiamo nella formazione continua del team e nell\'adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell\'esperienza umana.'
+    description: 'Investiamo nella formazione continua del team e nell’adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell’esperienza umana.'
   },
   {
-    image: '/images/ChiSiamo/valori/4.png',
+    image: '/images/ChiSiamo/valori/4.webp',
     title: 'Sostenibilità & Etica',
-    description: 'Promuoviamo politiche ESG, codice etico e modelli 231, perché il business etico genera valore duraturo.'
+    description: 'Mettiamo il cliente al centro di ogni processo: rispondiamo con rapidità, precisione e un supporto umano e competente.'
   }
 ];
 
@@ -41,13 +41,13 @@ export default function Valori() {
     <section className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center" style={{ backgroundColor: 'rgba(0, 96, 174, 0.1)' }}>
       
       <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-        I nostri valori al servizio della tua azienda
+        I valori che trasferiamo ai nostri partner
       </h2>
 
       {/* Desktop: mostra tutte le card */}
       <div className="hidden lg:flex flex-row gap-4 justify-center">
 
-        <div className="flex flex-col flex-1 gap-4 items-center p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/1.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
+        <div className="flex flex-col flex-1 gap-4 items-start p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/1.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
           <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Affidabilità & Trasparenza
           </h3>
@@ -56,29 +56,29 @@ export default function Valori() {
           </p>
         </div>
 
-        <div className="flex flex-col flex-1 gap-4 items-center p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/2.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
+        <div className="flex flex-col flex-1 gap-4 items-start p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/2.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
           <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Flessibilità & Partnership
           </h3>
           <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
-            Ci adattiamo a grandi aziende, PMI e PA, offrendo soluzioni su misura e white-label.          
+            Adattandoci a grandi aziende, PMI e PA, offriamo soluzioni su misura e white-label.
           </p>
         </div>
 
-        <div className="flex flex-col flex-1 gap-4 items-center p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/3.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
+        <div className="flex flex-col flex-1 gap-4 items-start p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/3.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
           <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Innovazione & Competenza
           </h3>
           <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
-            Investiamo nella formazione continua del team e nell'adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell'esperienza umana.
+            Investiamo nella formazione continua del team e nell’adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell’esperienza umana.
           </p>
         </div>
 
-        <div className="flex flex-col flex-1 gap-4 items-center p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/4.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
-          <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
+        <div className="flex flex-col flex-1 gap-4 items-start p-8" style={{ backgroundImage: 'url(/images/ChiSiamo/valori/4.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', borderRadius: '16px', height: '300px' }}>
+          <h3 className="lg:text-[20px] lg:leading-[20px] font-bold text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Sostenibilità & Etica
           </h3>
-          <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+          <p className="text-md text-left" style={{ color: COLORS.TEXT_WHITE }}>
             Promuoviamo politiche ESG, codice etico e modelli 231, perché il business etico genera valore duraturo.
           </p>
         </div>
