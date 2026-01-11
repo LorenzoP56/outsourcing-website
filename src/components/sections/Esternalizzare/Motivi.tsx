@@ -8,7 +8,7 @@ export default function Motivi() {
       <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/1.png" alt="Motivo 1" width={100} height={100} className="w-full h-auto" />
+          <Image src="/images/Esternalizzare/motivi/1.webp" alt="Motivo 1" width={100} height={100} className="w-full h-auto" />
         </div>
         
         <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
@@ -72,7 +72,7 @@ export default function Motivi() {
       <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/2.png" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
+          <Image src="/images/Esternalizzare/motivi/2.webp" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
         </div>
         
         <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
@@ -136,7 +136,7 @@ export default function Motivi() {
       <div className="flex lg:flex-row flex-col gap-8">
 
         <div className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/3.png" alt="Motivo 3" width={100} height={100} className="w-full h-auto" />
+          <Image src="/images/Esternalizzare/motivi/3.webp" alt="Motivo 3" width={100} height={100} className="w-full h-auto" />
         </div>
         
         <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
