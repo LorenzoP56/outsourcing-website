@@ -11,18 +11,11 @@ export default function Servizi() {
           className={`flex ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} flex-col gap-8`}
         >
           <Image 
-            src={service.imageDesktop} 
+            src={service.image} 
             alt={service.name} 
             width={500} 
             height={500} 
-            className="lg:w-[60%] w-full h-auto lg:block hidden" 
-          />
-          <Image 
-            src={service.imageMobile} 
-            alt={service.name} 
-            width={500} 
-            height={500} 
-            className="lg:hidden block w-full h-auto" 
+            className="w-[55%] h-[250px] object-cover object-center rounded-[16px]" 
           />
           
           <div className="flex flex-col flex-1 gap-8 lg:w-[40%] w-full justify-center items-center">
@@ -43,7 +36,7 @@ export default function Servizi() {
               </p>
             </div>
 
-            <Button href={`/servizi/${service.slug}`} className="lg:self-start self-center w-full">
+            <Button href={`/servizi/${service.slug}`} className="lg:self-start self-center w-fit">
               Scopri di più
             </Button>
           </div>

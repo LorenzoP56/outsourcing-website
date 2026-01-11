@@ -3,8 +3,7 @@ import Image from "next/image";
 
 interface DetailedContent {
   title: string;
-  imageDesktop: string;
-  imageMobile: string;
+  image: string;
   paragraphs: string[];
 }
 
@@ -19,18 +18,11 @@ export default function ServiceContent({ detailedContent }: ServiceContentProps)
       <div className="flex lg:flex-row flex-col gap-12 items-center">
         <div className="lg:w-1/2 w-full">
           <Image 
-            src={detailedContent.imageDesktop} 
+            src={detailedContent.image} 
             alt={detailedContent.title} 
             width={600} 
             height={500} 
-            className="hidden lg:block w-full h-auto rounded-lg"
-          />
-          <Image 
-            src={detailedContent.imageMobile} 
-            alt={detailedContent.title} 
-            width={600} 
-            height={500} 
-            className="block lg:hidden w-full h-auto rounded-lg"
+            className="w-full h-auto rounded-lg"
           />
         </div>
         

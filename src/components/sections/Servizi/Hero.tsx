@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="lg:text-xl text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             La trasformazione digitale richiede processi interni strutturati, dati affidabili e flussi operativi efficienti.
             I nostri servizi di Digital Back Office si basano su procedure standardizzate, ambienti di collaudo, controllo qualità e sistemi digitali che permettono un’elaborazione precisa e tracciata di ogni attività.
-            Per supportare l’azienda nella gestione documentale, nel monitoraggio dei flussi e nell’ottimizzazione dei processi, integriamo competenze operative, tecniche e analitiche.
+            Per supportare l’azienda nella gestione dei dati, nel monitoraggio dei flussi e nell’ottimizzazione dei processi, integriamo competenze operative, tecniche e analitiche.
           </p>
         </div>
       </div>

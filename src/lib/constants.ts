@@ -23,8 +23,7 @@ export const SERVICES = [
     name: "Assistenza dedicata agli utenti",
     serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
-    imageDesktop: "/images/Servizi/desktop/servizi/4.png",
-    imageMobile: "/images/Servizi/mobile/servizi/4.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali - Assistenza dedicata agli utenti.webp",
     headerImage: "images/Servizi/detailed/assistenza/bgHero",
     detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell’utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     functionalityTitle: "Come funziona",
@@ -70,11 +69,10 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Un supporto che semplifica l’uso dei servizi digitali e libera i tuoi reparti",
-      imageDesktop: "/images/Servizi/detailed/assistenza/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/assistenza/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/assistenza/G - Assistenza ded - Sezione.webp",
       paragraphs: [
         "Con il nostro servizio di <strong>assistenza dedicata</strong>, i tuoi utenti ricevono un supporto diretto e personalizzato per <strong>comprendere</strong>, <strong>configurare e utilizzare correttamente gli strumenti digitali</strong> messi a disposizione dalla tua azienda. Gestiamo attivazioni, accessi, difficoltà operative, problemi tecnici e qualsiasi esigenza quotidiana che possa ostacolare l’operatività.",
-        "L’azienda mantiene il pieno controllo e la governance del servizio digitale, mentre noi gestiamo tutta l’operatività quotidiana. Questo permette ai reparti interni - come IT, HR, Compliance o Digital Office - di <strong>concentrarsi sulle attività strategiche</strong> senza dover assorbire richieste continue da parte degli utenti.",
+        "L’azienda mantiene il pieno controllo e la governance del servizio digitale, mentre noi <strong>gestiamo tutta l’operatività quotidiana</strong>. Questo permette ai reparti interni - come IT, HR, Compliance o Digital Office - di <strong>concentrarsi sulle attività strategiche</strong> senza dover assorbire richieste continue da parte degli utenti.",
         "Il risultato è un <strong>servizio digitale sempre funzionante</strong>, <strong>conforme alle policy aziendali</strong> e <strong>utilizzato correttamente dagli utenti</strong>, con un supporto disponibile anche in <strong>lingua inglese</strong> quando necessario.",
       ]
     }
@@ -84,8 +82,7 @@ export const SERVICES = [
     name: "Contact Center",
     serviceDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     shortDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
-    imageDesktop: "/images/Servizi/desktop/servizi/2.png",
-    imageMobile: "/images/Servizi/mobile/servizi/2.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali - Contact Center.webp",
     headerImage: "images/Servizi/detailed/contactCenter/bgHero",
     detailDescription: "Assistenza multicanale strutturata per gestire ogni richiesta in modo rapido, tracciabile e coerente su tutti i canali di comunicazione.",
     functionalityTitle: "Come lavoriamo",
@@ -144,8 +141,7 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Un servizio clienti integrato, fluido e sempre sotto controllo",
-      imageDesktop: "/images/Servizi/detailed/contactCenter/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/contactCenter/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/contactCenter/E - Contact Center - Sezione.webp",
       paragraphs: [
         "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale che include <strong>telefono, e-mail, chat, social, ticket</strong> e <strong>piattaforme digitali</strong>. Ogni richiesta viene presa in carico con risposte rapide, coerenti e sempre tracciabili.",
         "Il nostro Contact Center è il punto di ingresso di tutte le comunicazioni: da qui le richieste vengono indirizzate al <strong>Customer Care</strong>, che gestisce la relazione, e al <strong>Customer Service</strong>, che si occupa delle soluzioni operative.",
@@ -158,10 +154,9 @@ export const SERVICES = [
     name: "Digital Back Office",
     serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
-    imageDesktop: "/images/Servizi/desktop/servizi/1.png",
-    imageMobile: "/images/Servizi/mobile/servizi/1.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali - Digital Back Office.webp",
     headerImage: "images/Servizi/detailed/digitalBank/bgHero",
-    detailDescription: "Supportiamo i tuoi processi digitali con attività operative strutturate, controlli accurati e gestione completa delle pratiche.",
+    detailDescription: "Supportiamo i tuoi processi digitali attraverso servizi operativi strutturati, controlli puntuali e gestione continua delle attività.",
     functionalityTitle: "Cosa facciamo",
     functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
     grid: true,
@@ -219,23 +214,21 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Un supporto operativo che semplifica la gestione dei tuoi processi digitali",
-      imageDesktop: "/images/Servizi/detailed/digitalBank/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/digitalBank/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/digitalBank/D - Digital Back Office - Sezione.webp",
       paragraphs: [
         "Nel Digital Back Office, <strong>ogni fase deve essere gestita con ordine e continuità</strong>: verifiche documentali, controlli di identità, validazione dei requisiti e attivazioni richiedono procedure chiare e una supervisione costante.",
         "Per questo organizziamo tutte le attività in flussi strutturati, con <strong>tracciabilità completa</strong> e tempi di lavorazione definiti dagli SLA concordati.",
-        "Ci occupiamo delle operazioni che non possono essere automatizzate, assicurando precisione e uniformità, anche in presenza di volumi elevati o pratiche sensibili.",
+        "Ci occupiamo delle operazioni che non possono essere completamente automatizzate, assicurando precisione e uniformità, anche in presenza di volumi elevati o pratiche sensibili.",
         "Il risultato è una <strong>gestione più fluida, meno rischi di errore</strong> e un team interno che può concentrarsi sulle attività strategiche."
       ]
     }
   },
   {
-    slug: "gestione-amministrativa-digitale-dei-clienti",
+    slug: "gestione-operativa-digitale-dei-clienti",
     name: "Gestione Operativa dei Dati Cliente",
     serviceDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
     shortDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
-    imageDesktop: "/images/Servizi/desktop/servizi/3.png",
-    imageMobile: "/images/Servizi/mobile/servizi/3.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali - Gestione operativa.webp",
     headerImage: "images/Servizi/detailed/gestioneAmministrativa/bgHero",
     detailDescription: "Organizziamo e gestiamo tutte le attività operative, anagrafiche e amministrative legate al ciclo di vita dei tuoi clienti, garantendo ordine, coerenza e controllo totale dei processi.",
     functionalityTitle: "Come lavoriamo",
@@ -294,8 +287,7 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Un ciclo amministrativo sempre sotto controllo",
-      imageDesktop: "/images/Servizi/detailed/gestioneAmministrativa/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/gestioneAmministrativa/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/gestioneAmministrativa/F - Gest Operativa - Sezione.webp",
       paragraphs: [
         "Gestiamo tutte le <strong>attività operative, amministrative</strong> e <strong>anagrafiche</strong> legate ai clienti che utilizzano i servizi digitali della tua azienda. Dalla creazione dei codici cliente all’allineamento delle anagrafiche, dagli incassi ai rimborsi fino al controllo delle fatture, ogni fase del ciclo di vita del cliente viene gestita in modo preciso e coerente.",
         "Questo servizio è particolarmente adatto a <strong>realtà che gestiscono servizi digitali ricorrenti, piattaforme SaaS, grandi database anagrafici</strong> o <strong>processi con attivazioni e cessazioni frequenti.</strong> Anche i flussi amministrativi multi-step e le attività di billing ad alto volume trovano un supporto strutturato e affidabile.",
@@ -308,8 +300,7 @@ export const SERVICES = [
     name: "Data management",
     serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
     shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente.\nI training possono essere modulari, multi-sessione, personalizzati o standard.",
-    imageDesktop: "/images/Servizi/desktop/servizi/6.png",
-    imageMobile: "/images/Servizi/mobile/servizi/6.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali - Data management.webp",
     headerImage: "images/Servizi/detailed/dataManagement/bgHero",
     detailDescription: "Gestiamo i tuoi dati in modo sicuro, organizzato e conforme, garantendo continuità operativa e una base solida per automazioni e progetti digitali.",
     functionalityTitle: "Come funziona",
@@ -368,8 +359,7 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Un sistema dati sicuro, ordinato e sempre disponibile",
-      imageDesktop: "/images/Servizi/detailed/dataManagement/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/dataManagement/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/dataManagement/H - Training Aziendali - Sezione.webp",
       paragraphs: [
         "Il Data Management è diventato un elemento strategico per qualsiasi organizzazione che voglia operare con continuità, sicurezza e scalabilità. Con il nostro servizio <strong>strutturiamo, proteggiamo e rendiamo fruibili tutti i dati aziendali<strong>, integrandoli nei processi digitali e garantendo la loro disponibilità in ogni momento.",
         "Gestiamo l’intero ciclo del dato <strong>applicando criteri avanzati di cybersecurity e governance</strong>. Organizziamo le informazioni in modo ordinato e tracciabile, così i sistemi lavorano meglio e il personale può contare su basi dati affidabili e aggiornate.",
@@ -382,8 +372,7 @@ export const SERVICES = [
     name: "Training aziendali",
     serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
     shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
-    imageDesktop: "/images/Servizi/desktop/servizi/5.png",
-    imageMobile: "/images/Servizi/mobile/servizi/5.png",
+    image: "/images/Servizi/immagini/C - Servizi Generali -Training Aziendali.webp",
     headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
     detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull’utilizzo dei servizi e degli strumenti dell’azienda",
     functionalityTitle: "Come funziona",
@@ -428,8 +417,7 @@ export const SERVICES = [
     ],
     detailedContent: {
       title: "Training aziendali per migliorare competenze e processi",
-      imageDesktop: "/images/Servizi/detailed/trainingAziendali/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/trainingAziendali/serviceImageMobile.png",
+      image: "/images/Servizi/detailed/trainingAziendali/H - Training Aziendali - Sezione.webp",
       paragraphs: [
         "Offriamo training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere <strong>modulari, multi-sessione, personalizzati</strong> o <strong>standard</strong>.",
         "Coprono tutte le funzionalità del servizio, incluse quelle non utilizzate da tutti i ruoli, e <strong>forniscono istruzioni operative, best practice, procedure di sicurezza</Strong> e <strong>supporto diretto ai partecipanti.</strong>",

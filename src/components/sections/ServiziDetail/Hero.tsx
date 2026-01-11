@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 export default function Hero({ title, description, bgHero }: HeroProps) {
-  const backgroundImage = bgHero ? `url(/${bgHero}.png)` : 'url(/images/bgHero.png)';
+  const backgroundImage =`url(/${bgHero}.webp)`;
   
   return (
     <section 

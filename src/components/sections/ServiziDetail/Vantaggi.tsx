@@ -35,23 +35,97 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
         </h2>
 
         {/* Desktop: mostra tutte le card */}
-        <div className="hidden lg:grid lg:grid-cols-5 gap-8">
-          {advantages.map((advantage, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg py-8 px-4 shadow-lg flex flex-col items-center justify-centerh-full gap-4"
-            >
-              <h3 
-                className="font-bold text-xl text-center"
-                style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
-              >
-                {advantages[currentIndex].title}
-              </h3>
-              <p className="text-base" style={{ color: COLORS.TEXT }}>
-                {advantage.description}
-              </p>
+        <div className="hidden lg:block">
+          {advantages.length === 2 ? (
+            // 2 servizi: 50% ciascuno
+            <div className="grid grid-cols-2 gap-8">
+              {advantages.map((advantage, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-lg py-2 px-4 shadow-xl flex flex-col items-center justify-center h-full gap-4"
+                >
+                  <h3 
+                    className="font-bold text-xl text-center"
+                    style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
+                  >
+                    {advantage.title}
+                  </h3>
+                  <p className="text-base" style={{ color: COLORS.TEXT }}>
+                    {advantage.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          ) : advantages.length === 7 ? (
+            // 7 servizi: 4 sopra e 3 sotto, centrati
+            <div className="flex flex-col gap-8">
+              {/* Prima riga: 4 servizi */}
+              <div className="grid grid-cols-4 gap-8 justify-items-center">
+                {advantages.slice(0, 4).map((advantage, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-white rounded-lg py-2 px-4 shadow-xl flex flex-col items-center justify-center h-full gap-4 w-full"
+                  >
+                    <h3 
+                      className="font-bold text-xl text-center"
+                      style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
+                    >
+                      {advantage.title}
+                    </h3>
+                    <p className="text-base" style={{ color: COLORS.TEXT }}>
+                      {advantage.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              {/* Seconda riga: 3 servizi centrati */}
+              <div className="grid grid-cols-3 gap-8 justify-items-center max-w-[75%] mx-auto">
+                {advantages.slice(4, 7).map((advantage, index) => (
+                  <div 
+                    key={index + 4} 
+                    className="bg-white rounded-lg py-2 px-4 shadow-xl flex flex-col items-center justify-center h-full gap-4 w-full"
+                  >
+                    <h3 
+                      className="font-bold text-xl text-center"
+                      style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
+                    >
+                      {advantage.title}
+                    </h3>
+                    <p className="text-base" style={{ color: COLORS.TEXT }}>
+                      {advantage.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            // 5 servizi o altri: tutti in riga
+            <div 
+              className="grid gap-8"
+              style={{ 
+                gridTemplateColumns: advantages.length === 5 
+                  ? 'repeat(5, 1fr)' 
+                  : `repeat(${advantages.length}, 1fr)`
+              }}
+            >
+              {advantages.map((advantage, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-lg py-2 px-4 shadow-xl flex flex-col items-center justify-center h-full gap-4"
+                >
+                  <h3 
+                    className="font-bold text-xl text-center"
+                    style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
+                  >
+                    {advantage.title}
+                  </h3>
+                  <p className="text-base" style={{ color: COLORS.TEXT }}>
+                    {advantage.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Mobile: mostra una card alla volta con pulsanti */}
