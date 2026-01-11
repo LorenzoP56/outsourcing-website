@@ -16,13 +16,13 @@ export default function Servizi() {
       </p>
 
       <div className="flex lg:flex-row flex-col gap-8 justify-between items-start">
-        <Link href={`/servizi/${SERVICES[0].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[0].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/1.webp" 
+            src="/images/Home/desktop/servizi/A - Home - Assistenza Dedicata Agli Utenti - Copy.webp" 
             alt="Servizio 1" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="h-[210px] w-auto object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -34,13 +34,13 @@ export default function Servizi() {
           </div>
         </Link>
 
-        <Link href={`/servizi/${SERVICES[1].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[1].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/2.webp" 
-            alt="Servizio 1" 
+            src="/images/Home/desktop/servizi/A - Home - Contact Center.webp" 
+            alt="Servizio 2" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-[210px] object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -52,13 +52,13 @@ export default function Servizi() {
           </div>
         </Link>
 
-        <Link href={`/servizi/${SERVICES[2].slug}`} className="flex flex-col flex-1 lg:gap-8 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[2].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/3.webp" 
-            alt="Servizio 1" 
+            src="/images/Home/desktop/servizi/A - Home - Digital Back Office.webp" 
+            alt="Servizio 3" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-[210px] object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -72,13 +72,13 @@ export default function Servizi() {
       </div>
 
       <div className="flex lg:flex-row flex-col gap-8 justify-center items-start">
-        <Link href={`/servizi/${SERVICES[3].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[3].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/4.webp" 
-            alt="Servizio 1" 
+            src="/images/Home/desktop/servizi/A - Home - Gestione Amministrativa Digitale.webp" 
+            alt="Servizio 4" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-[210px] object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -90,13 +90,13 @@ export default function Servizi() {
           </div>
         </Link>
 
-        <Link href={`/servizi/${SERVICES[4].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[4].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/5.webp" 
-            alt="Servizio 1" 
+            src="/images/Home/desktop/servizi/A - Home - Data management.webp" 
+            alt="Servizio 5" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-[210px] object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -108,13 +108,13 @@ export default function Servizi() {
           </div>
         </Link>
 
-        <Link href={`/servizi/${SERVICES[5].slug}`} className="flex flex-col gap-8 lg:w-[calc((100%-4rem)/3)] w-full cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
+        <Link href={`/servizi/${SERVICES[5].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/6.webp" 
-            alt="Servizio 1" 
+            src="/images/Home/desktop/servizi/A - Home - Training Aziendali.webp" 
+            alt="Servizio 6" 
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-[210px] object-cover object-center rounded-[16px]"
           />
           <div className="flex flex-col lg:gap-4 gap-0 lg:p-0 px-4 pb-4"> 
             <h3 className="lg:text-[32px] lg:leading-[32px] text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>

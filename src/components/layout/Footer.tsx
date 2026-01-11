@@ -32,7 +32,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer ref={sectionRef} className="py-16" style={{ backgroundColor: '#2B2D2F', color: COLORS.TEXT }}>
+    <footer ref={sectionRef} className="py-16" style={{ backgroundColor: '#010310', color: COLORS.TEXT }}>
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">

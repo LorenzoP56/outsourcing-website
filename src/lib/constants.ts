@@ -11,86 +11,71 @@ export const COLORS = {
   PRIMARY: "linear-gradient(to right, #208AE4, #1C2776)",
   SECONDARY: "#000000",
   TERTIARY: "#FFFFFF",
-  TEXT:"#4A4A4A",
-  TEXT_TITLE:"#2C2C2C",
+  TEXT:"#2B2D2F",
+  TEXT_TITLE:"#010310",
   TEXT_WHITE:"#FFFFFF",
   BLUE: " #208AE4",
 };
 
 export const SERVICES = [
   {
-    slug: "digital-back-office",
-    name: "Digital Back Office",
-    serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
-    shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
-    imageDesktop: "/images/Servizi/desktop/servizi/1.png",
-    imageMobile: "/images/Servizi/mobile/servizi/1.png",
-    headerImage: "images/Servizi/detailed/digitalBank/bgHero",
-    detailDescription: "Supportiamo i tuoi processi digitali con attività operative strutturate, controlli accurati e gestione completa delle pratiche.",
-    functionalityTitle: "Cosa facciamo",
-    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
-    grid: true,
+    slug: "assistenza-dedicata",
+    name: "Assistenza dedicata agli utenti",
+    serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    imageDesktop: "/images/Servizi/desktop/servizi/4.png",
+    imageMobile: "/images/Servizi/mobile/servizi/4.png",
+    headerImage: "images/Servizi/detailed/assistenza/bgHero",
+    detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell’utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    functionalityTitle: "Come funziona",
+    functionalitySubtitle: "Ogni richiesta viene gestita da un operatore dedicato, che segue l’utente passo dopo passo in tutte le fasi:",
+    grid: false,
     functionality: [
       {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/1.png",
-        description: "Verifiche documentali per onboarding utenti, attivazioni, compliance, recupero informazioni e gestione pratiche."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/1.png",
+        title: "Comprensione del servizio digitale",
+        description: "Aiutiamo l’utente a capire chiaramente come funziona il servizio messo a disposizione dall’azienda."
       },
       {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/2.png",
-        description: "Controlli di identità tramite sistemi digitali (adeguata verifica della clientela, OTP, video-identificazione dove prevista)."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/2.png",
+        title: "Attivazioni e configurazioni guidate",
+        description: "Supportiamo gli utenti in attivazioni, configurazioni e accessi ai portali e agli strumenti digitali."
       },
       {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/3.png",
-        description: "Validazione dei requisiti (es. requisiti tecnici, amministrativi, anagrafici, contrattuali)."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/3.png",
+        title: "Supporto tecnico-operativo",
+        description: "Gestiamo richieste e problematiche tecniche, fornendo soluzioni rapide e istruzioni precise."
       },
       {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/4.png",
-        description: "Configurazioni personalizzate di account, profili, app, piattaforme o servizi digitali."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/4.png",
+        title: "Utilizzo corretto e sicuro",
+        description: "Accompagniamo gli utenti nell’uso conforme alle procedure interne e alle policy di sicurezza."
       },
       {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/5.png",
-        description: "Attivazioni on-demand con procedure previste da SLA e workflow approvati dal cliente."
-      },
-      {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/6.png",
-        description: "Rilascio dei servizi con gestione dall’inizio alla fine delle fasi post-attivazione."
-      },
-      {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/7.png",
-        description: "Monitoraggio pratiche e gestione degli stati avanzamento."
-      },
-      {
-        icon: "/images/Servizi/detailed/digitalBank/funzionalita/8.png",
-        description: "Eventuali escalation verso reparti tecnici o di supporto avanzato."
+        icon: "/images/Servizi/detailed/assistenza/funzionalita/5.png",
+        title: "Risoluzione delle difficoltà",
+        description: "Interveniamo per sbloccare situazioni critiche o rallentamenti operativi, ripristinando rapidamente la funzionalità del servizio."
       }
     ],
-    advantagesTitle: "Il Digital Back Office è ideale per aziende che:",
+    advantagesTitle: "Risultato",
     advantages: [
       {
-        description: "Gestiscono servizi digitali complessi"
+        title: "Servizi digitali sempre operativi",
+        description: "Risparmi su stipendi, benefit e formazione del personale amministrativo, convertendo costi fissi in variabili."
       },
       {
-        description: "Hanno bisogno di operazioni ripetitive ma sensibili"
-      },
-      {
-        description: "Devono garantire qualità e conformità nei processi"
-      },
-      {
-        description: "Vogliono alleggerire il carico operativo interno"
-      },
-      {
-        description: "Operano in settori regolamentati o ad alto volume di pratiche"
+        title: "Nessun carico sui reparti interni",
+        description: "Gestiamo l’assistenza quotidiana; IT, HR, Compliance e Digital Office mantengono governance e controllo."
       }
     ],
     detailedContent: {
-      title: "Un supporto operativo che semplifica la gestione dei tuoi processi digitali",
-      imageDesktop: "/images/Servizi/detailed/digitalBank/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/digitalBank/serviceImageMobile.png",
+      title: "Un supporto che semplifica l’uso dei servizi digitali e libera i tuoi reparti",
+      imageDesktop: "/images/Servizi/detailed/assistenza/serviceImageDesktop.png",
+      imageMobile: "/images/Servizi/detailed/assistenza/serviceImageMobile.png",
       paragraphs: [
-        "Nel Digital Back Office, <strong>ogni fase deve essere gestita con ordine e continuità</strong>: verifiche documentali, controlli di identità, validazione dei requisiti e attivazioni richiedono procedure chiare e una supervisione costante.",
-        "Per questo organizziamo tutte le attività in flussi strutturati, con <strong>tracciabilità completa</strong> e tempi di lavorazione definiti dagli SLA concordati.",
-        "Ci occupiamo delle operazioni che non possono essere automatizzate, assicurando precisione e uniformità, anche in presenza di volumi elevati o pratiche sensibili.",
-        "Il risultato è una <strong>gestione più fluida, meno rischi di errore</strong> e un team interno che può concentrarsi sulle attività strategiche."
+        "Con il nostro servizio di <strong>assistenza dedicata</strong>, i tuoi utenti ricevono un supporto diretto e personalizzato per <strong>comprendere</strong>, <strong>configurare e utilizzare correttamente gli strumenti digitali</strong> messi a disposizione dalla tua azienda. Gestiamo attivazioni, accessi, difficoltà operative, problemi tecnici e qualsiasi esigenza quotidiana che possa ostacolare l’operatività.",
+        "L’azienda mantiene il pieno controllo e la governance del servizio digitale, mentre noi gestiamo tutta l’operatività quotidiana. Questo permette ai reparti interni - come IT, HR, Compliance o Digital Office - di <strong>concentrarsi sulle attività strategiche</strong> senza dover assorbire richieste continue da parte degli utenti.",
+        "Il risultato è un <strong>servizio digitale sempre funzionante</strong>, <strong>conforme alle policy aziendali</strong> e <strong>utilizzato correttamente dagli utenti</strong>, con un supporto disponibile anche in <strong>lingua inglese</strong> quando necessario.",
       ]
     }
   },
@@ -169,6 +154,82 @@ export const SERVICES = [
     }
   },
   {
+    slug: "digital-back-office",
+    name: "Digital Back Office",
+    serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
+    shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
+    imageDesktop: "/images/Servizi/desktop/servizi/1.png",
+    imageMobile: "/images/Servizi/mobile/servizi/1.png",
+    headerImage: "images/Servizi/detailed/digitalBank/bgHero",
+    detailDescription: "Supportiamo i tuoi processi digitali con attività operative strutturate, controlli accurati e gestione completa delle pratiche.",
+    functionalityTitle: "Cosa facciamo",
+    functionalitySubtitle: "Il team di Outsourcing Group gestisce le fasi operative dei processi digitali, occupandosi di:",
+    grid: true,
+    functionality: [
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/1.png",
+        description: "Verifiche documentali per onboarding utenti, attivazioni, compliance, recupero informazioni e gestione pratiche."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/2.png",
+        description: "Controlli di identità tramite sistemi digitali (adeguata verifica della clientela, OTP, video-identificazione dove prevista)."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/3.png",
+        description: "Validazione dei requisiti (es. requisiti tecnici, amministrativi, anagrafici, contrattuali)."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/4.png",
+        description: "Configurazioni personalizzate di account, profili, app, piattaforme o servizi digitali."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/5.png",
+        description: "Attivazioni on-demand con procedure previste da SLA e workflow approvati dal cliente."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/6.png",
+        description: "Rilascio dei servizi con gestione dall’inizio alla fine delle fasi post-attivazione."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/7.png",
+        description: "Monitoraggio pratiche e gestione degli stati avanzamento."
+      },
+      {
+        icon: "/images/Servizi/detailed/digitalBank/funzionalita/8.png",
+        description: "Eventuali escalation verso reparti tecnici o di supporto avanzato."
+      }
+    ],
+    advantagesTitle: "Il Digital Back Office è ideale per aziende che:",
+    advantages: [
+      {
+        description: "Gestiscono servizi digitali complessi"
+      },
+      {
+        description: "Hanno bisogno di operazioni ripetitive ma sensibili"
+      },
+      {
+        description: "Devono garantire qualità e conformità nei processi"
+      },
+      {
+        description: "Vogliono alleggerire il carico operativo interno"
+      },
+      {
+        description: "Operano in settori regolamentati o ad alto volume di pratiche"
+      }
+    ],
+    detailedContent: {
+      title: "Un supporto operativo che semplifica la gestione dei tuoi processi digitali",
+      imageDesktop: "/images/Servizi/detailed/digitalBank/serviceImageDesktop.png",
+      imageMobile: "/images/Servizi/detailed/digitalBank/serviceImageMobile.png",
+      paragraphs: [
+        "Nel Digital Back Office, <strong>ogni fase deve essere gestita con ordine e continuità</strong>: verifiche documentali, controlli di identità, validazione dei requisiti e attivazioni richiedono procedure chiare e una supervisione costante.",
+        "Per questo organizziamo tutte le attività in flussi strutturati, con <strong>tracciabilità completa</strong> e tempi di lavorazione definiti dagli SLA concordati.",
+        "Ci occupiamo delle operazioni che non possono essere automatizzate, assicurando precisione e uniformità, anche in presenza di volumi elevati o pratiche sensibili.",
+        "Il risultato è una <strong>gestione più fluida, meno rischi di errore</strong> e un team interno che può concentrarsi sulle attività strategiche."
+      ]
+    }
+  },
+  {
     slug: "gestione-amministrativa-digitale-dei-clienti",
     name: "Gestione Operativa dei Dati Cliente",
     serviceDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
@@ -239,127 +300,6 @@ export const SERVICES = [
         "Gestiamo tutte le <strong>attività operative, amministrative</strong> e <strong>anagrafiche</strong> legate ai clienti che utilizzano i servizi digitali della tua azienda. Dalla creazione dei codici cliente all’allineamento delle anagrafiche, dagli incassi ai rimborsi fino al controllo delle fatture, ogni fase del ciclo di vita del cliente viene gestita in modo preciso e coerente.",
         "Questo servizio è particolarmente adatto a <strong>realtà che gestiscono servizi digitali ricorrenti, piattaforme SaaS, grandi database anagrafici</strong> o <strong>processi con attivazioni e cessazioni frequenti.</strong> Anche i flussi amministrativi multi-step e le attività di billing ad alto volume trovano un supporto strutturato e affidabile.",
         "Il risultato è <strong>un sistema amministrativo ordinato, aggiornato</strong> e <strong>completamente tracciato</strong>, che elimina gli errori e garantisce continuità operativa. L’azienda può così concentrarsi sulle attività a maggiore valore aggiunto, delegando a noi la gestione puntuale e professionale di tutto il ciclo amministrativo."
-      ]
-    }
-  },
-  {
-    slug: "assistenza-dedicata",
-    name: "Assistenza dedicata agli utenti",
-    serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
-    shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
-    imageDesktop: "/images/Servizi/desktop/servizi/4.png",
-    imageMobile: "/images/Servizi/mobile/servizi/4.png",
-    headerImage: "images/Servizi/detailed/assistenza/bgHero",
-    detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell’utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
-    functionalityTitle: "Come funziona",
-    functionalitySubtitle: "Ogni richiesta viene gestita da un operatore dedicato, che segue l’utente passo dopo passo in tutte le fasi:",
-    grid: false,
-    functionality: [
-      {
-        icon: "/images/Servizi/detailed/assistenza/funzionalita/1.png",
-        title: "Comprensione del servizio digitale",
-        description: "Aiutiamo l’utente a capire chiaramente come funziona il servizio messo a disposizione dall’azienda."
-      },
-      {
-        icon: "/images/Servizi/detailed/assistenza/funzionalita/2.png",
-        title: "Attivazioni e configurazioni guidate",
-        description: "Supportiamo gli utenti in attivazioni, configurazioni e accessi ai portali e agli strumenti digitali."
-      },
-      {
-        icon: "/images/Servizi/detailed/assistenza/funzionalita/3.png",
-        title: "Supporto tecnico-operativo",
-        description: "Gestiamo richieste e problematiche tecniche, fornendo soluzioni rapide e istruzioni precise."
-      },
-      {
-        icon: "/images/Servizi/detailed/assistenza/funzionalita/4.png",
-        title: "Utilizzo corretto e sicuro",
-        description: "Accompagniamo gli utenti nell’uso conforme alle procedure interne e alle policy di sicurezza."
-      },
-      {
-        icon: "/images/Servizi/detailed/assistenza/funzionalita/5.png",
-        title: "Risoluzione delle difficoltà",
-        description: "Interveniamo per sbloccare situazioni critiche o rallentamenti operativi, ripristinando rapidamente la funzionalità del servizio."
-      }
-    ],
-    advantagesTitle: "Risultato",
-    advantages: [
-      {
-        title: "Servizi digitali sempre operativi",
-        description: "Risparmi su stipendi, benefit e formazione del personale amministrativo, convertendo costi fissi in variabili."
-      },
-      {
-        title: "Nessun carico sui reparti interni",
-        description: "Gestiamo l’assistenza quotidiana; IT, HR, Compliance e Digital Office mantengono governance e controllo."
-      }
-    ],
-    detailedContent: {
-      title: "Un supporto che semplifica l’uso dei servizi digitali e libera i tuoi reparti",
-      imageDesktop: "/images/Servizi/detailed/assistenza/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/assistenza/serviceImageMobile.png",
-      paragraphs: [
-        "Con il nostro servizio di <strong>assistenza dedicata</strong>, i tuoi utenti ricevono un supporto diretto e personalizzato per <strong>comprendere</strong>, <strong>configurare e utilizzare correttamente gli strumenti digitali</strong> messi a disposizione dalla tua azienda. Gestiamo attivazioni, accessi, difficoltà operative, problemi tecnici e qualsiasi esigenza quotidiana che possa ostacolare l’operatività.",
-        "L’azienda mantiene il pieno controllo e la governance del servizio digitale, mentre noi gestiamo tutta l’operatività quotidiana. Questo permette ai reparti interni - come IT, HR, Compliance o Digital Office - di <strong>concentrarsi sulle attività strategiche</strong> senza dover assorbire richieste continue da parte degli utenti.",
-        "Il risultato è un <strong>servizio digitale sempre funzionante</strong>, <strong>conforme alle policy aziendali</strong> e <strong>utilizzato correttamente dagli utenti</strong>, con un supporto disponibile anche in <strong>lingua inglese</strong> quando necessario.",
-      ]
-    }
-  },
-  {
-    slug: "training-aziendali",
-    name: "Training aziendali",
-    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
-    shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
-    imageDesktop: "/images/Servizi/desktop/servizi/5.png",
-    imageMobile: "/images/Servizi/mobile/servizi/5.png",
-    headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
-    detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull’utilizzo dei servizi e degli strumenti dell’azienda",
-    functionalityTitle: "Come funziona",
-    functionalitySubtitle: "I training aziendali sono pensati per gruppi di utenti, anche numerosi, che devono essere formati in modo uniforme, completo e strutturato. Si tratta di sessioni di formazione dedicate a dipendenti delle aziende clienti che in genere vertono sull’utilizzo dei servizi e degli strumenti digitali in uso.",
-    grid: true,
-    functionality: [
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/1.png",
-        description: "Spieghiamo tutte le funzionalità del servizio digitale in uso nell’azienda"
-      },
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/2.png",
-        description: "Rispondiamo in diretta ai dubbi dei partecipanti"
-      },
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/3.png",
-        description: "Mostriamo i flussi operativi"
-      },
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/4.png",
-        description: "Guidiamo i dipendenti nell’utilizzo corretto, sicuro ed efficace del servizio"
-      },
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/5.png",
-        description: "Approfondiamo anche parti del servizio che non tutti utilizzeranno, per garantire una visione completa"
-      },
-      {
-        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/6.png",
-        description: "Possiamo dedicare più giornate o sessioni a moduli specifici"
-      }
-    ],
-    advantagesTitle: "I training possono essere:",
-    advantages: [
-      {
-        title: "Personalizzati",
-        description: "Costruiti su misura in base alle esigenze dell’azienda cliente, ai ruoli dei dipendenti, ai processi interni e agli ambiti di utilizzo del servizio digitale."
-      },
-      {
-        title: "Standard",
-        description: "Pensati per fornire una panoramica completa del servizio digitale in tutte le sue funzionalità."
-      }
-    ],
-    detailedContent: {
-      title: "Training aziendali per migliorare competenze e processi",
-      imageDesktop: "/images/Servizi/detailed/trainingAziendali/serviceImageDesktop.png",
-      imageMobile: "/images/Servizi/detailed/trainingAziendali/serviceImageMobile.png",
-      paragraphs: [
-        "Offriamo training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere <strong>modulari, multi-sessione, personalizzati</strong> o <strong>standard</strong>.",
-        "Coprono tutte le funzionalità del servizio, incluse quelle non utilizzate da tutti i ruoli, e <strong>forniscono istruzioni operative, best practice, procedure di sicurezza</Strong> e <strong>supporto diretto ai partecipanti.</strong>",
-        "L’obiettivo è garantire che l’azienda abbia dipendenti competenti, autonomi e pronti a utilizzare il servizio digitale in modo corretto, migliorando produttività, continuità operativa e sicurezza."
       ]
     }
   },
@@ -436,7 +376,67 @@ export const SERVICES = [
         "Il risultato è un’<strong>infrastruttura dati moderna e resiliente</strong>, capace di supportare progetti digitali, automazioni e iniziative basate sull’intelligenza artificiale. Un ambiente sicuro, scalabile e progettato per accompagnare la crescita dell’azienda nel tempo."
       ]
     }
-  }
+  },
+  {
+    slug: "training-aziendali",
+    name: "Training aziendali",
+    serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
+    shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
+    imageDesktop: "/images/Servizi/desktop/servizi/5.png",
+    imageMobile: "/images/Servizi/mobile/servizi/5.png",
+    headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
+    detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull’utilizzo dei servizi e degli strumenti dell’azienda",
+    functionalityTitle: "Come funziona",
+    functionalitySubtitle: "I training aziendali sono pensati per gruppi di utenti, anche numerosi, che devono essere formati in modo uniforme, completo e strutturato. Si tratta di sessioni di formazione dedicate a dipendenti delle aziende clienti che in genere vertono sull’utilizzo dei servizi e degli strumenti digitali in uso.",
+    grid: true,
+    functionality: [
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/1.png",
+        description: "Spieghiamo tutte le funzionalità del servizio digitale in uso nell’azienda"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/2.png",
+        description: "Rispondiamo in diretta ai dubbi dei partecipanti"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/3.png",
+        description: "Mostriamo i flussi operativi"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/4.png",
+        description: "Guidiamo i dipendenti nell’utilizzo corretto, sicuro ed efficace del servizio"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/5.png",
+        description: "Approfondiamo anche parti del servizio che non tutti utilizzeranno, per garantire una visione completa"
+      },
+      {
+        icon: "/images/Servizi/detailed/trainingAziendali/funzionalita/6.png",
+        description: "Possiamo dedicare più giornate o sessioni a moduli specifici"
+      }
+    ],
+    advantagesTitle: "I training possono essere:",
+    advantages: [
+      {
+        title: "Personalizzati",
+        description: "Costruiti su misura in base alle esigenze dell’azienda cliente, ai ruoli dei dipendenti, ai processi interni e agli ambiti di utilizzo del servizio digitale."
+      },
+      {
+        title: "Standard",
+        description: "Pensati per fornire una panoramica completa del servizio digitale in tutte le sue funzionalità."
+      }
+    ],
+    detailedContent: {
+      title: "Training aziendali per migliorare competenze e processi",
+      imageDesktop: "/images/Servizi/detailed/trainingAziendali/serviceImageDesktop.png",
+      imageMobile: "/images/Servizi/detailed/trainingAziendali/serviceImageMobile.png",
+      paragraphs: [
+        "Offriamo training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere <strong>modulari, multi-sessione, personalizzati</strong> o <strong>standard</strong>.",
+        "Coprono tutte le funzionalità del servizio, incluse quelle non utilizzate da tutti i ruoli, e <strong>forniscono istruzioni operative, best practice, procedure di sicurezza</Strong> e <strong>supporto diretto ai partecipanti.</strong>",
+        "L’obiettivo è garantire che l’azienda abbia dipendenti competenti, autonomi e pronti a utilizzare il servizio digitale in modo corretto, migliorando produttività, continuità operativa e sicurezza."
+      ]
+    }
+  },
 ];
 
 export const BLOGS = [

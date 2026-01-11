@@ -3,7 +3,7 @@ import { COLORS } from "@/lib/constants";
 
 export default function Affidati() {
   return (
-    <section className="lg:px-32 lg:py-16 flex flex-col gap-8 px-8 py-16 items-center justify-center" style={{ backgroundImage: 'url(/images/ChiSiamo/bgAffidati.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+    <section className="lg:px-32 lg:py-16 flex flex-col gap-8 px-8 py-16 items-center justify-center" style={{ backgroundImage: 'url(/images/ChiSiamo/bgAffidati.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       
       <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
         Affidati ad un partner operativo di fiducia
