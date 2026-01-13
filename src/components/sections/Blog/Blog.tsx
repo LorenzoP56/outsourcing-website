@@ -66,7 +66,7 @@ export default function Blog() {
           }`}
         >
           {currentBlogs.map((blog, index) => (
-            <div
+            <article
               key={startIndex + index}
               className="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white"
             >
@@ -106,11 +106,11 @@ export default function Blog() {
                 </p>
 
                 {/* Date */}
-                <p className="text-sm mt-auto" style={{ color: COLORS.TEXT }}>
+                <time className="text-sm mt-auto" style={{ color: COLORS.TEXT }}>
                   {blog.date}
-                </p>
+                </time>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 

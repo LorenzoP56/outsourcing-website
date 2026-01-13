@@ -3,7 +3,7 @@ import { title } from "process";
 export const NAVIGATION_LINKS = [
   { name: "Chi Siamo", href: "/chi-siamo" },
   { name: "Servizi", href: "/servizi", icon: "/images/icons/servizi.svg" },
-  { name: "Perché esternalizzare", href: "/esternalizzare" },
+  { name: "Perché esternalizzare", href: "/esternalizzazione" },
   { name: "Blog", href: "/blog" },
 ];
 
@@ -21,11 +21,13 @@ export const SERVICES = [
   {
     slug: "assistenza-dedicata",
     name: "Assistenza dedicata agli utenti",
+    title: "Help Desk Outsourcing | Assistenza Utenti H24 | Outsourcing Group",
+    metaDescription: "Servizio Help Desk in outsourcing per supporto utenti H24. Assistenza su SPID, firma digitale, attivazioni e configurazioni. Riduci il carico interno.",
     serviceDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     shortDescription: "Supportiamo i tuoi utenti in attivazioni, accessi, configurazioni e uso corretto degli strumenti digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     image: "/images/Servizi/immagini/C - Servizi Generali - Assistenza dedicata agli utenti.webp",
     headerImage: "images/Servizi/detailed/assistenza/bgHero",
-    detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell’utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
+    detailDescription: "Supportiamo i tuoi utenti nelle attivazioni, negli accessi e nell'utilizzo corretto dei servizi digitali, garantendo continuità operativa e riducendo il carico sui tuoi reparti interni.",
     functionalityTitle: "Come funziona",
     functionalitySubtitle: "Ogni richiesta viene gestita da un operatore dedicato, che segue l’utente passo dopo passo in tutte le fasi:",
     grid: false,
@@ -80,6 +82,8 @@ export const SERVICES = [
   {
     slug: "contact-center",
     name: "Contact Center",
+    title: "Contact Center Outsourcing | Customer Care Multicanale | Outsourcing Group",
+    metaDescription: "Contact Center in outsourcing: gestione multicanale telefono, email, chat, social. Outsourcing customer care professionale. Disponibilità H24.",
     serviceDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     shortDescription: "Gestiamo tutta la comunicazione in entrata dei clienti attraverso un modello multicanale: telefono, e-mail, chat, social, ticket e piattaforme digitali, garantendo risposte rapide, coerenti e sempre tracciate.",
     image: "/images/Servizi/immagini/C - Servizi Generali - Contact Center.webp",
@@ -150,8 +154,10 @@ export const SERVICES = [
     }
   },
   {
-    slug: "digital-back-office",
+    slug: "outsourcing-back-office-digitale",
     name: "Digital Back Office",
+    title: "Outsourcing Back Office Digitale | Gestione Processi | Outsourcing Group",
+    metaDescription: "Outsourcing back office digitale per processi non automatizzabili. Gestione documentale, verifiche manuali, controlli qualità. Riduci tempi e costi.",
     serviceDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     shortDescription: "Forniamo un servizio di Digital Back Office strutturato per supportare processi digitali che non possono essere completamente automatizzati.",
     image: "/images/Servizi/immagini/C - Servizi Generali - Digital Back Office.webp",
@@ -224,10 +230,12 @@ export const SERVICES = [
     }
   },
   {
-    slug: "gestione-operativa-digitale-dei-clienti",
+    slug: "gestione-anagrafiche-clienti-outsourcing",
     name: "Gestione Operativa dei Dati Cliente",
-    serviceDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
-    shortDescription: "Gestiamo la creazione e l’allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
+    title: "Gestione anagrafiche clienti in outsourcing | CRM e data entry",
+    metaDescription: "Esternalizzazione gestione anagrafiche clienti: data entry CRM, fatturazione, allineamento dati. Precisione garantita sui processi amministrativi.",
+    serviceDescription: "Gestiamo la creazione e l'allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
+    shortDescription: "Gestiamo la creazione e l'allineamento dei dati cliente su sistemi gestionali e CRM, garantendo coerenza dei flussi amministrativi e dei processi di fatturazione e incasso.",
     image: "/images/Servizi/immagini/C - Servizi Generali - Gestione operativa.webp",
     headerImage: "images/Servizi/detailed/gestioneAmministrativa/bgHero",
     detailDescription: "Organizziamo e gestiamo tutte le attività operative, anagrafiche e amministrative legate al ciclo di vita dei tuoi clienti, garantendo ordine, coerenza e controllo totale dei processi.",
@@ -298,6 +306,8 @@ export const SERVICES = [
   {
     slug: "data-management",
     name: "Data management",
+    title: "Data Management Outsourcing | Sicurezza Dati GDPR | Outsourcing Group",
+    metaDescription: "Data Management in outsourcing: gestione sicura dati aziendali, backup automatici, conformità GDPR. Governance dati professionale e certificata.",
     serviceDescription: "Gestione organizzata e sicura, secondo criteri di cybersecurity, di tutti i tuoi dati aziendali con backup automatici e accesso controllato.",
     shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente.\nI training possono essere modulari, multi-sessione, personalizzati o standard.",
     image: "/images/Servizi/immagini/C - Servizi Generali - Data management.webp",
@@ -370,11 +380,13 @@ export const SERVICES = [
   {
     slug: "training-aziendali",
     name: "Training aziendali",
+    title: "Formazione strumenti digitali aziendali | Outsourcing Group",
+    metaDescription: "Training aziendale su strumenti digitali: corsi personalizzati per SPID, firma elettronica, PEC. Formazione modulare per massimizzare l'adozione.",
     serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
     shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
     image: "/images/Servizi/immagini/C - Servizi Generali -Training Aziendali.webp",
     headerImage: "images/Servizi/detailed/trainingAziendali/bgHero",
-    detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull’utilizzo dei servizi e degli strumenti dell’azienda",
+    detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull'utilizzo dei servizi e degli strumenti dell'azienda",
     functionalityTitle: "Come funziona",
     functionalitySubtitle: "I training aziendali sono pensati per gruppi di utenti, anche numerosi, che devono essere formati in modo uniforme, completo e strutturato. Si tratta di sessioni di formazione dedicate a dipendenti delle aziende clienti che in genere vertono sull’utilizzo dei servizi e degli strumenti digitali in uso.",
     grid: true,

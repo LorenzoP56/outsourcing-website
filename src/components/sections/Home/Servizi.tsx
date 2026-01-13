@@ -36,7 +36,7 @@ export default function Servizi() {
 
         <Link href={`/servizi/${SERVICES[1].slug}`} className="flex flex-col flex-1 gap-4 cursor-pointer lg:shadow-none shadow-lg" style={{ borderRadius: '16px' }}>
           <Image 
-            src="/images/Home/desktop/servizi/A - Home - Contact Center.webp" 
+            src="/img/home/A - Home - Contact Center (1).png" 
             alt="Servizio 2" 
             width={500}
             height={500}

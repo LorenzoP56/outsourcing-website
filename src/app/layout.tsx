@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ConditionalSections from "@/components/layout/ConditionalSections";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const asap = Asap({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it">
+      <GoogleTagManager gtmId="GTM-MSZNQ336" />
       <body className={`${asap.variable} ${jost.variable} ${asap.className} antialiased`}>
         <Header />
         <main className="pt-28">

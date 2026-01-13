@@ -40,7 +40,7 @@ export default function Affidati() {
               Il nostro team ti risponderà rapidamente per approfondire le esigenze della tua azienda.
             </p>
           </div>
-          <Button href="#" className="w-full" style={{ background: 'white', color: COLORS.TEXT }}>
+          <Button href="mailto:info@osgdigitaleconomy.com" className="w-full" style={{ background: 'white', color: COLORS.TEXT }}>
             Invia email
           </Button>
         </div>

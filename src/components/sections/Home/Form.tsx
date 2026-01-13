@@ -52,7 +52,7 @@ export default function Form() {
             <div className="flex items-start gap-2">
               <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
               <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
-                Accetto l'<a href="/privacy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
+                Accetto l'<a href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
               </label>
             </div>
             <Button type="submit" className="w-[300px]">

@@ -87,7 +87,7 @@ export default function Footer() {
                 Servizi
               </Link>
               <Link
-                href="/esternalizzare"
+                href="/esternalizzazione"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
@@ -112,8 +112,8 @@ export default function Footer() {
 
           {/* Servizi */}
           <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
-            isVisible 
-              ? 'opacity-100 translate-y-0' 
+            isVisible
+              ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
           }`}>
             <h3 className="text-white font-bold text-xl">
@@ -121,92 +121,93 @@ export default function Footer() {
             </h3>
             <nav className="flex flex-col gap-2">
               <Link
-                href="/chi-siamo"
+                href="/servizi/outsourcing-back-office-digitale"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Digital Back Office
               </Link>
               <Link
-                href="/servizi"
+                href="/servizi/contact-center"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Contact Center
               </Link>
               <Link
-                href="/esternalizzare"
+                href="/servizi/gestione-anagrafiche-clienti-outsourcing"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
-                Gestione Amministrativa Digitale
+                Gestione Operativa dei Dati Cliente
               </Link>
               <Link
-                href="/blog"
+                href="/servizi/assistenza-dedicata"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Assistenza dedicata agli utenti
               </Link>
               <Link
-                href="/contatti"
+                href="/servizi/data-management"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
                 Data management
               </Link>
               <Link
-                href="/contatti"
+                href="/servizi/training-aziendali"
                 className="text-base transition-colors duration-300"
                 style={{ color: COLORS.TEXT_WHITE }}
               >
-                Training Azendali
+                Training Aziendali
               </Link>
             </nav>
           </div>
 
           {/* Disponibilità */}
           <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
-            isVisible 
-              ? 'opacity-100 translate-y-0' 
+            isVisible
+              ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
           }`}>
             <h3 className="text-white font-bold text-xl">
               Disponibilità
             </h3>
-            <nav className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <div>
-                <h3 className="text-white font-bold text-xl">
+                <h4 className="text-white font-bold text-lg">
                   Lunedì - Venerdì
-                </h3>
+                </h4>
                 <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
                   09:00 - 19:00
                 </p>
               </div>
               <div>
-                <h3 className="text-white font-bold text-xl">
+                <h4 className="text-white font-bold text-lg">
                   Sabato e Domenica
-                </h3>
+                </h4>
                 <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
                   supporto attivabile su necessità operative o progetti dedicati
                 </p>
               </div>
-            </nav>
+            </div>
           </div>
 
           {/* Social Media */}
           <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
-            isVisible 
-              ? 'opacity-100 translate-y-0' 
+            isVisible
+              ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
           }`}>
-            <div className="flex gap-4">
+            <div className="flex gap-4" role="group" aria-label="Social media links">
               <Link
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-4xl transition-colors duration-300 hover:text-[#1877F2]"
                 style={{ color: COLORS.TEXT_WHITE }}
+                aria-label="Facebook"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </Link>
@@ -216,6 +217,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-4xl transition-colors duration-300 hover:text-[#000000]"
                 style={{ color: COLORS.TEXT_WHITE }}
+                aria-label="X (Twitter)"
               >
                 <FontAwesomeIcon icon={faXTwitter} />
               </Link>
@@ -225,11 +227,12 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-4xl transition-colors duration-300 hover:text-[#0A66C2]"
                 style={{ color: COLORS.TEXT_WHITE }}
+                aria-label="LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
             </div>
-            <nav className="flex flex-col gap-4">
+            <nav aria-label="Legal links" className="flex flex-col gap-4">
               <Link
                 href="/privacy-policy"
                 className="text-md transition-colors duration-300"

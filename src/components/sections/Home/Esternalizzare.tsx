@@ -58,18 +58,18 @@ export default function Esternalizzare() {
         </div>
 
         <div className="flex gap-6 lg:flex-row flex-col justify-center items-center mx-auto w-full">
-          <Button 
-            href="#" 
+          <Button
+            href="/contatti"
             className="w-[300px]"
           >
-            Richiedi preventivo
+            Richiedi un preventivo gratuito
           </Button>
-          <Button 
-            href="/contatti" 
+          <Button
+            href="/esternalizzazione"
             className="w-[300px]"
             style={{ background: 'white', color: COLORS.TEXT, border: '2px solid #E5E7EB' }}
           >
-            Contattaci
+            Scopri i vantaggi
           </Button>
         </div>
         

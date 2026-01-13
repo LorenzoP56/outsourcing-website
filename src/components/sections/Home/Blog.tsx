@@ -26,59 +26,59 @@ export default function Blog() {
 
       <div className="flex lg:flex-row flex-col gap-8">
 
-        <div className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
+        <article className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
           <Image src="/images/Home/desktop/blog/1.png" alt="Blog 1" width={500} height={500} className="w-full h-auto" />
           <div className="flex flex-col gap-2 px-8 py-4">
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
               BACKOFFICE COMMERCIALE
-            </h4>
+            </span>
             <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Ottimizzazione dei processi di backoffice per aumentare l'efficienza
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
               Strategie innovative per digitalizzare e automatizzare le attività…
             </p>
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <time dateTime="2025-10-03" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
               3 ottobre 2025
-            </h4>
+            </time>
           </div>
-        </div>
+        </article>
 
-        <div className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
-          <Image src="/images/Home/desktop/blog/2.png" alt="Blog 1" width={500} height={500} className="w-full h-auto" />
+        <article className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
+          <Image src="/images/Home/desktop/blog/2.png" alt="Blog 2" width={500} height={500} className="w-full h-auto" />
           <div className="flex flex-col gap-2 px-8 py-4">
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
               CUSTOMER CARE
-            </h4>
+            </span>
             <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               Customer care multicanale: soddisfare le esigenze dei clienti moderni
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
               Come costruire un servizio clienti efficace attraverso tutti i canali…
             </p>
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <time dateTime="2025-09-30" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
               30 settembre 2025
-            </h4>
+            </time>
           </div>
-        </div>
+        </article>
 
-        <div className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
-          <Image src="/images/Home/desktop/blog/3.png" alt="Blog 1" width={500} height={500} className="w-full h-auto" />
+        <article className="flex flex-col gap-4 flex-1 bg-white" style={{ borderRadius: '16px' }}>
+          <Image src="/images/Home/desktop/blog/3.png" alt="Blog 3" width={500} height={500} className="w-full h-auto" />
           <div className="flex flex-col gap-2 px-8 py-4">
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
               CONFORMITÀ NORMATIVA
-            </h4>
+            </span>
             <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
               GDPR e protezione dei dati: come garantire la conformità aziendale
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT }}>
               Le migliori pratiche per gestire la privacy dei dati e rispettare...
             </p>
-            <h4 style={{ color: COLORS.TEXT , fontSize: '10px'}}>
+            <time dateTime="2025-10-05" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
               5 ottobre 2025
-            </h4>
+            </time>
           </div>
-        </div>
+        </article>
 
       </div>
 
