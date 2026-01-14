@@ -1,10 +1,24 @@
 "use client";
 
-import { BLOGS, COLORS } from "@/lib/constants";
+import { COLORS } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function Blog() {
+interface BlogPost {
+  slug: string;
+  category: string;
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+}
+
+interface BlogProps {
+  posts: BlogPost[];
+}
+
+export default function Blog({ posts }: BlogProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -14,18 +28,18 @@ export default function Blog() {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
+
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const blogsPerPage = isMobile ? 3 : 6;
-  const totalPages = Math.ceil(BLOGS.length / blogsPerPage);
+  const totalPages = Math.ceil(posts.length / blogsPerPage);
   const startIndex = currentPage * blogsPerPage;
   const endIndex = startIndex + blogsPerPage;
-  const currentBlogs = BLOGS.slice(startIndex, endIndex);
+  const currentBlogs = posts.slice(startIndex, endIndex);
 
   // Reset to first page when screen size changes
   useEffect(() => {
@@ -56,61 +70,75 @@ export default function Blog() {
     }
   };
 
+  // Se non ci sono post, mostra un messaggio
+  if (posts.length === 0) {
+    return (
+      <section className="lg:px-32 lg:py-16 px-8 py-16">
+        <p className="text-center text-gray-500">Nessun articolo disponibile al momento.</p>
+      </section>
+    );
+  }
+
   return (
     <section className="lg:px-32 lg:py-16 px-8 py-16">
       <div className="flex flex-col gap-16">
         {/* Blog Grid - 3x2 (3 columns, 2 rows) */}
-        <div 
+        <div
           className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300 ${
             isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
         >
           {currentBlogs.map((blog, index) => (
-            <article
+            <Link
               key={startIndex + index}
-              className="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white"
+              href={`/blog/${blog.slug}`}
+              className="block"
             >
-              {/* Image */}
-              <div className="relative w-full h-[240px]">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <article
+                className="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white h-full cursor-pointer"
+              >
+                {/* Image */}
+                <div className="relative w-full h-[240px]">
+                  <Image
+                    src={blog.image}
+                    alt={blog.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
-              {/* Content */}
-              <div className="flex flex-col gap-3 p-6">
-                {/* Category */}
-                {blog.category && (
-                  <span
-                    className="text-xs font-semibold uppercase tracking-wider"
-                    style={{ color: COLORS.BLUE }}
+                {/* Content */}
+                <div className="flex flex-col gap-3 p-6 flex-grow">
+                  {/* Category */}
+                  {blog.category && (
+                    <span
+                      className="text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: COLORS.BLUE }}
+                    >
+                      {blog.category}
+                    </span>
+                  )}
+
+                  {/* Title */}
+                  <h3
+                    className="text-2xl font-bold leading-tight"
+                    style={{ fontFamily: "var(--font-jost)", color: COLORS.TEXT }}
                   >
-                    {blog.category}
-                  </span>
-                )}
+                    {blog.title}
+                  </h3>
 
-                {/* Title */}
-                <h3
-                  className="text-2xl font-bold leading-tight"
-                  style={{ fontFamily: "var(--font-jost)", color: COLORS.TEXT }}
-                >
-                  {blog.title}
-                </h3>
+                  {/* Description */}
+                  <p className="text-sm leading-relaxed line-clamp-3" style={{ color: COLORS.TEXT }}>
+                    {blog.description}
+                  </p>
 
-                {/* Description */}
-                <p className="text-sm leading-relaxed" style={{ color: COLORS.TEXT }}>
-                  {blog.description}
-                </p>
-
-                {/* Date */}
-                <time className="text-sm mt-auto" style={{ color: COLORS.TEXT }}>
-                  {blog.date}
-                </time>
-              </div>
-            </article>
+                  {/* Date */}
+                  <time className="text-sm mt-auto" style={{ color: COLORS.TEXT }}>
+                    {blog.date}
+                  </time>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
 
@@ -190,4 +218,3 @@ export default function Blog() {
     </section>
   );
 }
-

@@ -120,6 +120,46 @@ export function generateServiceSchema(service: {
   };
 }
 
+// Article Schema Generator (per blog posts)
+export function generateArticleSchema(article: {
+  title: string;
+  description: string;
+  slug: string;
+  date: string;
+  image?: string;
+  category?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    image: article.image || `${baseUrl}/logo.png`,
+    datePublished: article.date,
+    dateModified: article.date,
+    author: {
+      "@type": "Organization",
+      name: "Outsourcing Group SRL",
+      url: baseUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Outsourcing Group SRL",
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/blog/${article.slug}`,
+    },
+    ...(article.category && {
+      articleSection: article.category,
+    }),
+  };
+}
+
 // Helper per inserire JSON-LD nella pagina
 export function jsonLdScript(schema: object) {
   return {
