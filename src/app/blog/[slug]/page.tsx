@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { getPostBySlug, getAllSlugs, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 import { organizationSchema, generateBreadcrumbSchema, generateArticleSchema, jsonLdScript } from "@/lib/jsonld";
 import { COLORS } from "@/lib/constants";
+import ArticleHero from "@/components/sections/Blog/ArticleHero";
 
 // ISR: rigenera la pagina ogni 60 secondi
 export const revalidate = 60;
@@ -43,12 +43,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       follow: true,
     },
     alternates: {
-      canonical: `https://www.outsourcinggroup.it/blog/${slug}`,
+      canonical: `https://www.osgdigitaleconomy.com/blog/${slug}`,
     },
     openGraph: {
       title: post.seo?.title || post.title,
       description: post.seo?.metaDesc || stripHtml(post.excerpt),
-      url: `https://www.outsourcinggroup.it/blog/${slug}`,
+      url: `https://www.osgdigitaleconomy.com/blog/${slug}`,
       siteName: "Outsourcing Group",
       locale: "it_IT",
       type: "article",
@@ -107,34 +107,13 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
 
       {/* Hero Section con Featured Image */}
-      <section className="relative min-h-[400px] flex items-center justify-center">
-        {/* Background Image */}
-        <Image
-          src={post.featuredImage?.node?.sourceUrl || "/images/Blog/bgBlog.webp"}
-          alt={post.featuredImage?.node?.altText || post.title}
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 text-center px-8 py-16 max-w-4xl">
-          {category && (
-            <span
-              className="inline-block text-xs font-semibold uppercase tracking-wider mb-4 px-4 py-2 rounded-full"
-              style={{ backgroundColor: COLORS.BLUE, color: "white" }}
-            >
-              {category}
-            </span>
-          )}
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-jost)" }}
-          >
-            {post.title}
-          </h1>
-          <time className="text-white/80 text-sm">{formattedDate}</time>
-        </div>
-      </section>
+      <ArticleHero
+        title={post.title}
+        category={category}
+        date={formattedDate}
+        image={post.featuredImage?.node?.sourceUrl || "/images/Blog/bgBlog.webp"}
+        imageAlt={post.featuredImage?.node?.altText || post.title}
+      />
 
       {/* Content Section */}
       <article className="lg:px-32 lg:py-16 px-8 py-12">

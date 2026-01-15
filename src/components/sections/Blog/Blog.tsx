@@ -4,6 +4,7 @@ import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { AnimatedSection, motion } from "@/components/animations";
 
 interface BlogPost {
   slug: string;
@@ -80,7 +81,7 @@ export default function Blog({ posts }: BlogProps) {
   }
 
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16">
+    <AnimatedSection className="lg:px-32 lg:py-16 px-8 py-16">
       <div className="flex flex-col gap-16">
         {/* Blog Grid - 3x2 (3 columns, 2 rows) */}
         <div
@@ -89,14 +90,20 @@ export default function Blog({ posts }: BlogProps) {
           }`}
         >
           {currentBlogs.map((blog, index) => (
-            <Link
+            <motion.div
               key={startIndex + index}
-              href={`/blog/${blog.slug}`}
-              className="block"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
             >
-              <article
-                className="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white h-full cursor-pointer"
+              <Link
+                href={`/blog/${blog.slug}`}
+                className="block h-full"
               >
+                <article
+                  className="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white h-full cursor-pointer"
+                >
                 {/* Image */}
                 <div className="relative w-full h-[240px]">
                   <Image
@@ -138,7 +145,8 @@ export default function Blog({ posts }: BlogProps) {
                   </time>
                 </div>
               </article>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
         </div>
 
@@ -215,6 +223,6 @@ export default function Blog({ posts }: BlogProps) {
           </div>
         )}
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

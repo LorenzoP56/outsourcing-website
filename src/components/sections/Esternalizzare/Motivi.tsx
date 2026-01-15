@@ -1,5 +1,8 @@
+"use client";
+
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
+import { AnimatedSection, fadeInLeft, fadeInRight, StaggerContainer, StaggerItem, staggerContainerSlow, fadeInUp } from "@/components/animations";
 
 export default function Motivi() {
   return (
@@ -7,11 +10,11 @@ export default function Motivi() {
 
       <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
 
-        <div className="flex flex-1 flex-col gap-4 items-center justify-center">
+        <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/1.webp" alt="Motivo 1" width={100} height={100} className="w-full h-auto" />
-        </div>
-        
-        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
+        </AnimatedSection>
+
+        <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -65,17 +68,17 @@ export default function Motivi() {
 
           </div>
 
-        </div>
+        </AnimatedSection>
 
       </div>
 
       <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8">
 
-        <div className="flex flex-1 flex-col gap-4 items-center justify-center">
+        <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/2.webp" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
-        </div>
-        
-        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
+        </AnimatedSection>
+
+        <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -129,17 +132,17 @@ export default function Motivi() {
 
           </div>
 
-        </div>
+        </AnimatedSection>
 
       </div>
 
       <div className="flex lg:flex-row flex-col gap-8">
 
-        <div className="flex flex-1 flex-col gap-4 items-center justify-center">
+        <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col gap-4 items-center justify-center">
           <Image src="/images/Esternalizzare/motivi/3.webp" alt="Motivo 3" width={100} height={100} className="w-full h-auto" />
-        </div>
-        
-        <div className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
+        </AnimatedSection>
+
+        <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -195,7 +198,7 @@ export default function Motivi() {
 
           </div>
 
-        </div>
+        </AnimatedSection>
 
       </div>
 

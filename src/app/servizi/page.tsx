@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Servizi BPO e Outsourcing Back Office | Outsourcing Group",
   description: "Servizi BPO professionali: Contact Center, Digital Back Office, Data Management e Training. Esternalizza i processi aziendali e riduci i costi.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/servizi",
+    canonical: "https://www.osgdigitaleconomy.com/servizi",
   },
 };
 

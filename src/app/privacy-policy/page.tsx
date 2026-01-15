@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Outsourcing Group",
   description: "Informativa sulla privacy e trattamento dei dati personali di Outsourcing Group SRL in conformità al GDPR.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/privacy-policy",
+    canonical: "https://www.osgdigitaleconomy.com/privacy-policy",
   },
 };
 

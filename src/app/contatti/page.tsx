@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Richiedi una consulenza gratuita | Outsourcing Group",
   description: "Richiedi una consulenza gratuita sui nostri servizi di outsourcing. Preventivo personalizzato per Back Office, Contact Center, BPO. Risposta in 24h.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/contatti",
+    canonical: "https://www.osgdigitaleconomy.com/contatti",
   },
 };
 

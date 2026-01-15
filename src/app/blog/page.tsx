@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Blog Outsourcing | News su BPO e Back Office | Outsourcing Group",
   description: "Blog su outsourcing e BPO: articoli su customer care, esternalizzazione processi, GDPR e best practices. Aggiornamenti per decision maker.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/blog",
+    canonical: "https://www.osgdigitaleconomy.com/blog",
   },
 };
 

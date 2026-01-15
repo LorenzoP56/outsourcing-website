@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Cookie Policy | Outsourcing Group",
   description: "Informativa sull'uso dei cookie sul sito di Outsourcing Group SRL in conformità al GDPR.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/cookie-policy",
+    canonical: "https://www.osgdigitaleconomy.com/cookie-policy",
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Outsourcing e BPO Italia | Digital Back Office dal 1999 | Outsourcing Group",
   description: "Servizi di outsourcing e BPO per aziende italiane. Dal 1999 gestiamo Digital Back Office e Contact Center. Riduci i costi operativi fino al 40%.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it",
+    canonical: "https://www.osgdigitaleconomy.com",
   },
 };
 

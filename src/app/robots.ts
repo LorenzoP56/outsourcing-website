@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://www.outsourcinggroup.it/sitemap.xml',
+    sitemap: 'https://www.osgdigitaleconomy.com/sitemap.xml',
   }
 }

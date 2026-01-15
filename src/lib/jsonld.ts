@@ -1,6 +1,6 @@
 // JSON-LD Schema utilities per SEO
 
-const baseUrl = "https://www.outsourcinggroup.it";
+const baseUrl = "https://www.osgdigitaleconomy.com";
 
 // Organization Schema - da usare in tutte le pagine
 export const organizationSchema = {

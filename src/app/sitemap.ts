@@ -3,7 +3,7 @@ import { SERVICES } from '@/lib/constants'
 import { getAllPosts } from '@/lib/graph-ql/queries'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.outsourcinggroup.it'
+  const baseUrl = 'https://www.osgdigitaleconomy.com'
 
   // Pagine statiche
   const staticPages: MetadataRoute.Sitemap = [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Perché Esternalizzare? | Vantaggi Outsourcing BPO | Outsourcing Group",
   description: "Scopri i vantaggi dell'esternalizzazione: riduci i costi fino al 40%, aumenta efficienza e focus sul core business. Guida completa al BPO.",
   alternates: {
-    canonical: "https://www.outsourcinggroup.it/esternalizzazione",
+    canonical: "https://www.osgdigitaleconomy.com/esternalizzazione",
   },
 };
 

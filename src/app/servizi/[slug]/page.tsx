@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: ServicePageProps) {
     title: service.title,
     description: service.metaDescription,
     alternates: {
-      canonical: `https://www.outsourcinggroup.it/servizi/${service.slug}`,
+      canonical: `https://www.osgdigitaleconomy.com/servizi/${service.slug}`,
     },
   };
 }
