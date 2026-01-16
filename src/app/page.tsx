@@ -7,6 +7,7 @@ import Form from "@/components/sections/Home/Form";
 import Blog from "@/components/sections/Home/Blog";
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, websiteSchema, jsonLdScript } from "@/lib/jsonld";
+import { getLatestPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 
 export const metadata: Metadata = {
   title: "Outsourcing e BPO Italia | Digital Back Office dal 1999 | Outsourcing Group",
@@ -16,7 +17,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const posts = await getLatestPosts(3);
+
+  const blogPosts = posts.map(post => ({
+    slug: post.slug,
+    category: post.categories.nodes[0]?.name || '',
+    title: post.title,
+    description: stripHtml(post.excerpt),
+    image: post.featuredImage?.node.sourceUrl || '/images/Home/desktop/blog/1.png',
+    date: formatDate(post.date),
+  }));
+
   return (
     <>
       <script
@@ -37,7 +49,7 @@ export default function Home() {
       <Esternalizzare />
       <Form />
       <DomandeFrequenti />
-      <Blog />
+      <Blog posts={blogPosts} />
     </>
   );
 }

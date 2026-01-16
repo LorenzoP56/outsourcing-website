@@ -1,0 +1,22 @@
+.motivi-number {
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(180deg, #0060AE 0%, rgba(0, 96, 174, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .motivi-number {
+    font-size: 120px;
+    top: -15px;
+    left: -5px;
+  }
+}

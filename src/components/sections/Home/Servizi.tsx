@@ -27,8 +27,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[0].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/images/Home/desktop/servizi/A - Home - Assistenza Dedicata Agli Utenti - Copy.webp"
-                alt="Servizio 1"
+                src="/website_images/Home/assistenza-help-desk-utenti-outsourcing.jpg"
+                alt="Supporto tecnico help desk per attivazioni e configurazioni strumenti digitali"
                 width={500}
                 height={500}
                 className="h-[210px] w-full object-cover object-center"
@@ -49,8 +49,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[1].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/img/home/A - Home - Contact Center (1).png"
-                alt="Servizio 2"
+                src="/website_images/Home/contact-center-in-outsourcing.jpg"
+                alt="Contact center in outsourcing per gestione clienti e supporto vendite"
                 width={500}
                 height={500}
                 className="w-full h-[210px] object-cover object-center"
@@ -71,8 +71,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[2].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/images/Home/desktop/servizi/A - Home - Digital Back Office.webp"
-                alt="Servizio 3"
+                src="/website_images/Home/digital-back-office-outsourcing.jpg"
+                alt="Gestione processi digitali back office con postazione professionale in outsourcing"
                 width={500}
                 height={500}
                 className="w-full h-[210px] object-cover object-center"
@@ -95,8 +95,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[3].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/images/Home/desktop/servizi/A - Home - Gestione Amministrativa Digitale.webp"
-                alt="Servizio 4"
+                src="/website_images/Home/gestione-operativa-dati-cliente-outsourcing.jpg"
+                alt="Gestione operativa dati cliente in outsourcing"
                 width={500}
                 height={500}
                 className="w-full h-[210px] object-cover object-center"
@@ -117,8 +117,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[4].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/images/Home/desktop/servizi/A - Home - Data management.webp"
-                alt="Servizio 5"
+                src="/website_images/Home/data-management-outsourcing-group.jpg"
+                alt="Team data management analizza dati aziendali su monitor - Outsourcing Group"
                 width={500}
                 height={500}
                 className="w-full h-[210px] object-cover object-center"
@@ -139,8 +139,8 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[5].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/images/Home/desktop/servizi/A - Home - Training Aziendali.webp"
-                alt="Servizio 6"
+                src="/website_images/Home/training-aziendale-strumenti-digitali-online.jpg"
+                alt="Sessione di training aziendale online su strumenti digitali - Outsourcing Group"
                 width={500}
                 height={500}
                 className="w-full h-[210px] object-cover object-center"

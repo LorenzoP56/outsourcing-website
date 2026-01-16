@@ -3,15 +3,29 @@
 import { COLORS } from "@/lib/constants";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, StaggerContainer, StaggerItem, AnimatedCard, motion, staggerContainerSlow } from "@/components/animations";
 
-export default function Blog() {
+interface BlogPost {
+  slug: string;
+  category: string;
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+}
+
+interface BlogProps {
+  posts: BlogPost[];
+}
+
+export default function Blog({ posts }: BlogProps) {
   return (
     <section
       className="lg:px-32 lg:py-16 flex flex-col gap-8 px-8 py-16"
       style={{
-        backgroundImage: 'url(/images/Home/desktop/bgBlog.webp)',
+        backgroundImage: 'url(/website_images/Home/bgBlog.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -29,67 +43,38 @@ export default function Blog() {
       </AnimatedSection>
 
       <StaggerContainer variants={staggerContainerSlow} className="flex lg:flex-row flex-col gap-8">
-
-        <StaggerItem className="flex-1">
-          <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden" style={{ borderRadius: '16px' }}>
-            <Image src="/images/Home/desktop/blog/1.png" alt="Blog 1" width={500} height={500} className="w-full h-auto" />
-            <div className="flex flex-col gap-2 px-8 py-4">
-              <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
-                BACKOFFICE COMMERCIALE
-              </span>
-              <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Ottimizzazione dei processi di backoffice per aumentare l'efficienza
-              </h3>
-              <p className="text-md" style={{ color: COLORS.TEXT }}>
-                Strategie innovative per digitalizzare e automatizzare le attività…
-              </p>
-              <time dateTime="2025-10-03" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
-                3 ottobre 2025
-              </time>
-            </div>
-          </AnimatedCard>
-        </StaggerItem>
-
-        <StaggerItem className="flex-1">
-          <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden" style={{ borderRadius: '16px' }}>
-            <Image src="/images/Home/desktop/blog/2.png" alt="Blog 2" width={500} height={500} className="w-full h-auto" />
-            <div className="flex flex-col gap-2 px-8 py-4">
-              <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
-                CUSTOMER CARE
-              </span>
-              <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Customer care multicanale: soddisfare le esigenze dei clienti moderni
-              </h3>
-              <p className="text-md" style={{ color: COLORS.TEXT }}>
-                Come costruire un servizio clienti efficace attraverso tutti i canali…
-              </p>
-              <time dateTime="2025-09-30" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
-                30 settembre 2025
-              </time>
-            </div>
-          </AnimatedCard>
-        </StaggerItem>
-
-        <StaggerItem className="flex-1">
-          <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden" style={{ borderRadius: '16px' }}>
-            <Image src="/images/Home/desktop/blog/3.png" alt="Blog 3" width={500} height={500} className="w-full h-auto" />
-            <div className="flex flex-col gap-2 px-8 py-4">
-              <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
-                CONFORMITÀ NORMATIVA
-              </span>
-              <h3 className="text-[20px] leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                GDPR e protezione dei dati: come garantire la conformità aziendale
-              </h3>
-              <p className="text-md" style={{ color: COLORS.TEXT }}>
-                Le migliori pratiche per gestire la privacy dei dati e rispettare...
-              </p>
-              <time dateTime="2025-10-05" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
-                5 ottobre 2025
-              </time>
-            </div>
-          </AnimatedCard>
-        </StaggerItem>
-
+        {posts.map((post, index) => (
+          <StaggerItem key={post.slug} className="flex-1">
+            <Link href={`/blog/${post.slug}`}>
+              <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden h-full rounded-lg" style={{ borderRadius: '16px' }}>
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-col gap-2 px-8 py-4 flex-grow">
+                  {post.category && (
+                    <span style={{ color: COLORS.TEXT, fontSize: '10px', fontWeight: 600 }}>
+                      {post.category.toUpperCase()}
+                    </span>
+                  )}
+                  <h3 className="text-[20px] leading-[24px] font-bold line-clamp-2" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+                    {post.title}
+                  </h3>
+                  <p className="text-md line-clamp-2" style={{ color: COLORS.TEXT }}>
+                    {post.description}
+                  </p>
+                  <time dateTime={post.date} className="mt-auto" style={{ color: COLORS.TEXT, fontSize: '10px' }}>
+                    {post.date}
+                  </time>
+                </div>
+              </AnimatedCard>
+            </Link>
+          </StaggerItem>
+        ))}
       </StaggerContainer>
 
       <AnimatedSection delay={0.5}>

@@ -12,8 +12,8 @@ export default function Team() {
       <AnimatedSection variants={fadeInLeft} className="flex lg:flex-1 w-full justify-center items-center relative">
         <div className="relative w-full aspect-square max-w-lg">
           <Image
-            src="/images/ChiSiamo/B - Chi siamo - Trasformiamo.webp"
-            alt="Group"
+            src="/website_images/ChiSiamo/team-outsourcing-group-professionisti.jpg"
+            alt="Competenza tecnologica e innovazione nei processi digitali - Outsourcing Group"
             fill
             className="object-cover h-[80vh] w-auto aspect-[5/7] flex w-[40%] rounded-[16px]"
           />

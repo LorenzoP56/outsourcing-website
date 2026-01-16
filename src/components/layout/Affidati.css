@@ -1,0 +1,5 @@
+.affidati-bg {
+  background:
+    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    url("/website_images/Home/contattaci-consulenza-outsourcing-group.jpg") center / cover no-repeat;
+}

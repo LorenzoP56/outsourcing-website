@@ -1,5 +1,7 @@
 'use client'
 
+import "./Form.css";
+
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, StaggerContainer, StaggerItem, motion, fadeInLeft, fadeInRight } from "@/components/animations";
@@ -8,13 +10,7 @@ export default function Form() {
   return (
     <section
       id="form"
-      className="lg:px-32 lg:py-16 px-8 py-16"
-      style={{
-        backgroundImage: 'url(/images/Home/desktop/bgForm.webp)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="form-bg lg:px-32 lg:py-16 px-8 py-16"
     >
       <div className="flex lg:flex-row flex-col w-full h-full justify-between lg:gap-16 gap-8">
 

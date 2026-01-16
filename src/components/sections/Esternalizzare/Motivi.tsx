@@ -1,17 +1,19 @@
 "use client";
 
+import "./Motivi.css";
+
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import { AnimatedSection, fadeInLeft, fadeInRight, StaggerContainer, StaggerItem, staggerContainerSlow, fadeInUp } from "@/components/animations";
 
 export default function Motivi() {
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16 flex flex-col lg:gap-32 gap-16">
+    <section className="lg:px-32 lg:py-32 px-8 py-16 flex flex-col lg:gap-40 gap-16">
 
-      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8">
+      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8 lg:justify-between">
 
-        <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/1.webp" alt="Motivo 1" width={100} height={100} className="w-full h-auto" />
+        <AnimatedSection variants={fadeInLeft} className="flex flex-col gap-4 items-center justify-center relative">
+          <Image src="/website_images/Esternalizzare/trasformare-costi-fissi-in-dati-misurabili-outsourcing.png" alt="Motivo 1" width={580} height={448} className="rounded-[16px]" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
@@ -72,10 +74,10 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8">
+      <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8 lg:justify-between">
 
-        <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/2.webp" alt="Motivo 2" width={100} height={100} className="w-full h-auto" />
+        <AnimatedSection variants={fadeInRight} className="flex flex-col gap-4 items-center justify-center">
+          <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.png" alt="Motivo 2" width={580} height={448} className="rounded-[16px]" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">
@@ -136,10 +138,10 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex lg:flex-row flex-col gap-8">
+      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8 lg:justify-between">
 
-        <AnimatedSection variants={fadeInLeft} className="flex flex-1 flex-col gap-4 items-center justify-center">
-          <Image src="/images/Esternalizzare/motivi/3.webp" alt="Motivo 3" width={100} height={100} className="w-full h-auto" />
+        <AnimatedSection variants={fadeInLeft} className="flex flex-col gap-4 items-center justify-center">
+          <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.png" alt="Motivo 3" width={580} height={448} className="rounded-[16px]" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInRight} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center">

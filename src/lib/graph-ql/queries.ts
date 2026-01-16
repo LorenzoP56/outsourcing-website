@@ -136,3 +136,16 @@ export function formatDate(isoDate: string): string {
 export function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, '').trim();
 }
+
+/**
+ * Recupera gli ultimi N post pubblicati
+ */
+export async function getLatestPosts(count: number = 3): Promise<Post[]> {
+  try {
+    const data = await client.request<PostsResponse>(GET_ALL_POSTS);
+    return data.posts.nodes.slice(0, count);
+  } catch (error) {
+    console.error('Errore nel recupero degli ultimi post:', error);
+    return [];
+  }
+}

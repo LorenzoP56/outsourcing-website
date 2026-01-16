@@ -1,5 +1,7 @@
 "use client";
 
+import "./Esternalizzare.css";
+
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
@@ -10,7 +12,7 @@ export default function Esternalizzare() {
     <section
       className="lg:px-32 lg:py-16"
     >
-      <div className="flex flex-col gap-8 lg:justify-center lg:items-center justify-start items-start lg:px-8 lg:py-12 gap-10 px-8 py-16 lg:rounded-[56px] lg:bg-[url(/images/Home/desktop/esternalizzare.webp)] lg:bg-cover lg:bg-center lg:bg-no-repeat">
+      <div className="esternalizzare-bg flex flex-col gap-8 lg:justify-center lg:items-center justify-start items-start lg:px-8 lg:py-12 gap-10 px-8 py-16 lg:rounded-[56px]">
         <AnimatedSection className="flex flex-col gap-4">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center text-[#2B2D2F] lg:text-[#FFFFFF]" style={{ fontFamily: 'var(--font-jost)' }}>
             Perché esternalizzare con Outsourcing Group

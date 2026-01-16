@@ -8,7 +8,7 @@ html {
 /* Hero background - solo su desktop */
 @media (min-width: 1024px) {
   .hero-bg {
-    background-image: url(/img/home/ciao.png);
+    background-image: url(/website_images/Home/servizi-outsourcing-italia.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

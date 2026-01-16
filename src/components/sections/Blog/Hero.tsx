@@ -1,5 +1,7 @@
 "use client";
 
+import "./Hero.css";
+
 import { COLORS } from "@/lib/constants";
 import { motion } from "@/components/animations";
 
@@ -28,7 +30,7 @@ const itemVariants = {
 
 export default function Hero() {
   return (
-    <section className="min-h-[90vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center" style={{ backgroundImage: 'url(/images/Blog/bgBlog.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+    <section className="blog-hero-bg min-h-[90vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center">
       <motion.div
         className="flex flex-col w-full h-full justify-center gap-4"
         variants={containerVariants}

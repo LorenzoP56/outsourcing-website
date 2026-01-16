@@ -11,17 +11,17 @@ export default function Group() {
     >
       <AnimatedSection variants={fadeInLeft} className="lg:block hidden">
         <Image
-          src="/images/Home/mobile/A - Home - Partner Affidabile 1.webp"
-          alt="Group"
-          height={500}
-          width={400}
-          className="object-cover h-[80vh] w-auto aspect-[5/7] flex w-[40%] rounded-[16px]"
+          src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg"
+          alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"
+          height={682}
+          width={477}
+          className="object-cover rounded-[16px]"
         />
       </AnimatedSection>
 
       <StaggerContainer className="flex flex-col flex-1 h-full justify-center gap-8">
         <StaggerItem className="w-full overflow-hidden rounded-[16px] lg:hidden block">
-          <Image src="/images/Home/mobile/A - Home - Partner Affidabile 1.webp" alt="Hero" width={500} height={500} className="w-full h-auto object-cover object-center scale-125" />
+          <Image src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg" alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali" width={800} height={600} className="w-full h-auto object-cover object-center scale-125" />
         </StaggerItem>
 
         <StaggerItem>

@@ -98,8 +98,8 @@ export default function DomandeFrequenti() {
           ))}
         </div>
 
-        <div 
-          className="border rounded-3xl p-8 flex flex-col justify-between min-w-[320px] max-w-[350px] lg:gap-0 gap-8"
+        <div
+          className="border rounded-3xl p-6 lg:p-8 flex flex-col justify-between w-full lg:min-w-[320px] lg:max-w-[350px] gap-8 lg:gap-0 overflow-hidden"
           style={{ borderColor: COLORS.TEXT }}
         >
           <div 
@@ -128,9 +128,9 @@ export default function DomandeFrequenti() {
             </p>
           </div>
           
-          <Button 
+          <Button
             href="/contatti"
-            className="w-full text-center"
+            className="w-full text-center !min-w-0"
           >
             Contattaci
           </Button>

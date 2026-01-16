@@ -25,7 +25,7 @@ export default function Form() {
             Contattaci per una consulenza personalizzata.
           </p>
         </div>
-        <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/images/Contatti/imgForm.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
+        <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/website_images/Contatti/imgForm.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
           <h3 className="text-white font-bold text-xl">
             Disponibilità
           </h3>
@@ -69,7 +69,7 @@ export default function Form() {
             <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
           </div>
           <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
-            <Button type="submit" className="w-[300px]">
+            <Button type="submit" className="w-full lg:w-[300px]">
               Invia la tua richiesta
             </Button>
           </motion.div>
