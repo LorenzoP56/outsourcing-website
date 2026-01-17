@@ -116,11 +116,11 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
 
       {/* Content Section */}
-      <article className="lg:px-32 lg:py-16 px-8 py-12">
+      <article className="lg:px-32 lg:py-16 px-4 md:px-8 py-8 md:py-12 overflow-hidden">
         <div className="max-w-4xl mx-auto">
           {/* Article Content */}
           <div
-            className="prose prose-lg max-w-none"
+            className="prose prose-lg max-w-none prose-img:max-w-full prose-img:h-auto prose-img:rounded-lg prose-pre:overflow-x-auto prose-pre:max-w-full [&_*]:max-w-full [&_iframe]:max-w-full [&_iframe]:w-full [&_img]:max-w-full [&_img]:h-auto"
             style={{ color: COLORS.TEXT }}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />

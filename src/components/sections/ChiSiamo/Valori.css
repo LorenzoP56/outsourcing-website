@@ -1,24 +1,24 @@
 .valori-card-1 {
   background:
-    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    linear-gradient(135deg, rgba(2,20,36,.95) 0%, rgba(13,84,145,.6) 50%, rgba(2,20,36,.95) 100%),
     url("/website_images/ChiSiamo/affidabilita-trasparenza-outsourcing-group.jpg") center / cover no-repeat;
 }
 
 .valori-card-2 {
   background:
-    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    linear-gradient(135deg, rgba(2,20,36,.95) 0%, rgba(13,84,145,.6) 50%, rgba(2,20,36,.95) 100%),
     url("/website_images/ChiSiamo/chi-siamo-flessibilita-partnership-stretta-mano.jpg") center / cover no-repeat;
 }
 
 .valori-card-3 {
   background:
-    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    linear-gradient(135deg, rgba(2,20,36,.95) 0%, rgba(13,84,145,.6) 50%, rgba(2,20,36,.95) 100%),
     url("/website_images/ChiSiamo/innovazione-competenza-outsourcing-group.jpg") center / cover no-repeat;
 }
 
 .valori-card-4 {
   background:
-    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    linear-gradient(135deg, rgba(2,20,36,.95) 0%, rgba(13,84,145,.6) 50%, rgba(2,20,36,.95) 100%),
     url("/website_images/ChiSiamo/assistenza-clienti-soddisfazione-outsourcing.jpg") center / cover no-repeat;
 }
 

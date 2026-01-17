@@ -53,7 +53,7 @@ const buttonVariants = {
 export default function Hero() {
   return (
     <section
-      className="min-h-[90vh] lg:pl-32 lg:pr-0 lg:py-16 p-8 hero-bg flex items-center"
+      className="min-h-[80vh] lg:min-h-[90vh] lg:pl-32 lg:pr-0 lg:py-16 p-8 hero-bg flex items-center"
     >
       <motion.div
         className="flex flex-col lg:w-[50vw] w-full h-full justify-center gap-8"
@@ -64,7 +64,7 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
           <motion.h1
             variants={itemVariants}
-            className="lg:text-[56px] lg:leading-[56px] text-[40px] leading-[40px] font-bold"
+            className="text-[32px] leading-[40px] min-[500px]:text-[40px] min-[500px]:leading-[48px] lg:text-[56px] lg:leading-[64px] font-bold"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_TITLE }}
           >
             Soluzioni professionali di Digital Back Office per supportare la crescita della tua azienda nell'era dell'IA
@@ -88,7 +88,7 @@ export default function Hero() {
           <motion.div variants={buttonVariants} whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
             <Button
               href="#form"
-              className="w-[300px]"
+              className="lg:min-w-[300px]"
             >
               Contattaci
             </Button>
@@ -96,7 +96,7 @@ export default function Hero() {
           <motion.div variants={buttonVariants} whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
             <Button
               href="/servizi"
-              className="w-[300px]"
+              className="lg:min-w-[300px]"
               style={{ background: 'white', color: COLORS.TEXT, border: '2px solid #E5E7EB' }}
             >
               Scopri i nostri servizi

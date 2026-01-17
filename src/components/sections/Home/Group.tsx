@@ -7,31 +7,40 @@ import { AnimatedSection, StaggerContainer, StaggerItem, fadeInLeft, fadeInRight
 export default function Group() {
   return (
     <section
-      className="min-h-[100vh] lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 p-8 items-center justify-center"
+      className="min-h-auto lg:min-h-[100vh] flex lg:flex-row flex-col px-6 py-8 lg:px-16 lg:py-16 lg:items-center"
     >
-      <AnimatedSection variants={fadeInLeft} className="lg:block hidden">
+      {/* Immagine mobile - full width */}
+      <div className="flex justify-center lg:hidden mb-16">
+        <Image
+          src="/website_images/Home/partner-outsourcing-affidabile-consulenza_mobile.webp"
+          alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"
+          width={659}
+          height={437}
+          className="h-auto object-cover object-center rounded-[16px]"
+        />
+      </div>
+
+      {/* Immagine desktop */}
+      <AnimatedSection variants={fadeInLeft} className="hidden lg:flex lg:w-1/2 items-center justify-center">
         <Image
           src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg"
           alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"
-          height={682}
-          width={477}
+          height={800}
+          width={500}
           className="object-cover rounded-[16px]"
         />
       </AnimatedSection>
 
-      <StaggerContainer className="flex flex-col flex-1 h-full justify-center gap-8">
-        <StaggerItem className="w-full overflow-hidden rounded-[16px] lg:hidden block">
-          <Image src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg" alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali" width={800} height={600} className="w-full h-auto object-cover object-center scale-125" />
-        </StaggerItem>
-
+      {/* Contenuto testuale */}
+      <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8 lg:pl-16">
         <StaggerItem>
-          <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[40px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
+          <h2 className="text-[28px] leading-[36px] md:text-[32px] md:leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             Outsourcing Group partner affidabile
           </h2>
         </StaggerItem>
 
         <StaggerItem>
-          <p className="text-md" style={{ color: COLORS.TEXT }}>
+          <p className="text-sm md:text-base" style={{ color: COLORS.TEXT }}>
             Dal 1999 gestiamo <span className="font-bold">attività di Back Office per servizi digitali</span> e collaboriamo con una delle maggiori autorità di certificazione in Europa, operante nei settori strategici del Digital Trust, della Cybersecurity e della Business Innovation.
             <br />
             <br />
@@ -40,9 +49,9 @@ export default function Group() {
         </StaggerItem>
 
         <StaggerItem>
-          <ul className="list-disc pl-5">
+          <ul className="list-disc pl-5 text-sm md:text-base space-y-1" style={{ color: COLORS.TEXT }}>
             <li>il <span className="font-bold">sovraccarico operativo</span>, che sottrae tempo e risorse alle attività strategiche;</li>
-            <li>la <span className="font-bold">errori frequenti</span>, spesso causati dall'assenza di procedure chiare e strutturate;</li>
+            <li>gli <span className="font-bold">errori frequenti</span>, spesso causati dall'assenza di procedure chiare e strutturate;</li>
             <li>i <span className="font-bold">tempi lunghi</span>, eliminando rallentamenti operativi e colli di bottiglia;</li>
             <li>i <span className="font-bold">costi elevati del personale</span>, evitando di mantenere risorse dedicate a micro-attività non core;</li>
             <li>la <span className="font-bold">mancanza di presidio strutturato</span>, garantendo controllo continuo e tracciabilità dei flussi;</li>
@@ -51,7 +60,7 @@ export default function Group() {
         </StaggerItem>
 
         <StaggerItem>
-          <p className="text-md" style={{ color: COLORS.TEXT }}>
+          <p className="text-sm md:text-base" style={{ color: COLORS.TEXT }}>
             Un team di professionisti qualificati potrà assicurarti <span className="font-bold">qualità, precisione</span> e <span className="font-bold">conformità normativa</span> in ogni attività gestita.
           </p>
         </StaggerItem>

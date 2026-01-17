@@ -33,9 +33,9 @@ export default function Footer() {
 
   return (
     <footer ref={sectionRef} className="py-16" style={{ backgroundColor: '#010310', color: COLORS.TEXT }}>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-6">
           {/* Logo and Description */}
           <div className={`lg:col-span-1 transition-all duration-1000 ease-out gap-2 flex flex-col ${
             isVisible 
@@ -54,7 +54,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="text-md text-center lg:text-left" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="text-md text-left" style={{ color: COLORS.TEXT_WHITE }}>
               <span className="font-bold uppercase">OutSourcing Group srl</span> <br />
               Piazza G. Zanellato 13 - 35131 (PD)<br />
               P. IVA 03475900282 <br />
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
 
           {/* Pagine */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-left ${
             isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -111,7 +111,7 @@ export default function Footer() {
           </div>
 
           {/* Servizi */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-left ${
             isVisible
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
@@ -166,7 +166,7 @@ export default function Footer() {
           </div>
 
           {/* Disponibilità */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-left ${
             isVisible
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
@@ -195,7 +195,7 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-center lg:text-left mx-auto ${
+          <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-left ${
             isVisible
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'

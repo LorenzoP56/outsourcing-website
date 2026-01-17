@@ -57,8 +57,8 @@ export default function Header() {
     console.log("Menu toggled:", !isMenuOpen);
   };
   return (
-    <header className="absolute top-0 left-0 w-full z-50 h-[10vh] py-8 bg-white lg:bg-transparent">
-      <div className="mx-auto px-6 lg:px-32 py-8 flex items-center justify-between h-full">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white">
+      <div className="mx-auto px-4 md:px-8 lg:px-24 py-4 lg:py-6 flex items-center justify-between">
 
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -76,7 +76,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center justify-end gap-8">
+        <div className="hidden xl:flex items-center justify-end gap-8">
           <nav className="flex items-center space-x-8">
             {NAVIGATION_LINKS.map((link, index) => {
   const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
@@ -159,7 +159,7 @@ export default function Header() {
         {/* Mobile Hamburger Button */}
         <Button
           onClick={toggleMenu}
-          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 relative !p-0 !min-w-0"
+          className="xl:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 relative !p-0 !min-w-0"
           style={{ background: 'transparent' }}
           aria-label="Toggle menu"
         >
@@ -186,7 +186,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMounted && (
           <div
-            className={`lg:hidden fixed top-[10vh] left-0 w-full bg-white shadow-lg transition-all duration-300 ${
+            className={`xl:hidden fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] bg-white shadow-lg transition-all duration-300 overflow-y-auto ${
               isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
           >

@@ -33,12 +33,12 @@ const itemVariants = {
 };
 
 export default function Hero({ title, description, bgHero }: HeroProps) {
-  const backgroundImage = `url(/${bgHero}.webp)`;
+  const backgroundImage = `linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%), url(/${bgHero}.jpg)`;
 
   return (
     <section
       className="lg:px-32 lg:py-24 px-8 py-16 flex flex-col gap-4 min-h-[70vh] justify-center"
-      style={{ backgroundImage, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+      style={{ backgroundImage, backgroundSize: 'cover', backgroundPosition: '50% 25%', backgroundRepeat: 'no-repeat' }}
     >
       <motion.div
         variants={containerVariants}
