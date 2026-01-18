@@ -43,8 +43,7 @@ export default function Funzionalita({ functionalityTitle, functionalitySubtitle
               <StaggerItem
                 key={index}
                 variants={scaleIn}
-                className="flex shadow-lg lg:px-8 lg:py-4 px-4 py-2 gap-4 items-center"
-                style={{ borderRadius: 16 }}
+                className="flex shadow-lg lg:px-8 lg:py-4 px-4 py-2 gap-4 items-center rounded-2xl"
               >
                 <Image src={item.icon} alt={`Icona ${item.title || item.description}`} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
                 <p
@@ -62,8 +61,7 @@ export default function Funzionalita({ functionalityTitle, functionalitySubtitle
               <StaggerItem
                 key={index}
                 variants={scaleIn}
-                className="flex flex-col xl:px-8 lg:py-4 px-4 py-2 gap-4 items-center"
-                style={{ borderRadius: 16 }}
+                className="flex flex-col xl:px-8 lg:py-4 px-4 py-2 gap-4 items-center rounded-2xl"
               >
                 <Image src={item.icon} alt={`Icona ${item.title || item.description}`} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
                 <h3

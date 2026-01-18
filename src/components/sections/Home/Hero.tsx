@@ -48,7 +48,7 @@ const buttonVariants = {
       ease: "easeOut",
     },
   },
-};
+} as const;
 
 export default function Hero() {
   return (

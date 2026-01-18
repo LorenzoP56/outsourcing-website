@@ -46,7 +46,7 @@ export default function Blog({ posts }: BlogProps) {
         {posts.map((post, index) => (
           <StaggerItem key={post.slug} className="flex-1">
             <Link href={`/blog/${post.slug}`}>
-              <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden h-full rounded-lg" style={{ borderRadius: '16px' }}>
+              <AnimatedCard className="flex flex-col gap-4 bg-white overflow-hidden h-full rounded-lg rounded-2xl">
                 <div className="relative w-full h-[200px]">
                   <Image
                     src={post.image}
