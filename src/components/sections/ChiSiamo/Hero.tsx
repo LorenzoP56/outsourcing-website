@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
           <motion.h1
             variants={itemVariants}
-            className="lg:text-[56px] lg:leading-[56px] text-[36px] leading-[36px] font-bold lg:text-center"
+            className="lg:text-[56px] lg:leading-[56px] text-[36px] leading-[40px] font-bold lg:text-center"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
             Professionisti al passo con l'evoluzione del settore digitale

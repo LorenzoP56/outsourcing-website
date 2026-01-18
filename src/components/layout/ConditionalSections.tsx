@@ -25,10 +25,36 @@ export default function ConditionalSections() {
         <DomandeFrequenti />
       </>
     );
-  } else {
+  } else if (pathname.includes('/servizi')) {
     return (
       <>
         <Affidati />
+        <DomandeFrequenti />
+      </>
+    );
+  } else if (pathname.includes('/chi-siamo')) {
+    return (
+      <>
+        <AffidatiServizi />
+      </>
+    );
+  } else if (pathname.includes('/blog')) {
+    return (
+      <>
+        <Affidati />
+        <DomandeFrequenti />
+      </>
+    );
+  } else if (pathname.includes('/privacy-policy') || pathname.includes('/cookie-policy')) {
+    return (
+      <>
+        <DomandeFrequenti />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <AffidatiServizi />
         <DomandeFrequenti />
       </>
     );

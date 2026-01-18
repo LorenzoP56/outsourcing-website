@@ -33,7 +33,7 @@ export default function Servizi() {
           >
             <div className="flex flex-col gap-4">
               <h3
-                className="lg:text-[40px] lg:leading-[40px] text-[20px] leading-[20px] font-bold"
+                className="lg:text-[40px] lg:leading-[40px] text-[24px] leading-[24px] font-bold"
                 style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
               >
                 {service.name}
