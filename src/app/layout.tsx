@@ -18,6 +18,9 @@ const jost = Jost({
   variable: "--font-jost",
 });
 
+// Set to true when ready to go live with the real domain
+const isProduction = false;
+
 export const metadata: Metadata = {
   title: "Outsourcing",
   description: "Outsourcing Website",
@@ -30,6 +33,17 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
   },
+  // Block indexing on demo/staging
+  ...(!isProduction && {
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    },
+  }),
 };
 
 export default function RootLayout({
