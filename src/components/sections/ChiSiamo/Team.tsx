@@ -7,7 +7,7 @@ import { AnimatedSection, fadeInLeft, fadeInRight } from "@/components/animation
 export default function Team() {
   return (
     <section
-      className="lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-16 px-8 py-16 items-center justify-center"
+      className="lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-4 px-8 py-16 items-center justify-center"
     >
       <AnimatedSection variants={fadeInLeft} className="flex lg:flex-1 w-full justify-center items-center relative">
         <div className="relative w-full aspect-square max-w-lg">

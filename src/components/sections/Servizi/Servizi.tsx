@@ -20,8 +20,8 @@ export default function Servizi() {
             <Image
               src={service.image}
               alt={service.name}
-              width={640}
-              height={252}
+              width={6336}
+              height={2688}
               className="w-full object-cover object-center rounded-[16px]"
             />
           </AnimatedSection>

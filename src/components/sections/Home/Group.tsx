@@ -32,7 +32,7 @@ export default function Group() {
       </AnimatedSection>
 
       {/* Contenuto testuale */}
-      <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8 lg:pl-16">
+      <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8 lg:pr-16">
         <StaggerItem>
           <h2 className="text-[28px] leading-[36px] md:text-[32px] md:leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             Outsourcing Group partner affidabile

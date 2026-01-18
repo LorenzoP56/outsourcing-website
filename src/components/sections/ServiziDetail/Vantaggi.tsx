@@ -37,90 +37,51 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
           </h2>
         </AnimatedSection>
 
-        {/* Desktop: mostra tutte le card */}
+        {/* Desktop: mostra card affiancate, max 4 per riga */}
         <div className="hidden lg:block">
-          {advantages.length === 2 ? (
-            <StaggerContainer variants={staggerContainerSlow} className="grid grid-cols-2 gap-8">
-              {advantages.map((advantage, index) => (
-                <StaggerItem key={index} variants={scaleIn}>
-                  <AnimatedCard className="bg-white rounded-lg py-4 px-6 shadow-xl flex flex-col items-center justify-center h-full gap-4">
-                    <h3
-                      className="font-bold text-xl text-center"
-                      style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
-                    >
-                      {advantage.title}
-                    </h3>
-                    <p className="text-base text-center" style={{ color: COLORS.TEXT }}>
-                      {advantage.description}
-                    </p>
-                  </AnimatedCard>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
-          ) : advantages.length === 7 ? (
-            <div className="flex flex-col gap-8">
-              <StaggerContainer variants={staggerContainerSlow} className="grid grid-cols-4 gap-8 justify-items-center">
-                {advantages.slice(0, 4).map((advantage, index) => (
-                  <StaggerItem key={index} variants={scaleIn} className="w-full">
-                    <AnimatedCard className="bg-white rounded-lg py-4 px-6 shadow-xl flex flex-col items-center justify-center h-full gap-4">
-                      <h3
-                        className="font-bold text-xl text-center"
-                        style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
-                      >
-                        {advantage.title}
-                      </h3>
-                      <p className="text-base text-center" style={{ color: COLORS.TEXT }}>
-                        {advantage.description}
-                      </p>
-                    </AnimatedCard>
-                  </StaggerItem>
-                ))}
-              </StaggerContainer>
-              <StaggerContainer variants={staggerContainerSlow} className="grid grid-cols-3 gap-8 justify-items-center max-w-[75%] mx-auto">
-                {advantages.slice(4, 7).map((advantage, index) => (
-                  <StaggerItem key={index + 4} variants={scaleIn} className="w-full">
-                    <AnimatedCard className="bg-white rounded-lg py-4 px-6 shadow-xl flex flex-col items-center justify-center h-full gap-4">
-                      <h3
-                        className="font-bold text-xl text-center"
-                        style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
-                      >
-                        {advantage.title}
-                      </h3>
-                      <p className="text-base text-center" style={{ color: COLORS.TEXT }}>
-                        {advantage.description}
-                      </p>
-                    </AnimatedCard>
-                  </StaggerItem>
-                ))}
-              </StaggerContainer>
-            </div>
-          ) : (
-            <StaggerContainer
-              variants={staggerContainerSlow}
-              className="grid gap-8"
-              style={{
-                gridTemplateColumns: advantages.length === 5
-                  ? 'repeat(5, 1fr)'
-                  : `repeat(${advantages.length}, 1fr)`
-              }}
-            >
-              {advantages.map((advantage, index) => (
-                <StaggerItem key={index} variants={scaleIn}>
-                  <AnimatedCard className="bg-white rounded-lg py-4 px-6 shadow-xl flex flex-col items-center justify-center h-full gap-4">
-                    <h3
-                      className="font-bold text-xl text-center"
-                      style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
-                    >
-                      {advantage.title}
-                    </h3>
-                    <p className="text-base text-center" style={{ color: COLORS.TEXT }}>
-                      {advantage.description}
-                    </p>
-                  </AnimatedCard>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
-          )}
+          {(() => {
+            const firstRowCount = Math.min(advantages.length, 4);
+            const secondRowItems = advantages.slice(4);
+            const secondRowCount = secondRowItems.length;
+
+            return (
+              <div className="flex flex-col gap-6">
+                {/* Prima riga: max 4 card */}
+                <StaggerContainer
+                  variants={staggerContainerSlow}
+                  className="flex flex-wrap justify-center gap-6"
+                >
+                  {advantages.slice(0, 4).map((advantage, index) => (
+                    <StaggerItem key={index} variants={scaleIn} className="w-[220px]">
+                      <AnimatedCard className="bg-white rounded-2xl py-6 px-5 border border-gray-200 flex flex-col items-center justify-center h-full gap-2 min-h-[100px]">
+                        <p className="text-sm text-center font-medium" style={{ color: COLORS.TEXT }}>
+                          {advantage.title || advantage.description}
+                        </p>
+                      </AnimatedCard>
+                    </StaggerItem>
+                  ))}
+                </StaggerContainer>
+
+                {/* Seconda riga: card rimanenti, centrate */}
+                {secondRowCount > 0 && (
+                  <StaggerContainer
+                    variants={staggerContainerSlow}
+                    className="flex flex-wrap justify-center gap-6"
+                  >
+                    {secondRowItems.map((advantage, index) => (
+                      <StaggerItem key={index + 4} variants={scaleIn} className="w-[220px]">
+                        <AnimatedCard className="bg-white rounded-2xl py-6 px-5 border border-gray-200 flex flex-col items-center justify-center h-full gap-2 min-h-[100px]">
+                          <p className="text-sm text-center font-medium" style={{ color: COLORS.TEXT }}>
+                            {advantage.title || advantage.description}
+                          </p>
+                        </AnimatedCard>
+                      </StaggerItem>
+                    ))}
+                  </StaggerContainer>
+                )}
+              </div>
+            );
+          })()}
         </div>
 
         {/* Mobile: mostra una card alla volta con pulsanti */}
