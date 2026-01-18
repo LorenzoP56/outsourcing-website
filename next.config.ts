@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    optimizeCss: true, // Ottimizza e riduce il CSS
+  },
 };
 
 export default nextConfig;

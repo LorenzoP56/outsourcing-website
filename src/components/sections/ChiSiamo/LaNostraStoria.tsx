@@ -151,10 +151,11 @@ export default function LaNostraStoria() {
                       <button
                         onClick={() => toggleItem(index)}
                         className="lg:pointer-events-none text-sm font-semibold uppercase tracking-wider px-4 py-2 rounded w-fit italic cursor-pointer lg:cursor-default"
-                        style={{ 
+                        style={{
                           background: COLORS.PRIMARY,
                           color: COLORS.TEXT_WHITE
                         }}
+                        aria-label={`Mostra dettagli ${event.date}`}
                       >
                         {event.date}
                       </button>
@@ -162,6 +163,8 @@ export default function LaNostraStoria() {
                         onClick={() => toggleItem(index)}
                         className="lg:hidden cursor-pointer"
                         style={{ color: COLORS.BLUE }}
+                        aria-label={isOpen ? `Chiudi dettagli ${event.date}` : `Apri dettagli ${event.date}`}
+                        aria-expanded={isOpen}
                       >
                         <span className="transition-transform duration-200 inline-block" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                           ▼

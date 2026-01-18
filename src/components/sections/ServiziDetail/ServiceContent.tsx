@@ -22,9 +22,10 @@ export default function ServiceContent({ detailedContent }: ServiceContentProps)
           <Image
             src={detailedContent.image}
             alt={detailedContent.title}
-            width={5632}
-            height={3072}
+            width={700}
+            height={380}
             className="w-full h-auto rounded-lg"
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </AnimatedSection>
 

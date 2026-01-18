@@ -30,8 +30,9 @@ export default function Servizi() {
                 src="/website_images/Home/assistenza-help-desk-utenti-outsourcing.jpg"
                 alt="Supporto tecnico help desk per attivazioni e configurazioni strumenti digitali"
                 width={500}
-                height={500}
+                height={210}
                 className="h-[210px] w-full object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -52,8 +53,9 @@ export default function Servizi() {
                 src="/website_images/Home/contact-center-in-outsourcing.jpg"
                 alt="Contact center in outsourcing per gestione clienti e supporto vendite"
                 width={500}
-                height={500}
+                height={210}
                 className="w-full h-[210px] object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -74,8 +76,9 @@ export default function Servizi() {
                 src="/website_images/Home/digital-back-office-outsourcing.jpg"
                 alt="Gestione processi digitali back office con postazione professionale in outsourcing"
                 width={500}
-                height={500}
+                height={210}
                 className="w-full h-[210px] object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -98,8 +101,9 @@ export default function Servizi() {
                 src="/website_images/Home/gestione-operativa-dati-cliente-outsourcing.jpg"
                 alt="Gestione operativa dati cliente in outsourcing"
                 width={500}
-                height={500}
+                height={210}
                 className="w-full h-[210px] object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -120,8 +124,9 @@ export default function Servizi() {
                 src="/website_images/Home/data-management-outsourcing-group.jpg"
                 alt="Team data management analizza dati aziendali su monitor - Outsourcing Group"
                 width={500}
-                height={500}
+                height={210}
                 className="w-full h-[210px] object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -142,8 +147,9 @@ export default function Servizi() {
                 src="/website_images/Home/training-aziendale-strumenti-digitali-online.jpg"
                 alt="Sessione di training aziendale online su strumenti digitali - Outsourcing Group"
                 width={500}
-                height={500}
+                height={210}
                 className="w-full h-[210px] object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="flex flex-col gap-3 p-5 flex-grow">
                 <h3 className="lg:text-[24px] lg:leading-[28px] text-[20px] leading-[24px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>

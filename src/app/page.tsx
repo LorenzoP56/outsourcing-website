@@ -31,6 +31,13 @@ export default async function Home() {
 
   return (
     <>
+      <link
+        rel="preload"
+        href="/website_images/Home/servizi-outsourcing-italia2.webp"
+        as="image"
+        type="image/webp"
+        fetchPriority="high"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(organizationSchema)}

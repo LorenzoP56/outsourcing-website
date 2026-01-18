@@ -53,6 +53,7 @@ export default function Blog({ posts }: BlogProps) {
                     alt={post.title}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                   />
                 </div>
                 <div className="flex flex-col gap-2 px-8 py-4 flex-grow">

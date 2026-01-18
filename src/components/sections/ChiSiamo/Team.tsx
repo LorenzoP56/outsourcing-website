@@ -16,6 +16,7 @@ export default function Team() {
             alt="Competenza tecnologica e innovazione nei processi digitali - Outsourcing Group"
             fill
             className="object-cover h-[80vh] w-auto aspect-[5/7] flex w-[40%] rounded-[16px]"
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
       </AnimatedSection>

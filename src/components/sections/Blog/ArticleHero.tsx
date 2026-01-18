@@ -44,6 +44,7 @@ export default function ArticleHero({ title, category, date, image, imageAlt }: 
         fill
         className="object-cover"
         priority
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/50" />
       <motion.div

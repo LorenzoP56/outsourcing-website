@@ -17,17 +17,19 @@ export default function Group() {
           width={659}
           height={437}
           className="h-auto object-cover object-center rounded-[16px]"
+          sizes="100vw"
         />
       </div>
 
       {/* Immagine desktop */}
       <AnimatedSection variants={fadeInUp} className="hidden lg:flex lg:w-1/2 items-center justify-center">
         <Image
-          src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg"
+          src="/website_images/Home/partner-outsourcing-affidabile-consulenza.webp"
           alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"
-          height={800}
-          width={500}
-          className="object-cover rounded-[16px]"
+          width={800}
+          height={600}
+          className="object-cover rounded-[16px] max-h-[800px] w-auto"
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
       </AnimatedSection>
 

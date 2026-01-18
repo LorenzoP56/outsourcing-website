@@ -125,6 +125,7 @@ export default function Header() {
         }}
         aria-haspopup="menu"
         aria-expanded={isServicesOpen}
+        aria-label="Mostra sottomenu servizi"
       >
         <ChevronDown size={18} strokeWidth={2} color={COLORS.TEXT} />
       </button>
@@ -240,6 +241,7 @@ export default function Header() {
                         }}
                         aria-haspopup="menu"
                         aria-expanded={isServicesOpen}
+                        aria-label="Mostra sottomenu servizi"
                       >
                         <ChevronDown size={18} strokeWidth={2} color={COLORS.TEXT} />
                       </button>
