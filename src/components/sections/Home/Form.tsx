@@ -4,7 +4,7 @@ import "./Form.css";
 
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
-import { AnimatedSection, StaggerContainer, StaggerItem, motion, fadeInLeft, fadeInRight } from "@/components/animations";
+import { AnimatedSection, StaggerContainer, StaggerItem, motion, fadeInUp } from "@/components/animations";
 
 export default function Form() {
   return (
@@ -14,7 +14,7 @@ export default function Form() {
     >
       <div className="flex lg:flex-row flex-col w-full h-full justify-between lg:gap-16 gap-8">
 
-        <AnimatedSection variants={fadeInLeft} className="flex flex-col gap-4 flex-1 justify-center items-start">
+        <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1 justify-center items-start">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             Affidati ad un partner operativo di fiducia
           </h2>
@@ -25,7 +25,7 @@ export default function Form() {
           </p>
         </AnimatedSection>
 
-        <AnimatedSection variants={fadeInRight} className="flex flex-col gap-4 flex-1">
+        <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1">
           <form className="flex flex-col gap-4" onSubmit={(e) => {
             e.preventDefault();
             console.log("Form submitted");

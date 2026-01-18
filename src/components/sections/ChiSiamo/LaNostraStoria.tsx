@@ -109,8 +109,8 @@ const timelineEvents: TimelineEvent[] = [
 
 export default function LaNostraStoria() {
   // State per tracciare quali elementi sono aperti (solo su mobile)
-  // Il primo elemento (index 0) è aperto di default
-  const [openItems, setOpenItems] = useState<Set<number>>(new Set([0]));
+  // Tutti gli elementi sono aperti di default
+  const [openItems, setOpenItems] = useState<Set<number>>(new Set(timelineEvents.map((_, i) => i)));
 
   const toggleItem = (index: number) => {
     setOpenItems(prev => {

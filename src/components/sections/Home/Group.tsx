@@ -2,7 +2,7 @@
 
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
-import { AnimatedSection, StaggerContainer, StaggerItem, fadeInLeft, fadeInRight, fadeInUp } from "@/components/animations";
+import { AnimatedSection, StaggerContainer, StaggerItem, fadeInUp } from "@/components/animations";
 
 export default function Group() {
   return (
@@ -21,7 +21,7 @@ export default function Group() {
       </div>
 
       {/* Immagine desktop */}
-      <AnimatedSection variants={fadeInLeft} className="hidden lg:flex lg:w-1/2 items-center justify-center">
+      <AnimatedSection variants={fadeInUp} className="hidden lg:flex lg:w-1/2 items-center justify-center">
         <Image
           src="/website_images/Home/partner-outsourcing-affidabile-consulenza.jpg"
           alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"

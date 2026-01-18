@@ -3,7 +3,7 @@
 import { COLORS, SERVICES } from "@/lib/constants";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import { AnimatedSection, motion, fadeInLeft, fadeInRight } from "@/components/animations";
+import { AnimatedSection, motion, fadeInUp } from "@/components/animations";
 
 export default function Servizi() {
   return (
@@ -14,7 +14,7 @@ export default function Servizi() {
           className={`flex ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} flex-col gap-8`}
         >
           <AnimatedSection
-            variants={index % 2 === 0 ? fadeInLeft : fadeInRight}
+            variants={fadeInUp}
             className="lg:w-[55%] w-full"
           >
             <Image
@@ -27,7 +27,7 @@ export default function Servizi() {
           </AnimatedSection>
 
           <AnimatedSection
-            variants={index % 2 === 0 ? fadeInRight : fadeInLeft}
+            variants={fadeInUp}
             className="flex flex-col flex-1 gap-8 lg:w-[40%] w-full justify-center items-center"
           >
             <div className="flex flex-col gap-4">

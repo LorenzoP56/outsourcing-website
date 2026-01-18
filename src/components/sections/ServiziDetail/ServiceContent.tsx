@@ -2,7 +2,7 @@
 
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
-import { AnimatedSection, fadeInLeft, fadeInRight } from "@/components/animations";
+import { AnimatedSection, fadeInUp } from "@/components/animations";
 
 interface DetailedContent {
   title: string;
@@ -18,7 +18,7 @@ export default function ServiceContent({ detailedContent }: ServiceContentProps)
   return (
     <section className="lg:px-32 lg:py-32 px-8 py-16 bg-white">
       <div className="flex lg:flex-row flex-col gap-12 items-center">
-        <AnimatedSection variants={fadeInLeft} className="lg:w-1/2 w-full">
+        <AnimatedSection variants={fadeInUp} className="lg:w-1/2 w-full">
           <Image
             src={detailedContent.image}
             alt={detailedContent.title}
@@ -28,7 +28,7 @@ export default function ServiceContent({ detailedContent }: ServiceContentProps)
           />
         </AnimatedSection>
 
-        <AnimatedSection variants={fadeInRight} className="lg:w-1/2 w-full flex flex-col gap-6">
+        <AnimatedSection variants={fadeInUp} className="lg:w-1/2 w-full flex flex-col gap-6">
           <h2
             className="lg:text-[40px] lg:leading-[48px] text-[28px] leading-[36px] font-bold"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}

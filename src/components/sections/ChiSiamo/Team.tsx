@@ -2,14 +2,14 @@
 
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
-import { AnimatedSection, fadeInLeft, fadeInRight } from "@/components/animations";
+import { AnimatedSection, fadeInUp } from "@/components/animations";
 
 export default function Team() {
   return (
     <section
       className="lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-4 px-8 py-16 items-center justify-center"
     >
-      <AnimatedSection variants={fadeInLeft} className="flex lg:flex-1 w-full justify-center items-center relative">
+      <AnimatedSection variants={fadeInUp} className="flex lg:flex-1 w-full justify-center items-center relative">
         <div className="relative w-full aspect-square max-w-lg">
           <Image
             src="/website_images/ChiSiamo/team-outsourcing-group-professionisti.jpg"
@@ -20,7 +20,7 @@ export default function Team() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection variants={fadeInRight} className="flex flex-col flex-1 h-full justify-center gap-8">
+      <AnimatedSection variants={fadeInUp} className="flex flex-col flex-1 h-full justify-center gap-8">
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
           Insieme, trasformiamo ogni servizio in risultato
         </h2>
