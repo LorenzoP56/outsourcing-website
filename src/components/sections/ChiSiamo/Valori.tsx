@@ -41,7 +41,7 @@ export default function Valori() {
   };
 
   return (
-    <section className="lg:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center" style={{ backgroundColor: 'rgba(0, 96, 174, 0.1)' }}>
+    <section className="xl:px-32 lg:py-16 flex flex-col gap-16 px-8 py-16 items-center justify-center" style={{ backgroundColor: 'rgba(0, 96, 174, 0.1)' }}>
       
       <AnimatedSection>
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
@@ -61,7 +61,7 @@ export default function Valori() {
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Affidabilità & Trasparenza
             </h3>
-            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="lg:text-md text-sm" style={{ color: COLORS.TEXT_WHITE }}>
               I nostri processi sono certificati e conformi alle normative, per darti sicurezza completa.
             </p>
           </motion.div>
@@ -76,7 +76,7 @@ export default function Valori() {
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Flessibilità & Partnership
             </h3>
-            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="lg:text-md text-sm" style={{ color: COLORS.TEXT_WHITE }}>
               Adattandoci a grandi aziende, PMI e PA, offriamo soluzioni su misura e white-label.
             </p>
           </motion.div>
@@ -91,7 +91,7 @@ export default function Valori() {
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Innovazione & Competenza
             </h3>
-            <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="lg:text-md text-sm" style={{ color: COLORS.TEXT_WHITE }}>
               Investiamo nella formazione continua del team e nell'adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell'esperienza umana.
             </p>
           </motion.div>
@@ -106,7 +106,7 @@ export default function Valori() {
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Sostenibilità & Etica
             </h3>
-            <p className="text-md text-left" style={{ color: COLORS.TEXT_WHITE }}>
+            <p className="lg:text-md text-sm text-left" style={{ color: COLORS.TEXT_WHITE }}>
               Promuoviamo politiche ESG, codice etico e modelli 231, perché il business etico genera valore duraturo.
             </p>
           </motion.div>
@@ -121,7 +121,7 @@ export default function Valori() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.3 }}
-          className="valori-card-mobile flex flex-col gap-4 items-center p-8 w-full rounded-[16px]"
+          className="valori-card-mobile flex flex-col gap-4 items-center p-8 w-full rounded-[16px] justify-center"
           style={{
             backgroundImage: `linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%), url(${valori[currentIndex].image})`,
             backgroundSize: 'cover',
@@ -133,7 +133,7 @@ export default function Valori() {
           <h3 className="text-[20px] leading-[20px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
             {valori[currentIndex].title}
           </h3>
-          <p className="text-md text-center" style={{ color: COLORS.TEXT_WHITE }}>
+          <p className="lg:text-md text-sm text-center" style={{ color: COLORS.TEXT_WHITE }}>
             {valori[currentIndex].description}
           </p>
         </motion.div>

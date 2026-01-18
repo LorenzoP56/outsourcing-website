@@ -39,6 +39,12 @@ export default function AffidatiServizi() {
             <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Messaggio</label>
             <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
           </div>
+          <div className="flex items-start gap-2">
+            <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
+            <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
+              Accetto l'<a href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
+            </label>
+          </div>
           <Button type="submit" className="w-[300px]">
             Invia la tua richiesta
           </Button>

@@ -19,7 +19,7 @@ interface FunzionalitaProps {
 
 export default function Funzionalita({ functionalityTitle, functionalitySubtitle, grid, functionality }: FunzionalitaProps) {
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16 bg-white">
+    <section className="xl:px-32 lg:px-16 lg:py-16 px-8 py-16 bg-white">
       <div className="flex flex-col gap-12">
 
         <AnimatedSection>
@@ -46,7 +46,7 @@ export default function Funzionalita({ functionalityTitle, functionalitySubtitle
                 className="flex shadow-lg lg:px-8 lg:py-4 px-4 py-2 gap-4 items-center"
                 style={{ borderRadius: 16 }}
               >
-                <Image src={item.icon} alt={""} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
+                <Image src={item.icon} alt={`Icona ${item.title || item.description}`} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
                 <p
                   className="flex-1 text-base"
                   style={{ fontFamily: 'var(--font-asap)', color: COLORS.TEXT }}
@@ -57,15 +57,15 @@ export default function Funzionalita({ functionalityTitle, functionalitySubtitle
             ))}
           </StaggerContainer>
         ) : (
-          <StaggerContainer variants={staggerContainerSlow} className="grid lg:grid-cols-5 grid-cols-1 mt-8">
+          <StaggerContainer variants={staggerContainerSlow} className="grid lg:grid-cols-5 grid-cols-1 xl:mt-8 lg:mt-4">
             {functionality.map((item, index) => (
               <StaggerItem
                 key={index}
                 variants={scaleIn}
-                className="flex flex-col lg:px-8 lg:py-4 px-4 py-2 gap-4 items-center"
+                className="flex flex-col xl:px-8 lg:py-4 px-4 py-2 gap-4 items-center"
                 style={{ borderRadius: 16 }}
               >
-                <Image src={item.icon} alt={""} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
+                <Image src={item.icon} alt={`Icona ${item.title || item.description}`} width={100} height={100} className="object-contain lg:w-[70px] lg:h-[70px] w-[50px] h-[50px]" />
                 <h3
                   className="font-bold text-xl text-center"
                   style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}

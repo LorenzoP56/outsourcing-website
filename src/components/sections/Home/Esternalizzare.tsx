@@ -10,7 +10,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem, motion, scaleIn, stagge
 export default function Esternalizzare() {
   return (
     <section
-      className="lg:px-32 lg:py-16"
+      className="xl:px-32 lg:px-24 lg:py-16"
     >
       <div className="esternalizzare-bg flex flex-col gap-8 lg:justify-center lg:items-center justify-start items-start lg:px-8 lg:py-12 gap-10 px-8 py-16 lg:rounded-[56px]">
         <AnimatedSection className="flex flex-col gap-4">
@@ -26,7 +26,7 @@ export default function Esternalizzare() {
 
           <StaggerItem variants={scaleIn} className="flex flex-col gap-4 lg:flex-1 w-full lg:justify-center lg:items-center items-start">
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
-              <Image src="/images/Home/desktop/esternalizzare/1.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
+              <Image src="/images/Home/desktop/esternalizzare/1.png" alt="Icona riduzione costi operativi outsourcing" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left text-[#2B2D2F] lg:text-[#FFFFFF]" style={{ fontFamily: 'var(--font-jost)' }}>
                 Riduzione dei costi operativi
               </h3>
@@ -38,7 +38,7 @@ export default function Esternalizzare() {
 
           <StaggerItem variants={scaleIn} className="flex flex-col gap-4 lg:flex-1 w-full lg:justify-center lg:items-center items-start">
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
-              <Image src="/images/Home/desktop/esternalizzare/2.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
+              <Image src="/images/Home/desktop/esternalizzare/2.png" alt="Icona efficienza e qualità professionale outsourcing" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left text-[#2B2D2F] lg:text-[#FFFFFF]" style={{ fontFamily: 'var(--font-jost)' }}>
                 Efficienza e qualità professionale
               </h3>
@@ -50,7 +50,7 @@ export default function Esternalizzare() {
 
           <StaggerItem variants={scaleIn} className="flex flex-col gap-4 lg:flex-1 w-full lg:justify-center lg:items-center items-start">
             <div className="flex lg:flex-col flex-row gap-4 lg:justify-center items-center">
-              <Image src="/images/Home/desktop/esternalizzare/3.png" alt="Card 1" width={100} height={100} className="w-[70px] h-[70px]" />
+              <Image src="/images/Home/desktop/esternalizzare/3.png" alt="Icona focus core business esternalizzazione" width={100} height={100} className="w-[70px] h-[70px]" />
               <h3 className="lg:text-[32px] lg:leading-[32px] text-[24px] leading-[24px] font-bold lg:text-center text-left text-[#2B2D2F] lg:text-[#FFFFFF]" style={{ fontFamily: 'var(--font-jost)' }}>
                 Focus totale sul core business
               </h3>

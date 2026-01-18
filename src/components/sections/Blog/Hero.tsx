@@ -26,11 +26,11 @@ const itemVariants = {
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
-};
+} as const;
 
 export default function Hero() {
   return (
-    <section className="blog-hero-bg lg:min-h-[90vh] min-h-[70vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center">
+    <section className="blog-hero-bg xl:min-h-[90vh] min-h-[70vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center">
       <motion.div
         className="flex flex-col w-full h-full justify-center gap-4"
         variants={containerVariants}

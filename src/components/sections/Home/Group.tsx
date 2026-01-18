@@ -7,10 +7,10 @@ import { AnimatedSection, StaggerContainer, StaggerItem, fadeInUp } from "@/comp
 export default function Group() {
   return (
     <section
-      className="min-h-auto lg:min-h-[100vh] flex lg:flex-row flex-col px-6 py-8 lg:px-16 lg:py-16 lg:items-center"
+      className="min-h-auto xl:min-h-[100vh] flex lg:flex-row flex-col px-6 py-8 lg:px-32 lg:py-16 lg:items-center xl:gap-16 gap-12"
     >
       {/* Immagine mobile - full width */}
-      <div className="flex justify-center lg:hidden mb-16">
+      <div className="flex justify-center items-center lg:hidden">
         <Image
           src="/website_images/Home/partner-outsourcing-affidabile-consulenza_mobile.webp"
           alt="Partner Outsourcing Group affianca il cliente nella gestione processi aziendali"
@@ -32,7 +32,7 @@ export default function Group() {
       </AnimatedSection>
 
       {/* Contenuto testuale */}
-      <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8 lg:pr-16">
+      <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8">
         <StaggerItem>
           <h2 className="text-[28px] leading-[36px] md:text-[32px] md:leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             Outsourcing Group partner affidabile

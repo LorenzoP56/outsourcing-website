@@ -7,7 +7,7 @@ import { AnimatedSection, fadeInUp } from "@/components/animations";
 export default function Team() {
   return (
     <section
-      className="lg:px-32 lg:py-16 flex lg:flex-row flex-col gap-4 px-8 py-16 items-center justify-center"
+      className="xl:px-32 lg:px-24 lg:py-16 flex lg:flex-row flex-col xl:gap-4 gap-16 lg:gap-16 px-8 py-16 items-center justify-center"
     >
       <AnimatedSection variants={fadeInUp} className="flex lg:flex-1 w-full justify-center items-center relative">
         <div className="relative w-full aspect-square max-w-lg">

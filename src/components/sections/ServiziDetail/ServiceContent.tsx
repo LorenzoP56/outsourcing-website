@@ -16,7 +16,7 @@ interface ServiceContentProps {
 
 export default function ServiceContent({ detailedContent }: ServiceContentProps) {
   return (
-    <section className="lg:px-32 lg:py-32 px-8 py-16 bg-white">
+    <section className="xl:px-32 lg:px-16 xl:py-32 px-8 py-16 bg-white">
       <div className="flex lg:flex-row flex-col gap-12 items-center">
         <AnimatedSection variants={fadeInUp} className="lg:w-1/2 w-full">
           <Image

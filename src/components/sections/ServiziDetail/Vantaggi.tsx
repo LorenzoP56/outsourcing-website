@@ -26,7 +26,7 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
   };
 
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16 bg-white">
+    <section className="xl:px-32 lg:px-16 lg:py-16 px-8 py-16 bg-white">
       <div className="flex flex-col gap-12">
         <AnimatedSection>
           <h2

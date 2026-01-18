@@ -25,7 +25,7 @@ const itemVariants = {
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
-};
+} as const;
 
 const buttonContainerVariants = {
   hidden: { opacity: 0 },
@@ -53,7 +53,7 @@ const buttonVariants = {
 export default function Hero() {
   return (
     <section
-      className="min-h-[80vh] lg:min-h-[90vh] lg:pl-32 lg:pr-0 lg:py-16 p-8 hero-bg flex items-center"
+      className="min-h-[70vh] xl:min-h-[90vh] md:pl-16 lg:pl-32 lg:pr-0 lg:py-16 p-8 hero-bg flex items-center"
     >
       <motion.div
         className="flex flex-col lg:w-[50vw] w-full h-full justify-center gap-8"

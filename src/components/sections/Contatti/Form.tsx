@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
-import { AnimatedSection, fadeInLeft, fadeInRight, motion } from "@/components/animations";
+import { AnimatedSection, fadeInUp, motion } from "@/components/animations";
 
 export default function Form() {
   return (
@@ -14,7 +14,7 @@ export default function Form() {
       className="flex lg:flex-row flex-col gap-4 lg:mx-32 lg:-mt-24 -mt-8 bg-white p-12 lg:w-[80%] lg:mx-auto lg:shadow-lg gap-8"
       style={{ borderRadius: '16px' }}
     >
-      <AnimatedSection variants={fadeInLeft} className="flex flex-col gap-8 flex-1">
+      <AnimatedSection variants={fadeInUp} className="flex flex-col gap-8 flex-1">
         <div className="flex flex-col gap-4">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold lg:text-center lg:text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             Affidati ad un partner operativo di fiducia
@@ -47,7 +47,7 @@ export default function Form() {
           </div>
         </div>
       </AnimatedSection>
-      <AnimatedSection variants={fadeInRight} className="flex flex-col gap-4 flex-1">
+      <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1">
         <form className="flex flex-col gap-4" onSubmit={(e) => {
           e.preventDefault();
           console.log("Form submitted");
@@ -67,6 +67,12 @@ export default function Form() {
           <div className="flex flex-col gap-2">
             <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Messaggio</label>
             <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
+          </div>
+          <div className="flex items-start gap-2">
+            <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
+            <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>
+              Accetto l'<a href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
+            </label>
           </div>
           <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
             <Button type="submit" className="w-full lg:w-[300px]">

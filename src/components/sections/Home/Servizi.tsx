@@ -8,7 +8,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem, AnimatedCard, fadeInUp,
 export default function Servizi() {
   return (
     <section
-      className="min-h-[100vh] lg:px-32 lg:py-16 flex flex-col gap-8 p-8"
+      className="xl:min-h-[100vh] min-h-[70vh] lg:px-16 xl:px-32 lg:py-16 flex flex-col gap-8 p-8"
     >
       <AnimatedSection>
         <h2 className="text-[40px] leading-[40px] text-[32px] leading-[32px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>

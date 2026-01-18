@@ -81,7 +81,7 @@ export default function Blog({ posts }: BlogProps) {
   }
 
   return (
-    <AnimatedSection className="lg:px-32 lg:py-16 px-8 py-16">
+    <AnimatedSection className="xl:px-32 lg:px-16 lg:py-16 px-8 py-16">
       <div className="flex flex-col gap-16">
         {/* Blog Grid - 3x2 (3 columns, 2 rows) */}
         <div

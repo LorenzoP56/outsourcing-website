@@ -317,7 +317,7 @@ export const cardHoverVariants = {
       damping: 20,
     },
   },
-};
+} as const;
 
 interface AnimatedCardProps {
   children: ReactNode;

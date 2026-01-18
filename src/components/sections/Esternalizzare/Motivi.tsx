@@ -8,9 +8,9 @@ import { AnimatedSection, StaggerContainer, StaggerItem, staggerContainerSlow, f
 
 export default function Motivi() {
   return (
-    <section className="lg:px-32 lg:py-32 px-8 py-16 flex flex-col lg:gap-40 gap-16">
+    <section className="xl:px-32 lg:px-16 lg:py-32 px-8 py-16 flex flex-col lg:gap-40 gap-16">
 
-      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8 lg:justify-between">
+      <div className="flex lg:flex-row flex-col xl:gap-24 gap-8 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center relative lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
           <Image src="/website_images/Esternalizzare/trasformare-costi-fissi-in-dati-misurabili-outsourcing.webp" alt="Analisi dei dati e monitoraggio delle performance per trasformare i costi fissi in dati misurabili tramite outsourcing" width={1160} height={894} className="rounded-[16px]" />
@@ -34,7 +34,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Riduzione dei costi di personale e infrastrutture
               </h3>
@@ -43,7 +43,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Flessibilità nei volumi di lavoro, anche stagionali
               </h3>
@@ -52,7 +52,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Nessun costo di formazione o turnover interno
               </h3>
@@ -61,7 +61,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Miglior utilizzo delle competenze interne
               </h3>
@@ -74,7 +74,7 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex lg:flex-row-reverse flex-col lg:gap-24 gap-8 lg:justify-between">
+      <div className="flex lg:flex-row-reverse flex-col xl:gap-24 gap-8 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
           <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.webp" alt="Gestione sicura dei dati aziendali e velocizzazione dei processi digitali grazie ai servizi di outsourcing operativo" width={1160} height={894} className="rounded-[16px]" />
@@ -98,7 +98,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Gestione conforme dei dati e procedure sempre aggiornate
               </h3>
@@ -107,7 +107,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Tempi di lavorazione più rapidi grazie a flussi operativi ottimizzati
               </h3>
@@ -116,7 +116,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Riduzione del rischio di errori, difformità e accessi non autorizzati
               </h3>
@@ -125,7 +125,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Tracciabilità completa delle attività e delle modifiche
               </h3>
@@ -138,7 +138,7 @@ export default function Motivi() {
 
       </div>
 
-      <div className="flex lg:flex-row flex-col lg:gap-24 gap-8 lg:justify-between">
+      <div className="flex lg:flex-row flex-col xl:gap-24 gap-8 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
           <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.webp" alt="Team di outsourcing impegnato nel problem solving e nella gestione delle criticità operative aziendali" width={1160} height={894} className="rounded-[16px]" />
@@ -164,7 +164,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Gestione immediata delle eccezioni e delle pratiche complesse
               </h3>
@@ -173,7 +173,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Meno interruzioni per il team interno
               </h3>
@@ -182,7 +182,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Riduzione dei colli di bottiglia operativi
               </h3>
@@ -191,7 +191,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="Motivo 2" width={100} height={100} className="w-[30px] h-[30px]" />
+              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 Maggiore qualità del risultato finale grazie a verifiche puntuali
               </h3>

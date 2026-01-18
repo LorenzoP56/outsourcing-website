@@ -30,7 +30,7 @@ const itemVariants = {
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
-};
+} as const;
 
 export default function Hero({ title, description, bgHero }: HeroProps) {
   const backgroundImage = `linear-gradient(135deg, rgba(2,20,36,.85) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.85) 100%), url(/${bgHero}.webp)`;

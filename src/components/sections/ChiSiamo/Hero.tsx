@@ -24,7 +24,7 @@ const itemVariants = {
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
-};
+} as const;
 
 export default function Hero() {
   return (

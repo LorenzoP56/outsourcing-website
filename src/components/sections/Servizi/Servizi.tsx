@@ -7,7 +7,7 @@ import { AnimatedSection, motion, fadeInUp } from "@/components/animations";
 
 export default function Servizi() {
   return (
-    <section className="lg:px-32 lg:py-16 px-8 py-16 lg:gap-32 gap-16 flex flex-col">
+    <section className="xl:px-32 lg:px-16 lg:pt-8 lg:pb-48 px-8 py-16 lg:gap-32 gap-16 flex flex-col">
       {SERVICES.map((service, index) => (
         <div
           key={service.slug}
@@ -15,7 +15,7 @@ export default function Servizi() {
         >
           <AnimatedSection
             variants={fadeInUp}
-            className="lg:w-[55%] w-full"
+            className="lg:w-[55%] w-full flex items-center justify-center"
           >
             <Image
               src={service.image}
