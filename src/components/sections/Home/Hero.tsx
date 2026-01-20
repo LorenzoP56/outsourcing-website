@@ -5,16 +5,28 @@ import Button from "@/components/ui/Button";
 import { motion } from "@/components/animations";
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: {},
   visible: {
-    opacity: 1,
     transition: {
       staggerChildren: 0.15,
-      delayChildren: 0.2,
+      delayChildren: 0.1,
     },
   },
 };
 
+// H1 sempre visibile per LCP veloce, solo leggero translateY
+const h1Variants = {
+  hidden: { y: 20 },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+} as const;
+
+// Altri elementi: opacity + translateY
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -63,7 +75,7 @@ export default function Hero() {
       >
         <div className="flex flex-col gap-4">
           <motion.h1
-            variants={itemVariants}
+            variants={h1Variants}
             className="text-[32px] leading-[40px] min-[500px]:text-[40px] min-[500px]:leading-[48px] lg:text-[56px] lg:leading-[64px] font-bold"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_TITLE }}
           >

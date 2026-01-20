@@ -24,8 +24,8 @@ const valori = [
   },
   {
     image: '/website_images/ChiSiamo/assistenza-clienti-soddisfazione-outsourcing.jpg',
-    title: 'Sostenibilità & Etica',
-    description: 'Promuoviamo politiche ESG, codice etico e modelli 231, perché il business etico genera valore duraturo.'
+    title: 'Assistenza & Soddisfazione',
+    description: 'Mettiamo il cliente al centro di ogni processo: rispondiamo con rapidità, precisione e un supporto umano e competente.'
   }
 ];
 

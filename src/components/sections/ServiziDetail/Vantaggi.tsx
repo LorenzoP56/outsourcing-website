@@ -52,10 +52,15 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
                   className="flex flex-wrap justify-center gap-6"
                 >
                   {advantages.slice(0, 4).map((advantage, index) => (
-                    <StaggerItem key={index} variants={scaleIn} className="w-[220px]">
-                      <AnimatedCard className="bg-white rounded-2xl py-6 px-5 border border-gray-200 flex flex-col items-center justify-center h-full gap-2 min-h-[100px]">
-                        <p className="text-sm text-center font-medium" style={{ color: COLORS.TEXT }}>
-                          {advantage.title || advantage.description}
+                    <StaggerItem key={index} variants={scaleIn} className="flex-1 min-w-[280px] max-w-[400px]">
+                      <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4 min-h-[180px]">
+                        {advantage.title && (
+                          <h3 className="text-lg text-center font-bold" style={{ color: COLORS.TEXT }}>
+                            {advantage.title}
+                          </h3>
+                        )}
+                        <p className="text-sm text-center" style={{ color: COLORS.TEXT }}>
+                          {advantage.description}
                         </p>
                       </AnimatedCard>
                     </StaggerItem>
@@ -69,10 +74,15 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
                     className="flex flex-wrap justify-center gap-6"
                   >
                     {secondRowItems.map((advantage, index) => (
-                      <StaggerItem key={index + 4} variants={scaleIn} className="w-[220px]">
-                        <AnimatedCard className="bg-white rounded-2xl py-6 px-5 border border-gray-200 flex flex-col items-center justify-center h-full gap-2 min-h-[100px]">
-                          <p className="text-sm text-center font-medium" style={{ color: COLORS.TEXT }}>
-                            {advantage.title || advantage.description}
+                      <StaggerItem key={index + 4} variants={scaleIn} className="flex-1 min-w-[280px] max-w-[400px]">
+                        <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4 min-h-[180px]">
+                          {advantage.title && (
+                            <h3 className="text-lg text-center font-bold" style={{ color: COLORS.TEXT }}>
+                              {advantage.title}
+                            </h3>
+                          )}
+                          <p className="text-sm text-center" style={{ color: COLORS.TEXT }}>
+                            {advantage.description}
                           </p>
                         </AnimatedCard>
                       </StaggerItem>

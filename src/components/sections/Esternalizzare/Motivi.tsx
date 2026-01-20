@@ -14,7 +14,7 @@ export default function Motivi() {
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center relative lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
           <Image src="/website_images/Esternalizzare/trasformare-costi-fissi-in-dati-misurabili-outsourcing.webp" alt="Analisi dei dati e monitoraggio delle performance per trasformare i costi fissi in dati misurabili tramite outsourcing"
-          width={1160} height={894} className="rounded-[16px] lg:max-h-[400px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
+          width={1160} height={894} className="rounded-[16px] lg:max-h-[600px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInUp} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center lg:w-1/2">
@@ -78,7 +78,8 @@ export default function Motivi() {
       <div className="flex lg:flex-row-reverse flex-col lg:gap-8 gap-16 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
-          <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.webp" alt="Gestione sicura dei dati aziendali e velocizzazione dei processi digitali grazie ai servizi di outsourcing operativo" width={1160} height={894} className="rounded-[16px] lg:max-h-[400px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.webp" 
+          alt="Gestione sicura dei dati aziendali e velocizzazione dei processi digitali grazie ai servizi di outsourcing operativo" width={1160} height={894} className="rounded-[16px] lg:max-h-[600px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInUp} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center lg:w-1/2">
@@ -142,7 +143,8 @@ export default function Motivi() {
       <div className="flex lg:flex-row flex-col lg:gap-8 gap-16 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
-          <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.webp" alt="Team di outsourcing impegnato nel problem solving e nella gestione delle criticità operative aziendali" width={1160} height={894} className="rounded-[16px] lg:max-h-[400px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.webp" 
+          alt="Team di outsourcing impegnato nel problem solving e nella gestione delle criticità operative aziendali" width={1160} height={894} className="rounded-[16px] lg:max-h-[600px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInUp} className="flex flex-1 flex-col lg:gap-16 gap-8 justify-center lg:w-1/2">

@@ -383,7 +383,7 @@ export const SERVICES = [
     title: "Formazione strumenti digitali aziendali | Outsourcing Group",
     metaDescription: "Training aziendale su strumenti digitali: corsi personalizzati per SPID, firma elettronica, PEC. Formazione modulare per massimizzare l'adozione.",
     serviceDescription: "Offriamo Training aziendali per gruppi di utenti finali sull'utilizzo dei servizi digitali dell'azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
-    shortDescription: "Gestione di funzioni \"non core\" e attività ripetitive in outsourcing. Ottimizzi costi e tempi, garantendo continuità e qualità operativa.",
+    shortDescription: "Offriamo Training aziendali per gruppi di utenti finali sull’utilizzo dei servizi digitali dell’azienda cliente. I training possono essere modulari, multi-sessione, personalizzati o standard.",
     image: "/website_images/Servizi/Pagina Generale/servizi-training-aziendali-formazione-online-outsourcing.webp",
     headerImage: "website_images/Servizi/TrainingAziendali/formazione-aziendale-remota-outsourcing",
     detailDescription: "Progettiamo ed eroghiamo attività di training dedicate a gruppi di utenti finali sull'utilizzo dei servizi e degli strumenti dell'azienda",

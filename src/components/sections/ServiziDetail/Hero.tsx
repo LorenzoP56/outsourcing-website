@@ -10,16 +10,28 @@ interface HeroProps {
 }
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: {},
   visible: {
-    opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
     },
   },
 };
 
+// H1 sempre visibile per LCP veloce, solo leggero translateY
+const h1Variants = {
+  hidden: { y: 20 },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+} as const;
+
+// Altri elementi: opacity + translateY
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -47,7 +59,7 @@ export default function Hero({ title, description, bgHero }: HeroProps) {
         className="flex flex-col gap-4"
       >
         <motion.h1
-          variants={itemVariants}
+          variants={h1Variants}
           className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-left"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >

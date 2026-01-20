@@ -44,7 +44,7 @@ export default function Esternalizzare() {
               </h3>
             </div>
             <p className="text-md lg:text-center text-left text-[#2B2D2F] lg:text-[#FFFFFF]">
-              Ogni processo è gestito da personale già formato.Il servizio è scalabile in base ai picchi operativi.L'azienda può così alzare la qualità del servizio ai clienti e abbattere errori, ritardi e inefficienze interne.
+              Ogni processo è gestito da personale già formato. Il servizio è scalabile in base ai picchi operativi. L'azienda può così alzare la qualità del servizio ai clienti e abbattere errori, ritardi e inefficienze interne.
             </p>
           </StaggerItem>
 

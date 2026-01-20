@@ -7,16 +7,28 @@ import Button from "@/components/ui/Button";
 import { motion } from "@/components/animations";
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: {},
   visible: {
-    opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.15,
       delayChildren: 0.1,
     },
   },
 };
 
+// H1 sempre visibile per LCP veloce, solo leggero translateY
+const h1Variants = {
+  hidden: { y: 20 },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+} as const;
+
+// Altri elementi: opacity + translateY
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -39,7 +51,7 @@ export default function Hero() {
         animate="visible"
       >
         <motion.h1
-          variants={itemVariants}
+          variants={h1Variants}
           className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
@@ -50,7 +62,7 @@ export default function Hero() {
           className="lg:text-xl text-base text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          L'outsourcing non è una semplice esternalizzazione di compiti, ma una strategia per rendere i processi più snelli, sicuri e sostenibili nel tempo. Esternalizzando libererai risorse per il core business, ridurrai i costi operativi, avrai accesso a competenze specializzate e potrai adattare facilmente la capacità alle variazioni della domanda.
+          L'outsourcing non è una semplice esternalizzazione di compiti, ma una strategia per rendere i processi più snelli, sicuri e sostenibili nel tempo.<br/><br/>Esternalizzando libererai risorse per il core business, ridurrai i costi operativi, avrai accesso a competenze specializzate e potrai adattare facilmente la capacità alle variazioni della domanda.
           <br/>
           <br/>
           Migliore capacità operativa significa crescita della tua azienda.

@@ -35,10 +35,17 @@ export default function ConditionalSections() {
   } else if (pathname.includes('/chi-siamo')) {
     return (
       <>
-        <AffidatiServizi />
+        <Affidati />
       </>
     );
   } else if (pathname.includes('/blog')) {
+    return (
+      <>
+        <Affidati />
+        <DomandeFrequenti />
+      </>
+    );
+  } else if (pathname.includes('/esternalizzazione')) {
     return (
       <>
         <Affidati />
