@@ -68,7 +68,7 @@ export default function Esternalizzare() {
               href="/contatti"
               className="w-[300px]"
             >
-              Richiedi un preventivo gratuito
+              Richiedi un preventivo
             </Button>
           </motion.div>
           <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>

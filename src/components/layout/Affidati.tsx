@@ -17,9 +17,9 @@ export default function Affidati() {
         Contattaci per una consulenza personalizzata.
       </p>
 
-      <div className="flex lg:flex-row flex-col gap-8 justify-center items-center">
+      <div className="flex lg:flex-row flex-col gap-8 justify-center lg:items-stretch items-center">
 
-        <div className="flex flex-col p-8 gap-8 w-[300px] items-center justify-center">
+        <div className="flex flex-col p-8 gap-8 w-[300px] items-center justify-start">
           <div className="flex flex-col gap-4 items-center justify-center">
             <h3 className="text-[24px] leading-[24px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Contattaci
@@ -33,7 +33,7 @@ export default function Affidati() {
           </Button>
         </div>
 
-        <div className="flex flex-col p-8 gap-8 w-[300px] items-center justify-center">
+        <div className="flex flex-col p-8 gap-8 w-[300px] items-center justify-start">
           <div className="flex flex-col gap-4 items-center justify-center">
             <h3 className="text-[24px] leading-[24px] font-bold text-center" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
               Scrivici
