@@ -53,7 +53,7 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
                 >
                   {advantages.slice(0, 4).map((advantage, index) => (
                     <StaggerItem key={index} variants={scaleIn} className="flex-1 min-w-[280px] max-w-[400px]">
-                      <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4 min-h-[180px]">
+                      <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4">
                         {advantage.title && (
                           <h3 className="text-lg text-center font-bold" style={{ color: COLORS.TEXT }}>
                             {advantage.title}
@@ -75,7 +75,7 @@ export default function Vantaggi({ advantagesTitle, advantages }: VantaggiProps)
                   >
                     {secondRowItems.map((advantage, index) => (
                       <StaggerItem key={index + 4} variants={scaleIn} className="flex-1 min-w-[280px] max-w-[400px]">
-                        <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4 min-h-[180px]">
+                        <AnimatedCard className="bg-white rounded-2xl py-8 px-6 border border-gray-200 flex flex-col items-center justify-start h-full gap-4">
                           {advantage.title && (
                             <h3 className="text-lg text-center font-bold" style={{ color: COLORS.TEXT }}>
                               {advantage.title}
