@@ -75,7 +75,7 @@ export default function Esternalizzare() {
             <Button
               href="/esternalizzazione"
               className="w-[300px]"
-              style={{ background: 'white', color: COLORS.TEXT, border: '2px solid #E5E7EB' }}
+              style={{ background: 'white', color: COLORS.TEXT }}
             >
               Scopri i vantaggi
             </Button>
