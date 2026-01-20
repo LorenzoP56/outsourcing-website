@@ -28,14 +28,13 @@ const h1Variants = {
   },
 } as const;
 
-// Altri elementi: opacity + translateY
+// Altri elementi: solo translateY (no opacity per LCP veloce)
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { y: 20 },
   visible: {
-    opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.5,
       ease: [0.25, 0.1, 0.25, 1],
     },
   },
@@ -69,9 +68,9 @@ export default function Hero() {
         </motion.p>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
+        initial={{ y: 20 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
         whileHover={{ scale: 1.03, y: -2 }}
         whileTap={{ scale: 0.97 }}
       >
