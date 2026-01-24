@@ -60,7 +60,7 @@ export default function Hero() {
           className="lg:text-xl text-base text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          Review sulle ultime novità in tema di outsourcing del back office digitale, customer care professionale e conformità normativa. Scopri strategie, best practice e soluzioni innovative per ottimizzare i tuoi processi aziendali.
+          Rimani aggiornato sulle ultime novità in tema di outsourcing del back office digitale, customer care professionale e conformità normativa. Scopri strategie, best practice e soluzioni innovative per ottimizzare i tuoi processi aziendali.
         </motion.p>
       </motion.div>
     </section>

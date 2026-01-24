@@ -73,7 +73,7 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[2].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/website_images/Home/digital-back-office-outsourcing.jpg"
+                src="/website_images/Home/digital-back-office-outsourcing.webp"
                 alt="Gestione processi digitali back office con postazione professionale in outsourcing"
                 width={500}
                 height={210}
@@ -98,7 +98,7 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[3].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/website_images/Home/gestione-operativa-dati-cliente-outsourcing.jpg"
+                src="/website_images/Home/gestione-operativa-dati-cliente-outsourcing.webp"
                 alt="Gestione operativa dati cliente in outsourcing"
                 width={500}
                 height={210}
@@ -121,7 +121,7 @@ export default function Servizi() {
           <Link href={`/servizi/${SERVICES[4].slug}`} className="h-full block">
             <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
               <Image
-                src="/website_images/Home/data-management-outsourcing-group.jpg"
+                src="/website_images/Home/data-management-outsourcing-group.webp"
                 alt="Team data management analizza dati aziendali su monitor - Outsourcing Group"
                 width={500}
                 height={210}

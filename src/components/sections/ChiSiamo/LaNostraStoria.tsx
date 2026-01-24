@@ -27,7 +27,7 @@ const timelineEvents: TimelineEvent[] = [
     title: "Archiviazione ottica",
     description: (
       <>
-        In questi anni il Consorzio si trasforma in <strong>Outsourcing Group Srl</strong> e contribuisce da uno dei primi grandi progetti nazionali di digitalizzazione: <strong>l'archiviazione ottica dei bilanci e delle pratiche delle Camere di Commercio italiane</strong>. Vengono digitalizzati milioni di documenti e costruite le prime infrastrutture di conservazione digitale sicura.
+        In questi anni il Consorzio si trasforma in <strong>Outsourcing Group Srl</strong> e contribuisce a uno dei primi grandi progetti nazionali di digitalizzazione: <strong>l'archiviazione ottica dei bilanci e delle pratiche delle Camere di Commercio italiane</strong>. Vengono digitalizzati milioni di documenti e costruite le prime infrastrutture di conservazione digitale sicura.
         È uno dei momenti più significativi nella storia dell'azienda: dalla digitalizzazione dati si passa alla digitalizzazione massiva dei documenti, gettando le basi per i moderni servizi di gestione documentale.
       </>
     ),

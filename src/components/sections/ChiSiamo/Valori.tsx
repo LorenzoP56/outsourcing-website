@@ -8,7 +8,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem, scaleIn, staggerContain
 
 const valori = [
   {
-    image: '/website_images/ChiSiamo/affidabilita-trasparenza-outsourcing-group.jpg',
+    image: '/website_images/ChiSiamo/affidabilita-trasparenza-outsourcing-group.webp',
     title: 'Affidabilità & Trasparenza',
     description: 'I nostri processi sono certificati e conformi alle normative, per darti sicurezza completa.'
   },
@@ -18,7 +18,7 @@ const valori = [
     description: 'Adattandoci a grandi aziende, PMI e PA, offriamo soluzioni su misura e white-label.'
   },
   {
-    image: '/website_images/ChiSiamo/innovazione-competenza-outsourcing-group.jpg',
+    image: '/website_images/ChiSiamo/innovazione-competenza-outsourcing-group.webp',
     title: 'Innovazione & Competenza',
     description: 'Investiamo nella formazione continua del team e nell\'adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell\'esperienza umana.'
   },
@@ -55,7 +55,7 @@ export default function Valori() {
         <StaggerItem variants={scaleIn} className="flex-1">
           <motion.div
             whileHover={{ scale: 1.03, y: -5 }}
-            className="valori-card-1 flex flex-col gap-4 items-start p-8 h-full rounded-[16px]"
+            className="valori-card-1 flex flex-col gap-4 items-start justify-center p-8 h-full rounded-[16px]"
             style={{ height: '300px' }}
           >
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
@@ -70,7 +70,7 @@ export default function Valori() {
         <StaggerItem variants={scaleIn} className="flex-1">
           <motion.div
             whileHover={{ scale: 1.03, y: -5 }}
-            className="valori-card-2 flex flex-col gap-4 items-start p-8 h-full rounded-[16px]"
+            className="valori-card-2 flex flex-col gap-4 items-start justify-center p-8 h-full rounded-[16px]"
             style={{ height: '300px' }}
           >
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
@@ -85,7 +85,7 @@ export default function Valori() {
         <StaggerItem variants={scaleIn} className="flex-1">
           <motion.div
             whileHover={{ scale: 1.03, y: -5 }}
-            className="valori-card-3 flex flex-col gap-4 items-start p-8 h-full rounded-[16px]"
+            className="valori-card-3 flex flex-col gap-4 items-start justify-center p-8 h-full rounded-[16px]"
             style={{ height: '300px' }}
           >
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
@@ -100,7 +100,7 @@ export default function Valori() {
         <StaggerItem variants={scaleIn} className="flex-1">
           <motion.div
             whileHover={{ scale: 1.03, y: -5 }}
-            className="valori-card-4 flex flex-col gap-4 items-start p-8 h-full rounded-[16px]"
+            className="valori-card-4 flex flex-col gap-4 items-start justify-center p-8 h-full rounded-[16px]"
             style={{ height: '300px' }}
           >
             <h3 className="lg:text-[20px] lg:leading-[20px] font-bold text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
