@@ -58,6 +58,7 @@ export default function Footer() {
               <span className="font-bold uppercase">OutSourcing Group srl</span> <br />
               Piazza G. Zanellato 13 - 35131 (PD)<br />
               P. IVA 03475900282 <br />
+              Tel +39 049 870 1855 <br />
               info@osgdigitaleconomy.com
             </p>
           </div>

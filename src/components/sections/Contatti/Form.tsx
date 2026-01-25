@@ -4,6 +4,7 @@ import * as React from 'react';
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, fadeInUp, motion } from "@/components/animations";
+import Link from 'next/link';
 
 export default function Form() {
   return (
@@ -22,7 +23,7 @@ export default function Form() {
           <p className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
             Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.
             <br />
-            Contattaci per una consulenza personalizzata.
+            Contattaci per una consulenza personalizzata lasciando i tuoi dati nel form o chiamando lo <Link href={"tel:+390498701855"} style={{color: COLORS.BLUE}}>049 870 1855</Link>
           </p>
         </div>
         <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/website_images/Contatti/imgForm.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
