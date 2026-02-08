@@ -1,0 +1,27 @@
+{
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "q1": {
+        "question": "What are the main benefits of outsourcing digital services?",
+        "answer": "Outsourcing allows you to reduce operational costs, access specialized skills, ensure constant regulatory compliance, and quickly scale resources according to business needs, without investments in infrastructure or internal training."
+      },
+      "q2": {
+        "question": "How long does it take to activate outsourcing services?",
+        "answer": "It depends on the project's complexity. For standard services such as data management or contact center, activation can happen within 2-4 weeks. For more complex projects requiring administrative process customization or document integration, it can extend to 4-6 weeks."
+      },
+      "q3": {
+        "question": "How do you differentiate from a simple external support service?",
+        "answer": "Unlike a traditional call center, Outsourcing Group operates as a true extension of your company's internal departments.\nOur team is directly informed by the client on the procedures to manage - for example, SPID activation, digital signatures, or PEC - ensuring precise and consistent responses aligned with service standards.\nIn this way, we relieve the organization from complex operational activities, ensuring continuity, quality, and full adherence to business processes."
+      },
+      "q4": {
+        "question": "Are your services scalable based on our needs?",
+        "answer": "Absolutely yes. Scalability is one of the main advantages of outsourcing. We can increase or reduce dedicated resources quickly, adapting to seasonal peaks, new projects, or business variations, always guaranteeing the agreed service level."
+      }
+    },
+    "cta": {
+      "title": "Have more questions?",
+      "description": "Click below to contact us and ask for any information you need."
+    }
+  }
+}

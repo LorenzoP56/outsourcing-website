@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { getPostBySlug, getAllSlugs, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 import { organizationSchema, generateBreadcrumbSchema, generateArticleSchema, jsonLdScript } from "@/lib/jsonld";
 import { COLORS } from "@/lib/constants";
 import ArticleHero from "@/components/sections/Blog/ArticleHero";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 // ISR: rigenera la pagina ogni 60 secondi
 export const revalidate = 60;
@@ -13,7 +15,7 @@ export const revalidate = 60;
 export const dynamicParams = true;
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 // Genera i parametri statici per pre-render
@@ -22,18 +24,22 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+const BASE_URL = "https://www.osgdigitaleconomy.com";
+
 // Genera i metadata dinamici da Yoast SEO
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const post = await getPostBySlug(slug);
 
   if (!post) {
+    const t = await getTranslations({ locale, namespace: 'Blog' });
     return {
-      title: "Articolo non trovato | Outsourcing Group",
+      title: t('meta.notFoundTitle'),
     };
   }
 
   const imageUrl = post.seo?.opengraphImage?.sourceUrl || post.featuredImage?.node?.sourceUrl;
+  const ogLocale = locale === 'it' ? 'it_IT' : 'en_US';
 
   return {
     title: post.seo?.title || post.title,
@@ -43,14 +49,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       follow: true,
     },
     alternates: {
-      canonical: `https://www.osgdigitaleconomy.com/blog/${slug}`,
+      canonical: `${BASE_URL}/${locale}/blog/${slug}`,
+      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/blog/${slug}`])),
     },
     openGraph: {
       title: post.seo?.title || post.title,
       description: post.seo?.metaDesc || stripHtml(post.excerpt),
-      url: `https://www.osgdigitaleconomy.com/blog/${slug}`,
+      url: `${BASE_URL}/${locale}/blog/${slug}`,
       siteName: "Outsourcing Group",
-      locale: "it_IT",
+      locale: ogLocale,
       type: "article",
       publishedTime: post.date,
       authors: ["Outsourcing Group"],
@@ -66,7 +73,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const tCommon = await getTranslations('Common');
+
   const post = await getPostBySlug(slug);
 
   if (!post) {
@@ -147,7 +157,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   strokeLinejoin="round"
                 />
               </svg>
-              Torna al Blog
+              {tCommon('backToBlog')}
             </Link>
           </div>
         </div>

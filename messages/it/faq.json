@@ -1,0 +1,27 @@
+{
+  "FAQ": {
+    "title": "Domande frequenti",
+    "questions": {
+      "q1": {
+        "question": "Quali sono i principali vantaggi dell'outsourcing dei servizi digitali?",
+        "answer": "L'outsourcing permette di ridurre i costi operativi, accedere a competenze specializzate, garantire conformità normativa costante e scalare rapidamente le risorse in base alle esigenze del business, senza investimenti in infrastrutture o formazione interna."
+      },
+      "q2": {
+        "question": "Quanto tempo richiede l'attivazione dei servizi di outsourcing?",
+        "answer": "Dipende dalla complessità del progetto. Per servizi standard come il data management o il contact center, l'attivazione può avvenire in 2-4 settimane. Per progetti più articolati che richiedono personalizzazione dei processi amministrativi o integrazione documentale, il tempo può estendersi a 4-6 settimane."
+      },
+      "q3": {
+        "question": "In che modo vi differenziate da un semplice servizio di assistenza esterno?",
+        "answer": "A differenza di un call center tradizionale, Outsourcing Group opera come una vera estensione dei reparti interni della tua azienda.\nIl nostro team viene informato direttamente dal cliente sulle procedure da gestire - ad esempio attivazione di SPID, firme digitali o PEC - così da garantire risposte precise e coerenti con gli standard del servizio.\nIn questo modo solleviamo l'organizzazione da attività operative complesse, assicurando continuità, qualità e piena aderenza ai processi aziendali."
+      },
+      "q4": {
+        "question": "I vostri servizi sono scalabili in base alle nostre esigenze?",
+        "answer": "Assolutamente sì. La scalabilità è uno dei principali vantaggi dell'outsourcing. Possiamo aumentare o ridurre le risorse dedicate in tempi rapidi, adattandoci ai picchi stagionali, ai nuovi progetti o alle variazioni del business, garantendo sempre il livello di servizio concordato."
+      }
+    },
+    "cta": {
+      "title": "Hai altre domande?",
+      "description": "Clicca qui sotto per contattarci e chiedere qualsiasi informazione di cui hai bisogno."
+    }
+  }
+}

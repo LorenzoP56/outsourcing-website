@@ -1,0 +1,60 @@
+{
+  "Home": {
+    "meta": {
+      "title": "Outsourcing & BPO Italy | Digital Back Office Since 1999 | Outsourcing Group",
+      "description": "Outsourcing and BPO services for Italian companies. Since 1999 we manage Digital Back Office and Contact Center. Reduce operational costs by up to 40%."
+    },
+    "hero": {
+      "title": "Outsourcing and BPO for Your Company's Digital Back Office",
+      "description": "We manage <bold>Back Office</bold> and <bold>Contact Center</bold> activities that can be outsourced, with strong expertise in customer support.",
+      "description2": "We optimize your Back Office business processes by <bold>reducing time and costs, ensuring operational continuity</bold> and <bold>service quality</bold>.",
+      "ctaContact": "Contact Us",
+      "ctaServices": "Discover Our Services"
+    },
+    "group": {
+      "title": "Outsourcing Group, a Reliable Partner",
+      "description1": "Since 1999, we have been managing <bold>Back Office activities for digital services</bold> and collaborating with one of Europe's leading certification authorities, operating in the strategic sectors of Digital Trust, Cybersecurity, and Business Innovation.",
+      "description2": "Our activities are an essential pillar in ensuring your company <bold>efficiency, security</bold> and <bold>continuity</bold> in digital processes. Operating <bold>behind the scenes</bold>, we offer companies a range of opportunities by reducing:",
+      "items": {
+        "overload": "<bold>operational overload</bold>, which takes time and resources away from strategic activities;",
+        "errors": "<bold>frequent errors</bold>, often caused by the lack of clear and structured procedures;",
+        "slowness": "<bold>long processing times</bold>, eliminating operational delays and bottlenecks;",
+        "costs": "<bold>high personnel costs</bold>, avoiding dedicated resources for non-core micro-activities;",
+        "noControl": "the <bold>lack of structured oversight</bold>, ensuring continuous control and traceability of workflows;",
+        "disorganization": "<bold>data disorganization</bold>, ensuring timely archiving, updating, and verification."
+      },
+      "closing": "A team of qualified professionals will ensure <bold>quality, precision</bold> and <bold>regulatory compliance</bold> in every managed activity."
+    },
+    "servizi": {
+      "title": "Our Services",
+      "description": "Discover how we can help your company with tailored services."
+    },
+    "esternalizzare": {
+      "title": "Why Outsource with Outsourcing Group",
+      "description": "Discover how we can optimize your business processes and increase efficiency.",
+      "items": {
+        "costs": {
+          "title": "Operational Cost Reduction",
+          "description": "By outsourcing, the company eliminates fixed costs (personnel, training, software, infrastructure, workstations, shifts) and turns them into variable costs, paying only for what it uses."
+        },
+        "efficiency": {
+          "title": "Efficiency and Professional Quality",
+          "description": "Every process is managed by already trained personnel. The service is scalable based on operational peaks. This allows the company to raise service quality while eliminating errors, delays, and internal inefficiencies."
+        },
+        "focus": {
+          "title": "Total Focus on Core Business",
+          "description": "By delegating Digital Back Office & Contact Center, the company frees up time and resources for what truly drives business growth."
+        }
+      }
+    },
+    "form": {
+      "title": "Trust a Reliable Operational Partner",
+      "description": "Discover how Outsourcing Group can free you from digital bureaucracy and guarantee compliance and quality.",
+      "ctaText": "Contact us for a personalized consultation."
+    },
+    "blog": {
+      "title": "Read Our Latest Articles",
+      "description": "Updates and practical tips to improve your organization's digital management."
+    }
+  }
+}

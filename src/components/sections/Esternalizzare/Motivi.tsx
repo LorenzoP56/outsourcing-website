@@ -5,8 +5,11 @@ import "./Motivi.css";
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import { AnimatedSection, StaggerContainer, StaggerItem, staggerContainerSlow, fadeInUp } from "@/components/animations";
+import {useTranslations} from "next-intl";
 
 export default function Motivi() {
+  const t = useTranslations('Esternalizzazione');
+
   return (
     <section className="xl:px-32 lg:px-16 lg:py-32 px-8 py-16 flex flex-col lg:gap-40 gap-16">
 
@@ -21,13 +24,13 @@ export default function Motivi() {
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Trasforma i costi fissi in risultati misurabili
+              {t('motivi.costs.title')}
             </h3>
             <p className="text-base" style={{ color: COLORS.TEXT }}>
-              Gestire internamente attività operative o amministrative comporta costi fissi elevati, formazione continua e un impiego di risorse che spesso non genera valore strategico.
+              {t('motivi.costs.description1')}
               <br />
               <br />
-              Affidandoti a un partner specializzato, <span className="font-bold">puoi convertire i costi fissi dovuti ad attività operative o amministrative in investimenti mirati e soprattutto modulabili</span>, ottimizzando così la gestione del personale (sia nel numero che nelle capacità professionali) e così adattandoti al meglio ai periodi di picco o di down.
+              {t.rich('motivi.costs.description2', { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
             </p>
           </div>
 
@@ -37,7 +40,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Riduzione dei costi di personale e infrastrutture
+                {t('motivi.costs.items.personnel')}
               </h3>
 
             </div>
@@ -46,7 +49,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Flessibilità nei volumi di lavoro, anche stagionali
+                {t('motivi.costs.items.flexibility')}
               </h3>
 
             </div>
@@ -55,7 +58,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Nessun costo di formazione o turnover interno
+                {t('motivi.costs.items.training')}
               </h3>
 
             </div>
@@ -64,7 +67,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Miglior utilizzo delle competenze interne
+                {t('motivi.costs.items.skills')}
               </h3>
 
             </div>
@@ -78,7 +81,7 @@ export default function Motivi() {
       <div className="flex lg:flex-row-reverse flex-col lg:gap-8 gap-16 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
-          <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.webp" 
+          <Image src="/website_images/Esternalizzare/dati-sicuri-velocita-processi-digitali-outsourcing.webp"
           alt="Gestione sicura dei dati aziendali e velocizzazione dei processi digitali grazie ai servizi di outsourcing operativo" width={1160} height={894} className="rounded-[16px] lg:max-h-[600px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
         </AnimatedSection>
 
@@ -86,13 +89,13 @@ export default function Motivi() {
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Dati sicuri e velocità dei processi
+              {t('motivi.security.title')}
             </h3>
             <p className="text-base" style={{ color: COLORS.TEXT }}>
-              Gestire internamente attività che coinvolgono dati sensibili richiede procedure rigide, strumenti adeguati e personale costantemente aggiornato sulle normative. <span className="font-bold">Un partner specializzato assicura invece processi controllati, protocolli chiari e una gestione dei dati conforme e monitorata, riducendo al minimo errori, rallentamenti e rischi operativi.</span>
+              {t.rich('motivi.security.description1', { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
               <br />
               <br />
-              Affidando queste attività a Outsourcing Group, ottieni processi più rapidi, tracciati e sicuri: ogni operazione viene eseguita seguendo istruzioni precise e standard condivisi, garantendo continuità e qualità anche nei momenti di maggiore carico.
+              {t('motivi.security.description2')}
             </p>
           </div>
 
@@ -102,7 +105,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Gestione conforme dei dati e procedure sempre aggiornate
+                {t('motivi.security.items.compliance')}
               </h3>
 
             </div>
@@ -111,7 +114,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Tempi di lavorazione più rapidi grazie a flussi operativi ottimizzati
+                {t('motivi.security.items.speed')}
               </h3>
 
             </div>
@@ -120,7 +123,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Riduzione del rischio di errori, difformità e accessi non autorizzati
+                {t('motivi.security.items.errors')}
               </h3>
 
             </div>
@@ -129,7 +132,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Tracciabilità completa delle attività e delle modifiche
+                {t('motivi.security.items.traceability')}
               </h3>
 
             </div>
@@ -143,7 +146,7 @@ export default function Motivi() {
       <div className="flex lg:flex-row flex-col lg:gap-8 gap-16 lg:justify-between">
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 items-center justify-center lg:w-1/2 md:w-1/2 w-full lg:self-auto self-center">
-          <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.webp" 
+          <Image src="/website_images/Esternalizzare/problem-solving-gestione-criticita-operativa-outsourcing.webp"
           alt="Team di outsourcing impegnato nel problem solving e nella gestione delle criticità operative aziendali" width={1160} height={894} className="rounded-[16px] lg:max-h-[600px] lg:w-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
         </AnimatedSection>
 
@@ -151,15 +154,15 @@ export default function Motivi() {
 
           <div className="flex flex-col gap-4">
             <h3 className="lg:text-[20px] lg:leading-[20px] text-[16px] leading-[16px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-              Problem solving e gestione delle criticità
+              {t('motivi.problemSolving.title')}
             </h3>
             <p className="text-base" style={{ color: COLORS.TEXT }}>
-              Le attività operative spesso generano imprevisti: richieste fuori standard, pratiche incomplete, errori da correggere o casi che richiedono verifiche aggiuntive.Quando il team interno è già sovraccarico, queste criticità rallentano il lavoro e incidono sulla qualità del servizio.
+              {t('motivi.problemSolving.description1')}
               <br />
               <br />
-              Un partner esperto intercetta, gestisce e risolve queste situazioni quotidiane, applicando procedure chiare, verifiche accurate e un <span className="font-bold">approccio strutturato al problem solving.</span>
+              {t.rich('motivi.problemSolving.description2', { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
               <br />
-              Outsourcing Group affronta le anomalie in modo rapido e ordinato, consentendo al cliente di mantenere continuità e fluidità nei processi senza carichi extra.
+              {t('motivi.problemSolving.description3')}
             </p>
           </div>
 
@@ -169,7 +172,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Gestione immediata delle eccezioni e delle pratiche complesse
+                {t('motivi.problemSolving.items.exceptions')}
               </h3>
 
             </div>
@@ -178,7 +181,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Meno interruzioni per il team interno
+                {t('motivi.problemSolving.items.interruptions')}
               </h3>
 
             </div>
@@ -187,7 +190,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Riduzione dei colli di bottiglia operativi
+                {t('motivi.problemSolving.items.bottlenecks')}
               </h3>
 
             </div>
@@ -196,7 +199,7 @@ export default function Motivi() {
 
               <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-                Maggiore qualità del risultato finale grazie a verifiche puntuali
+                {t('motivi.problemSolving.items.quality')}
               </h3>
 
             </div>

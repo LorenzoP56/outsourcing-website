@@ -1,0 +1,60 @@
+{
+  "Home": {
+    "meta": {
+      "title": "Outsourcing e BPO Italia | Digital Back Office dal 1999 | Outsourcing Group",
+      "description": "Servizi di outsourcing e BPO per aziende italiane. Dal 1999 gestiamo Digital Back Office e Contact Center. Riduci i costi operativi fino al 40%."
+    },
+    "hero": {
+      "title": "Outsourcing e BPO per il Digital Back Office della tua azienda",
+      "description": "Gestiamo le attività di <bold>Back Office</bold> e <bold>Contact Center</bold> esternalizzabili, con una forte specializzazione nell'assistenza ai clienti.",
+      "description2": "Ottimizziamo i tuoi processi aziendali di Back Office <bold>riducendo tempi e costi, garantendo continuità operativa</bold> e <bold>qualità del servizio</bold>.",
+      "ctaContact": "Contattaci",
+      "ctaServices": "Scopri i nostri servizi"
+    },
+    "group": {
+      "title": "Outsourcing Group partner affidabile",
+      "description1": "Dal 1999 gestiamo <bold>attività di Back Office per servizi digitali</bold> e collaboriamo con una delle maggiori autorità di certificazione in Europa, operante nei settori strategici del Digital Trust, della Cybersecurity e della Business Innovation.",
+      "description2": "Le nostre attività costituiscono un pilastro essenziale per garantire alla tua azienda <bold>efficienza, sicurezza</bold> e <bold>continuità</bold> nei processi digitali. Operando <bold>dietro le quinte</bold>, offriamo alle aziende un ventaglio di opportunità riducendo:",
+      "items": {
+        "overload": "il <bold>sovraccarico operativo</bold>, che sottrae tempo e risorse alle attività strategiche;",
+        "errors": "gli <bold>errori frequenti</bold>, spesso causati dall'assenza di procedure chiare e strutturate;",
+        "slowness": "i <bold>tempi lunghi</bold>, eliminando rallentamenti operativi e colli di bottiglia;",
+        "costs": "i <bold>costi elevati del personale</bold>, evitando di mantenere risorse dedicate a micro-attività non core;",
+        "noControl": "la <bold>mancanza di presidio strutturato</bold>, garantendo controllo continuo e tracciabilità dei flussi;",
+        "disorganization": "la <bold>disorganizzazione dei dati</bold>, assicurando archiviazione, aggiornamento e verifica puntuali."
+      },
+      "closing": "Un team di professionisti qualificati potrà assicurarti <bold>qualità, precisione</bold> e <bold>conformità normativa</bold> in ogni attività gestita."
+    },
+    "servizi": {
+      "title": "I nostri servizi",
+      "description": "Scopri come possiamo aiutare la tua azienda con servizi su misura."
+    },
+    "esternalizzare": {
+      "title": "Perché esternalizzare con Outsourcing Group",
+      "description": "Scopri come possiamo ottimizzare i tuoi processi aziendali e aumentare l'efficienza.",
+      "items": {
+        "costs": {
+          "title": "Riduzione dei costi operativi",
+          "description": "Esternalizzando, l'azienda elimina spese fisse (personale, formazione, software, infrastruttura, postazioni, turnazioni) e le trasforma in costi variabili, pagando solo ciò che usa."
+        },
+        "efficiency": {
+          "title": "Efficienza e qualità professionale",
+          "description": "Ogni processo è gestito da personale già formato. Il servizio è scalabile in base ai picchi operativi. L'azienda può così alzare la qualità del servizio ai clienti e abbattere errori, ritardi e inefficienze interne."
+        },
+        "focus": {
+          "title": "Focus totale sul core business",
+          "description": "Delegando Digital Back Office & Contact Center, l'azienda libera tempo e risorse per ciò che fa crescere davvero il business."
+        }
+      }
+    },
+    "form": {
+      "title": "Affidati ad un partner operativo di fiducia",
+      "description": "Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.",
+      "ctaText": "Contattaci per una consulenza personalizzata."
+    },
+    "blog": {
+      "title": "Leggi i nostri ultimi articoli",
+      "description": "Aggiornamenti e consigli pratici per migliorare la gestione digitale nella tua organizzazione."
+    }
+  }
+}

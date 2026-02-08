@@ -1,0 +1,87 @@
+{
+  "Header": {
+    "nav": {
+      "chiSiamo": "About Us",
+      "servizi": "Services",
+      "esternalizzazione": "Why Outsource",
+      "blog": "Blog"
+    },
+    "cta": "Contact Us",
+    "aria": {
+      "showServicesSubmenu": "Show services submenu",
+      "toggleMenu": "Toggle menu"
+    }
+  },
+  "Footer": {
+    "company": {
+      "name": "OutSourcing Group srl",
+      "address": "Piazza G. Zanellato 13 - 35131 (PD)",
+      "vatId": "VAT ID 03475900282",
+      "phone": "Phone +39 049 870 1855",
+      "email": "info@osgdigitaleconomy.com"
+    },
+    "sections": {
+      "pages": "Pages",
+      "services": "Services",
+      "availability": "Availability"
+    },
+    "links": {
+      "chiSiamo": "About Us",
+      "servizi": "Services",
+      "esternalizzazione": "Why Outsource",
+      "blog": "Blog",
+      "contatti": "Contact"
+    },
+    "serviceLinks": {
+      "backOffice": "Digital Back Office",
+      "contactCenter": "Contact Center",
+      "datiCliente": "Client Data Operations Management",
+      "assistenza": "Dedicated User Support",
+      "dataManagement": "Data Management",
+      "training": "Corporate Training"
+    },
+    "schedule": {
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "09:00 - 19:00",
+      "weekend": "Saturday and Sunday",
+      "weekendNote": "support available on demand for dedicated operations or projects"
+    },
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    },
+    "copyright": "Copyright {year} - Outsourcing Group srl - All rights reserved"
+  },
+  "Common": {
+    "contactUs": "Contact Us",
+    "sendRequest": "Send Your Request",
+    "discoverMore": "Learn More",
+    "requestQuote": "Request a Quote",
+    "discoverAdvantages": "Discover the Benefits",
+    "requestInfo": "Request Information",
+    "startDelegating": "Start Delegating",
+    "readMoreArticles": "Read More Articles",
+    "backToBlog": "Back to Blog",
+    "talkToConsultant": "Talk to a Consultant",
+    "sendEmail": "Send Email",
+    "noArticles": "No articles available at this time."
+  },
+  "Form": {
+    "name": "Full Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Message",
+    "privacyConsent": "I accept the <link>privacy policy</link>",
+    "submit": "Send Your Request"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backToHome": "Back to Home"
+  },
+  "Pagination": {
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page {number}"
+  }
+}
