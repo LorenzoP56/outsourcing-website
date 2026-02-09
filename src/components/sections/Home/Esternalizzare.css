@@ -2,6 +2,6 @@
   .esternalizzare-bg {
     background:
       linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
-      url("/website_images/Home/team-outsourcing-group-professionisti.jpg") center / cover no-repeat;
+      url("/website_images/Home/team-outsourcing-group-professionisti.webp") center / cover no-repeat;
   }
 }
