@@ -3,6 +3,8 @@
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { motion } from "@/components/animations";
+import {useTranslations} from 'next-intl';
+
 
 const containerVariants = {
   hidden: {},
@@ -60,6 +62,7 @@ const buttonVariants = {
 } as const;
 
 export default function Hero() {
+    const t = useTranslations('Home');
   return (
     <section
       className="min-h-[70vh] xl:min-h-[90vh] md:pl-16 lg:pl-32 lg:pr-0 lg:py-16 p-8 hero-bg flex items-center"
@@ -76,17 +79,21 @@ export default function Hero() {
             className="text-[32px] leading-[40px] min-[500px]:text-[40px] min-[500px]:leading-[48px] lg:text-[56px] lg:leading-[64px] font-bold"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_TITLE }}
           >
-            Soluzioni professionali di Digital Back Office per supportare la crescita della tua azienda nell'era dell'IA
+            {t('hero.title')}
           </motion.h1>
           <motion.p
             variants={itemVariants}
             className="text-base"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
-            Gestiamo le attività di <span className="font-bold">Back Office</span> e <span className="font-bold">Contact Center</span> esternalizzabili, con una forte specializzazione nell'assistenza ai clienti.
+            {t.rich('hero.description', {
+              bold: (chunks) => <span className="font-bold">{chunks}</span>
+            })}
             <br />
             <br />
-            Ottimizziamo i tuoi processi aziendali di Back Office <span className="font-bold">riducendo tempi e costi, garantendo continuità operativa</span> e <span className="font-bold">qualità del servizio</span>.
+            {t.rich('hero.description2', {
+              bold: (chunks) => <span className="font-bold">{chunks}</span>
+            })}
           </motion.p>
         </div>
 
@@ -99,7 +106,7 @@ export default function Hero() {
               href="#form"
               className="lg:min-w-[300px]"
             >
-              Contattaci
+              {t('hero.ctaContact')}
             </Button>
           </motion.div>
           <motion.div variants={buttonVariants} whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
@@ -108,7 +115,7 @@ export default function Hero() {
               className="lg:min-w-[300px]"
               style={{ background: 'white', color: COLORS.TEXT, border: '2px solid #E5E7EB' }}
             >
-              Scopri i nostri servizi
+              {t('hero.ctaServices')}
             </Button>
           </motion.div>
         </motion.div>

@@ -1,0 +1,34 @@
+{
+  "Contatti": {
+    "meta": {
+      "title": "Request a Free Consultation | Outsourcing Group",
+      "description": "Request a free consultation on our outsourcing services. Customized quote for Back Office, Contact Center, BPO. Response within 24h."
+    },
+    "hero": {
+      "title": "Contact"
+    },
+    "form": {
+      "title": "Trust a Reliable Operational Partner",
+      "description": "Discover how Outsourcing Group can free you from digital bureaucracy and guarantee compliance and quality.",
+      "ctaPhone": "Contact us for a personalized consultation by leaving your details in the form or calling",
+      "availability": "Availability",
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "09:00 - 19:00",
+      "weekend": "Saturday and Sunday",
+      "weekendNote": "support available on demand for dedicated operations or projects"
+    }
+  },
+  "Affidati": {
+    "title": "Trust a Reliable Operational Partner",
+    "description": "Discover how Outsourcing Group can free you from digital bureaucracy and guarantee compliance and quality.",
+    "subtitle": "Contact us for a personalized consultation.",
+    "contact": {
+      "title": "Contact Us",
+      "description": "A dedicated consultant will help you understand how we can support your processes. Speak with someone who knows your industry."
+    },
+    "write": {
+      "title": "Write to Us",
+      "description": "Our team will respond quickly with a customized proposal for your company."
+    }
+  }
+}

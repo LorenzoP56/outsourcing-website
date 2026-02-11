@@ -2,11 +2,16 @@
 
 import "./Form.css";
 
+import {Link} from "@/i18n/navigation";
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, StaggerContainer, StaggerItem, motion, fadeInUp } from "@/components/animations";
+import {useTranslations} from "next-intl";
 
 export default function Form() {
+  const t = useTranslations('Home');
+  const tForm = useTranslations('Form');
+
   return (
     <section
       id="form"
@@ -16,19 +21,18 @@ export default function Form() {
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1 justify-center items-start">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}>
-            Affidati ad un partner operativo di fiducia
+            {t('form.title')}
           </h2>
           <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
-            Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.
+            {t('form.description')}
             <br />
-            Contattaci per una consulenza personalizzata.
+            {t('form.ctaText')}
           </p>
         </AnimatedSection>
 
         <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1">
           <form className="flex flex-col gap-4" onSubmit={(e) => {
             e.preventDefault();
-            console.log("Form submitted");
           }}>
             <motion.div
               className="flex flex-col gap-2"
@@ -37,7 +41,7 @@ export default function Form() {
               transition={{ delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <label htmlFor="name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Nome e Cognome</label>
+              <label htmlFor="name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>{tForm('name')}</label>
               <motion.input
                 whileFocus={{ scale: 1.01, boxShadow: "0 0 0 3px rgba(32, 138, 228, 0.3)" }}
                 type="text"
@@ -53,7 +57,7 @@ export default function Form() {
               transition={{ delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <label htmlFor="email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Email</label>
+              <label htmlFor="email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>{tForm('email')}</label>
               <motion.input
                 whileFocus={{ scale: 1.01, boxShadow: "0 0 0 3px rgba(32, 138, 228, 0.3)" }}
                 type="email"
@@ -69,7 +73,7 @@ export default function Form() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <label htmlFor="azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Azienda</label>
+              <label htmlFor="azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>{tForm('company')}</label>
               <motion.input
                 whileFocus={{ scale: 1.01, boxShadow: "0 0 0 3px rgba(32, 138, 228, 0.3)" }}
                 type="text"
@@ -85,7 +89,7 @@ export default function Form() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>Messaggio</label>
+              <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>{tForm('message')}</label>
               <motion.textarea
                 whileFocus={{ scale: 1.01, boxShadow: "0 0 0 3px rgba(32, 138, 228, 0.3)" }}
                 id="message"
@@ -102,7 +106,9 @@ export default function Form() {
             >
               <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
               <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
-                Accetto l'<a href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
+                {tForm.rich('privacyConsent', {
+                  link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+                })}
               </label>
             </motion.div>
             <motion.div
@@ -114,7 +120,7 @@ export default function Form() {
               whileTap={{ scale: 0.97 }}
             >
               <Button type="submit" className="w-[300px]">
-                Invia la tua richiesta
+                {tForm('submit')}
               </Button>
             </motion.div>
           </form>
