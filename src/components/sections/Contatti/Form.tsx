@@ -4,14 +4,9 @@ import * as React from 'react';
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, fadeInUp, motion } from "@/components/animations";
-import {Link} from "@/i18n/navigation";
-import {useTranslations} from "next-intl";
+import Link from 'next/link';
 
 export default function Form() {
-  const t = useTranslations('Contatti');
-  const tForm = useTranslations('Form');
-  const tCommon = useTranslations('Common');
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -23,32 +18,32 @@ export default function Form() {
       <AnimatedSection variants={fadeInUp} className="flex flex-col gap-8 flex-1">
         <div className="flex flex-col gap-4">
           <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold lg:text-center lg:text-left" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-            {t('form.title')}
+            Affidati ad un partner operativo di fiducia
           </h2>
           <p className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-            {t('form.description')}
+            Scopri come Outsourcing Group può liberarti dalla burocrazia digitale e garantirti conformità e qualità.
             <br />
-            {t('form.ctaPhone')} <a href="tel:+390498701855" style={{color: COLORS.BLUE}}>049 870 1855</a>
+            Contattaci per una consulenza personalizzata lasciando i tuoi dati nel form o chiamando lo <Link href={"tel:+390498701855"} style={{color: COLORS.BLUE}}>049 870 1855</Link>
           </p>
         </div>
         <div className='flex flex-col gap-2 p-4' style={{ backgroundImage: 'url(/website_images/Contatti/imgForm.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',borderRadius: '16px' }}>
           <h3 className="text-white font-bold text-xl">
-            {t('form.availability')}
+            Disponibilità
           </h3>
           <div>
             <h3 className="text-white font-bold text-xl">
-              {t('form.weekdays')}
+              Lunedì - Venerdì
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
-              {t('form.weekdaysHours')}
+              09:00 - 19:00
             </p>
           </div>
           <div>
             <h3 className="text-white font-bold text-xl">
-              {t('form.weekend')}
+              Sabato e Domenica
             </h3>
             <p className="text-md" style={{ color: COLORS.TEXT_WHITE }}>
-              {t('form.weekendNote')}
+              supporto attivabile su necessità operative o progetti dedicati
             </p>
           </div>
         </div>
@@ -59,30 +54,30 @@ export default function Form() {
           console.log("Form submitted");
         }}>
           <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('name')}</label>
+            <label htmlFor="name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Nome e Cognome</label>
             <input type="text" id="name" name="name" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('email')}</label>
+            <label htmlFor="email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Email</label>
             <input type="email" id="email" name="email" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('company')}</label>
+            <label htmlFor="azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Azienda</label>
             <input type="text" id="azienda" name="azienda" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('message')}</label>
+            <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>Messaggio</label>
             <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
           </div>
           <div className="flex items-start gap-2">
             <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
             <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>
-              {tForm.rich('privacyConsent', { link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link> })}
+              Accetto l'<a href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>
             </label>
           </div>
           <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
             <Button type="submit" className="w-full lg:w-[300px]">
-              {tCommon('sendRequest')}
+              Invia la tua richiesta
             </Button>
           </motion.div>
         </form>

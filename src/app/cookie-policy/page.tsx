@@ -1,33 +1,21 @@
 import { COLORS } from "@/lib/constants";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
-import { setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
-
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-
-  return {
-    title: "Cookie Policy | Outsourcing Group",
-    description: "Informativa sull'uso dei cookie sul sito di Outsourcing Group SRL in conformità al GDPR.",
-    alternates: {
-      canonical: `${BASE_URL}/${locale}/cookie-policy`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/cookie-policy`])),
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: "Cookie Policy | Outsourcing Group",
+  description: "Informativa sull'uso dei cookie sul sito di Outsourcing Group SRL in conformità al GDPR.",
+  alternates: {
+    canonical: "https://www.osgdigitaleconomy.com/cookie-policy",
+  },
+};
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
   { name: "Cookie Policy", url: "/cookie-policy" },
 ]);
 
-export default async function CookiePolicy({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
+export default function CookiePolicy() {
   return (
     <>
       <script

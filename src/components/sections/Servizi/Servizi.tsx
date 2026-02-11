@@ -4,12 +4,8 @@ import { COLORS, SERVICES } from "@/lib/constants";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { AnimatedSection, motion, fadeInUp } from "@/components/animations";
-import {useTranslations} from "next-intl";
 
 export default function Servizi() {
-  const t = useTranslations('Servizi');
-  const tCommon = useTranslations('Common');
-
   return (
     <section className="xl:px-32 lg:px-16 lg:pt-8 lg:pb-48 px-8 py-16 lg:gap-32 gap-16 flex flex-col">
       {SERVICES.map((service, index) => (
@@ -40,13 +36,13 @@ export default function Servizi() {
                 className="lg:text-[40px] lg:leading-[40px] text-[24px] leading-[24px] font-bold"
                 style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
               >
-                {t(`details.${service.slug}.name`)}
+                {service.name}
               </h3>
               <p className="text-base" style={{ color: COLORS.TEXT }}>
-                {t(`details.${service.slug}.shortDescription`).split("\n").map((line: string, i: number) => (
+                {service.shortDescription.split("\n").map((line, i) => (
                   <span key={i}>
                     {line}
-                    {i !== t(`details.${service.slug}.shortDescription`).split("\n").length - 1 && <br />}
+                    {i !== service.shortDescription.split("\n").length - 1 && <br />}
                   </span>
                 ))}
               </p>
@@ -58,7 +54,7 @@ export default function Servizi() {
               className="lg:self-start self-center"
             >
               <Button href={`/servizi/${service.slug}`} className="w-fit">
-                {tCommon('discoverMore')}
+                Scopri di più
               </Button>
             </motion.div>
           </AnimatedSection>

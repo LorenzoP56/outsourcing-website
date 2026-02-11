@@ -8,28 +8,16 @@ import Blog from "@/components/sections/Home/Blog";
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, websiteSchema, jsonLdScript } from "@/lib/jsonld";
 import { getLatestPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+export const metadata: Metadata = {
+  title: "Outsourcing e BPO Italia | Digital Back Office dal 1999 | Outsourcing Group",
+  description: "Servizi di outsourcing e BPO per aziende italiane. Dal 1999 gestiamo Digital Back Office e Contact Center. Riduci i costi operativi fino al 40%.",
+  alternates: {
+    canonical: "https://www.osgdigitaleconomy.com",
+  },
+};
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Home' });
-
-  return {
-    title: t('meta.title'),
-    description: t('meta.description'),
-    alternates: {
-      canonical: `${BASE_URL}/${locale}`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}`])),
-    },
-  };
-}
-
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default async function Home() {
   const posts = await getLatestPosts(3);
 
   const blogPosts = posts.map(post => ({

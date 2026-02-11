@@ -3,11 +3,8 @@
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import { AnimatedSection, fadeInUp } from "@/components/animations";
-import {useTranslations} from "next-intl";
 
 export default function Team() {
-  const t = useTranslations('ChiSiamo');
-
   return (
     <section
       className="xl:px-32 lg:px-24 lg:py-16 flex lg:flex-row flex-col xl:gap-4 gap-16 lg:gap-16 px-8 py-16 items-center justify-center"
@@ -26,17 +23,18 @@ export default function Team() {
 
       <AnimatedSection variants={fadeInUp} className="flex flex-col flex-1 h-full justify-center gap-8">
         <h2 className="lg:text-[40px] lg:leading-[40px] text-[32px] leading-[32px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-          {t('team.title')}
+          Insieme, trasformiamo ogni servizio in risultato
         </h2>
         <p className="text-base" style={{ color: COLORS.TEXT }}>
 
-          {t.rich('team.description1', { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
+          Affidare in outsourcing processi e dati sensibili richiede fiducia. Per questo, il nostro team lavora con <span className="font-bold">trasparenza, metodo</span> e un <span className="font-bold">approccio collaborativo continuo</span> con ogni cliente.
           <br />
           <br />
-          {t.rich('team.description2', { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
+          Da oltre vent'anni operiamo nel <span className="font-bold">digital trust</span>, unendo competenze tecniche e attenzione alle persone. Ogni membro del team viene informato direttamente sulle procedure e sui flussi operativi del cliente, acquisendo una conoscenza approfondita delle sue modalità di lavoro e delle pratiche specifiche da gestire.
+          Questo ci consente di operare come una <span className="font-bold">vera estensione del tuo reparto interno</span>, garantendo precisione, coerenza e continuità nel tempo.
           <br />
           <br />
-          {t('team.description3')}
+          Crediamo nella collaborazione come leva di crescita reciproca: ogni progetto diventa un'occasione per migliorare insieme ai nostri clienti, condividendo conoscenze e soluzioni.
         </p>
       </AnimatedSection>
 

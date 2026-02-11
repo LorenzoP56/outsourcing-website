@@ -2,10 +2,9 @@
 
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
-import {Link} from "@/i18n/navigation";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AnimatedSection, motion } from "@/components/animations";
-import {useTranslations} from "next-intl";
 
 interface BlogPost {
   slug: string;
@@ -21,9 +20,6 @@ interface BlogProps {
 }
 
 export default function Blog({ posts }: BlogProps) {
-  const tCommon = useTranslations('Common');
-  const tPagination = useTranslations('Pagination');
-
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -79,7 +75,7 @@ export default function Blog({ posts }: BlogProps) {
   if (posts.length === 0) {
     return (
       <section className="lg:px-32 lg:py-16 px-8 py-16">
-        <p className="text-center text-gray-500">{tCommon('noArticles')}</p>
+        <p className="text-center text-gray-500">Nessun articolo disponibile al momento.</p>
       </section>
     );
   }
@@ -163,7 +159,7 @@ export default function Blog({ posts }: BlogProps) {
               onClick={handlePrev}
               className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:bg-gray-100 transition-colors"
               style={{ borderColor: COLORS.TEXT }}
-              aria-label={tPagination('previous')}
+              aria-label="Pagina precedente"
             >
               <svg
                 width="24"
@@ -194,7 +190,7 @@ export default function Blog({ posts }: BlogProps) {
                     color: index === currentPage ? "white" : COLORS.TEXT,
                     border: index === currentPage ? "none" : `2px solid ${COLORS.TEXT}`,
                   }}
-                  aria-label={tPagination('page', { number: index + 1 })}
+                  aria-label={`Pagina ${index + 1}`}
                   aria-current={index === currentPage ? "page" : undefined}
                 >
                   {index + 1}
@@ -207,7 +203,7 @@ export default function Blog({ posts }: BlogProps) {
               onClick={handleNext}
               className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:bg-gray-100 transition-colors"
               style={{ borderColor: COLORS.TEXT }}
-              aria-label={tPagination('next')}
+              aria-label="Pagina successiva"
             >
               <svg
                 width="24"

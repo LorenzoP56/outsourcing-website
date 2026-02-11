@@ -3,37 +3,24 @@ import Blog from "@/components/sections/Blog/Blog";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
 import { getAllPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import { routing } from "@/i18n/routing";
 
 // ISR: rigenera la pagina ogni 60 secondi
 export const revalidate = 60;
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
-
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Blog' });
-
-  return {
-    title: t('meta.title'),
-    description: t('meta.description'),
-    alternates: {
-      canonical: `${BASE_URL}/${locale}/blog`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/blog`])),
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: "Blog Outsourcing | News su BPO e Back Office | Outsourcing Group",
+  description: "Blog su outsourcing e BPO: articoli su customer care, esternalizzazione processi, GDPR e best practices. Aggiornamenti per decision maker.",
+  alternates: {
+    canonical: "https://www.osgdigitaleconomy.com/blog",
+  },
+};
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
   { name: "Blog", url: "/blog" },
 ]);
 
-export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
+export default async function BlogPage() {
   // Fetch posts da WordPress
   const posts = await getAllPosts();
 

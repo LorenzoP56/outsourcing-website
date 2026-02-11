@@ -4,7 +4,6 @@ import "./Hero.css";
 
 import { COLORS } from "@/lib/constants";
 import { motion } from "@/components/animations";
-import {useTranslations} from "next-intl";
 
 const containerVariants = {
   hidden: {},
@@ -41,8 +40,6 @@ const itemVariants = {
 } as const;
 
 export default function Hero() {
-  const t = useTranslations('Blog');
-
   return (
     <section className="blog-hero-bg min-h-[70vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center">
       <motion.div
@@ -56,16 +53,16 @@ export default function Hero() {
           className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          {t('hero.title')}
+          Blog
         </motion.h1>
         <motion.p
           variants={itemVariants}
           className="lg:text-xl text-base text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          {t('hero.description1')} {t('hero.description2')}
+          Rimani aggiornato sulle ultime novità in tema di outsourcing del back office digitale, customer care professionale e conformità normativa. Scopri strategie, best practice e soluzioni innovative per ottimizzare i tuoi processi aziendali.
         </motion.p>
       </motion.div>
     </section>
   );
-}
+} 
