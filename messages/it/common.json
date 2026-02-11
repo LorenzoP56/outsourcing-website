@@ -1,0 +1,87 @@
+{
+  "Header": {
+    "nav": {
+      "chiSiamo": "Chi Siamo",
+      "servizi": "Servizi",
+      "esternalizzazione": "Perché esternalizzare",
+      "blog": "Blog"
+    },
+    "cta": "Contattaci",
+    "aria": {
+      "showServicesSubmenu": "Mostra sottomenu servizi",
+      "toggleMenu": "Apri/chiudi menu"
+    }
+  },
+  "Footer": {
+    "company": {
+      "name": "OutSourcing Group srl",
+      "address": "Piazza G. Zanellato 13 - 35131 (PD)",
+      "vatId": "P. IVA 03475900282",
+      "phone": "Tel +39 049 870 1855",
+      "email": "info@osgdigitaleconomy.com"
+    },
+    "sections": {
+      "pages": "Pagine",
+      "services": "Servizi",
+      "availability": "Disponibilità"
+    },
+    "links": {
+      "chiSiamo": "Chi siamo",
+      "servizi": "Servizi",
+      "esternalizzazione": "Perché esternalizzare",
+      "blog": "Blog",
+      "contatti": "Contatti"
+    },
+    "serviceLinks": {
+      "backOffice": "Digital Back Office",
+      "contactCenter": "Contact Center",
+      "datiCliente": "Gestione Operativa dei Dati Cliente",
+      "assistenza": "Assistenza dedicata agli utenti",
+      "dataManagement": "Data management",
+      "training": "Training Aziendali"
+    },
+    "schedule": {
+      "weekdays": "Lunedì - Venerdì",
+      "weekdaysHours": "09:00 - 19:00",
+      "weekend": "Sabato e Domenica",
+      "weekendNote": "supporto attivabile su necessità operative o progetti dedicati"
+    },
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    },
+    "copyright": "Copyright {year} - Outsourcing Group srl - Tutti i diritti riservati"
+  },
+  "Common": {
+    "contactUs": "Contattaci",
+    "sendRequest": "Invia la tua richiesta",
+    "discoverMore": "Scopri di più",
+    "requestQuote": "Richiedi un preventivo",
+    "discoverAdvantages": "Scopri i vantaggi",
+    "requestInfo": "Richiedi informazioni",
+    "startDelegating": "Inizia a delegare",
+    "readMoreArticles": "Leggi altri articoli",
+    "backToBlog": "Torna al Blog",
+    "talkToConsultant": "Parla con un consulente",
+    "sendEmail": "Invia email",
+    "noArticles": "Nessun articolo disponibile al momento."
+  },
+  "Form": {
+    "name": "Nome e Cognome",
+    "email": "Email",
+    "company": "Azienda",
+    "message": "Messaggio",
+    "privacyConsent": "Accetto l'<link>informativa sulla privacy</link>",
+    "submit": "Invia la tua richiesta"
+  },
+  "NotFound": {
+    "title": "Pagina non trovata",
+    "description": "La pagina che stai cercando non esiste o è stata spostata.",
+    "backToHome": "Torna alla Home"
+  },
+  "Pagination": {
+    "previous": "Pagina precedente",
+    "next": "Pagina successiva",
+    "page": "Pagina {number}"
+  }
+}

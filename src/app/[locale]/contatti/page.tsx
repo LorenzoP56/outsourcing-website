@@ -2,21 +2,34 @@ import Hero from "@/components/sections/Contatti/Hero";
 import Form from "@/components/sections/Contatti/Form";
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Richiedi una consulenza gratuita | Outsourcing Group",
-  description: "Richiedi una consulenza gratuita sui nostri servizi di outsourcing. Preventivo personalizzato per Back Office, Contact Center, BPO. Risposta in 24h.",
-  alternates: {
-    canonical: "https://www.osgdigitaleconomy.com/contatti",
-  },
-};
+const BASE_URL = "https://www.osgdigitaleconomy.com";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Contatti' });
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/contatti`,
+      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/contatti`])),
+    },
+  };
+}
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
   { name: "Contatti", url: "/contatti" },
 ]);
 
-export default function Contatti() {
+export default async function Contatti({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <script
