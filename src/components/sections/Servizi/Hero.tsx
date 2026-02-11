@@ -2,6 +2,7 @@
 
 import { COLORS } from "@/lib/constants";
 import { motion } from "@/components/animations";
+import {useTranslations} from "next-intl";
 
 const containerVariants = {
   hidden: {},
@@ -38,6 +39,8 @@ const itemVariants = {
 } as const;
 
 export default function Hero() {
+  const t = useTranslations('Servizi');
+
   return (
     <section
       className="min-h-[50vh] lg:px-32 lg:py-16 px-8 pt-16 flex items-center justify-center"
@@ -54,18 +57,20 @@ export default function Hero() {
             className="lg:text-[56px] lg:leading-[56px] text-[40px] leading-[48px] font-bold lg:text-center"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
-            I nostri servizi professionali di
+            {t('hero.titleLine1')}
             <br />
-            Digital Back Office
+            {t('hero.titleLine2')}
           </motion.h1>
           <motion.p
             variants={itemVariants}
             className="lg:text-xl text-base"
             style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}
           >
-            La trasformazione digitale richiede processi interni strutturati, dati affidabili e flussi operativi efficienti.
-            I nostri servizi di Digital Back Office si basano su procedure standardizzate, ambienti di collaudo, controllo qualità e sistemi digitali che permettono un'elaborazione precisa e tracciata di ogni attività.
-            Per supportare l'azienda nella gestione dei dati, nel monitoraggio dei flussi e nell'ottimizzazione dei processi, integriamo competenze operative, tecniche e analitiche.
+            {t('hero.description1')}
+            {' '}
+            {t('hero.description2')}
+            {' '}
+            {t('hero.description3')}
           </motion.p>
         </div>
       </motion.div>

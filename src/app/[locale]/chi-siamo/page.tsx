@@ -5,21 +5,34 @@ import Valori from "@/components/sections/ChiSiamo/Valori";
 import Team from "@/components/sections/ChiSiamo/Team";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Chi Siamo | 25 Anni di Esperienza in Digital Back Office",
-  description: "Scopri Outsourcing Group: dal 1999 partner per servizi BPO e back office digitale. 25 anni di esperienza, partner di autorità di certificazione europea.",
-  alternates: {
-    canonical: "https://www.osgdigitaleconomy.com/chi-siamo",
-  },
-};
+const BASE_URL = "https://www.osgdigitaleconomy.com";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'ChiSiamo' });
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/chi-siamo`,
+      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/chi-siamo`])),
+    },
+  };
+}
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
   { name: "Chi Siamo", url: "/chi-siamo" },
 ]);
 
-export default function ChiSiamo() {
+export default async function ChiSiamo({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <script

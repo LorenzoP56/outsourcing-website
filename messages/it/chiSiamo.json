@@ -1,0 +1,106 @@
+{
+  "ChiSiamo": {
+    "meta": {
+      "title": "Chi Siamo | 25 Anni di Esperienza in Digital Back Office",
+      "description": "Scopri Outsourcing Group: dal 1999 partner per servizi BPO e back office digitale. 25 anni di esperienza, partner di autorità di certificazione europea."
+    },
+    "hero": {
+      "title": "Professionisti al passo con l'evoluzione del settore digitale",
+      "description": "Dal 1999 affianchiamo le aziende con servizi digitali che evolvono costantemente, integrando tecnologie e competenze per garantire gestione operativa, qualità e compliance in un mercato in continua trasformazione."
+    },
+    "storia": {
+      "title": "La nostra storia nel digitale",
+      "events": {
+        "80s90s": {
+          "period": "Anni '80 - '90",
+          "title": "L'era del data entry",
+          "description": "Negli anni '90 l'azienda opera come <strong>Leondata Srl</strong>, specializzandosi nei servizi di data entry e nella trascrizione manuale dei dati da documenti cartacei ai sistemi gestionali, gettando le basi dei moderni servizi di back office. Le attività principali riguardano l'inserimento e la gestione di grandi volumi di dati amministrativi e fiscali. Leondata diventa successivamente socia fondatrice del <strong>Consorzio Outsourcing Group</strong>, portando competenze e know-how nel trattamento digitale dei dati."
+        },
+        "98_99": {
+          "period": "Anni '98 - '99",
+          "title": "Archiviazione ottica",
+          "description": "In questi anni il Consorzio si trasforma in <strong>Outsourcing Group Srl</strong> e contribuisce a uno dei primi grandi progetti nazionali di digitalizzazione: <strong>l'archiviazione ottica dei bilanci e delle pratiche delle Camere di Commercio italiane</strong>. Vengono digitalizzati milioni di documenti e costruite le prime infrastrutture di conservazione digitale sicura. È uno dei momenti più significativi nella storia dell'azienda: dalla digitalizzazione dati si passa alla digitalizzazione massiva dei documenti, gettando le basi per i moderni servizi di gestione documentale."
+        },
+        "2005": {
+          "period": "2005",
+          "title": "PEC (Posta Elettronica Certificata)",
+          "description": "La PEC introduce un nuovo modo di comunicare con valore legale, accelerando i processi amministrativi e riducendo la dipendenza dal cartaceo. È l'inizio della trasformazione digitale nelle comunicazioni ufficiali tra aziende, professionisti e Pubblica Amministrazione."
+        },
+        "2011": {
+          "period": "2011",
+          "title": "L'inizio del servizio di attivazione PEC per un'autorità di certificazione europea",
+          "description": "Outsourcing Group avvia la gestione operativa delle <strong>attivazioni PEC per una delle principali autorità di certificazione europee</strong>. Il team si occupa della verifica dei dati, del controllo qualità e dell'attivazione delle caselle PEC, operando su processi ad alto volume e requisiti certificati. Nel tempo il servizio si è evoluto verso portali online self-service, con il supporto continuo di Outsourcing Group nelle fasi di verifica e assistenza agli utenti."
+        },
+        "2013": {
+          "period": "2013",
+          "title": "Outsourcing Group avvia l'emissione delle prime firme digitali",
+          "description": "Dopo l'introduzione della firma digitale in Italia nel 2010, nel 2013 Outsourcing Group inizia a operare direttamente nel settore come partner operativo di una delle principali autorità di certificazione europee. Il team gestisce <strong>verifica dei dati, identificazione degli utenti, emissione dei certificati</strong> e <strong>assistenza tecnica</strong> su Business Key, Smart Card e firme digitali remote."
+        },
+        "2016": {
+          "period": "2016",
+          "title": "SPID e identità digitale",
+          "description": "Con la nascita di SPID, che diventa in pochi anni lo strumento principale di accesso ai servizi digitali pubblici e privati, cresce la richiesta di supporto e assistenza specializzata. Outsourcing Group avvia, fin dalle prime fasi, la <strong>gestione delle attivazioni SPID</strong>, occupandosi di verifiche documentali e controllo dell'identità su volumi elevati."
+        },
+        "2018": {
+          "period": "2018",
+          "title": "Entra in vigore il GDPR",
+          "description": "Il Regolamento Europeo sulla protezione dei dati introduce requisiti stringenti su sicurezza, processi, tracciabilità e gestione delle informazioni. Le aziende devono adeguare procedure e sistemi. Outsourcing Group avvia un percorso completo di adeguamento, supportata da un'azienda specializzata in sicurezza dei dati e normativa GDPR."
+        },
+        "2023": {
+          "period": "2023",
+          "title": "Approvazione del Data Act",
+          "description": "Arriva il nuovo quadro normativo europeo dedicato ai dati, alla loro condivisione e alla governance. Le imprese sono chiamate a gestire processi ancora più strutturati e sicuri."
+        },
+        "today": {
+          "period": "Oggi",
+          "title": "Intelligenza Artificiale nei processi operativi",
+          "description": "L'IA inizia a supportare la gestione di dati, documenti e ticket, rendendo i processi più veloci, ordinati e tracciabili. Le aziende si preparano a una nuova fase di efficienza digitale."
+        }
+      },
+      "aria": {
+        "showDetails": "Mostra dettagli {period}",
+        "hideDetails": "Chiudi dettagli {period}",
+        "openDetails": "Apri dettagli {period}"
+      }
+    },
+    "costruiamo": {
+      "title": "Costruiamo insieme la soluzione più adatta alla tua azienda",
+      "description": "Ogni azienda ha esigenze diverse. Ascoltiamo le tue necessità e analizziamo insieme il modo più efficace per esternalizzare i processi e migliorare la gestione operativa."
+    },
+    "valori": {
+      "title": "I valori che trasferiamo ai nostri partner",
+      "items": {
+        "reliability": {
+          "title": "Affidabilità & Trasparenza",
+          "description": "I nostri processi sono certificati e conformi alle normative, per darti sicurezza completa."
+        },
+        "flexibility": {
+          "title": "Flessibilità & Partnership",
+          "description": "Adattandoci a grandi aziende, PMI e PA, offriamo soluzioni su misura e white-label."
+        },
+        "innovation": {
+          "title": "Innovazione & Competenza",
+          "description": "Investiamo nella formazione continua del team e nell'adozione di strumenti digitali che semplificano il lavoro, senza sostituire il valore dell'esperienza umana."
+        },
+        "assistance": {
+          "title": "Assistenza & Soddisfazione",
+          "description": "Mettiamo il cliente al centro di ogni processo: rispondiamo con rapidità, precisione e un supporto umano e competente."
+        },
+        "sustainability": {
+          "title": "Sostenibilità & Etica",
+          "description": "Promuoviamo politiche ESG, codice etico e modelli 231, perché il business etico genera valore duraturo."
+        }
+      },
+      "aria": {
+        "previous": "Valore precedente",
+        "next": "Valore successivo"
+      }
+    },
+    "team": {
+      "title": "Insieme, trasformiamo ogni servizio in risultato",
+      "description1": "Affidare in outsourcing processi e dati sensibili richiede fiducia. Per questo, il nostro team lavora con <bold>trasparenza, metodo</bold> e un <bold>approccio collaborativo continuo</bold> con ogni cliente.",
+      "description2": "Da oltre vent'anni operiamo nel <bold>digital trust</bold>, unendo competenze tecniche e attenzione alle persone. Ogni membro del team viene informato direttamente sulle procedure e sui flussi operativi del cliente, acquisendo una conoscenza approfondita delle sue modalità di lavoro e delle pratiche specifiche da gestire. Questo ci consente di operare come una <bold>vera estensione del tuo reparto interno</bold>, garantendo precisione, coerenza e continuità nel tempo.",
+      "description3": "Crediamo nella collaborazione come leva di crescita reciproca: ogni progetto diventa un'occasione per migliorare insieme ai nostri clienti, condividendo conoscenze e soluzioni."
+    }
+  }
+}

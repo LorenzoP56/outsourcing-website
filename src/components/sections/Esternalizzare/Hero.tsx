@@ -5,6 +5,7 @@ import "./Hero.css";
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 import { motion } from "@/components/animations";
+import {useTranslations} from "next-intl";
 
 const containerVariants = {
   hidden: {},
@@ -41,6 +42,9 @@ const itemVariants = {
 } as const;
 
 export default function Hero() {
+  const t = useTranslations('Esternalizzazione');
+  const tCommon = useTranslations('Common');
+
   return (
     <section className="esternalizzare-hero-bg xl:min-h-[90vh] lg:min-h-[70vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center">
       <motion.div
@@ -54,17 +58,17 @@ export default function Hero() {
           className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          Perché esternalizzare alcuni processi interni
+          {t('hero.title')}
         </motion.h1>
         <motion.p
           variants={itemVariants}
           className="lg:text-xl text-base text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          L'outsourcing non è una semplice esternalizzazione di compiti, ma una strategia per rendere i processi più snelli, sicuri e sostenibili nel tempo.<br/><br/>Esternalizzando libererai risorse per il core business, ridurrai i costi operativi, avrai accesso a competenze specializzate e potrai adattare facilmente la capacità alle variazioni della domanda.
+          {t('hero.description1')}<br/><br/>{t('hero.description2')}
           <br/>
           <br/>
-          Migliore capacità operativa significa crescita della tua azienda.
+          {t('hero.description3')}
         </motion.p>
       </motion.div>
       <motion.div
@@ -75,9 +79,9 @@ export default function Hero() {
         whileTap={{ scale: 0.97 }}
       >
         <Button href="/contatti">
-          Inizia a delegare
+          {tCommon('startDelegating')}
         </Button>
       </motion.div>
     </section>
   );
-} 
+}
