@@ -2,7 +2,6 @@
 
 import { COLORS } from "@/lib/constants";
 import { motion } from "@/components/animations";
-import {useTranslations} from "next-intl";
 
 const containerVariants = {
   hidden: {},
@@ -39,8 +38,6 @@ const itemVariants = {
 } as const;
 
 export default function Hero() {
-  const t = useTranslations('Contatti');
-
   return (
     <section className="min-h-[70vh] lg:px-32 lg:py-16 px-8 py-16 flex flex-col gap-8 items-center justify-center" style={{ backgroundImage: 'url(/website_images/Contatti/bgHero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <motion.div
@@ -54,9 +51,9 @@ export default function Hero() {
           className="lg:text-[56px] lg:leading-[56px] text-[32px] leading-[32px] font-bold text-center"
           style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT_WHITE }}
         >
-          {t('hero.title')}
+          Contatti
         </motion.h1>
       </motion.div>
     </section>
   );
-}
+} 

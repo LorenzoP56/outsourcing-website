@@ -3,14 +3,8 @@
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import { AnimatedSection, StaggerContainer, StaggerItem, fadeInUp } from "@/components/animations";
-import {useTranslations} from "next-intl";
-
-const ITEM_KEYS = ["overload", "errors", "slowness", "costs", "noControl", "disorganization"] as const;
 
 export default function Group() {
-  const t = useTranslations('Home');
-  const bold = (chunks: React.ReactNode) => <span className="font-bold">{chunks}</span>;
-
   return (
     <section
       className="min-h-auto xl:min-h-[100vh] flex lg:flex-row flex-col px-6 py-8 lg:px-32 lg:py-16 lg:items-center xl:gap-16 gap-12"
@@ -43,30 +37,33 @@ export default function Group() {
       <StaggerContainer className="flex flex-col lg:w-1/2 gap-6 lg:gap-8">
         <StaggerItem>
           <h2 className="text-[28px] leading-[36px] md:text-[32px] md:leading-[40px] lg:text-[40px] lg:leading-[48px] font-bold" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
-            {t('group.title')}
+            Outsourcing Group partner affidabile
           </h2>
         </StaggerItem>
 
         <StaggerItem>
           <p className="text-sm md:text-base" style={{ color: COLORS.TEXT }}>
-            {t.rich('group.description1', { bold })}
+            Dal 1999 gestiamo <span className="font-bold">attività di Back Office per servizi digitali</span> e collaboriamo con una delle maggiori autorità di certificazione in Europa, operante nei settori strategici del Digital Trust, della Cybersecurity e della Business Innovation.
             <br />
             <br />
-            {t.rich('group.description2', { bold })}
+            Le nostre attività costituiscono un pilastro essenziale per garantire alla tua azienda <span className="font-bold">efficienza, sicurezza</span> e <span className="font-bold">continuità</span> nei processi digitali. Operando <span className="font-bold">dietro le quinte</span>, offriamo alle aziende un ventaglio di opportunità riducendo:
           </p>
         </StaggerItem>
 
         <StaggerItem>
           <ul className="list-disc pl-5 text-sm md:text-base space-y-1" style={{ color: COLORS.TEXT }}>
-            {ITEM_KEYS.map((key) => (
-              <li key={key}>{t.rich(`group.items.${key}`, { bold })}</li>
-            ))}
+            <li>il <span className="font-bold">sovraccarico operativo</span>, che sottrae tempo e risorse alle attività strategiche;</li>
+            <li>gli <span className="font-bold">errori frequenti</span>, spesso causati dall'assenza di procedure chiare e strutturate;</li>
+            <li>i <span className="font-bold">tempi lunghi</span>, eliminando rallentamenti operativi e colli di bottiglia;</li>
+            <li>i <span className="font-bold">costi elevati del personale</span>, evitando di mantenere risorse dedicate a micro-attività non core;</li>
+            <li>la <span className="font-bold">mancanza di presidio strutturato</span>, garantendo controllo continuo e tracciabilità dei flussi;</li>
+            <li>la <span className="font-bold">disorganizzazione dei dati</span>, assicurando archiviazione, aggiornamento e verifica puntuali.</li>
           </ul>
         </StaggerItem>
 
         <StaggerItem>
           <p className="text-sm md:text-base" style={{ color: COLORS.TEXT }}>
-            {t.rich('group.closing', { bold })}
+            Un team di professionisti qualificati potrà assicurarti <span className="font-bold">qualità, precisione</span> e <span className="font-bold">conformità normativa</span> in ogni attività gestita.
           </p>
         </StaggerItem>
       </StaggerContainer>

@@ -9,9 +9,9 @@ import AffidatiServizi from './AffidatiServizi';
 export default function ConditionalSections() {
   const pathname = usePathname();
   
-  if (pathname === '/it' || pathname === '/en') {
+  if (pathname === '/') {
     return null;
-  } else if (pathname.includes('/contatti')) {
+  } else if (pathname === '/contatti') {
     return (
       <>
         <DomandeFrequenti />

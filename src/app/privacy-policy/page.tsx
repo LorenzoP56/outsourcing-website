@@ -1,33 +1,21 @@
 import { COLORS } from "@/lib/constants";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
-import { setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
-
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-
-  return {
-    title: "Privacy Policy | Outsourcing Group",
-    description: "Informativa sulla privacy e trattamento dei dati personali di Outsourcing Group SRL in conformità al GDPR.",
-    alternates: {
-      canonical: `${BASE_URL}/${locale}/privacy-policy`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/privacy-policy`])),
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: "Privacy Policy | Outsourcing Group",
+  description: "Informativa sulla privacy e trattamento dei dati personali di Outsourcing Group SRL in conformità al GDPR.",
+  alternates: {
+    canonical: "https://www.osgdigitaleconomy.com/privacy-policy",
+  },
+};
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
   { name: "Privacy Policy", url: "/privacy-policy" },
 ]);
 
-export default async function PrivacyPolicy({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
+export default function PrivacyPolicy() {
   return (
     <>
       <script
