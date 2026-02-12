@@ -6,11 +6,13 @@ import Button from "@/components/ui/Button";
 import { AnimatedSection, fadeInUp, motion } from "@/components/animations";
 import {Link} from "@/i18n/navigation";
 import {useTranslations} from "next-intl";
+import { useContactForm } from "@/hooks/useContactForm";
 
 export default function Form() {
   const t = useTranslations('Contatti');
   const tForm = useTranslations('Form');
   const tCommon = useTranslations('Common');
+  const { formData, loading, success, error, handleChange, handleSubmit } = useContactForm();
 
   return (
     <motion.div
@@ -54,38 +56,54 @@ export default function Form() {
         </div>
       </AnimatedSection>
       <AnimatedSection variants={fadeInUp} className="flex flex-col gap-4 flex-1">
-        <form className="flex flex-col gap-4" onSubmit={(e) => {
-          e.preventDefault();
-          console.log("Form submitted");
-        }}>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('name')}</label>
-            <input type="text" id="name" name="name" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('email')}</label>
-            <input type="email" id="email" name="email" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('company')}</label>
-            <input type="text" id="azienda" name="azienda" className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('message')}</label>
-            <textarea id="message" name="message" className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
-          </div>
-          <div className="flex items-start gap-2">
-            <input type="checkbox" id="privacy" name="privacy" required className="mt-1" />
-            <label htmlFor="privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>
-              {tForm.rich('privacyConsent', { link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link> })}
-            </label>
-          </div>
-          <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
-            <Button type="submit" className="w-full lg:w-[300px]">
-              {tCommon('sendRequest')}
-            </Button>
+        {success ? (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-green-50 border border-green-400 rounded-md p-6 text-center"
+          >
+            <p className="text-green-700 text-lg font-semibold">{tForm('successMessage')}</p>
           </motion.div>
-        </form>
+        ) : (
+          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="contatti-name" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('name')}</label>
+              <input type="text" id="contatti-name" name="name" required value={formData.name} onChange={handleChange} className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="contatti-email" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('email')}</label>
+              <input type="email" id="contatti-email" name="email" required value={formData.email} onChange={handleChange} className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="contatti-azienda" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('company')}</label>
+              <input type="text" id="contatti-azienda" name="azienda" value={formData.azienda} onChange={handleChange} className="bg-white rounded-md p-3 text-gray-800 border border-gray-300" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="contatti-message" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>{tForm('message')}</label>
+              <textarea id="contatti-message" name="message" value={formData.message} onChange={handleChange} className="bg-white rounded-md p-3 text-gray-800 min-h-[120px] border border-gray-300" />
+            </div>
+            <div className="flex items-start gap-2">
+              <input type="checkbox" id="contatti-privacy" name="privacy" required className="mt-1" />
+              <label htmlFor="contatti-privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT }}>
+                {tForm.rich('privacyConsent', { link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link> })}
+              </label>
+            </div>
+            {error && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-red-500 text-sm"
+              >
+                {error}
+              </motion.p>
+            )}
+            <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
+              <Button type="submit" className="w-full lg:w-[300px]" disabled={loading}>
+                {loading ? tForm('sending') : tCommon('sendRequest')}
+              </Button>
+            </motion.div>
+          </form>
+        )}
       </AnimatedSection>
     </motion.div>
   );

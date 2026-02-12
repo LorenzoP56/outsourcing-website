@@ -71,8 +71,10 @@
     "email": "Email",
     "company": "Azienda",
     "message": "Messaggio",
-    "privacyConsent": "Accetto l'<link>informativa sulla privacy</link>",
-    "submit": "Invia la tua richiesta"
+    "privacyConsent": "Accetto l''<link>informativa sulla privacy</link>",
+    "submit": "Invia la tua richiesta",
+    "sending": "Invio in corso...",
+    "successMessage": "Richiesta inviata con successo! Ti ricontatteremo al più presto."
   },
   "NotFound": {
     "title": "Pagina non trovata",
