@@ -5,56 +5,56 @@
       "description": "Discover Outsourcing Group: since 1999, a partner for BPO and digital back office services. 25 years of experience, partner of European certification authorities."
     },
     "hero": {
-      "title": "Professionals Keeping Pace with the Digital Industry Evolution",
-      "description": "Since 1999, we have been supporting companies with constantly evolving digital services, integrating technologies and skills to ensure operational management, quality, and compliance in a continuously transforming market."
+      "title": "Professionals in step with the evolution of the digital sector",
+      "description": "Since 1999, we have been supporting companies with constantly evolving digital services, integrating technologies and expertise to ensure operational management, quality and compliance in an ever-changing market."
     },
     "storia": {
       "title": "Our History in Digital",
       "events": {
         "80s90s": {
-          "period": "1980s - 1990s",
-          "title": "The Data Entry Era",
-          "description": "In the 1990s, the company operated as <strong>Leondata Srl</strong>, specializing in data entry services and manual transcription of data from paper documents to management systems, laying the foundations of modern back office services. The main activities involved the entry and management of large volumes of administrative and fiscal data. Leondata later became a founding member of the <strong>Outsourcing Group Consortium</strong>, bringing expertise and know-how in digital data processing."
+          "period": "1980 - 1990",
+          "title": "The data entry era",
+          "description": "In the 1990s, the company operated as <strong>Leondata Srl</strong>, specializing in data entry services and the manual transcription of data from paper documents to management systems, laying the foundations for modern back office services. The main activities concern the entry and management of large volumes of administrative and tax data. Leondata later became a founding member of the <strong>Outsourcing Group Consortium</strong>, bringing expertise and know-how in digital data processing."
         },
         "98_99": {
           "period": "1998 - 1999",
-          "title": "Optical Archiving",
-          "description": "During these years, the Consortium transformed into <strong>Outsourcing Group Srl</strong> and contributed to one of the first major national digitization projects: <strong>the optical archiving of financial statements and documents of Italian Chambers of Commerce</strong>. Millions of documents were digitized, and the first secure digital preservation infrastructures were built. It was one of the most significant moments in the company's history: from data digitization to massive document digitization, laying the foundations for modern document management services."
+          "title": "Optical archiving",
+          "description": "During these years, the Consortium transformed into <strong>Outsourcing Group Srl</strong> and contributed to one of the first major national digitization projects: <strong>the optical archiving of financial statements and documents of Italian Chambers of Commerce</strong>. Millions of documents are digitized and the first secure digital preservation infrastructures are built. It's one of the most significant moments in the company's history: from data digitization to massive document digitization, laying the foundation for modern document management services."
         },
         "2005": {
           "period": "2005",
           "title": "PEC (Certified Electronic Mail)",
-          "description": "PEC introduced a new way of communicating with legal validity, accelerating administrative processes and reducing dependence on paper. It was the beginning of the digital transformation in official communications between businesses, professionals, and Public Administration."
+          "description": "The PEC introduces a new way of communicating with legal value, accelerating administrative processes and reducing dependence on paper. It is the beginning of the digital transformation in official communications between companies, professionals and Public Administration."
         },
         "2011": {
           "period": "2011",
-          "title": "Start of PEC Activation Service for a European Certification Authority",
-          "description": "Outsourcing Group began managing the operational <strong>PEC activations for one of the leading European certification authorities</strong>. The team handled data verification, quality control, and PEC mailbox activation, operating on high-volume processes with certified requirements. Over time, the service evolved toward online self-service portals, with Outsourcing Group's continued support in verification and user assistance phases."
+          "title": "The start of the PEC activation service for a European certification authority",
+          "description": "Outsourcing Group initiates operational management of <strong>PEC activations for a leading European certification authority</strong>. The team is responsible for data verification, quality control, and activation of PEC boxes, operating on high-volume processes and certified requirements. Over time, the service has evolved towards self-service online portals, with the continuous support of Outsourcing Group in the verification and user assistance phases."
         },
         "2013": {
           "period": "2013",
-          "title": "Outsourcing Group Begins Issuing the First Digital Signatures",
-          "description": "Following the introduction of digital signatures in Italy in 2010, in 2013 Outsourcing Group began operating directly in the sector as an operational partner of one of the leading European certification authorities. The team manages <strong>data verification, user identification, certificate issuance</strong> and <strong>technical support</strong> for Business Keys, Smart Cards, and remote digital signatures."
+          "title": "Outsourcing Group begins issuing first digital signatures",
+          "description": "After the introduction of digital signatures in Italy in 2010, Outsourcing Group began operating directly in the sector in 2013 as an operating partner of one of Europe's leading certification authorities. The team manages <strong>data verification, user identification, certificate issuance</strong> and <strong>technical assistance</strong> on Business Keys, Smart Cards, and remote digital signatures."
         },
         "2016": {
           "period": "2016",
-          "title": "SPID and Digital Identity",
-          "description": "With the launch of SPID, which within a few years became the primary tool for accessing public and private digital services, the demand for specialized support and assistance grew. Outsourcing Group launched, from the earliest phases, the <strong>management of SPID activations</strong>, handling document verification and identity control on high volumes."
+          "title": "SPID and digital identity",
+          "description": "With the birth of SPID, which in just a few years becomes the main tool for accessing public and private digital services, the demand for specialized support and assistance is growing. Outsourcing Group starts, from the early stages, the <strong>management of SPID activations</strong>, dealing with document verification and identity control over high volumes."
         },
         "2018": {
           "period": "2018",
-          "title": "GDPR Comes into Effect",
-          "description": "The European Regulation on data protection introduced stringent requirements on security, processes, traceability, and information management. Companies had to adapt procedures and systems. Outsourcing Group initiated a complete compliance process, supported by a company specializing in data security and GDPR regulations."
+          "title": "GDPR comes into force",
+          "description": "The European Data Protection Regulation introduces stringent requirements on security, processes, traceability and information management. Companies must adjust procedures and systems. Outsourcing Group begins a comprehensive adjustment journey, supported by a company specializing in data security and GDPR regulation."
         },
         "2023": {
           "period": "2023",
-          "title": "Data Act Approval",
-          "description": "The new European regulatory framework dedicated to data, its sharing, and governance arrived. Companies are called upon to manage even more structured and secure processes."
+          "title": "Approval of the Data Act",
+          "description": "The new European regulatory framework dedicated to data, data sharing and governance is coming. Businesses are called upon to manage even more structured and secure processes."
         },
         "today": {
           "period": "Today",
-          "title": "Artificial Intelligence in Operational Processes",
-          "description": "AI is beginning to support the management of data, documents, and tickets, making processes faster, more organized, and traceable. Companies are preparing for a new phase of digital efficiency."
+          "title": "Artificial Intelligence in operational processes",
+          "description": "AI begins to support data, document and ticket management, making processes faster, tidier and more traceable. Companies are preparing for a new phase of digital efficiency."
         }
       },
       "aria": {

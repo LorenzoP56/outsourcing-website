@@ -15,56 +15,56 @@
     "discoverMore": "Learn More",
     "details": {
       "assistenza-dedicata": {
-        "name": "Dedicated User Support",
-        "serviceDescription": "We support your users with activations, configurations, and the use of digital services.",
-        "shortDescription": "We support your users with activations, configurations, and the use of digital services.",
-        "detailDescription": "We support your users with activations, configurations, and the daily use of digital services. Our team handles every request with competence and care, providing clear, timely, and personalized assistance. We guide users through the entire operational journey, from understanding the service to resolving any difficulties, ensuring a smooth and uninterrupted experience.",
-        "functionalityTitle": "How It Works",
-        "functionalitySubtitle": "Every request is handled by a dedicated operator, trained on the client's services, following clear and measurable procedures.",
+        "name": "Dedicated user assistance",
+        "serviceDescription": "We support your users in activations, configurations and use of digital services.",
+        "shortDescription": "We support your users in activations, configurations and the use of digital services.",
+        "detailDescription": "We support your users in the activations, configurations and daily use of digital services. Our team handles every request competently and carefully, offering clear, timely, and personalized assistance. We accompany users throughout the operational journey, from understanding the service to resolving any difficulties, ensuring a smooth and uninterrupted experience.",
+        "functionalityTitle": "How it works",
+        "functionalitySubtitle": "Each request is handled by a dedicated operator, trained in customer services, following clear and measurable procedures.",
         "functionality": {
           "item1": {
-            "title": "Understanding the Digital Service",
-            "description": "We help the user clearly understand what they are purchasing, what features are available, and how to access them."
+            "title": "Understanding the digital service",
+            "description": "We help the user clearly understand what they are purchasing, what features are available and how to access them."
           },
           "item2": {
-            "title": "Guided Activations and Configurations",
-            "description": "We support users with initial activations, customized configurations, and technical settings, including step-by-step guidance."
+            "title": "Guided activations and configurations",
+            "description": "We support users in initial activations, custom configurations and technical settings, even in step-by-step mode."
           },
           "item3": {
-            "title": "Technical-Operational Support",
-            "description": "We manage requests and technical issues related to the use of digital services, providing immediate solutions."
+            "title": "Technical-operational support",
+            "description": "We handle requests and technical issues related to the use of digital services, offering immediate solutions."
           },
           "item4": {
-            "title": "Correct and Secure Usage",
-            "description": "We guide users in the compliant use of digital tools, reducing errors and improper behavior."
+            "title": "Correct and safe use",
+            "description": "We accompany users in the compliant use of digital tools, reducing errors and improper behavior."
           },
           "item5": {
-            "title": "Difficulty Resolution",
-            "description": "We intervene to unblock critical situations, guiding the user to resolution and ensuring service continuity."
+            "title": "Resolution of difficulties",
+            "description": "We intervene to unblock critical situations, guiding the user to resolution and ensuring continuity of the service."
           }
         },
-        "advantagesTitle": "Results",
+        "advantagesTitle": "Result",
         "advantages": {
           "item1": {
-            "title": "Always Operational Digital Services",
-            "description": "Save on salaries, benefits, and training with a team that is already prepared and certified."
+            "title": "Digital services always operational",
+            "description": "Save on salaries, benefits and training thanks to a ready-made, certified team."
           },
           "item2": {
-            "title": "No Burden on Internal Departments",
-            "description": "We manage daily support, peak periods, and activations without interrupting your team."
+            "title": "No burden on internal departments",
+            "description": "We manage daily support, peaks and activations, without interruptions for your team."
           }
         },
         "detailedContentTitle": "Support that simplifies the use of digital services",
         "detailedContent": {
-          "p1": "With our <strong>dedicated support</strong> service, your users receive direct and personalized assistance to <strong>understand</strong>, <strong>configure, and correctly use the digital tools</strong> provided by your company. We handle activations, access issues, operational difficulties, technical problems, and any daily need that may hinder productivity.",
-          "p2": "The company retains full control and governance of the digital service, while we <strong>manage all day-to-day operations</strong>. This allows internal departments - such as IT, HR, Compliance, or Digital Office - to <strong>focus on strategic activities</strong> without having to absorb continuous requests from users.",
-          "p3": "The result is a <strong>digital service that is always operational</strong>, <strong>compliant with corporate policies</strong>, and <strong>correctly used by users</strong>, with support also available in <strong>English</strong> when needed."
+          "p1": "With our <strong>dedicated support service</strong>, your users receive direct and personalized assistance to <strong>understand, configure and correctly use the digital tools</strong> provided by your company. We manage activations, accesses, operational difficulties, technical problems and any daily needs that may hinder the operation.",
+          "p2": "The company maintains full control and governance of the digital service, while we <strong>manage all day-to-day operations</strong>. This allows internal departments - such as IT, HR, Compliance, or Digital Office - to <strong>focus on strategic activities</strong> without having to absorb continuous requests from users.",
+          "p3": "The result is a <strong>digital service that is always functioning, compliant with company policies and used correctly by users,</strong> with support also available in English when needed."
         }
       },
       "contact-center": {
         "name": "Contact Center",
-        "serviceDescription": "We manage all incoming customer communications with structured multichannel support.",
-        "shortDescription": "We manage all incoming customer communications with structured multichannel support.",
+        "serviceDescription": "We manage all incoming client communication with structured multi-channel assistance.",
+        "shortDescription": "We manage all incoming client communication with structured multi-channel assistance.",
         "detailDescription": "Structured multichannel assistance to manage every customer request clearly, quickly, and professionally. Every contact is tracked and managed to ensure maximum satisfaction.",
         "functionalityTitle": "How We Work",
         "functionalitySubtitle": "Every project starts with an analysis of the client's needs. We define workflows, train the team, and activate the necessary channels.",

@@ -53,17 +53,17 @@
     "copyright": "Copyright {year} - Outsourcing Group srl - All rights reserved"
   },
   "Common": {
-    "contactUs": "Contact Us",
-    "sendRequest": "Send Your Request",
-    "discoverMore": "Learn More",
-    "requestQuote": "Request a Quote",
-    "discoverAdvantages": "Discover the Benefits",
-    "requestInfo": "Request Information",
-    "startDelegating": "Start Delegating",
-    "readMoreArticles": "Read More Articles",
-    "backToBlog": "Back to Blog",
-    "talkToConsultant": "Talk to a Consultant",
-    "sendEmail": "Send Email",
+    "contactUs": "Contact us",
+    "sendRequest": "Send your request",
+    "discoverMore": "Learn more",
+    "requestQuote": "Request a quote",
+    "discoverAdvantages": "Discover the benefits",
+    "requestInfo": "Request information",
+    "startDelegating": "Start delegating",
+    "readMoreArticles": "Read more articles",
+    "backToBlog": "Back to blog",
+    "talkToConsultant": "Talk to an advisor",
+    "sendEmail": "Send email",
     "noArticles": "No articles available at this time."
   },
   "Form": {

@@ -8,8 +8,8 @@
       "title": "Contact"
     },
     "form": {
-      "title": "Trust a Reliable Operational Partner",
-      "description": "Discover how Outsourcing Group can free you from digital bureaucracy and guarantee compliance and quality.",
+      "title": "Trust a reliable operating partner",
+      "description": "Discover how Outsourcing Group can free you from digital red tape and ensure compliance and quality.",
       "ctaPhone": "Contact us for a personalized consultation by leaving your details in the form or calling",
       "availability": "Availability",
       "weekdays": "Monday - Friday",
@@ -19,15 +19,15 @@
     }
   },
   "Affidati": {
-    "title": "Trust a Reliable Operational Partner",
-    "description": "Discover how Outsourcing Group can free you from digital bureaucracy and guarantee compliance and quality.",
+    "title": "Trust a reliable operating partner",
+    "description": "Discover how Outsourcing Group can free you from digital red tape and ensure compliance and quality.",
     "subtitle": "Contact us for a personalized consultation.",
     "contact": {
-      "title": "Contact Us",
+      "title": "Contact us",
       "description": "A dedicated consultant will help you understand how we can support your processes. Speak with someone who knows your industry."
     },
     "write": {
-      "title": "Write to Us",
+      "title": "Write to us",
       "description": "Our team will respond quickly with a customized proposal for your company."
     }
   }
