@@ -44,6 +44,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+      </head>
       <GoogleTagManager gtmId="GTM-MSZNQ336" />
       <body className={`${asap.variable} ${jost.variable} ${asap.className} antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>

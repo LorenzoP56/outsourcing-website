@@ -58,6 +58,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         as="image"
         type="image/webp"
         fetchPriority="high"
+        media="(min-width: 1024px)"
       />
       <script
         type="application/ld+json"
