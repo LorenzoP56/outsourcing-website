@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next'
 import { SERVICES } from '@/lib/constants'
 import { getAllPosts } from '@/lib/graph-ql/queries'
 
+export const revalidate = 3600
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.osgdigitaleconomy.com'
 

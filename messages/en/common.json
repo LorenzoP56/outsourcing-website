@@ -88,8 +88,12 @@
   },
   "NotFound": {
     "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backToHome": "Back to Home"
+    "subtitle": "Oops! It seems you've taken a wrong turn.",
+    "description": "The page you are looking for does not exist or has been moved. But don't worry, we can help you find your way.",
+    "backToHome": "Back to Home",
+    "orTry": "Or explore:",
+    "services": "Our Services",
+    "contact": "Contact Us"
   },
   "Pagination": {
     "previous": "Previous page",

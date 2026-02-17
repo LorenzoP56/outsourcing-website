@@ -88,8 +88,12 @@
   },
   "NotFound": {
     "title": "Pagina non trovata",
-    "description": "La pagina che stai cercando non esiste o è stata spostata.",
-    "backToHome": "Torna alla Home"
+    "subtitle": "Oops! Sembra che tu abbia preso una strada sbagliata.",
+    "description": "La pagina che stai cercando non esiste o è stata spostata. Ma non preoccuparti, possiamo aiutarti a trovare la strada giusta.",
+    "backToHome": "Torna alla Home",
+    "orTry": "Oppure esplora:",
+    "services": "I nostri servizi",
+    "contact": "Contattaci"
   },
   "Pagination": {
     "previous": "Pagina precedente",
