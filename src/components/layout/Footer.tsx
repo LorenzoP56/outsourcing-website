@@ -4,8 +4,6 @@ import { COLORS } from "@/lib/constants";
 import {Link} from "@/i18n/navigation";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faXTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {useTranslations} from "next-intl";
 
 export default function Footer() {
@@ -153,44 +151,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social Media */}
+          {/* Legal Links */}
           <div className={`transition-all duration-1000 ease-out delay-300 gap-4 flex flex-col text-left ${
             isVisible
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'
           }`}>
-            <div className="flex gap-4" role="group" aria-label="Social media links">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-colors duration-300 hover:text-[#1877F2]"
-                style={{ color: COLORS.TEXT_WHITE }}
-                aria-label="Facebook"
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a
-                href="https://x.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-colors duration-300 hover:text-[#000000]"
-                style={{ color: COLORS.TEXT_WHITE }}
-                aria-label="X (Twitter)"
-              >
-                <FontAwesomeIcon icon={faXTwitter} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-colors duration-300 hover:text-[#0A66C2]"
-                style={{ color: COLORS.TEXT_WHITE }}
-                aria-label="LinkedIn"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
             <nav aria-label="Legal links" className="flex flex-col gap-4">
               <Link
                 href="/privacy-policy"

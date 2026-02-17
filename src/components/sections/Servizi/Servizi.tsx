@@ -23,7 +23,7 @@ export default function Servizi() {
           >
             <Image
               src={service.image}
-              alt={service.name}
+              alt={t(`details.${service.slug}.name`)}
               width={800}
               height={340}
               className="w-full object-cover object-center rounded-[16px]"

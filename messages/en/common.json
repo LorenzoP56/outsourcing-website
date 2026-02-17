@@ -74,7 +74,17 @@
     "privacyConsent": "I accept the <link>privacy policy</link>",
     "submit": "Send Your Request",
     "sending": "Sending...",
-    "successMessage": "Request sent successfully! We will get back to you shortly."
+    "successMessage": "Request sent successfully! We will get back to you shortly.",
+    "errors": {
+      "MISSING_FIELDS": "Name and email are required.",
+      "INVALID_EMAIL": "Please enter a valid email address.",
+      "PRIVACY_REQUIRED": "You must accept the privacy policy.",
+      "INPUT_TOO_LONG": "One or more fields exceed the maximum allowed length.",
+      "RATE_LIMITED": "Too many requests. Please try again later.",
+      "SEND_ERROR": "Error sending data. Please try again later.",
+      "SERVER_ERROR": "Server error. Please try again later.",
+      "NETWORK_ERROR": "Network error. Check your connection and try again."
+    }
   },
   "NotFound": {
     "title": "Page Not Found",

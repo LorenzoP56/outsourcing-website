@@ -74,7 +74,17 @@
     "privacyConsent": "Accetto l''<link>informativa sulla privacy</link>",
     "submit": "Invia la tua richiesta",
     "sending": "Invio in corso...",
-    "successMessage": "Richiesta inviata con successo! Ti ricontatteremo al più presto."
+    "successMessage": "Richiesta inviata con successo! Ti ricontatteremo al più presto.",
+    "errors": {
+      "MISSING_FIELDS": "Nome e email sono obbligatori.",
+      "INVALID_EMAIL": "Inserisci un indirizzo email valido.",
+      "PRIVACY_REQUIRED": "Devi accettare l'informativa sulla privacy.",
+      "INPUT_TOO_LONG": "Uno o più campi superano la lunghezza massima consentita.",
+      "RATE_LIMITED": "Troppe richieste. Riprova tra qualche minuto.",
+      "SEND_ERROR": "Errore nell'invio dei dati. Riprova più tardi.",
+      "SERVER_ERROR": "Errore del server. Riprova più tardi.",
+      "NETWORK_ERROR": "Errore di rete. Controlla la connessione e riprova."
+    }
   },
   "NotFound": {
     "title": "Pagina non trovata",

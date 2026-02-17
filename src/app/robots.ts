@@ -1,7 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-// Set to true when ready to go live with the real domain
-const isProduction = false;
+const isProduction = process.env.ENABLE_INDEXING === "true";
 
 export default function robots(): MetadataRoute.Robots {
   // Block all crawlers on demo/staging

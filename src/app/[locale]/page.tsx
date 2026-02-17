@@ -6,7 +6,7 @@ import DomandeFrequenti from "@/components/layout/DomandeFrequenti";
 import Form from "@/components/sections/Home/Form";
 import Blog from "@/components/sections/Home/Blog";
 import type { Metadata } from "next";
-import { organizationSchema, localBusinessSchema, websiteSchema, jsonLdScript } from "@/lib/jsonld";
+import { organizationSchema, localBusinessSchema, websiteSchema, generateFAQSchema, jsonLdScript } from "@/lib/jsonld";
 import { getLatestPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -30,6 +30,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tFaq = await getTranslations({ locale, namespace: 'FAQ' });
+  const faqKeys = ["q1", "q2", "q3", "q4"] as const;
+  const faqSchema = generateFAQSchema(
+    faqKeys.map((key) => ({
+      question: tFaq(`questions.${key}.question`),
+      answer: tFaq(`questions.${key}.answer`),
+    }))
+  );
+
   const posts = await getLatestPosts(3);
 
   const blogPosts = posts.map(post => ({
@@ -61,6 +70,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(websiteSchema)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(faqSchema)}
       />
       <Hero />
       <Group />

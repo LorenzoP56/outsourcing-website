@@ -12,7 +12,17 @@ import { useContactForm } from "@/hooks/useContactForm";
 export default function Form() {
   const t = useTranslations('Home');
   const tForm = useTranslations('Form');
-  const { formData, loading, success, error, handleChange, handleSubmit } = useContactForm();
+  const errorMessages = {
+    MISSING_FIELDS: tForm('errors.MISSING_FIELDS'),
+    INVALID_EMAIL: tForm('errors.INVALID_EMAIL'),
+    PRIVACY_REQUIRED: tForm('errors.PRIVACY_REQUIRED'),
+    INPUT_TOO_LONG: tForm('errors.INPUT_TOO_LONG'),
+    RATE_LIMITED: tForm('errors.RATE_LIMITED'),
+    SEND_ERROR: tForm('errors.SEND_ERROR'),
+    SERVER_ERROR: tForm('errors.SERVER_ERROR'),
+    NETWORK_ERROR: tForm('errors.NETWORK_ERROR'),
+  };
+  const { formData, loading, success, error, handleChange, handleSubmit } = useContactForm(errorMessages);
 
   return (
     <section
@@ -43,6 +53,10 @@ export default function Form() {
             </motion.div>
           ) : (
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+              {/* Honeypot field - hidden from real users */}
+              <div className="absolute opacity-0 -z-10" aria-hidden="true">
+                <input type="text" name="website" value={formData.website} onChange={handleChange} tabIndex={-1} autoComplete="off" />
+              </div>
               <motion.div
                 className="flex flex-col gap-2"
                 initial={{ opacity: 0, y: 20 }}
@@ -123,22 +137,24 @@ export default function Form() {
                 transition={{ delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <input type="checkbox" id="home-privacy" name="privacy" required className="mt-1" />
+                <input type="checkbox" id="home-privacy" name="privacy" required className="mt-1" checked={formData.privacy} onChange={handleChange} />
                 <label htmlFor="home-privacy" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
                   {tForm.rich('privacyConsent', {
                     link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link>
                   })}
                 </label>
               </motion.div>
-              {error && (
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="text-red-300 text-sm"
-                >
-                  {error}
-                </motion.p>
-              )}
+              <div aria-live="polite">
+                {error && (
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-red-300 text-sm"
+                  >
+                    {error}
+                  </motion.p>
+                )}
+              </div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

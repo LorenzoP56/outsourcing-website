@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const isProduction = false;
+const isProduction = process.env.ENABLE_INDEXING === "true";
 
 export const metadata: Metadata = {
   title: "Outsourcing",

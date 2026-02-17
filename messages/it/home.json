@@ -27,7 +27,15 @@
     },
     "servizi": {
       "title": "I nostri servizi",
-      "description": "Scopri come possiamo aiutare la tua azienda con servizi su misura."
+      "description": "Scopri come possiamo aiutare la tua azienda con servizi su misura.",
+      "imageAlts": {
+        "assistenza": "Supporto tecnico help desk per attivazioni e configurazioni strumenti digitali",
+        "contactCenter": "Contact center in outsourcing per gestione clienti e supporto vendite",
+        "backOffice": "Gestione processi digitali back office con postazione professionale in outsourcing",
+        "datiCliente": "Gestione operativa dati cliente in outsourcing",
+        "dataManagement": "Team data management analizza dati aziendali su monitor - Outsourcing Group",
+        "training": "Sessione di training aziendale online su strumenti digitali - Outsourcing Group"
+      }
     },
     "esternalizzare": {
       "title": "Perché esternalizzare con Outsourcing Group",

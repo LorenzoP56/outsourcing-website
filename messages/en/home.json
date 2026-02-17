@@ -27,7 +27,15 @@
     },
     "servizi": {
       "title": "Our services",
-      "description": "Find out how we can help your business with tailor-made services."
+      "description": "Find out how we can help your business with tailor-made services.",
+      "imageAlts": {
+        "assistenza": "Help desk technical support for digital tool activations and configurations",
+        "contactCenter": "Outsourced contact center for customer management and sales support",
+        "backOffice": "Digital back office process management with professional outsourcing workstation",
+        "datiCliente": "Outsourced client data operations management",
+        "dataManagement": "Data management team analyzing business data on monitor - Outsourcing Group",
+        "training": "Online corporate training session on digital tools - Outsourcing Group"
+      }
     },
     "esternalizzare": {
       "title": "Why Outsource with Outsourcing Group",

@@ -160,6 +160,22 @@ export function generateArticleSchema(article: {
   };
 }
 
+// FAQPage Schema Generator
+export function generateFAQSchema(faqs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 // Helper per inserire JSON-LD nella pagina
 export function jsonLdScript(schema: object) {
   return {

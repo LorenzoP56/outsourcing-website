@@ -15,13 +15,13 @@ const SERVICE_IMAGES = [
   "/website_images/Home/training-aziendale-strumenti-digitali-online.jpg",
 ] as const;
 
-const SERVICE_ALTS = [
-  "Supporto tecnico help desk per attivazioni e configurazioni strumenti digitali",
-  "Contact center in outsourcing per gestione clienti e supporto vendite",
-  "Gestione processi digitali back office con postazione professionale in outsourcing",
-  "Gestione operativa dati cliente in outsourcing",
-  "Team data management analizza dati aziendali su monitor - Outsourcing Group",
-  "Sessione di training aziendale online su strumenti digitali - Outsourcing Group",
+const SERVICE_ALT_KEYS = [
+  "assistenza",
+  "contactCenter",
+  "backOffice",
+  "datiCliente",
+  "dataManagement",
+  "training",
 ] as const;
 
 export default function Servizi() {
@@ -34,7 +34,7 @@ export default function Servizi() {
         <AnimatedCard className="flex flex-col cursor-pointer shadow-lg rounded-[16px] overflow-hidden bg-white h-full">
           <Image
             src={SERVICE_IMAGES[index]}
-            alt={SERVICE_ALTS[index]}
+            alt={t(`servizi.imageAlts.${SERVICE_ALT_KEYS[index]}`)}
             width={500}
             height={210}
             className="w-full h-[210px] object-cover object-center"
