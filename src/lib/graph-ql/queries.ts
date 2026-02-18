@@ -2,7 +2,10 @@ import { gql, GraphQLClient } from 'graphql-request';
 import type { PostsResponse, PostResponse, SlugsResponse, Post } from './type';
 
 const baseUrl = process.env.WP_URL || 'http://localhost:8000/graphql';
-const client = new GraphQLClient(baseUrl);
+const client = new GraphQLClient(baseUrl, {
+  fetch: (input, init) =>
+    fetch(input, { ...init, next: { revalidate: 3600 } }),
+});
 
 // Query per ottenere tutti i post con SEO
 const GET_ALL_POSTS = gql`
