@@ -1,20 +1,29 @@
 import { COLORS } from "@/lib/constants";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
 const BASE_URL = "https://www.osgdigitaleconomy.com";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Legal' });
 
   return {
-    title: "Cookie Policy | Outsourcing Group",
-    description: "Informativa sull'uso dei cookie sul sito di Outsourcing Group SRL in conformità al GDPR.",
+    title: t('cookie.metaTitle'),
+    description: t('cookie.metaDescription'),
     alternates: {
       canonical: `${BASE_URL}/${locale}/cookie-policy`,
       languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/cookie-policy`])),
+    },
+    openGraph: {
+      title: t('cookie.metaTitle'),
+      description: t('cookie.metaDescription'),
+      url: `${BASE_URL}/${locale}/cookie-policy`,
+      siteName: "Outsourcing Group",
+      locale: locale === 'it' ? 'it_IT' : 'en_US',
+      type: "website",
     },
   };
 }
@@ -27,6 +36,8 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 export default async function CookiePolicy({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  const isIt = locale === "it";
 
   return (
     <>
@@ -48,137 +59,182 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
           <div className="prose prose-lg max-w-none" style={{ color: COLORS.TEXT }}>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              1. Titolare del trattamento
+              {isIt ? "1. Titolare del trattamento" : "1. Data Controller"}
             </h2>
             <p className="mb-4">
-              Ai sensi del Regolamento UE 2016/679 (GDPR), il Titolare del trattamento dei dati è:
+              {isIt
+                ? "Ai sensi del Regolamento UE 2016/679 (GDPR), il Titolare del trattamento dei dati è:"
+                : "Pursuant to EU Regulation 2016/679 (GDPR), the Data Controller is:"}
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="mb-2"><strong>OUTSOURCING GROUP srl</strong></p>
-              <p className="mb-2">Sede legale: Piazza Giacomo Zanellato, 13 – 35127 Padova (PD)</p>
-              <p className="mb-2">P. IVA / Codice Fiscale: IT03475900282</p>
-              <p className="mb-0">Email di contatto privacy: <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline">info@osgdigitaleconomy.com</a></p>
+              <p className="mb-2">{isIt ? "Sede legale: Piazza Giacomo Zanellato, 13 – 35127 Padova (PD)" : "Registered office: Piazza Giacomo Zanellato, 13 – 35127 Padova (PD), Italy"}</p>
+              <p className="mb-2">{isIt ? "P. IVA / Codice Fiscale: IT03475900282" : "VAT / Tax Code: IT03475900282"}</p>
+              <p className="mb-0">{isIt ? "Email di contatto privacy" : "Privacy contact email"}: <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline">info@osgdigitaleconomy.com</a></p>
             </div>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              2. Introduzione sull'uso dei cookie
+              {isIt ? "2. Introduzione sull'uso dei cookie" : "2. Introduction to the use of cookies"}
             </h2>
             <p className="mb-4">
-              Il sito web di OUTSOURCING GROUP srl utilizza cookie e tecnologie simili per garantire il corretto funzionamento del sito e migliorare l'esperienza di navigazione degli utenti.
+              {isIt
+                ? "Il sito web di OUTSOURCING GROUP srl utilizza cookie e tecnologie simili per garantire il corretto funzionamento del sito e migliorare l'esperienza di navigazione degli utenti."
+                : "The OUTSOURCING GROUP srl website uses cookies and similar technologies to ensure the proper functioning of the site and to improve the browsing experience."}
             </p>
             <p className="mb-4">
-              I cookie possono essere utilizzati per memorizzare preferenze, analizzare il traffico del sito e comprendere come gli utenti interagiscono con i contenuti. Alcuni cookie possono essere installati da soggetti terzi, come fornitori di servizi di analisi.
+              {isIt
+                ? "I cookie possono essere utilizzati per memorizzare preferenze, analizzare il traffico del sito e comprendere come gli utenti interagiscono con i contenuti. Alcuni cookie possono essere installati da soggetti terzi, come fornitori di servizi di analisi."
+                : "Cookies may be used to store preferences, analyse site traffic and understand how users interact with content. Some cookies may be set by third parties, such as analytics service providers."}
             </p>
             <p className="mb-8">
-              La presente Cookie Policy fornisce informazioni dettagliate sull'uso dei cookie e sulle modalità con cui l'utente può gestire o revocare il proprio consenso.
+              {isIt
+                ? "La presente Cookie Policy fornisce informazioni dettagliate sull'uso dei cookie e sulle modalità con cui l'utente può gestire o revocare il proprio consenso."
+                : "This Cookie Policy provides detailed information on the use of cookies and the ways in which users can manage or withdraw their consent."}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              3. Categorie di cookie utilizzati
+              {isIt ? "3. Categorie di cookie utilizzati" : "3. Categories of cookies used"}
             </h2>
-            <p className="mb-6">I cookie utilizzati su questo sito sono classificati nelle seguenti categorie:</p>
+            <p className="mb-6">{isIt ? "I cookie utilizzati su questo sito sono classificati nelle seguenti categorie:" : "The cookies used on this site are classified into the following categories:"}</p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              A. Cookie necessari
+              {isIt ? "A. Cookie necessari" : "A. Necessary cookies"}
             </h3>
             <p className="mb-8">
-              Questi cookie sono essenziali per il corretto funzionamento del sito web e non possono essere disattivati nei nostri sistemi. Vengono generalmente impostati in risposta ad azioni effettuate dall'utente, come la compilazione di moduli o la gestione delle preferenze di consenso.
+              {isIt
+                ? "Questi cookie sono essenziali per il corretto funzionamento del sito web e non possono essere disattivati nei nostri sistemi. Vengono generalmente impostati in risposta ad azioni effettuate dall'utente, come la compilazione di moduli o la gestione delle preferenze di consenso."
+                : "These cookies are essential for the proper functioning of the website and cannot be disabled in our systems. They are generally set in response to actions taken by the user, such as filling in forms or managing consent preferences."}
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              B. Cookie di preferenza
+              {isIt ? "B. Cookie di preferenza" : "B. Preference cookies"}
             </h3>
             <p className="mb-8">
-              Consentono al sito di memorizzare informazioni che influenzano il comportamento o l'aspetto del sito, come la lingua preferita o altre impostazioni personalizzate.
+              {isIt
+                ? "Consentono al sito di memorizzare informazioni che influenzano il comportamento o l'aspetto del sito, come la lingua preferita o altre impostazioni personalizzate."
+                : "These cookies allow the site to remember information that affects the behaviour or appearance of the site, such as the preferred language or other personalised settings."}
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              C. Cookie statistici
+              {isIt ? "C. Cookie statistici" : "C. Statistical cookies"}
             </h3>
             <p className="mb-4">
-              Raccolgono informazioni in forma aggregata e anonima sull'utilizzo del sito web, con l'obiettivo di migliorarne prestazioni, contenuti e usabilità.
+              {isIt
+                ? "Raccolgono informazioni in forma aggregata e anonima sull'utilizzo del sito web, con l'obiettivo di migliorarne prestazioni, contenuti e usabilità."
+                : "These cookies collect information in aggregate and anonymous form about the use of the website, with the aim of improving its performance, content and usability."}
             </p>
             <p className="mb-8">
-              Il sito utilizza <strong>Google Analytics</strong>, servizio che potrebbe comportare il trasferimento di dati al di fuori dell'Unione Europea.
+              {isIt
+                ? "Il sito utilizza Google Tag Manager e Google Analytics, servizi che potrebbero comportare il trasferimento di dati al di fuori dell'Unione Europea."
+                : "The site uses Google Tag Manager and Google Analytics, services that may involve the transfer of data outside the European Union."}
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              D. Cookie di marketing
+              {isIt ? "D. Cookie di marketing" : "D. Marketing cookies"}
             </h3>
             <p className="mb-8">
-              Questi cookie vengono utilizzati per tracciare i visitatori attraverso i siti web, con l'obiettivo di mostrare contenuti o comunicazioni potenzialmente rilevanti per l'utente.
+              {isIt
+                ? "Questi cookie vengono utilizzati per tracciare i visitatori attraverso i siti web, con l'obiettivo di mostrare contenuti o comunicazioni potenzialmente rilevanti per l'utente."
+                : "These cookies are used to track visitors across websites, with the aim of displaying content or communications that may be relevant to the user."}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              4. Base giuridica del trattamento
+              {isIt ? "4. Base giuridica del trattamento" : "4. Legal basis for processing"}
             </h2>
             <p className="mb-4">
-              La base giuridica per l'utilizzo dei <strong>cookie necessari</strong> è l'interesse legittimo del Titolare al corretto funzionamento del sito web.
+              {isIt
+                ? <>La base giuridica per l&apos;utilizzo dei <strong>cookie necessari</strong> è l&apos;interesse legittimo del Titolare al corretto funzionamento del sito web.</>
+                : <>The legal basis for the use of <strong>necessary cookies</strong> is the legitimate interest of the Data Controller in the proper functioning of the website.</>}
             </p>
             <p className="mb-8">
-              Per l'utilizzo dei <strong>cookie di preferenza, statistici e marketing</strong>, la base giuridica del trattamento è il <strong>consenso esplicito dell'utente</strong>, espresso tramite il banner di gestione dei cookie al primo accesso al sito.
+              {isIt
+                ? <>Per l&apos;utilizzo dei <strong>cookie di preferenza, statistici e marketing</strong>, la base giuridica del trattamento è il <strong>consenso esplicito dell&apos;utente</strong>, espresso tramite il banner di gestione dei cookie al primo accesso al sito.</>
+                : <>For the use of <strong>preference, statistical and marketing cookies</strong>, the legal basis for processing is the <strong>explicit consent of the user</strong>, expressed through the cookie management banner on first access to the site.</>}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              5. Modalità di gestione e revoca del consenso
+              {isIt ? "5. Modalità di gestione e revoca del consenso" : "5. Managing and withdrawing consent"}
             </h2>
             <ol className="list-decimal pl-6 mb-8 space-y-4">
               <li>
-                L'utente può in qualsiasi momento modificare o revocare il consenso ai cookie non necessari tramite il banner di gestione dei cookie presente sul sito o tramite l'apposito link sempre accessibile.
+                {isIt
+                  ? "L'utente può in qualsiasi momento modificare o revocare il consenso ai cookie non necessari tramite il banner di gestione dei cookie presente sul sito o tramite l'apposito link sempre accessibile."
+                  : "Users can modify or withdraw consent to non-essential cookies at any time through the cookie management banner on the site or through the dedicated link that is always accessible."}
               </li>
               <li>
-                È inoltre possibile gestire o eliminare i cookie direttamente dalle impostazioni del proprio browser, facendo riferimento alle opzioni di privacy e sicurezza del software utilizzato.
+                {isIt
+                  ? "È inoltre possibile gestire o eliminare i cookie direttamente dalle impostazioni del proprio browser, facendo riferimento alle opzioni di privacy e sicurezza del software utilizzato."
+                  : "It is also possible to manage or delete cookies directly from your browser settings, by referring to the privacy and security options of your software."}
               </li>
             </ol>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              6. Trasferimenti extra UE
+              {isIt ? "6. Trasferimenti extra UE" : "6. Transfers outside the EU"}
             </h2>
             <p className="mb-4">
-              Utilizzando servizi di terze parti come Google Analytics, alcuni dati potrebbero essere trasferiti verso Paesi non appartenenti allo Spazio Economico Europeo.
+              {isIt
+                ? "Utilizzando servizi di terze parti come Google Analytics, alcuni dati potrebbero essere trasferiti verso Paesi non appartenenti allo Spazio Economico Europeo."
+                : "By using third-party services such as Google Analytics, some data may be transferred to countries outside the European Economic Area."}
             </p>
             <p className="mb-8">
-              In tali casi, il trattamento avviene nel rispetto delle garanzie previste dal GDPR, incluse le clausole contrattuali standard adottate dalla Commissione Europea.
+              {isIt
+                ? "In tali casi, il trattamento avviene nel rispetto delle garanzie previste dal GDPR, incluse le clausole contrattuali standard adottate dalla Commissione Europea."
+                : "In such cases, processing is carried out in compliance with the safeguards provided for by the GDPR, including standard contractual clauses adopted by the European Commission."}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              7. Diritti dell'interessato
+              {isIt ? "7. Diritti dell'interessato" : "7. Rights of the data subject"}
             </h2>
             <p className="mb-4">
-              Ai sensi degli articoli 15 e seguenti del GDPR, l'interessato ha il diritto di:
+              {isIt
+                ? "Ai sensi degli articoli 15 e seguenti del GDPR, l'interessato ha il diritto di:"
+                : "Under Articles 15 et seq. of the GDPR, the data subject has the right to:"}
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2">
-              <li>accedere ai propri dati personali</li>
-              <li>richiederne la rettifica o la cancellazione</li>
-              <li>opporsi al trattamento o richiederne la limitazione</li>
-              <li>ricevere i propri dati in formato strutturato (diritto alla portabilità)</li>
-              <li>proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.garanteprivacy.it</a>)</li>
+              <li>{isIt ? "accedere ai propri dati personali" : "access their personal data"}</li>
+              <li>{isIt ? "richiederne la rettifica o la cancellazione" : "request rectification or erasure"}</li>
+              <li>{isIt ? "opporsi al trattamento o richiederne la limitazione" : "object to processing or request its restriction"}</li>
+              <li>{isIt ? "ricevere i propri dati in formato strutturato (diritto alla portabilità)" : "receive their data in a structured format (right to portability)"}</li>
+              <li>
+                {isIt
+                  ? <>proporre reclamo all&apos;Autorità Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.garanteprivacy.it</a>)</>
+                  : <>lodge a complaint with the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.garanteprivacy.it</a>)</>}
+              </li>
             </ul>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              8. Contatti per l'esercizio dei diritti
+              {isIt ? "8. Contatti per l'esercizio dei diritti" : "8. Contact for exercising rights"}
             </h2>
             <p className="mb-4">
-              Per esercitare i propri diritti o richiedere informazioni sul trattamento dei dati personali, l'interessato può contattare il Titolare del trattamento ai seguenti recapiti:
+              {isIt
+                ? "Per esercitare i propri diritti o richiedere informazioni sul trattamento dei dati personali, l'interessato può contattare il Titolare del trattamento ai seguenti recapiti:"
+                : "To exercise your rights or request information about the processing of your personal data, you can contact the Data Controller at:"}
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="mb-2"><strong>OUTSOURCING GROUP srl</strong></p>
               <p className="mb-0">Email: <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline">info@osgdigitaleconomy.com</a></p>
             </div>
             <p className="mb-8">
-              Il Titolare fornirà riscontro entro i termini previsti dalla normativa vigente.
+              {isIt
+                ? "Il Titolare fornirà riscontro entro i termini previsti dalla normativa vigente."
+                : "The Data Controller will respond within the timeframes required by applicable law."}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
-              9. Cookie Declaration di Cookiebot
+              {isIt ? "9. Cookie Declaration" : "9. Cookie Declaration"}
             </h2>
             <p className="mb-8">
-              In questa sezione è disponibile la dichiarazione dettagliata dei cookie utilizzati sul sito, generata e aggiornata automaticamente tramite Cookiebot.
+              {isIt
+                ? "In questa sezione è disponibile la dichiarazione dettagliata dei cookie utilizzati sul sito, generata e aggiornata automaticamente tramite il servizio di gestione del consenso."
+                : "This section contains the detailed declaration of cookies used on the site, generated and updated automatically through the consent management service."}
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
               <p className="text-sm" style={{ color: COLORS.TEXT }}>
-                <strong>Nota:</strong> Qui verrà integrato il widget/tabella di Cookiebot per la dichiarazione dettagliata dei cookie utilizzati sul sito.
+                <strong>{isIt ? "Nota:" : "Note:"}</strong>{" "}
+                {isIt
+                  ? "Qui verrà integrato il widget/tabella del servizio di gestione consenso (es. Cookiebot/Iubenda) per la dichiarazione dettagliata dei cookie utilizzati sul sito."
+                  : "The consent management service widget/table (e.g. Cookiebot/Iubenda) will be integrated here for the detailed declaration of cookies used on the site."}
               </p>
             </div>
 

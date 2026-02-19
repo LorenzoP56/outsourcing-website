@@ -18,6 +18,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: `${BASE_URL}/${locale}/contatti`,
       languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/contatti`])),
     },
+    openGraph: {
+      title: t('meta.title'),
+      description: t('meta.description'),
+      url: `${BASE_URL}/${locale}/contatti`,
+      siteName: "Outsourcing Group",
+      locale: locale === 'it' ? 'it_IT' : 'en_US',
+      type: "website",
+    },
   };
 }
 

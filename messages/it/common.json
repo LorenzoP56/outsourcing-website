@@ -95,6 +95,11 @@
     "services": "I nostri servizi",
     "contact": "Contattaci"
   },
+  "Error": {
+    "title": "Qualcosa è andato storto",
+    "description": "Si è verificato un errore imprevisto. Riprova o torna più tardi.",
+    "retry": "Riprova"
+  },
   "Pagination": {
     "previous": "Pagina precedente",
     "next": "Pagina successiva",

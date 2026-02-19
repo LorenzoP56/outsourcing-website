@@ -95,6 +95,11 @@
     "services": "Our Services",
     "contact": "Contact Us"
   },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again or come back later.",
+    "retry": "Try again"
+  },
   "Pagination": {
     "previous": "Previous page",
     "next": "Next page",

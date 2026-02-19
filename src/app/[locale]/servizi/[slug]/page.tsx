@@ -42,6 +42,14 @@ export async function generateMetadata({ params }: ServicePageProps) {
       canonical: `${BASE_URL}/${locale}/servizi/${service.slug}`,
       languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/servizi/${service.slug}`])),
     },
+    openGraph: {
+      title: t(`details.${slug}.name`),
+      description: t(`details.${slug}.serviceDescription`),
+      url: `${BASE_URL}/${locale}/servizi/${service.slug}`,
+      siteName: "Outsourcing Group",
+      locale: locale === 'it' ? 'it_IT' : 'en_US',
+      type: "website",
+    },
   };
 }
 
