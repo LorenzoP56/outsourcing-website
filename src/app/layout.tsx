@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing"; 
 import { Asap, Jost } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
@@ -35,10 +35,9 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const locale = await getLocale();
 
   return (
-    <html lang={locale}>
+    <html lang={routing.defaultLocale}>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
