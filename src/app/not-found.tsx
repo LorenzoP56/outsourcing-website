@@ -20,17 +20,17 @@ export default function RootNotFound() {
           className="text-[24px] leading-[30px] lg:text-[32px] lg:leading-[38px] font-bold"
           style={{ fontFamily: "var(--font-jost)", color: COLORS.TEXT_TITLE }}
         >
-          Page Not Found
+          Pagina non trovata
         </h2>
         <p className="text-base lg:text-lg" style={{ fontFamily: "var(--font-jost)", color: COLORS.TEXT }}>
-          The page you are looking for does not exist or has been moved.
+          La pagina che stai cercando non esiste o è stata spostata.
         </p>
         <a
           href="/"
           className="mt-2 inline-flex items-center justify-center px-8 py-4 rounded-[16px] text-[18px] leading-[18px] font-bold text-white min-w-[240px]"
           style={{ background: COLORS.PRIMARY, fontFamily: "var(--font-jost)" }}
         >
-          Back to Home
+          Torna in Home
         </a>
       </div>
     </section>
