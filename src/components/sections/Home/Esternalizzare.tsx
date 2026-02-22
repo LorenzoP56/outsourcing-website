@@ -10,9 +10,9 @@ import {useTranslations} from "next-intl";
 
 const ITEM_KEYS = ["costs", "efficiency", "focus"] as const;
 const ITEM_ICONS = [
-  "/images/Home/desktop/esternalizzare/1.png",
-  "/images/Home/desktop/esternalizzare/2.png",
-  "/images/Home/desktop/esternalizzare/3.png",
+  "/website_images/Home/esternalizzare/1.png",
+  "/website_images/Home/esternalizzare/2.png",
+  "/website_images/Home/esternalizzare/3.png",
 ] as const;
 const ITEM_ICON_ALTS = [
   "Icona riduzione costi operativi outsourcing",

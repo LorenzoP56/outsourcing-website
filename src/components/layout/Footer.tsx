@@ -45,7 +45,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-4">
               <div className="h-16 flex items-center">
                 <Image
-                  src="/images/logoOrizzontale.svg"
+                  src="/website_images/logoOrizzontale.svg"
                   alt="Outsourcing Group"
                   width={220}
                   height={48}

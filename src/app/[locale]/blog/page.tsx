@@ -51,7 +51,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
     category: post.categories?.nodes?.[0]?.name?.toUpperCase() || "",
     title: post.title,
     description: stripHtml(post.excerpt),
-    image: post.featuredImage?.node?.sourceUrl || "/images/Blog/blog/1.png",
+    image: post.featuredImage?.node?.sourceUrl || "/website_images/Home/placeholder_blog_outsourcing_padova.webp",
     date: formatDate(post.date),
   }));
 

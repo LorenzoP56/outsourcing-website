@@ -158,7 +158,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <div className="w-full h-[80px] flex items-center justify-center">
               <Image
-                src="/images/logo.svg"
+                src="/website_images/logo.svg"
                 alt="Outsourcing Group"
                 width={100}
                 height={100}

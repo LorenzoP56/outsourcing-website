@@ -54,7 +54,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     category: post.categories.nodes[0]?.name || '',
     title: post.title,
     description: stripHtml(post.excerpt),
-    image: post.featuredImage?.node.sourceUrl || '/images/Home/desktop/blog/1.png',
+    image: post.featuredImage?.node.sourceUrl || '/website_images/Home/placeholder_blog_outsourcing_padova.webp',
     date: formatDate(post.date),
   }));
 

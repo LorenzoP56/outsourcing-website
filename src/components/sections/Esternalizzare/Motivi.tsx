@@ -38,7 +38,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.costs.items.personnel')}
               </h3>
@@ -47,7 +47,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.costs.items.flexibility')}
               </h3>
@@ -56,7 +56,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.costs.items.training')}
               </h3>
@@ -65,7 +65,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.costs.items.skills')}
               </h3>
@@ -103,7 +103,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.security.items.compliance')}
               </h3>
@@ -112,7 +112,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.security.items.speed')}
               </h3>
@@ -121,7 +121,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.security.items.errors')}
               </h3>
@@ -130,7 +130,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.security.items.traceability')}
               </h3>
@@ -170,7 +170,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.problemSolving.items.exceptions')}
               </h3>
@@ -179,7 +179,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.problemSolving.items.interruptions')}
               </h3>
@@ -188,7 +188,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.problemSolving.items.bottlenecks')}
               </h3>
@@ -197,7 +197,7 @@ export default function Motivi() {
 
             <div className="flex flex-row gap-4 items-center">
 
-              <Image src="/images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
+              <Image src="/website_images/Esternalizzare/motivi/tick.png" alt="" width={100} height={100} className="w-[30px] h-[30px]" aria-hidden="true" />
               <h3 className="text-base" style={{ fontFamily: 'var(--font-jost)', color: COLORS.TEXT }}>
                 {t('motivi.problemSolving.items.quality')}
               </h3>

@@ -121,7 +121,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         title={post.title}
         category={category}
         date={formattedDate}
-        image={post.featuredImage?.node?.sourceUrl || "/images/Blog/bgBlog.webp"}
+        image={post.featuredImage?.node?.sourceUrl || "/website_images/Blog/bgBlog.webp"}
         imageAlt={post.featuredImage?.node?.altText || post.title}
       />
 
