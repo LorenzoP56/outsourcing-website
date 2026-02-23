@@ -5,44 +5,44 @@
       "description": "Discover the benefits of outsourcing: reduce costs by up to 40%, increase efficiency and focus on your core business. Complete BPO guide."
     },
     "hero": {
-      "title": "Why Outsource Some Internal Processes",
-      "description1": "Outsourcing is not simply delegating tasks, but a strategy to make processes leaner, safer, and more sustainable over time.",
-      "description2": "By outsourcing, you will free up resources for core business, reduce operating costs, gain access to specialized skills, and easily adapt capacity to demand fluctuations.",
+      "title": "Why outsource some internal processes",
+      "description1": "Outsourcing is not simply the externalization of tasks, but a strategy to make processes leaner, safer and more sustainable over time.",
+      "description2": "By outsourcing, you will free up resources for your core business, reduce operating costs, gain access to specialized skills and easily adapt capacity to changing demand.",
       "description3": "Better operational capacity means growth for your company."
     },
     "motivi": {
       "costs": {
-        "title": "Turn Fixed Costs into Measurable Results",
-        "description1": "Managing operational or administrative activities internally involves high fixed costs, continuous training, and a use of resources that often does not generate strategic value.",
-        "description2": "By relying on a specialized partner, <bold>you can convert fixed costs from operational or administrative activities into targeted and above all scalable investments</bold>, thus optimizing personnel management (both in numbers and professional capabilities) and thus adapting best to peak or down periods.",
+        "title": "Transform fixed costs into measurable results",
+        "description1": "Managing operational or administrative activities in-house involves high fixed costs, ongoing training and resource deployment that often does not generate strategic value.",
+        "description2": "By relying on a specialized partner, <bold>you can convert fixed costs due to operational or administrative activities into targeted and, above all, modular investments</bold>, thus optimizing personnel management (both in number and professional capabilities) and thus best adapting to peak or down periods.",
         "items": {
-          "personnel": "Reduction in personnel and infrastructure costs",
-          "flexibility": "Flexibility in work volumes, including seasonal peaks",
+          "personnel": "Reduction of personnel and infrastructure costs",
+          "flexibility": "Flexibility in work volumes, even seasonal ones",
           "training": "No training costs or internal turnover",
-          "skills": "Better utilization of internal expertise"
+          "skills": "Better use of internal expertise"
         }
       },
       "security": {
-        "title": "Secure Data and Fast Processes",
-        "description1": "Internally managing activities involving sensitive data requires strict procedures, adequate tools, and staff constantly updated on regulations. <bold>A specialized partner instead ensures controlled processes, clear protocols, and compliant and monitored data management, minimizing errors, delays, and operational risks.</bold>",
-        "description2": "By entrusting these activities to Outsourcing Group, you get faster, tracked, and secure processes: every operation is carried out following precise instructions and shared standards, ensuring continuity and quality even during peak periods.",
+        "title": "Secure data and process speed",
+        "description1": "Managing activities involving sensitive data internally requires strict procedures, appropriate tools and staff who are constantly updated on regulations. <bold>Instead, a specialized partner ensures controlled processes, clear protocols and compliant and monitored data management, minimizing errors, slowdowns and operational risks.</bold>",
+        "description2": "By entrusting these tasks to Outsourcing Group, you get faster, more tracked and more secure processes: each operation is performed following precise instructions and shared standards, ensuring continuity and quality even at times of greatest load.",
         "items": {
           "compliance": "Compliant data management with always up-to-date procedures",
-          "speed": "Faster processing times through optimized operational flows",
-          "errors": "Reduced risk of errors, discrepancies, and unauthorized access",
-          "traceability": "Complete traceability of activities and modifications"
+          "speed": "Faster processing times thanks to optimized operating flows",
+          "errors": "Reduction of the risk of errors, discrepancies and unauthorized access",
+          "traceability": "Full traceability of activities and changes"
         }
       },
       "problemSolving": {
-        "title": "Problem Solving and Crisis Management",
-        "description1": "Operational activities often generate unexpected issues: non-standard requests, incomplete files, errors to correct, or cases requiring additional checks. When the internal team is already overloaded, these issues slow down work and affect service quality.",
-        "description2": "An expert partner intercepts, manages, and resolves these daily situations, applying clear procedures, accurate checks, and a <bold>structured approach to problem solving.</bold>",
-        "description3": "Outsourcing Group addresses anomalies quickly and methodically, allowing the client to maintain continuity and fluidity in processes without extra workload.",
+        "title": "Problem solving and critical issue management",
+        "description1": "Operational activities often generate unexpected events: non-standard requests, incomplete practices, errors to be corrected, or cases requiring additional verification. When the internal team is already overloaded, these critical issues slow down work and impact service quality.",
+        "description2": "An experienced partner intercepts, manages and solves these everyday situations, applying clear procedures, accurate verifications and a <bold>structured approach to problem solving.</bold>",
+        "description3": "Outsourcing Group deals with anomalies quickly and efficiently, allowing customers to maintain continuity and fluidity in their processes without extra workloads.",
         "items": {
-          "exceptions": "Immediate handling of exceptions and complex cases",
-          "interruptions": "Fewer interruptions for the internal team",
+          "exceptions": "Immediate handling of exceptions and complex practices",
+          "interruptions": "Less disruption for the internal team",
           "bottlenecks": "Reduction of operational bottlenecks",
-          "quality": "Higher quality of final results through targeted checks"
+          "quality": "Higher quality of the final result thanks to timely checks"
         }
       }
     }

@@ -15,9 +15,9 @@
     "discoverMore": "Learn More",
     "details": {
       "assistenza-dedicata": {
-        "name": "Dedicated user assistance",
+        "name": "Dedicated User Assistance",
         "serviceDescription": "We support your users in activations, configurations and use of digital services.",
-        "shortDescription": "We support your users in activations, configurations and the use of digital services.",
+        "shortDescription": "We support your users in activations, configurations and use of digital services.",
         "detailDescription": "We support your users in the activations, configurations and daily use of digital services. Our team handles every request competently and carefully, offering clear, timely, and personalized assistance. We accompany users throughout the operational journey, from understanding the service to resolving any difficulties, ensuring a smooth and uninterrupted experience.",
         "functionalityTitle": "How it works",
         "functionalitySubtitle": "Each request is handled by a dedicated operator, trained in customer services, following clear and measurable procedures.",
@@ -65,44 +65,44 @@
         "name": "Contact Center",
         "serviceDescription": "We manage all incoming client communication with structured multi-channel assistance.",
         "shortDescription": "We manage all incoming client communication with structured multi-channel assistance.",
-        "detailDescription": "Structured multichannel assistance to manage every customer request clearly, quickly, and professionally. Every contact is tracked and managed to ensure maximum satisfaction.",
-        "functionalityTitle": "How We Work",
-        "functionalitySubtitle": "Every project starts with an analysis of the client's needs. We define workflows, train the team, and activate the necessary channels.",
+        "detailDescription": "Structured multi-channel support to handle every request from your customers clearly, quickly and professionally. Each contact is tracked and managed to ensure maximum satisfaction.",
+        "functionalityTitle": "How we work",
+        "functionalitySubtitle": "Each project starts from an analysis of the client's needs. We define the flows, train the team and activate the necessary channels.",
         "functionality": {
           "item1": {
-            "title": "Unified Multichannel Platform",
-            "description": "We manage all communications in a single console: phone, email, chat, tickets, and social media."
+            "title": "Unified multi-channel platform",
+            "description": "We manage all communications in one console: phone, email, chat, tickets and social."
           },
           "item2": {
-            "title": "Complete Traceability",
-            "description": "Every interaction is recorded and monitored, ensuring visibility on response times, outcomes, and volumes."
+            "title": "Complete traceability",
+            "description": "Each interaction is recorded and monitored, ensuring visibility into timing, outcomes, and volumes."
           },
           "item3": {
-            "title": "Guaranteed SLAs",
+            "title": "SLAs guaranteed",
             "description": "We respect defined response times, with periodic reports on operational performance."
           },
           "item4": {
-            "title": "Integrated Flow",
-            "description": "Entry occurs at the Contact Center and, if necessary, the request is directed to the client's departments for completion."
+            "title": "Integrated flow",
+            "description": "Entry takes place in the Contact Center and, if necessary, the request is addressed to the client's departments for completion."
           },
           "item5": {
-            "title": "Trained Operators",
-            "description": "Every operator is trained on the client's services to ensure competent and consistent responses."
+            "title": "Trained operators",
+            "description": "Each operator is trained in the client's services, to ensure competent and consistent responses."
           }
         },
         "advantagesTitle": "Your Benefits",
         "advantages": {
           "item1": "Single clear and professional point of contact",
-          "item2": "Reduced handling times",
+          "item2": "Reduced management time",
           "item3": "Better end-customer satisfaction",
-          "item4": "Constant volume monitoring",
-          "item5": "Consistent responses across all channels",
-          "item6": "Reduced internal workload for the business team",
-          "item7": "Immediate scalability during peak periods"
+          "item4": "Constant monitoring of volumes",
+          "item5": "Consistency of responses across all channels",
+          "item6": "Reduced internal workload for the company team",
+          "item7": "Immediate scalability during peak workloads"
         },
-        "detailedContentTitle": "An integrated, fluid, and always-controlled customer service",
+        "detailedContentTitle": "An integrated, fluid and always under control customer service",
         "detailedContent": {
-          "p1": "We manage all incoming customer communications through a multichannel model that includes <strong>phone, email, chat, social media, tickets</strong>, and <strong>digital platforms</strong>. Every request is handled with fast, consistent, and always traceable responses.",
+          "p1": "We manage all incoming customer communication through a multi-channel model that includes <strong>phone, email, chat, social, tickets and digital platforms</strong>. Each request is taken over with quick, consistent and always traceable responses.",
           "p2": "Our Contact Center is the entry point for all communications: from here, requests are directed to <strong>Customer Care</strong>, which manages the relationship, and to <strong>Customer Service</strong>, which handles operational solutions.",
           "p3": "The full integration between Contact Center, Customer Care, and Customer Service ensures a <strong>seamless experience</strong>, <strong>uniform</strong> and of <strong>high quality</strong>, providing your users with a truly excellent Customer Experience."
         }
@@ -111,18 +111,18 @@
         "name": "Digital Back Office",
         "serviceDescription": "We provide a structured Digital Back Office service to manage operational activities related to digital services.",
         "shortDescription": "We provide a structured Digital Back Office service to manage operational activities related to digital services.",
-        "detailDescription": "We support your digital processes through structured operational services, managed by qualified teams with compliant procedures. Every activity is tracked, verified, and completed according to defined SLAs.",
-        "functionalityTitle": "What We Do",
-        "functionalitySubtitle": "The Outsourcing Group team manages the operational phases of digital services, from document verification to activation and delivery.",
+        "detailDescription": "We support your digital processes through structured operational services, managed by qualified teams and with compliant procedures. Each activity is tracked, verified and completed according to defined SLAs.",
+        "functionalityTitle": "What we do",
+        "functionalitySubtitle": "The Outsourcing Group team manages the operational phases of digital services, from document verification to activation and release.",
         "functionality": {
-          "item1": "Document verifications for user onboarding and service activation.",
+          "item1": "Document checks for user onboarding and service activation.",
           "item2": "Identity checks through digital systems and compliant procedures.",
-          "item3": "Requirement validation (e.g., technical, regulatory, or contractual requirements).",
-          "item4": "Customized configurations of accounts, profiles, and settings.",
-          "item5": "On-demand activations with procedures defined by SLAs.",
-          "item6": "Service delivery with end-to-end case management.",
-          "item7": "Case monitoring and progress tracking.",
-          "item8": "Escalations to technical or advanced support departments when needed."
+          "item3": "Validation of requirements (e.g. technical, regulatory or contractual requirements).",
+          "item4": "Custom account, profile and settings configurations.",
+          "item5": "On-demand activations with procedures provided by defined SLAs.",
+          "item6": "Release of services with management from the beginning to the end of the practice.",
+          "item7": "Practical monitoring and progress management.",
+          "item8": "Any escalation to technical or advanced support departments."
         },
         "advantagesTitle": "Digital Back Office is ideal for companies that:",
         "advantages": {
@@ -130,125 +130,125 @@
           "item2": "Need repetitive but sensitive operations",
           "item3": "Must ensure quality and compliance in processes",
           "item4": "Want to lighten the internal operational load",
-          "item5": "Operate in regulated sectors or high-volume environments"
+          "item5": "Operate in regulated sectors or high-volume areas of practice"
         },
-        "detailedContentTitle": "Operational support that simplifies digital service management",
+        "detailedContentTitle": "An operational support that simplifies the management of digital services",
         "detailedContent": {
-          "p1": "In the Digital Back Office, <strong>every phase must be managed with order and continuity</strong>: document verifications, identity checks, requirement validation, and activations require clear procedures and constant supervision.",
-          "p2": "That is why we organize all activities into structured workflows, with <strong>complete traceability</strong> and processing times defined by agreed SLAs.",
-          "p3": "We handle operations that cannot be fully automated, ensuring precision and consistency, even with high volumes or sensitive cases.",
-          "p4": "The result is <strong>smoother management, fewer error risks</strong>, and an internal team that can focus on strategic activities."
+          "p1": "In the Digital Back Office, <strong>each phase must be managed in an orderly and consistent manner</strong>: document verifications, identity checks, requirement validation and activations require clear procedures and constant supervision.",
+          "p2": "That is why we organize all activities into structured flows, with <strong>complete traceability</strong> and processing times defined by the agreed SLAs.",
+          "p3": "We deal with operations that cannot be fully automated, ensuring precision and uniformity, even in the presence of high volumes or sensitive practices.",
+          "p4": "The result is <strong>smoother management</strong>, less risk of error, and an internal team that can focus on strategic activities."
         }
       },
       "gestione-anagrafiche-clienti-outsourcing": {
-        "name": "Client Data Operations Management",
-        "serviceDescription": "We manage the creation and alignment of client data in your business systems.",
-        "shortDescription": "We manage the creation and alignment of client data in your business systems.",
-        "detailDescription": "We organize and manage all operational activities related to client data: from record creation to update management, with complete traceability and regulatory compliance.",
-        "functionalityTitle": "How We Work",
-        "functionalitySubtitle": "Every administrative process is managed with clear, traceable workflows compliant with current regulations.",
+        "name": "Operational Management of Customer Data",
+        "serviceDescription": "We manage the creation and alignment of customer data in your business systems.",
+        "shortDescription": "We manage the creation and alignment of customer data in your business systems.",
+        "detailDescription": "We organize and manage all operational activities related to customer data: from registry creation to update management, with complete traceability and regulatory compliance.",
+        "functionalityTitle": "How we work",
+        "functionalitySubtitle": "Each administrative process is managed with clear, traceable workflows that comply with current legislation.",
         "functionality": {
           "item1": {
-            "title": "Standardized Procedures",
-            "description": "Every activity follows documented, verifiable, and replicable procedures to ensure quality and consistency."
+            "title": "Standardized procedures",
+            "description": "Each activity follows documented, verifiable and replicable procedures to ensure quality and consistency."
           },
           "item2": {
-            "title": "Complete Traceability",
-            "description": "All operations (creations, modifications, deletions) are tracked and documented to ensure compliance."
+            "title": "Complete traceability",
+            "description": "All operations (creations, changes, deletions) are tracked and documented to ensure compliance."
           },
           "item3": {
-            "title": "Integration with Your Systems",
-            "description": "We work directly on CRM, management systems, and business databases without interrupting workflows."
+            "title": "Integration with your systems",
+            "description": "We work directly on CRM, management and corporate databases, without interruptions in flows."
           },
           "item4": {
-            "title": "Qualified Supervision",
-            "description": "Operators trained on regulations and procedures specific to the client's sector."
+            "title": "Qualified supervision",
+            "description": "Operators trained in specific regulations and procedures of the customer's industry."
           },
           "item5": {
-            "title": "Continuous Quality Controls",
-            "description": "We perform constant checks on data and processes to intercept and correct errors before they have an impact."
+            "title": "Continuous quality controls",
+            "description": "We perform constant checks on data and practices to intercept and correct errors before they impact."
           }
         },
-        "advantagesTitle": "Why Choose This Service",
+        "advantagesTitle": "Why choose this service",
         "advantages": {
           "item1": "Elimination of registry and administrative errors",
-          "item2": "Drastic reduction in internal management times",
-          "item3": "Always up-to-date and consistent data",
-          "item4": "Better experience for the end customer",
-          "item5": "Control of financial flows and administrative processes",
+          "item2": "Drastic reduction of internal management time",
+          "item3": "Data always up-to-date and consistent",
+          "item4": "Best experience for the end customer",
+          "item5": "Control of economic flows and administrative practices",
           "item6": "Total alignment between digital systems",
           "item7": "Immediate scalability in case of volume increase"
         },
         "detailedContentTitle": "An administrative cycle always under control",
         "detailedContent": {
-          "p1": "We manage all <strong>operational, administrative</strong>, and <strong>registry activities</strong> related to clients who use your company's digital services. From creating client codes to aligning records, from collections to refunds and invoice verification, every phase of the client lifecycle is managed precisely and consistently.",
-          "p2": "This service is particularly suited to <strong>organizations managing recurring digital services, SaaS platforms, large registry databases</strong>, or <strong>processes with frequent activations and terminations.</strong> Multi-step administrative workflows and high-volume billing activities also find structured and reliable support.",
-          "p3": "The result is <strong>an orderly, up-to-date administrative system</strong> that is <strong>fully traceable</strong>, eliminating errors and ensuring operational continuity. The company can thus focus on higher-value activities, delegating to us the precise and professional management of the entire administrative cycle."
+          "p1": "We manage all <strong>operational, administrative and registry activities</strong> related to customers who use your company's digital services.  From creating customer codes to aligning personal records, from collections to refunds to checking invoices, every stage of the customer lifecycle is managed precisely and consistently.",
+          "p2": "This service is particularly suitable for entities that <strong>manage recurring digital services, SaaS platforms, large registry databases, or processes with frequent activations and terminations.</strong> Multi-step administrative flows and high-volume billing activities also find structured and reliable support.",
+          "p3": "The result is <strong>an orderly, up-to-date and fully tracked administrative system</strong> that eliminates errors and ensures business continuity. The company can thus focus on activities with greater added value, delegating to us the punctual and professional management of the entire administrative cycle."
         }
       },
       "data-management": {
         "name": "Data Management",
-        "serviceDescription": "Organized and secure management of business data, according to cybersecurity and compliance criteria.",
-        "shortDescription": "Organized and secure management of business data, according to cybersecurity and compliance criteria.",
-        "detailDescription": "We manage your data securely, organized, and compliant. From archiving to protection, from data quality to integration with business systems.",
-        "functionalityTitle": "How It Works",
-        "functionalitySubtitle": "Every Data Management activity is managed with a clear, verifiable, and compliant operational model.",
+        "serviceDescription": "Organized and secure management of corporate data, according to cybersecurity and compliance criteria.",
+        "shortDescription": "Organized and secure management of corporate data, according to cybersecurity and compliance criteria.",
+        "detailDescription": "We manage your data in a secure, organized and compliant manner. From storage to protection, from data quality to integration with business systems.",
+        "functionalityTitle": "How it works",
+        "functionalitySubtitle": "Every Data Management activity is managed with a clear, verifiable and compliant operating model.",
         "functionality": {
-          "item1": "We organize data in an orderly, structured, and easily accessible manner.",
+          "item1": "We organize data in an orderly, structured and easily accessible way.",
           "item2": "We apply cybersecurity criteria to protect data from unauthorized access.",
           "item3": "We manage automatic backups and redundant copies to prevent any loss.",
-          "item4": "We define roles and permissions, tracking every access and modification to data.",
-          "item5": "We integrate data with CRM, ERP, management systems, and client platforms.",
-          "item6": "We verify data quality, correcting inconsistencies and duplicates."
+          "item4": "We define roles and permissions, tracking every data access and change.",
+          "item5": "We integrate data with CRM, ERP, management and customer platforms.",
+          "item6": "We check the quality of the data, correcting inconsistencies and duplicates."
         },
         "advantagesTitle": "Your Benefits",
         "advantages": {
           "item1": "We apply advanced cybersecurity standards to protect information.",
-          "item2": "We keep data structured, aligned, and easily accessible.",
-          "item3": "Constant backups and redundant systems to ensure operational continuity.",
+          "item2": "We keep the data structured, aligned and easily searchable.",
+          "item3": "Constant backups and redundant systems to ensure business continuity.",
           "item4": "Data always ready and available for analysis, reporting, and decision-making processes.",
-          "item5": "Recovery procedures and continuous monitoring to prevent interruptions.",
+          "item5": "Continuous recovery and monitoring procedures to prevent outages.",
           "item6": "We manage data in compliance with current regulations (GDPR, Data Act, etc.).",
           "item7": "We integrate into your digital systems without operational interruptions."
         },
-        "detailedContentTitle": "A secure, organized, and always available data system",
+        "detailedContentTitle": "A secure, organized and always available data system",
         "detailedContent": {
-          "p1": "Data Management has become a strategic element for any organization that wants to operate with continuity, security, and scalability. With our service, we <strong>structure, protect, and make all business data accessible</strong>, integrating them into digital processes and ensuring their availability at all times.",
-          "p2": "We manage the entire data lifecycle by <strong>applying advanced cybersecurity and governance criteria</strong>. We organize information in an orderly and traceable manner, so systems work better and staff can rely on reliable and up-to-date databases.",
-          "p3": "The result is a <strong>modern and resilient data infrastructure</strong>, capable of supporting digital projects, automation, and artificial intelligence initiatives. A secure, scalable environment designed to accompany the company's growth over time."
+          "p1": "Data Management has become a strategic element for any organization that wants to operate with continuity, security and scalability. With our service, we <strong>structure, protect and make all business data usable</strong>, integrating it into digital processes and ensuring their availability at all times.",
+          "p2": "We manage the entire data lifecycle by <strong>applying advanced cybersecurity and governance criteria</strong>. We organize information in an orderly and traceable way, so systems work better and staff can count on reliable and up-to-date databases.",
+          "p3": "The result is a <strong>modern and resilient data infrastructure</strong> capable of supporting digital projects, automation and AI-powered initiatives. A safe, scalable environment designed to accompany the company's growth over time."
         }
       },
       "training-aziendali": {
         "name": "Corporate Training",
-        "serviceDescription": "We offer corporate training for groups of end users on complex digital services.",
-        "shortDescription": "We offer corporate training for groups of end users on complex digital services.",
+        "serviceDescription": "We offer Corporate Training for end-user groups on complex digital services.",
+        "shortDescription": "We offer Corporate Training for end-user groups on complex digital services.",
         "detailDescription": "We design and deliver training activities dedicated to groups of employees who need to use complex digital services. Each session is designed to transfer practical and operational skills.",
-        "functionalityTitle": "How It Works",
-        "functionalitySubtitle": "Corporate training sessions are designed for groups of users who need to understand and use a specific digital service.",
+        "functionalityTitle": "How it works",
+        "functionalitySubtitle": "Business training is designed for groups of users who need to understand and use a specific digital service.",
         "functionality": {
           "item1": "We explain all features of the digital service in a clear and practical way.",
-          "item2": "We answer participants' questions in real time.",
-          "item3": "We demonstrate operational flows, from login to daily use.",
-          "item4": "We guide employees in the correct, secure, and compliant use of the tool.",
-          "item5": "We also cover parts of the service that not everyone will use, but that are useful to know.",
-          "item6": "We can dedicate multiple days or sessions to specific modules based on needs."
+          "item2": "We answer the doubts of the participants live.",
+          "item3": "We show the operational flows, from login to daily usage.",
+          "item4": "We guide employees in the correct, safe and compliant use of the tool.",
+          "item5": "We also delve into parts of the service that not everyone will use, but that are useful to know.",
+          "item6": "We can dedicate multiple days or sessions to specific modules, as needed."
         },
-        "advantagesTitle": "Training sessions can be:",
+        "advantagesTitle": "Training can be:",
         "advantages": {
           "item1": {
             "title": "Customized",
-            "description": "Built to measure based on business needs, with focus on critical areas and internal operational flows."
+            "description": "Tailor-built to business needs, with a focus on critical areas and internal operational flows."
           },
           "item2": {
             "title": "Standard",
-            "description": "Designed to provide a complete overview of the digital service, useful for onboarding and updates."
+            "description": "Designed to provide a comprehensive overview of the digital service, useful for onboarding and updating."
           }
         },
         "detailedContentTitle": "Corporate training to improve skills and processes",
         "detailedContent": {
-          "p1": "We offer corporate training for groups of end users on the use of the client company's digital services. Training sessions can be <strong>modular, multi-session, customized</strong>, or <strong>standard</strong>.",
-          "p2": "They cover all features of the service, including those not used by all roles, and <strong>provide operational instructions, best practices, security procedures</strong>, and <strong>direct support to participants.</strong>",
-          "p3": "The goal is to ensure that the company has competent, autonomous employees ready to use the digital service correctly, improving productivity, operational continuity, and security."
+          "p1": "We offer business training for end-user groups on using the client company's digital services. Training sessions can be <strong>modular, multi-session, customized or standard</strong>.",
+          "p2": "They cover all service features, including those not used by all roles, and <strong>provide operational instructions, best practices, security procedures and direct support to participants</strong>.",
+          "p3": "The goal is to ensure that the company has competent, autonomous employees who are ready to use the digital service properly, improving productivity, business continuity and security."
         }
       }
     }

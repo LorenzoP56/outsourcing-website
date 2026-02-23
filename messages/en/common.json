@@ -35,8 +35,8 @@
     "serviceLinks": {
       "backOffice": "Digital Back Office",
       "contactCenter": "Contact Center",
-      "datiCliente": "Client Data Operations Management",
-      "assistenza": "Dedicated User Support",
+      "datiCliente": "Operational Management of Customer Data",
+      "assistenza": "Dedicated User Assistance",
       "dataManagement": "Data Management",
       "training": "Corporate Training"
     },
