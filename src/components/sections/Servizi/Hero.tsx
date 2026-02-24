@@ -43,7 +43,7 @@ export default function Hero() {
 
   return (
     <section
-      className="min-h-[50vh] lg:px-32 lg:py-16 px-8 pt-16 flex items-center justify-center"
+      className="xl:min-h-[50vh] lg:px-32 lg:py-16 px-8 pt-16 flex items-center justify-center"
     >
       <motion.div
         className="flex flex-col w-full h-full justify-center"

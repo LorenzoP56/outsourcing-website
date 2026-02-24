@@ -33,7 +33,7 @@ export default function Servizi() {
 
           <AnimatedSection
             variants={fadeInUp}
-            className="flex flex-col flex-1 gap-8 lg:w-[40%] w-full justify-center items-center"
+            className="flex flex-col flex-1 gap-8 lg:w-[40%] w-full justify-center items-center lg:items-start"
           >
             <div className="flex flex-col gap-4">
               <h3

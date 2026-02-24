@@ -152,7 +152,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white">
-      <div className="mx-auto px-4 md:px-8 lg:px-24 py-4 lg:py-6 flex items-center justify-between">
+      <div className="mx-auto w-full max-w-screen-2xl px-4 md:px-8 lg:px-24 py-4 lg:py-6 flex items-center justify-between">
 
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
