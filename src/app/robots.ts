@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://www.osgdigitaleconomy.com/sitemap.xml',
+    sitemap: 'https://osgdigitaleconomy.com/sitemap.xml',
   }
 }

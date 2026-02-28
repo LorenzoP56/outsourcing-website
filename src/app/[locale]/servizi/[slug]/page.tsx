@@ -8,7 +8,7 @@ import { organizationSchema, generateBreadcrumbSchema, generateServiceSchema, js
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+const BASE_URL = "https://osgdigitaleconomy.com";
 
 interface ServicePageProps {
   params: Promise<{

@@ -1,7 +1,5 @@
 "use client";
 
-import "./Esternalizzare.css";
-
 import { COLORS } from "@/lib/constants";
 import Image from "next/image";
 import Button from "@/components/ui/Button";

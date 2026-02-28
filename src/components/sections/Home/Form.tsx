@@ -1,7 +1,5 @@
 'use client'
 
-import "./Form.css";
-
 import {Link} from "@/i18n/navigation";
 import { COLORS } from "@/lib/constants";
 import Button from "@/components/ui/Button";

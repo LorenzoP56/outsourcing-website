@@ -134,6 +134,16 @@ html {
   margin: 1.5em 0;
 }
 
+/* Hero entry animations (CSS — no JS required) */
+@keyframes hero-anim {
+  from { transform: translateY(20px); }
+  to   { transform: translateY(0px);  }
+}
+
+.hero-anim {
+  animation: hero-anim 0.5s ease-out both;
+}
+
 /* Hero background - solo su desktop */
 @media (min-width: 1024px) {
   .hero-bg {
@@ -142,5 +152,28 @@ html {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+/* Esternalizzare section background - solo su desktop */
+@media (min-width: 1024px) {
+  .esternalizzare-bg {
+    background:
+      linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+      url("/website_images/Home/team-outsourcing-group-professionisti.webp") center / cover no-repeat;
+  }
+}
+
+/* Affidati section background */
+.affidati-bg {
+  background:
+    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    url("/website_images/Home/contattaci-consulenza-outsourcing-group.webp") center / cover no-repeat;
+}
+
+/* Form section background */
+.form-bg {
+  background:
+    linear-gradient(135deg, rgba(2,20,36,.65) 0%, rgba(13,84,145,.5) 50%, rgba(2,20,36,.65) 100%),
+    url("/website_images/Home/contattaci-consulenza-outsourcing-group.webp") center / cover no-repeat;
 }
 

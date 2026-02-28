@@ -1,10 +1,12 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import DomandeFrequenti from './DomandeFrequenti';
-import Affidati from './Affidati';
-import Map from '@/components/sections/Contatti/Map';
-import AffidatiServizi from './AffidatiServizi';
+import dynamic from 'next/dynamic';
+
+const DomandeFrequenti = dynamic(() => import('./DomandeFrequenti'));
+const Affidati = dynamic(() => import('./Affidati'));
+const Map = dynamic(() => import('@/components/sections/Contatti/Map'));
+const AffidatiServizi = dynamic(() => import('./AffidatiServizi'));
 
 export default function ConditionalSections() {
   const pathname = usePathname();

@@ -1,7 +1,5 @@
 "use client";
 
-import "./Affidati.css";
-
 import Button from "@/components/ui/Button";
 import { COLORS } from "@/lib/constants";
 import {Link} from "@/i18n/navigation";

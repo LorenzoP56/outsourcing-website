@@ -5,7 +5,7 @@ import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/li
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+const BASE_URL = "https://osgdigitaleconomy.com";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

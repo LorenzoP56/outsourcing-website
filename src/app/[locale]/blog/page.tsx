@@ -9,7 +9,7 @@ import { routing } from "@/i18n/routing";
 // ISR: rigenera la pagina ogni 60 secondi
 export const revalidate = 60;
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+const BASE_URL = "https://osgdigitaleconomy.com";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

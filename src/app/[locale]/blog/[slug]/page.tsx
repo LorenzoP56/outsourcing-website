@@ -24,7 +24,7 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+const BASE_URL = "https://osgdigitaleconomy.com";
 
 // Genera i metadata dinamici da Yoast SEO
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

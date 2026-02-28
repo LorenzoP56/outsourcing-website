@@ -1,17 +1,19 @@
 import Hero from "@/components/sections/Home/Hero";
-import Group from "@/components/sections/Home/Group";
-import Servizi from "@/components/sections/Home/Servizi";
-import Esternalizzare from "@/components/sections/Home/Esternalizzare";
-import DomandeFrequenti from "@/components/layout/DomandeFrequenti";
-import Form from "@/components/sections/Home/Form";
-import Blog from "@/components/sections/Home/Blog";
+import dynamic from "next/dynamic";
+
+const Group = dynamic(() => import("@/components/sections/Home/Group"));
+const Servizi = dynamic(() => import("@/components/sections/Home/Servizi"));
+const Esternalizzare = dynamic(() => import("@/components/sections/Home/Esternalizzare"));
+const Form = dynamic(() => import("@/components/sections/Home/Form"));
+const DomandeFrequenti = dynamic(() => import("@/components/layout/DomandeFrequenti"));
+const Blog = dynamic(() => import("@/components/sections/Home/Blog"));
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, websiteSchema, generateFAQSchema, jsonLdScript } from "@/lib/jsonld";
 import { getLatestPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.osgdigitaleconomy.com";
+const BASE_URL = "https://osgdigitaleconomy.com";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -67,6 +69,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         type="image/webp"
         fetchPriority="high"
         media="(min-width: 1024px)"
+      />
+      <link
+        rel="preload"
+        href="/website_images/Home/bgBlog.webp"
+        as="image"
+        type="image/webp"
       />
       <script
         type="application/ld+json"

@@ -19,7 +19,6 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
@@ -33,10 +32,6 @@ export default function Header() {
       router.replace(pathname, { locale: newLocale });
     });
   };
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -223,41 +218,40 @@ export default function Header() {
         </Button>
 
         {/* Mobile Menu */}
-        {isMounted && (
-          <div
-            className={`xl:hidden fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] bg-white shadow-lg transition-all duration-300 overflow-y-auto ${
-              isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-            }`}
-          >
-            <nav className="flex flex-col items-center py-8 space-y-6">
-              {NAV_LINKS.map((link, index) => renderNavLink(link, index, () => setIsMenuOpen(false)))}
-              <div className="flex items-center rounded-full border overflow-hidden" style={{ borderColor: COLORS.TEXT, opacity: isPending ? 0.5 : 1 }}>
-                {routing.locales.map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => {
-                      switchLocale(l);
-                      setIsMenuOpen(false);
-                    }}
-                    disabled={isPending}
-                    className="px-4 py-2 text-sm font-bold uppercase transition-colors"
-                    style={{
-                      background: locale === l ? COLORS.PRIMARY : 'transparent',
-                      color: locale === l ? COLORS.TEXT_WHITE : COLORS.TEXT,
-                    }}
-                  >
-                    {l}
-                  </button>
-                ))}
-              </div>
-              <div className="pt-4">
-                <Button href="/contatti" onClick={() => setIsMenuOpen(false)}>
-                  {t("cta")}
-                </Button>
-              </div>
-            </nav>
-          </div>
-        )}
+        <div
+          className={`xl:hidden fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] bg-white shadow-lg transition-all duration-300 overflow-y-auto ${
+            isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+          aria-hidden={!isMenuOpen}
+        >
+          <nav className="flex flex-col items-center py-8 space-y-6">
+            {NAV_LINKS.map((link, index) => renderNavLink(link, index, () => setIsMenuOpen(false)))}
+            <div className="flex items-center rounded-full border overflow-hidden" style={{ borderColor: COLORS.TEXT, opacity: isPending ? 0.5 : 1 }}>
+              {routing.locales.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => {
+                    switchLocale(l);
+                    setIsMenuOpen(false);
+                  }}
+                  disabled={isPending}
+                  className="px-4 py-2 text-sm font-bold uppercase transition-colors"
+                  style={{
+                    background: locale === l ? COLORS.PRIMARY : 'transparent',
+                    color: locale === l ? COLORS.TEXT_WHITE : COLORS.TEXT,
+                  }}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+            <div className="pt-4">
+              <Button href="/contatti" onClick={() => setIsMenuOpen(false)}>
+                {t("cta")}
+              </Button>
+            </div>
+          </nav>
+        </div>
 
       </div>
     </header>

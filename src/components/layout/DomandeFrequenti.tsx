@@ -2,8 +2,7 @@
 
 import React, { useState } from "react";
 import { COLORS } from "@/lib/constants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComments } from "@fortawesome/free-solid-svg-icons";
+import { MessageCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 import {useTranslations} from "next-intl";
 
@@ -92,10 +91,9 @@ export default function DomandeFrequenti() {
             className="w-16 h-16 flex items-center justify-center rounded-2xl"
             style={{ background: COLORS.PRIMARY }}
           >
-            <FontAwesomeIcon
-              icon={faComments}
-              className="text-3xl"
-              style={{ color: COLORS.TEXT_WHITE }}
+            <MessageCircle
+              size={32}
+              color={COLORS.TEXT_WHITE}
             />
           </div>
 
