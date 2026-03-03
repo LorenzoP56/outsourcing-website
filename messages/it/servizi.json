@@ -1,7 +1,7 @@
 {
   "Servizi": {
     "meta": {
-      "title": "Servizi BPO e Outsourcing Back Office | Outsourcing Group",
+      "title": "Servizi BPO e Outsourcing Back Office | Outsourcing Group Padova",
       "description": "Servizi BPO professionali: Contact Center, Digital Back Office, Data Management e Training. Esternalizza i processi aziendali e riduci i costi.",
       "notFoundTitle": "Servizio non trovato"
     },
@@ -15,8 +15,9 @@
     "discoverMore": "Scopri di più",
     "details": {
       "assistenza-dedicata": {
+        "metaTitle": "Assistenza Dedicata Utenti Digitali | Supporto Attivazioni | Outsourcing Group",
         "name": "Assistenza Dedicata agli Utenti",
-        "serviceDescription": "Supportiamo i tuoi utenti in attivazioni, configurazioni e utilizzo dei servizi digitali.",
+        "serviceDescription": "Supporto dedicato agli utenti per attivazioni, configurazioni e servizi digitali. Esternalizza l'assistenza con Outsourcing Group. Contattaci.",
         "shortDescription": "Supportiamo i tuoi utenti in attivazioni, configurazioni e utilizzo dei servizi digitali.",
         "detailDescription": "Supportiamo i tuoi utenti nelle attivazioni, nelle configurazioni e nell'utilizzo quotidiano dei servizi digitali. Il nostro team gestisce ogni richiesta con competenza e attenzione, offrendo un'assistenza chiara, puntuale e personalizzata. Accompagniamo gli utenti lungo tutto il percorso operativo, dalla comprensione del servizio alla risoluzione di eventuali difficoltà, garantendo un'esperienza fluida e senza interruzioni.",
         "functionalityTitle": "Come funziona",
@@ -62,8 +63,9 @@
         }
       },
       "contact-center": {
+        "metaTitle": "Contact Center Outsourcing Italia | Assistenza Multicanale | Outsourcing Group",
         "name": "Contact Center",
-        "serviceDescription": "Gestiamo tutta la comunicazione in entrata dei clienti con assistenza multicanale strutturata.",
+        "serviceDescription": "Contact Center multicanale in outsourcing: voce, email, chat. Gestione professionale dei clienti dal 1999. Richiedi un preventivo gratuito.",
         "shortDescription": "Gestiamo tutta la comunicazione in entrata dei clienti con assistenza multicanale strutturata.",
         "detailDescription": "Assistenza multicanale strutturata per gestire ogni richiesta dei tuoi clienti in modo chiaro, rapido e professionale. Ogni contatto viene tracciato e gestito per garantire la massima soddisfazione.",
         "functionalityTitle": "Come lavoriamo",
@@ -108,8 +110,9 @@
         }
       },
       "outsourcing-back-office-digitale": {
+        "metaTitle": "Digital Back Office Outsourcing | Gestione Processi Digitali | Outsourcing Group",
         "name": "Digital Back Office",
-        "serviceDescription": "Forniamo un servizio di Digital Back Office strutturato per gestire le attività operative legate ai servizi digitali.",
+        "serviceDescription": "Outsourcing Digital Back Office strutturato: gestione processi, anagrafiche e operatività digitale. Dal 1999. Parla con un consulente oggi.",
         "shortDescription": "Forniamo un servizio di Digital Back Office strutturato per gestire le attività operative legate ai servizi digitali.",
         "detailDescription": "Supportiamo i tuoi processi digitali attraverso servizi operativi strutturati, gestiti da team qualificati e con procedure conformi. Ogni attività è tracciata, verificata e completata secondo SLA definiti.",
         "functionalityTitle": "Cosa facciamo",
@@ -141,8 +144,9 @@
         }
       },
       "gestione-anagrafiche-clienti-outsourcing": {
+        "metaTitle": "Gestione Anagrafiche Clienti Outsourcing | Dati CRM | Outsourcing Group",
         "name": "Gestione Operativa dei Dati Cliente",
-        "serviceDescription": "Gestiamo la creazione e l'allineamento dei dati cliente nei tuoi sistemi aziendali.",
+        "serviceDescription": "Gestione anagrafiche clienti in outsourcing: creazione, allineamento e aggiornamento dati su CRM/ERP. GDPR compliant. Richiedi un preventivo.",
         "shortDescription": "Gestiamo la creazione e l'allineamento dei dati cliente nei tuoi sistemi aziendali.",
         "detailDescription": "Organizziamo e gestiamo tutte le attività operative legate ai dati cliente: dalla creazione delle anagrafiche alla gestione degli aggiornamenti, con tracciabilità completa e conformità normativa.",
         "functionalityTitle": "Come lavoriamo",
@@ -187,8 +191,9 @@
         }
       },
       "data-management": {
+        "metaTitle": "Data Management Aziendale | Sicurezza GDPR | Outsourcing Group",
         "name": "Data Management",
-        "serviceDescription": "Gestione organizzata e sicura dei dati aziendali, secondo criteri di cybersecurity e conformità.",
+        "serviceDescription": "Data Management aziendale sicuro: archiviazione, backup, cybersecurity e conformità GDPR. Proteggi i tuoi dati con Outsourcing Group.",
         "shortDescription": "Gestione organizzata e sicura dei dati aziendali, secondo criteri di cybersecurity e conformità.",
         "detailDescription": "Gestiamo i tuoi dati in modo sicuro, organizzato e conforme. Dall'archiviazione alla protezione, dalla qualità del dato all'integrazione con i sistemi aziendali.",
         "functionalityTitle": "Come funziona",
@@ -219,8 +224,9 @@
         }
       },
       "training-aziendali": {
+        "metaTitle": "Training Aziendale su Servizi Digitali | Formazione BPO | Outsourcing Group",
         "name": "Training Aziendali",
-        "serviceDescription": "Offriamo Training Aziendali per gruppi di utenti finali su servizi digitali complessi.",
+        "serviceDescription": "Training Aziendali su Servizi Digitali: formazione su misura per gruppi di dipendenti. Sessioni personalizzate o standard, in presenza o da remoto. Richiedi un preventivo.",
         "shortDescription": "Offriamo Training Aziendali per gruppi di utenti finali su servizi digitali complessi.",
         "detailDescription": "Progettiamo ed eroghiamo attività di training dedicate a gruppi di dipendenti che devono utilizzare servizi digitali complessi. Ogni sessione è pensata per trasferire competenze pratiche e operative.",
         "functionalityTitle": "Come funziona",

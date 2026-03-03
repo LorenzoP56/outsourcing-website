@@ -7,8 +7,13 @@
     },
     "hero": {
       "title": "Blog",
-      "description1": "SStay up-to-date on the latest news on outsourcing, digital service management, and regulatory compliance.",
+      "description1": "Stay up-to-date on the latest news on outsourcing, digital service management, and regulatory compliance.",
       "description2": "Discover strategies, best practices, and innovative solutions to optimize your business processes."
+    },
+    "comingSoon": {
+      "title": "English articles coming soon",
+      "description": "We are working on translating our content into English. In the meantime, you can read our articles in Italian.",
+      "cta": "Read articles in Italian"
     }
   }
 }

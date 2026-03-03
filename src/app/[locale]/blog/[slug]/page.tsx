@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import {Link} from "@/i18n/navigation";
 import { getPostBySlug, getAllSlugs, formatDate, stripHtml } from "@/lib/graph-ql/queries";
-import { organizationSchema, generateBreadcrumbSchema, generateArticleSchema, jsonLdScript } from "@/lib/jsonld";
+import { organizationSchema, authorPersonSchema, generateBreadcrumbSchema, generateArticleSchema, jsonLdScript } from "@/lib/jsonld";
 import { COLORS } from "@/lib/constants";
 import ArticleHero from "@/components/sections/Blog/ArticleHero";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BlogPostPage({ params }: PageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const tCommon = await getTranslations('Common');
+  const tCommon = await getTranslations({ locale, namespace: 'Common' });
 
   const post = await getPostBySlug(slug);
 
@@ -92,6 +92,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     { name: post.title, url: `/blog/${slug}` },
   ]);
 
+  const wordCount = stripHtml(post.content).split(/\s+/).filter(Boolean).length;
+
   const articleSchema = generateArticleSchema({
     title: post.title,
     description: post.seo?.metaDesc || stripHtml(post.excerpt),
@@ -99,6 +101,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     date: post.date,
     image: post.featuredImage?.node?.sourceUrl,
     category: category,
+    locale: locale,
+    wordCount: wordCount,
   });
 
   return (
@@ -106,6 +110,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(organizationSchema)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(authorPersonSchema)}
       />
       <script
         type="application/ld+json"
@@ -123,6 +131,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         date={formattedDate}
         image={post.featuredImage?.node?.sourceUrl || "/website_images/Blog/bgBlog.webp"}
         imageAlt={post.featuredImage?.node?.altText || post.title}
+        byline={tCommon('writtenBy')}
       />
 
       {/* Content Section */}

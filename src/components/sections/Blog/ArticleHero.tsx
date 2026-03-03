@@ -10,6 +10,7 @@ interface ArticleHeroProps {
   date: string;
   image: string;
   imageAlt: string;
+  byline: string;
 }
 
 const containerVariants = {
@@ -35,7 +36,7 @@ const itemVariants = {
   },
 } as const;
 
-export default function ArticleHero({ title, category, date, image, imageAlt }: ArticleHeroProps) {
+export default function ArticleHero({ title, category, date, image, imageAlt, byline }: ArticleHeroProps) {
   return (
     <section className="relative min-h-[400px] flex items-center justify-center">
       <Image
@@ -72,6 +73,9 @@ export default function ArticleHero({ title, category, date, image, imageAlt }: 
         <motion.time variants={itemVariants} className="text-white/80 text-sm">
           {date}
         </motion.time>
+        <motion.p variants={itemVariants} className="text-white/70 text-sm mt-2">
+          {byline}
+        </motion.p>
       </motion.div>
     </section>
   );

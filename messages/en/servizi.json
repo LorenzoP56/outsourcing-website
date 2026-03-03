@@ -1,7 +1,7 @@
 {
   "Servizi": {
     "meta": {
-      "title": "BPO & Back Office Outsourcing Services | Outsourcing Group",
+      "title": "BPO & Back Office Outsourcing Services | Outsourcing Group Padova",
       "description": "Professional BPO services: Contact Center, Digital Back Office, Data Management and Training. Outsource business processes and reduce costs.",
       "notFoundTitle": "Service not found"
     },
@@ -15,8 +15,9 @@
     "discoverMore": "Learn More",
     "details": {
       "assistenza-dedicata": {
+        "metaTitle": "Dedicated Digital User Support | Activation Assistance | Outsourcing Group",
         "name": "Dedicated User Assistance",
-        "serviceDescription": "We support your users in activations, configurations and use of digital services.",
+        "serviceDescription": "Dedicated user support for activations, configurations and digital services. Outsource assistance with Outsourcing Group. Contact us today.",
         "shortDescription": "We support your users in activations, configurations and use of digital services.",
         "detailDescription": "We support your users in the activations, configurations and daily use of digital services. Our team handles every request competently and carefully, offering clear, timely, and personalized assistance. We accompany users throughout the operational journey, from understanding the service to resolving any difficulties, ensuring a smooth and uninterrupted experience.",
         "functionalityTitle": "How it works",
@@ -62,8 +63,9 @@
         }
       },
       "contact-center": {
+        "metaTitle": "Contact Center Outsourcing Italy | Multichannel Assistance | Outsourcing Group",
         "name": "Contact Center",
-        "serviceDescription": "We manage all incoming client communication with structured multi-channel assistance.",
+        "serviceDescription": "Multichannel Contact Center outsourcing: voice, email, chat. Professional customer management since 1999. Request a free quote today.",
         "shortDescription": "We manage all incoming client communication with structured multi-channel assistance.",
         "detailDescription": "Structured multi-channel support to handle every request from your customers clearly, quickly and professionally. Each contact is tracked and managed to ensure maximum satisfaction.",
         "functionalityTitle": "How we work",
@@ -108,8 +110,9 @@
         }
       },
       "outsourcing-back-office-digitale": {
+        "metaTitle": "Digital Back Office Outsourcing | Digital Process Management | Outsourcing Group",
         "name": "Digital Back Office",
-        "serviceDescription": "We provide a structured Digital Back Office service to manage operational activities related to digital services.",
+        "serviceDescription": "Structured Digital Back Office outsourcing: process management, data operations and digital workflows. Since 1999. Talk to a consultant today.",
         "shortDescription": "We provide a structured Digital Back Office service to manage operational activities related to digital services.",
         "detailDescription": "We support your digital processes through structured operational services, managed by qualified teams and with compliant procedures. Each activity is tracked, verified and completed according to defined SLAs.",
         "functionalityTitle": "What we do",
@@ -141,8 +144,9 @@
         }
       },
       "gestione-anagrafiche-clienti-outsourcing": {
+        "metaTitle": "Customer Data Registry Outsourcing | CRM Data Management | Outsourcing Group",
         "name": "Operational Management of Customer Data",
-        "serviceDescription": "We manage the creation and alignment of customer data in your business systems.",
+        "serviceDescription": "Customer data registry outsourcing: creation, alignment and updates on CRM/ERP systems. GDPR compliant. Request a quote today.",
         "shortDescription": "We manage the creation and alignment of customer data in your business systems.",
         "detailDescription": "We organize and manage all operational activities related to customer data: from registry creation to update management, with complete traceability and regulatory compliance.",
         "functionalityTitle": "How we work",
@@ -187,8 +191,9 @@
         }
       },
       "data-management": {
+        "metaTitle": "Business Data Management | GDPR Security & Compliance | Outsourcing Group",
         "name": "Data Management",
-        "serviceDescription": "Organized and secure management of corporate data, according to cybersecurity and compliance criteria.",
+        "serviceDescription": "Secure business Data Management: storage, backup, cybersecurity and GDPR compliance. Protect your data with Outsourcing Group.",
         "shortDescription": "Organized and secure management of corporate data, according to cybersecurity and compliance criteria.",
         "detailDescription": "We manage your data in a secure, organized and compliant manner. From storage to protection, from data quality to integration with business systems.",
         "functionalityTitle": "How it works",
@@ -219,8 +224,9 @@
         }
       },
       "training-aziendali": {
+        "metaTitle": "Digital Services Corporate Training | BPO Training | Outsourcing Group",
         "name": "Corporate Training",
-        "serviceDescription": "We offer Corporate Training for end-user groups on complex digital services.",
+        "serviceDescription": "Corporate Training on Digital Services: tailored sessions for employee groups. Customized or standard programmes, on-site or remote. Request a quote.",
         "shortDescription": "We offer Corporate Training for end-user groups on complex digital services.",
         "detailDescription": "We design and deliver training activities dedicated to groups of employees who need to use complex digital services. Each session is designed to transfer practical and operational skills.",
         "functionalityTitle": "How it works",

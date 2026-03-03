@@ -26,12 +26,6 @@ export const organizationSchema = {
     "@type": "Country",
     name: "Italy",
   },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
-    closes: "19:00",
-  },
 };
 
 // LocalBusiness Schema
@@ -120,6 +114,18 @@ export function generateServiceSchema(service: {
   };
 }
 
+// Author Person Schema - Lorenzo
+export const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${baseUrl}/#author-lorenzo`,
+  name: "Lorenzo",
+  url: `${baseUrl}/chi-siamo`,
+  worksFor: {
+    "@id": `${baseUrl}/#organization`,
+  },
+};
+
 // Article Schema Generator (per blog posts)
 export function generateArticleSchema(article: {
   title: string;
@@ -128,19 +134,31 @@ export function generateArticleSchema(article: {
   date: string;
   image?: string;
   category?: string;
+  locale?: string;
+  wordCount?: number;
 }) {
+  const imageUrl = article.image || `${baseUrl}/logo.png`;
+  const inLanguage = article.locale === 'en' ? 'en' : 'it';
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: article.image || `${baseUrl}/logo.png`,
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+    },
+    inLanguage,
     datePublished: article.date,
     dateModified: article.date,
+    ...(article.wordCount && { wordCount: article.wordCount }),
     author: {
-      "@type": "Organization",
-      name: "Outsourcing Group SRL",
-      url: baseUrl,
+      "@type": "Person",
+      "@id": `${baseUrl}/#author-lorenzo`,
+      name: "Lorenzo",
     },
     publisher: {
       "@type": "Organization",

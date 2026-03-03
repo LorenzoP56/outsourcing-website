@@ -36,14 +36,14 @@ export async function generateMetadata({ params }: ServicePageProps) {
   }
 
   return {
-    title: t(`details.${slug}.name`),
+    title: t(`details.${slug}.metaTitle`),
     description: t(`details.${slug}.serviceDescription`),
     alternates: {
       canonical: `${BASE_URL}/${locale}/servizi/${service.slug}`,
       languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/servizi/${service.slug}`])),
     },
     openGraph: {
-      title: t(`details.${slug}.name`),
+      title: t(`details.${slug}.metaTitle`),
       description: t(`details.${slug}.serviceDescription`),
       url: `${BASE_URL}/${locale}/servizi/${service.slug}`,
       siteName: "Outsourcing Group",

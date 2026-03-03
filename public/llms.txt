@@ -1,0 +1,37 @@
+# Outsourcing Group SRL
+
+> Outsourcing Group è un'azienda italiana specializzata in servizi BPO e Digital Back Office dal 1999. Con sede a Padova, supporta aziende italiane ed europee nell'esternalizzazione di processi operativi digitali: Contact Center, Digital Back Office, Data Management, Gestione Anagrafiche e Training Aziendali.
+
+## Informazioni aziendali
+
+- **Nome:** Outsourcing Group SRL
+- **Sede:** Piazza Giacomo Zanellato 13, 35131 Padova (PD), Italia
+- **P. IVA:** IT03475900282
+- **Attiva dal:** 1999
+- **Sito:** https://www.osgdigitaleconomy.com
+- **Email:** info@osgdigitaleconomy.com
+- **Telefono:** +39 049 870 1855
+
+## Servizi
+
+- [Contact Center Outsourcing](https://www.osgdigitaleconomy.com/it/servizi/contact-center): Gestione multicanale della comunicazione clienti (voce, email, chat, ticket). SLA garantiti, operatori formati, scalabilità immediata.
+- [Digital Back Office](https://www.osgdigitaleconomy.com/it/servizi/outsourcing-back-office-digitale): Gestione operativa dei processi digitali: verifiche documentali, onboarding, attivazioni, configurazioni e rilascio servizi.
+- [Gestione Anagrafiche Clienti](https://www.osgdigitaleconomy.com/it/servizi/gestione-anagrafiche-clienti-outsourcing): Creazione, allineamento e aggiornamento dati cliente su CRM/ERP. Processi GDPR compliant con tracciabilità completa.
+- [Data Management](https://www.osgdigitaleconomy.com/it/servizi/data-management): Archiviazione, backup, cybersecurity e qualità del dato aziendale. Conformità GDPR e Data Act.
+- [Assistenza Dedicata agli Utenti](https://www.osgdigitaleconomy.com/it/servizi/assistenza-dedicata): Supporto utenti per attivazioni, configurazioni e utilizzo di servizi digitali complessi.
+- [Training Aziendali](https://www.osgdigitaleconomy.com/it/servizi/training-aziendali): Formazione su misura su servizi digitali per gruppi di dipendenti. Sessioni standard o personalizzate.
+
+## Blog
+
+- [Call center outsourcing: cos'è, come funziona e quando conviene](https://www.osgdigitaleconomy.com/it/blog/call-center-outsourcing)
+- [Contact Center as a Service (CCaaS): come funziona e quando conviene](https://www.osgdigitaleconomy.com/it/blog/contact-center-as-a-service-ccaas)
+
+## Pagine principali
+
+- [Chi Siamo](https://www.osgdigitaleconomy.com/it/chi-siamo): Storia, valori e team di Outsourcing Group. Dal 1999 partner per BPO e Digital Back Office.
+- [Perché Esternalizzare](https://www.osgdigitaleconomy.com/it/esternalizzazione): Guida ai vantaggi dell'outsourcing per le aziende italiane.
+- [Contatti](https://www.osgdigitaleconomy.com/it/contatti): Richiedi una consulenza gratuita.
+
+## Lingua
+
+Il sito è disponibile in italiano (primario) e inglese. I contenuti del blog sono attualmente in italiano.

@@ -144,10 +144,15 @@ export default function Blog({ posts }: BlogProps) {
                     {blog.description}
                   </p>
 
-                  {/* Date */}
-                  <time className="text-sm mt-auto" style={{ color: COLORS.TEXT }}>
-                    {blog.date}
-                  </time>
+                  {/* Date + Byline */}
+                  <div className="mt-auto flex flex-col gap-1">
+                    <time className="text-sm" style={{ color: COLORS.TEXT }}>
+                      {blog.date}
+                    </time>
+                    <p className="text-xs" style={{ color: COLORS.TEXT, opacity: 0.7 }}>
+                      {tCommon('writtenBy')}
+                    </p>
+                  </div>
                 </div>
               </article>
               </Link>
