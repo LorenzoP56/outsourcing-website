@@ -5,6 +5,7 @@ import Funzionalita from "@/components/sections/ServiziDetail/Funzionalita";
 import Vantaggi from "@/components/sections/ServiziDetail/Vantaggi";
 import ServiceContent from "@/components/sections/ServiziDetail/ServiceContent";
 import { organizationSchema, generateBreadcrumbSchema, generateServiceSchema, jsonLdScript } from "@/lib/jsonld";
+import FaqSchema from "@/components/FaqSchema";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
@@ -40,7 +41,10 @@ export async function generateMetadata({ params }: ServicePageProps) {
     description: t(`details.${slug}.serviceDescription`),
     alternates: {
       canonical: `${BASE_URL}/${locale}/servizi/${service.slug}`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/servizi/${service.slug}`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/servizi/${service.slug}`])),
+        'x-default': `${BASE_URL}/it/servizi/${service.slug}`,
+      },
     },
     openGraph: {
       title: t(`details.${slug}.metaTitle`),
@@ -105,6 +109,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
   };
 
   const serviceName = t(`details.${slug}.name`);
+  const serviceHeroTitle = t.has(`details.${slug}.heroTitle`)
+    ? t(`details.${slug}.heroTitle`)
+    : serviceName;
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "/" },
@@ -132,7 +139,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(serviceSchema)}
       />
-      <Hero title={serviceName} description={t(`details.${slug}.detailDescription`)} bgHero={service.headerImage} />
+      <FaqSchema />
+      <Hero title={serviceHeroTitle} description={t(`details.${slug}.detailDescription`)} bgHero={service.headerImage} />
       <Funzionalita functionalityTitle={t(`details.${slug}.functionalityTitle`)} functionalitySubtitle={t(`details.${slug}.functionalitySubtitle`)} grid={service.grid} functionality={functionality} />
       <Vantaggi advantagesTitle={t(`details.${slug}.advantagesTitle`)} advantages={advantages} />
       <ServiceContent detailedContent={detailedContent} />

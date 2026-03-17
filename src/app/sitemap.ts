@@ -11,29 +11,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://osgdigitaleconomy.com'
 
   // Pagine statiche — generate per ogni locale
+  // lastModified: aggiornare manualmente quando il contenuto della pagina cambia in modo significativo
   const staticPaths = [
-    { path: '', changeFrequency: 'weekly' as const, priority: 1 },
-    { path: '/chi-siamo', changeFrequency: 'monthly' as const, priority: 0.8 },
-    { path: '/servizi', changeFrequency: 'weekly' as const, priority: 0.9 },
-    { path: '/esternalizzazione', changeFrequency: 'monthly' as const, priority: 0.8 },
-    { path: '/blog', changeFrequency: 'weekly' as const, priority: 0.7 },
-    { path: '/contatti', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { path: '', changeFrequency: 'weekly' as const, priority: 1, lastModified: '2026-03-17' },
+    { path: '/chi-siamo', changeFrequency: 'monthly' as const, priority: 0.8, lastModified: '2026-01-15' },
+    { path: '/servizi', changeFrequency: 'weekly' as const, priority: 0.9, lastModified: '2026-03-17' },
+    { path: '/esternalizzazione', changeFrequency: 'monthly' as const, priority: 0.8, lastModified: '2026-01-15' },
+    { path: '/blog', changeFrequency: 'weekly' as const, priority: 0.7, lastModified: '2026-03-17' },
+    { path: '/contatti', changeFrequency: 'monthly' as const, priority: 0.6, lastModified: '2026-01-15' },
   ]
 
   const staticPages: MetadataRoute.Sitemap = locales.flatMap((locale) =>
-    staticPaths.map(({ path, changeFrequency, priority }) => ({
-      url: `${baseUrl}/${locale}${path}`,
-      lastModified: new Date(),
-      changeFrequency,
-      priority,
-    }))
+    staticPaths
+      .filter(({ path }) => !(locale === 'en' && path === '/blog'))
+      .map(({ path, changeFrequency, priority, lastModified }) => ({
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(lastModified),
+        changeFrequency,
+        priority,
+      }))
   )
 
   // Pagine dinamiche dei servizi — generate per ogni locale
+  // lastModified: aggiornare manualmente quando il contenuto del servizio cambia
   const servicePages: MetadataRoute.Sitemap = locales.flatMap((locale) =>
     SERVICES.map((service) => ({
       url: `${baseUrl}/${locale}/servizi/${service.slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-01-15'),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     }))
@@ -43,7 +47,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts()
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${baseUrl}/it/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.modified || post.date),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }))

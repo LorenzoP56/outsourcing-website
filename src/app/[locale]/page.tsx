@@ -9,6 +9,7 @@ const DomandeFrequenti = dynamic(() => import("@/components/layout/DomandeFreque
 const Blog = dynamic(() => import("@/components/sections/Home/Blog"));
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, websiteSchema, jsonLdScript } from "@/lib/jsonld";
+import FaqSchema from "@/components/FaqSchema";
 import { getLatestPosts, formatDate, stripHtml } from "@/lib/graph-ql/queries";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -24,7 +25,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('meta.description'),
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}`])),
+        'x-default': `${BASE_URL}/it`,
+      },
     },
     openGraph: {
       title: t('meta.title'),
@@ -79,6 +83,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(websiteSchema)}
       />
+      <FaqSchema />
       <Hero />
       <Group />
       <Servizi />

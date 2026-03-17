@@ -15,7 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('privacy.metaDescription'),
     alternates: {
       canonical: `${BASE_URL}/${locale}/privacy-policy`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/privacy-policy`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/privacy-policy`])),
+        'x-default': `${BASE_URL}/it/privacy-policy`,
+      },
     },
     openGraph: {
       title: t('privacy.metaTitle'),

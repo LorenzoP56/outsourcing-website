@@ -29,6 +29,7 @@ export interface Post {
   excerpt: string;
   content: string;
   date: string;
+  modified: string;
   featuredImage: FeaturedImage | null;
   categories: {
     nodes: Category[];

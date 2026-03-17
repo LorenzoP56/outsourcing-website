@@ -1,7 +1,15 @@
 import createMiddleware from 'next-intl/middleware';
-import {routing} from './i18n/routing';
- 
-export default createMiddleware(routing);
+import { routing } from './i18n/routing';
+import { NextRequest, NextResponse } from 'next/server';
+
+const intlMiddleware = createMiddleware(routing);
+
+export default function middleware(request: NextRequest) {
+  if (request.nextUrl.pathname === '/en/blog') {
+    return NextResponse.redirect(new URL('/it/blog', request.url), { status: 302 });
+  }
+  return intlMiddleware(request);
+}
  
 export const config = {
   // Match all pathnames except for
