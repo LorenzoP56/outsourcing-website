@@ -26,6 +26,17 @@ export const organizationSchema = {
     "@type": "Country",
     name: "Italy",
   },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "certification",
+    name: "UNI EN ISO 9001:2015 - Sistema di Gestione per la Qualità",
+    identifier: "0536.2026",
+    recognizedBy: {
+      "@type": "Organization",
+      name: "IMQ S.p.A.",
+      url: "https://www.imq.it",
+    },
+  },
 };
 
 // LocalBusiness Schema

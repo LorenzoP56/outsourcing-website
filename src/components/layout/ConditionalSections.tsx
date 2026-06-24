@@ -34,6 +34,13 @@ export default function ConditionalSections() {
         <DomandeFrequenti />
       </>
     );
+  } else if (pathname.includes('/certificazioni')) {
+    return (
+      <>
+        <Affidati />
+        <DomandeFrequenti />
+      </>
+    );
   } else if (pathname.includes('/chi-siamo')) {
     return (
       <>

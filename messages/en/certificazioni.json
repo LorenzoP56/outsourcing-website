@@ -1,0 +1,61 @@
+{
+  "Certificazioni": {
+    "meta": {
+      "title": "ISO 9001 Certification | Outsourcing Group Padova",
+      "description": "Outsourcing Group SRL is UNI EN ISO 9001:2015 certified by IMQ for its Quality Management System, with international IQNet recognition."
+    },
+    "hero": {
+      "title": "Our certifications",
+      "description": "The quality of our processes, verified and certified by an independent third party."
+    },
+    "intro": {
+      "paragraph1": "Outsourcing Group SRL has achieved certification of its <bold>Quality Management System</bold> in compliance with the <bold>UNI EN ISO 9001:2015</bold> standard, issued by <bold>IMQ</bold>, one of the leading certification bodies in Europe.",
+      "paragraph2": "The certification (certificate no. 0536.2026) covers the provision of digital back office, contact center and customer support services, and is the guarantee — verified by an independent third party — of the reliability and quality of our work.",
+      "paragraph3": "Thanks to IMQ's membership in the international <bold>IQNet</bold> network, the certification is recognized internationally by the certification bodies belonging to the network."
+    },
+    "iso": {
+      "title": "What being ISO 9001 certified means",
+      "paragraph1": "ISO 9001 is the international reference standard for Quality Management Systems. It defines the requirements an organization must meet to ensure structured, monitored processes oriented towards continuous improvement.",
+      "paragraph2": "For our clients it means relying on a partner that operates according to documented and periodically audited procedures: consistent service quality, traceability of activities and a concrete focus on customer satisfaction."
+    },
+    "logos": {
+      "imqAlt": "IMQ Certified mark - Quality Management System ISO 9001:2015 of Outsourcing Group SRL",
+      "iqnetAlt": "IQNet Recognized Certification mark - international recognition of the ISO 9001 certification",
+      "certificatesAlt": "ISO 9001:2015 certificates of Outsourcing Group SRL issued by IMQ and IQNet",
+      "caption": "Outsourcing Group SRL — Quality Management System certified UNI EN ISO 9001:2015 by IMQ (certificate no. 0536.2026), with international IQNet recognition."
+    },
+    "details": {
+      "title": "Certification details",
+      "standardLabel": "Standard",
+      "standardValue": "UNI EN ISO 9001:2015",
+      "scopeLabel": "Certified activities",
+      "scopeValue": "Provision of digital back office, contact center and customer support services",
+      "bodyLabel": "Certification body",
+      "bodyValue": "IMQ S.p.A.",
+      "numberLabel": "Certificate no.",
+      "numberValue": "0536.2026",
+      "issuedLabel": "First issued",
+      "issuedValue": "14/05/2026",
+      "expiryLabel": "Expiry",
+      "expiryValue": "13/05/2029"
+    },
+    "downloads": {
+      "title": "Download the certificates",
+      "description": "The certificates are available in PDF format. Their validity can be verified at any time via the QR code on the IMQ certificate.",
+      "imq": {
+        "name": "IMQ Certificate — ISO 9001:2015",
+        "info": "Certificate no. 0536.2026 issued by IMQ S.p.A."
+      },
+      "iqnet": {
+        "name": "IQNet Certificate",
+        "info": "IQNet attestation no. IT-156455-0536.2026"
+      },
+      "cta": "Download PDF"
+    },
+    "homeStrip": {
+      "title": "Outsourcing Group achieves ISO 9001 certification",
+      "description": "Outsourcing Group SRL has certified its Quality Management System according to the UNI EN ISO 9001:2015 standard with IMQ, with international recognition by the IQNet network.",
+      "cta": "Learn more"
+    }
+  }
+}

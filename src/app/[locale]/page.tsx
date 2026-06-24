@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Home/Hero";
 import dynamic from "next/dynamic";
 
 const Group = dynamic(() => import("@/components/sections/Home/Group"));
+const Certificazioni = dynamic(() => import("@/components/sections/Home/Certificazioni"));
 const Servizi = dynamic(() => import("@/components/sections/Home/Servizi"));
 const Esternalizzare = dynamic(() => import("@/components/sections/Home/Esternalizzare"));
 const Form = dynamic(() => import("@/components/sections/Home/Form"));
@@ -81,6 +82,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       />
       <Hero />
       <Group />
+      <Certificazioni />
       <Servizi />
       <Esternalizzare />
       <Form />

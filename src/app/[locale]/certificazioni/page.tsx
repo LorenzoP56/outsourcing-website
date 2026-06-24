@@ -1,0 +1,53 @@
+import Certificazioni from "@/components/sections/Certificazioni/Certificazioni";
+import type { Metadata } from "next";
+import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+
+const BASE_URL = "https://osgdigitaleconomy.com";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Certificazioni' });
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/certificazioni`,
+      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/certificazioni`])),
+    },
+    openGraph: {
+      title: t('meta.title'),
+      description: t('meta.description'),
+      url: `${BASE_URL}/${locale}/certificazioni`,
+      siteName: "Outsourcing Group",
+      locale: locale === 'it' ? 'it_IT' : 'en_US',
+      type: "website",
+    },
+  };
+}
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Certificazioni", url: "/certificazioni" },
+]);
+
+export default async function CertificazioniPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(organizationSchema)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbSchema)}
+      />
+      <Certificazioni />
+    </>
+  );
+}
