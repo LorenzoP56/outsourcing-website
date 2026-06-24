@@ -50,7 +50,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     alternates: {
       canonical: `${BASE_URL}/${locale}/blog/${slug}`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/blog/${slug}`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/blog/${slug}`])),
+        'x-default': `${BASE_URL}/it/blog/${slug}`,
+      },
     },
     openGraph: {
       title: post.seo?.title || post.title,

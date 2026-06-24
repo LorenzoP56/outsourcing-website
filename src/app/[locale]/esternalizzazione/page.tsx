@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Esternalizzare/Hero";
 import Motivi from "@/components/sections/Esternalizzare/Motivi";
 import type { Metadata } from "next";
 import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import FaqSchema from "@/components/FaqSchema";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
@@ -16,7 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('meta.description'),
     alternates: {
       canonical: `${BASE_URL}/${locale}/esternalizzazione`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/esternalizzazione`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/esternalizzazione`])),
+        'x-default': `${BASE_URL}/it/esternalizzazione`,
+      },
     },
     openGraph: {
       title: t('meta.title'),
@@ -48,6 +52,7 @@ export default async function Esternalizzare({ params }: { params: Promise<{ loc
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(breadcrumbSchema)}
       />
+      <FaqSchema />
       <Hero />
       <Motivi />
     </>

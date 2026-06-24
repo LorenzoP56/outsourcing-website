@@ -125,14 +125,14 @@ export function generateServiceSchema(service: {
   };
 }
 
-// Author Person Schema - Lorenzo
+// Author Schema - Redazione Outsourcing Group
 export const authorPersonSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": `${baseUrl}/#author-lorenzo`,
-  name: "Lorenzo",
+  "@type": "Organization",
+  "@id": `${baseUrl}/#author-redazione`,
+  name: "Redazione Outsourcing Group",
   url: `${baseUrl}/chi-siamo`,
-  worksFor: {
+  parentOrganization: {
     "@id": `${baseUrl}/#organization`,
   },
 };
@@ -167,9 +167,9 @@ export function generateArticleSchema(article: {
     dateModified: article.date,
     ...(article.wordCount && { wordCount: article.wordCount }),
     author: {
-      "@type": "Person",
-      "@id": `${baseUrl}/#author-lorenzo`,
-      name: "Lorenzo",
+      "@type": "Organization",
+      "@id": `${baseUrl}/#author-redazione`,
+      name: "Redazione Outsourcing Group",
     },
     publisher: {
       "@type": "Organization",

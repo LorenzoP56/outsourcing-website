@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Contatti/Hero";
 import Form from "@/components/sections/Contatti/Form";
 import type { Metadata } from "next";
 import { organizationSchema, localBusinessSchema, generateBreadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import FaqSchema from "@/components/FaqSchema";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
@@ -16,7 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('meta.description'),
     alternates: {
       canonical: `${BASE_URL}/${locale}/contatti`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/contatti`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/contatti`])),
+        'x-default': `${BASE_URL}/it/contatti`,
+      },
     },
     openGraph: {
       title: t('meta.title'),
@@ -52,6 +56,7 @@ export default async function Contatti({ params }: { params: Promise<{ locale: s
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript(breadcrumbSchema)}
       />
+      <FaqSchema />
       <Hero />
       <Form />
     </>

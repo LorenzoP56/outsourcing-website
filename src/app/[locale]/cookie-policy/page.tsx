@@ -15,7 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('cookie.metaDescription'),
     alternates: {
       canonical: `${BASE_URL}/${locale}/cookie-policy`,
-      languages: Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/cookie-policy`])),
+      languages: {
+        ...Object.fromEntries(routing.locales.map(l => [l, `${BASE_URL}/${l}/cookie-policy`])),
+        'x-default': `${BASE_URL}/it/cookie-policy`,
+      },
     },
     openGraph: {
       title: t('cookie.metaTitle'),
