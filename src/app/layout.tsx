@@ -19,6 +19,7 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://osgdigitaleconomy.com'),
   title: "Outsourcing",
   description: "Outsourcing Website",
   icons: {
