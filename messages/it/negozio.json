@@ -1,0 +1,17 @@
+{
+  "Negozio": {
+    "meta": {
+      "title": "Attiva SPID, Firma Digitale e PEC online | Outsourcing Group",
+      "description": "Attiva SPID, Firma Digitale e PEC con l'assistenza di Outsourcing Group. Rivenditore autorizzato Punto Digitale."
+    },
+    "hero": {
+      "title": "SPID, Firma Digitale e PEC",
+      "description": "Attiva i tuoi servizi di identità digitale con l'assistenza di Outsourcing Group."
+    },
+    "startingFrom": "a partire da",
+    "oneTime": "una tantum",
+    "annual": "/anno",
+    "discoverMore": "Scopri di più",
+    "empty": "Nessun servizio disponibile al momento."
+  }
+}

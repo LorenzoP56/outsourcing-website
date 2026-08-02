@@ -1,0 +1,17 @@
+{
+  "Negozio": {
+    "meta": {
+      "title": "Activate SPID, Digital Signature and PEC online | Outsourcing Group",
+      "description": "Activate SPID, Digital Signature and certified email (PEC) with support from Outsourcing Group, authorized Punto Digitale reseller."
+    },
+    "hero": {
+      "title": "SPID, Digital Signature and PEC",
+      "description": "Activate your digital identity services with support from Outsourcing Group."
+    },
+    "startingFrom": "starting from",
+    "oneTime": "one-time",
+    "annual": "/year",
+    "discoverMore": "Learn more",
+    "empty": "No services available at the moment."
+  }
+}

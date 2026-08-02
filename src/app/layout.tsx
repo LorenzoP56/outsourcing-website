@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { routing } from "@/i18n/routing"; 
 import { Asap, Jost } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { ClerkProvider } from '@clerk/nextjs';
+import { SanityLive } from '@/sanity/lib/live';
 import "./globals.css";
 
 const isProduction = process.env.ENABLE_INDEXING === "true";
@@ -43,9 +45,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <GoogleTagManager gtmId="GTM-MSZNQ336" />
-      <body className={`${asap.variable} ${jost.variable} ${asap.className} antialiased`}>
-        {children}
-      </body>
+        <body className={`${asap.variable} ${jost.variable} ${asap.className} antialiased`}>
+          <ClerkProvider>
+            {children}
+          </ClerkProvider>
+          <SanityLive />
+        </body>
+      
     </html>
   );
 }
