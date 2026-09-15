@@ -16,6 +16,12 @@
       "weekdaysHours": "09:00 - 19:00",
       "weekend": "Sabato e Domenica",
       "weekendNote": "supporto attivabile su necessità operative o progetti dedicati"
+    },
+    "map": {
+      "consentNotice": "Cliccando su \"Carica mappa\" verrà effettuata una connessione ai server di Google Maps, con l'impostazione di cookie da parte di Google. Per maggiori informazioni consulta la nostra",
+      "cookiePolicyLink": "Cookie Policy",
+      "loadButton": "Carica mappa",
+      "altText": "Mappa della sede di Outsourcing Group"
     }
   },
   "Affidati": {

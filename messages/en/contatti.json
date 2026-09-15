@@ -16,6 +16,12 @@
       "weekdaysHours": "09:00 - 19:00",
       "weekend": "Saturday and Sunday",
       "weekendNote": "support available on demand for dedicated operations or projects"
+    },
+    "map": {
+      "consentNotice": "Clicking \"Load map\" will connect to Google Maps servers, and Google will set its own cookies. For more information see our",
+      "cookiePolicyLink": "Cookie Policy",
+      "loadButton": "Load map",
+      "altText": "Map of Outsourcing Group's office"
     }
   },
   "Affidati": {

@@ -142,6 +142,18 @@ export default function Form() {
                   })}
                 </label>
               </motion.div>
+              <motion.div
+                className="flex items-start gap-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.55 }}
+                viewport={{ once: true }}
+              >
+                <input type="checkbox" id="home-marketing" name="marketing" className="mt-1" checked={formData.marketing} onChange={handleChange} />
+                <label htmlFor="home-marketing" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
+                  {tForm('marketingConsent')}
+                </label>
+              </motion.div>
               <div aria-live="polite">
                 {error && (
                   <motion.p

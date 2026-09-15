@@ -71,7 +71,7 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="mb-2"><strong>OUTSOURCING GROUP srl</strong></p>
-              <p className="mb-2">{isIt ? "Sede legale: Piazza Giacomo Zanellato, 13 – 35127 Padova (PD)" : "Registered office: Piazza Giacomo Zanellato, 13 – 35127 Padova (PD), Italy"}</p>
+              <p className="mb-2">{isIt ? "Sede legale: Piazza Giacomo Zanellato, 13 – 35131 Padova (PD)" : "Registered office: Piazza Giacomo Zanellato, 13 – 35131 Padova (PD), Italy"}</p>
               <p className="mb-2">{isIt ? "P. IVA / Codice Fiscale: IT03475900282" : "VAT / Tax Code: IT03475900282"}</p>
               <p className="mb-0">{isIt ? "Email di contatto privacy" : "Privacy contact email"}: <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline">info@osgdigitaleconomy.com</a></p>
             </div>
@@ -135,10 +135,15 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
               {isIt ? "D. Cookie di marketing" : "D. Marketing cookies"}
             </h3>
-            <p className="mb-8">
+            <p className="mb-4">
               {isIt
                 ? "Questi cookie vengono utilizzati per tracciare i visitatori attraverso i siti web, con l'obiettivo di mostrare contenuti o comunicazioni potenzialmente rilevanti per l'utente."
                 : "These cookies are used to track visitors across websites, with the aim of displaying content or communications that may be relevant to the user."}
+            </p>
+            <p className="mb-8">
+              {isIt
+                ? "Nella pagina Contatti è integrata una mappa Google Maps che, al momento del caricamento, imposta cookie propri di Google e comporta la connessione ai server di Google."
+                : "The Contact page embeds a Google Maps widget which, once loaded, sets its own Google cookies and connects to Google's servers."}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
@@ -176,14 +181,21 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
             </h2>
             <p className="mb-4">
               {isIt
-                ? "Utilizzando servizi di terze parti come Google Analytics, alcuni dati potrebbero essere trasferiti verso Paesi non appartenenti allo Spazio Economico Europeo."
-                : "By using third-party services such as Google Analytics, some data may be transferred to countries outside the European Economic Area."}
+                ? "I cookie di terze parti utilizzati sul sito comportano i seguenti trasferimenti di dati e garanzie:"
+                : "The third-party cookies used on the site involve the following data transfers and safeguards:"}
             </p>
-            <p className="mb-8">
-              {isIt
-                ? "In tali casi, il trattamento avviene nel rispetto delle garanzie previste dal GDPR, incluse le clausole contrattuali standard adottate dalla Commissione Europea."
-                : "In such cases, processing is carried out in compliance with the safeguards provided for by the GDPR, including standard contractual clauses adopted by the European Commission."}
-            </p>
+            <ul className="list-disc pl-6 mb-8">
+              <li>
+                {isIt
+                  ? <><strong>Google</strong> (Google Analytics, Google Tag Manager, Google Maps) – società con sede negli Stati Uniti, aderente al <strong>Data Privacy Framework (DPF) UE-USA</strong>, il meccanismo di adeguatezza riconosciuto dalla Commissione Europea.</>
+                  : <><strong>Google</strong> (Google Analytics, Google Tag Manager, Google Maps) – US-based company, adhering to the <strong>EU-U.S. Data Privacy Framework (DPF)</strong>, the adequacy mechanism recognised by the European Commission.</>}
+              </li>
+              <li>
+                {isIt
+                  ? "Eventuali altri fornitori terzi operano, ove possibile, con infrastrutture nell'Unione Europea; in caso contrario, il trasferimento avviene sulla base delle Clausole Contrattuali Standard (SCC) adottate dalla Commissione Europea."
+                  : "Any other third-party providers operate, where possible, with infrastructure within the European Union; otherwise, the transfer is based on the Standard Contractual Clauses (SCC) adopted by the European Commission."}
+              </li>
+            </ul>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
               {isIt ? "7. Diritti dell'interessato" : "7. Rights of the data subject"}
@@ -232,14 +244,12 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
                 : "This section contains the detailed declaration of cookies used on the site, generated and updated automatically through the consent management service."}
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-              <p className="text-sm" style={{ color: COLORS.TEXT }}>
-                <strong>{isIt ? "Nota:" : "Note:"}</strong>{" "}
-                {isIt
-                  ? "Qui verrà integrato il widget/tabella del servizio di gestione consenso (es. Cookiebot/Iubenda) per la dichiarazione dettagliata dei cookie utilizzati sul sito."
-                  : "The consent management service widget/table (e.g. Cookiebot/Iubenda) will be integrated here for the detailed declaration of cookies used on the site."}
-              </p>
-            </div>
+            <script
+              id="CookieDeclaration"
+              src="https://consent.cookiebot.com/e58a8351-5b5c-43aa-8d93-5a7b3391f9f5/cd.js"
+              type="text/javascript"
+              async
+            />
 
           </div>
         </div>

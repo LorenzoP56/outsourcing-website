@@ -74,6 +74,12 @@ export default function AffidatiServizi() {
                 {tForm.rich('privacyConsent', { link: (chunks) => <Link href="/privacy-policy" className="underline" target="_blank" rel="noopener noreferrer">{chunks}</Link> })}
               </label>
             </div>
+            <div className="flex items-start gap-2">
+              <input type="checkbox" id="affidati-marketing" name="marketing" className="mt-1" checked={formData.marketing} onChange={handleChange} />
+              <label htmlFor="affidati-marketing" className="lg:text-md text-[16px] leading-[16px]" style={{ color: COLORS.TEXT_WHITE }}>
+                {tForm('marketingConsent')}
+              </label>
+            </div>
             <div aria-live="polite">
               {error && (
                 <motion.p

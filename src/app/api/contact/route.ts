@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { name, email, azienda, message, privacy, website } = body;
+    const { name, email, azienda, message, privacy, marketing, website } = body;
 
     // Honeypot: if the hidden "website" field is filled, it's a bot
     if (website) {
@@ -110,6 +110,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const marketingConsent = marketing === true;
+
+    // Contact is always created for CRM handling of the request (Art. 6(1)(b) GDPR).
+    // Marketing consent is tracked separately and only that flag legitimizes commercial use.
     const brevoResponse = await fetch(BREVO_API_URL, {
       method: "POST",
       headers: {
@@ -123,9 +127,11 @@ export async function POST(request: NextRequest) {
           NOME: sanitizedName,
           AZIENDA: sanitizedAzienda,
           MEX: sanitizedMessage,
+          MARKETING_CONSENT: marketingConsent,
+          MARKETING_CONSENT_DATE: marketingConsent ? new Date().toISOString() : "",
         },
         listIds: [3],
-        emailBlacklisted: false,
+        emailBlacklisted: !marketingConsent,
         smsBlacklisted: false,
         updateEnabled: true,
       }),

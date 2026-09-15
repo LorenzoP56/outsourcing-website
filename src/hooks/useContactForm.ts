@@ -8,6 +8,7 @@ interface FormData {
   azienda: string;
   message: string;
   privacy: boolean;
+  marketing: boolean;
   website: string; // honeypot field
 }
 
@@ -38,6 +39,7 @@ export function useContactForm(errorMessages: ErrorMessages): UseContactFormRetu
     azienda: "",
     message: "",
     privacy: false,
+    marketing: false,
     website: "",
   });
   const [loading, setLoading] = useState(false);
@@ -74,7 +76,7 @@ export function useContactForm(errorMessages: ErrorMessages): UseContactFormRetu
       }
 
       setSuccess(true);
-      setFormData({ name: "", email: "", azienda: "", message: "", privacy: false, website: "" });
+      setFormData({ name: "", email: "", azienda: "", message: "", privacy: false, marketing: false, website: "" });
     } catch {
       setError(errorMessages.NETWORK_ERROR);
     } finally {
