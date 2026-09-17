@@ -4,6 +4,8 @@ import { organizationSchema, generateBreadcrumbSchema, jsonLdScript } from "@/li
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
+import CookieDeclaration from "@/components/sections/Cookie/CookieDeclaration";
+
 const BASE_URL = "https://osgdigitaleconomy.com";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -244,12 +246,7 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
                 : "This section contains the detailed declaration of cookies used on the site, generated and updated automatically through the consent management service."}
             </p>
 
-            <script
-              id="CookieDeclaration"
-              src="https://consent.cookiebot.com/e58a8351-5b5c-43aa-8d93-5a7b3391f9f5/cd.js"
-              type="text/javascript"
-              async
-            />
+            <CookieDeclaration locale={locale} />
 
           </div>
         </div>
