@@ -80,6 +80,21 @@ export default async function PrivacyPolicy({ params }: { params: Promise<{ loca
             </div>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
+              {isIt ? "1.1 Responsabile della Protezione dei Dati (DPO)" : "1.1 Data Protection Officer (DPO)"}
+            </h2>
+            <p className="mb-4">
+              {isIt
+                ? "OUTSOURCING GROUP srl ha nominato un Responsabile della Protezione dei Dati (Data Protection Officer – DPO), contattabile ai seguenti recapiti:"
+                : "OUTSOURCING GROUP srl has appointed a Data Protection Officer (DPO), who can be contacted using the following details:"}
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <p className="mb-2"><strong>RC SRL</strong></p>
+              <p className="mb-2">{isIt ? "Nome e cognome" : "Full name"}: RENATO CASTROREALE</p>
+              <p className="mb-2">{isIt ? "Cellulare" : "Mobile"}: <a href="tel:+393482308611" className="text-blue-600 hover:underline">3482308611</a></p>
+              <p className="mb-0">Email: <a href="mailto:r.castroreale@rcsrl.it" className="text-blue-600 hover:underline">r.castroreale@rcsrl.it</a></p>
+            </div>
+
+            <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
               {isIt ? "2. Tipologie di dati trattati" : "2. Types of data processed"}
             </h2>
             <p className="mb-4">{isIt ? "I dati personali raccolti tramite il sito web includono:" : "Personal data collected through the website includes:"}</p>
