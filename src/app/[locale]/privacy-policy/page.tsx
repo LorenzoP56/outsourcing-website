@@ -129,7 +129,6 @@ export default async function PrivacyPolicy({ params }: { params: Promise<{ loca
               <li>{isIt ? "inserire la richiesta nel sistema CRM aziendale (Brevo)" : "record the request in the company's CRM system (Brevo)"}</li>
               <li>{isIt ? "qualificare commercialmente la richiesta" : "commercially qualify the request"}</li>
               <li>{isIt ? "ricontattare l'utente telefonicamente o via email per dare seguito a quanto richiesto" : "contact the user by phone or email to follow up on the request"}</li>
-              <li>{isIt ? "svolgere un'eventuale profilazione elementare del lead (es. settore di appartenenza, dimensione aziendale), limitata a quanto necessario per la gestione commerciale della richiesta" : "carry out limited lead profiling (e.g. industry sector, company size), restricted to what is necessary to handle the request commercially"}</li>
             </ul>
             <p className="mb-6">
               {isIt
@@ -144,7 +143,14 @@ export default async function PrivacyPolicy({ params }: { params: Promise<{ loca
                 : <>After the initial request, the Data Controller may continue the interaction with the user (e.g. sending further information strictly related to the requested service, managing the commercial negotiation) on the basis of its <strong>legitimate interest</strong> in pursuing the pre-contractual relationship initiated by the data subject (<strong>Art. 6(1)(f) GDPR</strong>), balanced against the rights and freedoms of the data subject, who may object to this processing at any time.</>}
             </p>
 
-            <p className="mb-2"><strong>{isIt ? "c) Marketing e newsletter" : "c) Marketing and newsletter"}</strong></p>
+            <p className="mb-2"><strong>{isIt ? "c) Classificazione commerciale dei contatti" : "c) Commercial classification of contacts"}</strong></p>
+            <p className="mb-6">
+              {isIt
+                ? <>Il Titolare può classificare i contatti ricevuti in base a informazioni elementari (es. settore di appartenenza, dimensione aziendale) per organizzare la propria attività commerciale. Questa attività non è necessaria per rispondere alla richiesta dell&apos;utente e si basa sul <strong>legittimo interesse</strong> commerciale del Titolare (<strong>art. 6, par. 1, lett. f) GDPR</strong>). L&apos;interessato può opporsi in qualsiasi momento, senza alcuna conseguenza sulla gestione della sua richiesta, scrivendo ai recapiti indicati nella sezione 9.</>
+                : <>The Data Controller may classify the contacts it receives based on basic information (e.g. industry sector, company size) to organise its commercial activities. This activity is not necessary to respond to the user&apos;s request and is based on the Data Controller&apos;s commercial <strong>legitimate interest</strong> (<strong>Art. 6(1)(f) GDPR</strong>). The data subject may object at any time, with no consequences for the handling of their request, by writing to the contacts listed in section 9.</>}
+            </p>
+
+            <p className="mb-2"><strong>{isIt ? "d) Marketing e newsletter" : "d) Marketing and newsletter"}</strong></p>
             <p className="mb-8">
               {isIt
                 ? <>L&apos;invio di comunicazioni commerciali, promozionali e di newsletter avviene esclusivamente sulla base del <strong>consenso specifico e separato</strong> dell&apos;interessato (<strong>art. 6, par. 1, lett. a) GDPR</strong>), espresso tramite l&apos;apposita casella facoltativa e distinta presente nei form del sito, indipendente dalla presa visione della presente informativa. Il consenso è in ogni momento revocabile, senza pregiudizio per la liceità del trattamento basata sul consenso prestato prima della revoca.</>
@@ -296,8 +302,13 @@ export default async function PrivacyPolicy({ params }: { params: Promise<{ loca
                 ? "Per esercitare i propri diritti o richiedere informazioni sul trattamento dei dati personali, è possibile contattare il Titolare del trattamento al seguente indirizzo email:"
                 : "To exercise your rights or request information about the processing of your personal data, you can contact the Data Controller at the following email address:"}
             </p>
-            <p className="mb-8">
+            <p className="mb-4">
               <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline text-lg font-semibold">info@osgdigitaleconomy.com</a>
+            </p>
+            <p className="mb-8">
+              {isIt
+                ? <>In alternativa, l&apos;interessato può rivolgersi direttamente al Responsabile della Protezione dei Dati (DPO), ai recapiti indicati nella sezione 1.1 (email: <a href="mailto:r.castroreale@rcsrl.it" className="text-blue-600 hover:underline">r.castroreale@rcsrl.it</a>).</>
+                : <>Alternatively, the data subject may contact the Data Protection Officer (DPO) directly, using the details provided in section 1.1 (email: <a href="mailto:r.castroreale@rcsrl.it" className="text-blue-600 hover:underline">r.castroreale@rcsrl.it</a>).</>}
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
@@ -312,6 +323,9 @@ export default async function PrivacyPolicy({ params }: { params: Promise<{ loca
               {isIt
                 ? "Eventuali variazioni saranno pubblicate su questa pagina e avranno effetto dal momento della loro pubblicazione."
                 : "Any changes will be published on this page and will take effect from the date of publication."}
+            </p>
+            <p className="mb-8 font-semibold">
+              {isIt ? "Ultimo aggiornamento: 25 settembre 2026" : "Last updated: 25 September 2026"}
             </p>
 
           </div>

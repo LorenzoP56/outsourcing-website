@@ -125,8 +125,8 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
             </h3>
             <p className="mb-4">
               {isIt
-                ? "Raccolgono informazioni in forma aggregata e anonima sull'utilizzo del sito web, con l'obiettivo di migliorarne prestazioni, contenuti e usabilità."
-                : "These cookies collect information in aggregate and anonymous form about the use of the website, with the aim of improving its performance, content and usability."}
+                ? "Raccolgono informazioni sull'utilizzo del sito web, con l'obiettivo di migliorarne prestazioni, contenuti e usabilità. La raccolta avviene tramite cookie e identificatori online (es. client ID) che consentono a Google di riconoscere il dispositivo dell'utente: i dati trasmessi, quindi, non sono anonimi."
+                : "These cookies collect information about the use of the website, with the aim of improving its performance, content and usability. Collection takes place through cookies and online identifiers (e.g. client ID) that allow Google to recognise the user's device: the data transmitted is therefore not anonymous."}
             </p>
             <p className="mb-8">
               {isIt
@@ -247,6 +247,56 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
             </p>
 
             <CookieDeclaration locale={locale} />
+
+            <h3 className="text-2xl font-bold mt-12 mb-4" style={{ color: COLORS.TEXT_TITLE }}>
+              {isIt ? "Google Maps (pagina Contatti)" : "Google Maps (Contact page)"}
+            </h3>
+            <p className="mb-4">
+              {isIt
+                ? "La mappa Google Maps della pagina Contatti resta bloccata finché l'utente non presta il consenso. Per questo motivo i relativi cookie potrebbero non comparire nella dichiarazione automatica qui sopra. Una volta caricata la mappa, Google può impostare sul dominio google.com cookie come i seguenti:"
+                : "The Google Maps widget on the Contact page stays blocked until the user gives consent. For this reason, its cookies may not appear in the automatic declaration above. Once the map is loaded, Google may set cookies on the google.com domain such as the following:"}
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-left border-collapse text-base">
+                <thead>
+                  <tr className="border-b">
+                    <th className="py-2 pr-4">{isIt ? "Nome" : "Name"}</th>
+                    <th className="py-2 pr-4">{isIt ? "Fornitore" : "Provider"}</th>
+                    <th className="py-2 pr-4">{isIt ? "Finalità" : "Purpose"}</th>
+                    <th className="py-2 pr-4">{isIt ? "Durata" : "Duration"}</th>
+                    <th className="py-2">{isIt ? "Categoria" : "Category"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b">
+                    <td className="py-2 pr-4">NID</td>
+                    <td className="py-2 pr-4">Google LLC (google.com)</td>
+                    <td className="py-2 pr-4">{isIt ? "Memorizza preferenze e un identificatore univoco del dispositivo, usato da Google anche per personalizzare gli annunci" : "Stores preferences and a unique device identifier, also used by Google to personalise ads"}</td>
+                    <td className="py-2 pr-4">{isIt ? "6 mesi" : "6 months"}</td>
+                    <td className="py-2">Marketing</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="py-2 pr-4">AEC</td>
+                    <td className="py-2 pr-4">Google LLC (google.com)</td>
+                    <td className="py-2 pr-4">{isIt ? "Sicurezza: impedisce l'invio di richieste fraudolente" : "Security: prevents fraudulent requests"}</td>
+                    <td className="py-2 pr-4">{isIt ? "6 mesi" : "6 months"}</td>
+                    <td className="py-2">Marketing</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="py-2 pr-4">SOCS</td>
+                    <td className="py-2 pr-4">Google LLC (google.com)</td>
+                    <td className="py-2 pr-4">{isIt ? "Memorizza le scelte dell'utente sui cookie di Google" : "Stores the user's choices about Google cookies"}</td>
+                    <td className="py-2 pr-4">{isIt ? "13 mesi" : "13 months"}</td>
+                    <td className="py-2">Marketing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mb-8">
+              {isIt
+                ? <>L&apos;elenco può variare in base alle scelte tecniche di Google. Per informazioni aggiornate: <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">policies.google.com/technologies/cookies</a>.</>
+                : <>The list may change depending on Google&apos;s technical choices. For up-to-date information: <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">policies.google.com/technologies/cookies</a>.</>}
+            </p>
 
           </div>
         </div>
