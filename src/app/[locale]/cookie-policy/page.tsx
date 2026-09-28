@@ -231,6 +231,11 @@ export default async function CookiePolicy({ params }: { params: Promise<{ local
               <p className="mb-2"><strong>OUTSOURCING GROUP srl</strong></p>
               <p className="mb-0">Email: <a href="mailto:info@osgdigitaleconomy.com" className="text-blue-600 hover:underline">info@osgdigitaleconomy.com</a></p>
             </div>
+            <p className="mb-4">
+              {isIt
+                ? <>In alternativa, l&apos;interessato può rivolgersi direttamente al Responsabile della Protezione dei Dati (DPO), ai recapiti indicati nella <a href={`/${locale}/privacy-policy`} className="text-blue-600 hover:underline">Privacy Policy</a> (email: <a href="mailto:r.castroreale@rcsrl.it" className="text-blue-600 hover:underline">r.castroreale@rcsrl.it</a>).</>
+                : <>Alternatively, the data subject may contact the Data Protection Officer (DPO) directly, using the details provided in the <a href={`/${locale}/privacy-policy`} className="text-blue-600 hover:underline">Privacy Policy</a> (email: <a href="mailto:r.castroreale@rcsrl.it" className="text-blue-600 hover:underline">r.castroreale@rcsrl.it</a>).</>}
+            </p>
             <p className="mb-8">
               {isIt
                 ? "Il Titolare fornirà riscontro entro i termini previsti dalla normativa vigente."
